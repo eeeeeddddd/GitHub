@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="edward Fellows"/>
+    <link rel="stylesheet" href="css/css.css" />
+    <!--link rel="stylesheet" href="js/script.js"/-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.css" /><!--jquery-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.structure.css"/><!--jquery-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.theme.css" /><!--jquery-->
+    <title>jQuery - Ui (dialog box)</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+		<div id="box" title="Pipe"><!--or $("#box").dialog ({title: "pipe"} in script-->
+			<p>pipe</p><br>
+			<img src="img/pipe.png" width="100px />"
+		</div>
+		
+
+
+</div><!-- wrapper -->
+
+<script type="text/javascript" src="jq/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="jq/ui/jquery-ui.js"></script><!--jquery after jq-->
+<script>
+	
+	$(document).ready (function() {
+
+		$("#box").dialog({});
+					
+	});
+
+//	$("#box").dialog ({title: "pipe"});
+//	$("#box").dialog ({draggable: false});	
+//	$("#box").dialog ({draggable: false, resizable: false});
+//	$("#box").dialog ({width: 200px, height: 200px});
+//	$("#box").dialog ({show: 150, hide: 150});
+//	$("#box").dialog ({show: "bounce", hide: explode});
+//	$("#box").dialog ({modal: true});
+	
+</script>	
+</body>
+</html>
+
+
+
+
+
+

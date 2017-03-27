@@ -1,0 +1,237 @@
+/*colour of outter background plus 20% lighter on expandable pages & toggle button*/
+/*colour of text*/
+/*color of expandable page text*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Antic';
+  box-sizing: border-box; }
+
+body {
+  text-align: center;
+  background-color: purple; }
+
+#wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background-color: white; }
+
+header {
+  background: blue;
+  width: 100%;
+  height: 600px;
+  padding-bottom: 100px;
+  padding-top: 250px;
+  box-sizing: border-box;
+  top: 0px;
+  z-index: -99; }
+
+.edwardfellows {
+  font-family: 'Homemade Apple';
+  font-size: 46px;
+  color: white; }
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+#section1 {
+  margin-top: 600px;
+  height: 500px;
+  position: relative; }
+
+#box1 {
+  width: 50%;
+  height: 500px;
+  background: pink;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 2s; }
+  #box1:hover {
+    opacity: 1.0; }
+
+#box2 {
+  width: 50%;
+  height: 100%;
+  background: lime;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 2s; }
+  #box2:hover {
+    opacity: 1.0; }
+
+/*end section one*/
+#section2 {
+  height: 250px;
+  position: relative; }
+
+#box3 {
+  width: 25%;
+  height: 100%;
+  background: blue;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  transition: 2s; }
+  #box3:hover {
+    opacity: 1.0;
+    background: lime; }
+
+#box4 {
+  width: 25%;
+  height: 100%;
+  background: yellow;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  transition: 2s; }
+  #box4:hover {
+    opacity: 1.0; }
+
+#box5 {
+  width: 25%;
+  height: 100%;
+  background: gray;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 1s;
+  transition: 2s; }
+  #box5:hover {
+    opacity: 1.0; }
+
+#box6 {
+  width: 25%;
+  height: 100%;
+  background: red;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 75%;
+  transition: 2s; }
+  #box6:hover {
+    opacity: 1.0; }
+
+/*end of section 2*/
+#section3 {
+  height: 500px;
+  position: relative; }
+
+#box7 {
+  width: 50%;
+  height: 100%;
+  background: lime;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 2s; }
+  #box7:hover {
+    opacity: 1.0; }
+
+#box8 {
+  z-index: 1;
+  width: 25%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 1s; }
+  #box8:hover {
+    opacity: 1.0;
+    width: 50%; }
+
+#box9 {
+  width: 25%;
+  height: 100%;
+  background: blue;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 75%;
+  transition: 2s; }
+  #box9:hover {
+    opacity: 1.0; }
+
+/*end section 4*/
+#section4 {
+  height: 500px;
+  position: relative; }
+
+#box10 {
+  width: 50%;
+  height: 100%;
+  background: aqua;
+  opacity: 0.6;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 2s; }
+  #box10:hover {
+    opacity: 1.0;
+    width: 100%; }
+
+footer {
+  background: blue; }
+
+#design {
+  padding-top: 30px;
+  padding-bottom: 70px; }
+  #design p {
+    font-size: 8px;
+    font-family: 'Homemade Apple';
+    line-height: 6px;
+    color: white; }
+  #design a {
+    text-decoration: none; }
+
+.pipe {
+  width: 10px;
+  height: 10px; }
+
+/*
+@media (max-width: 500px) {
+	nav {
+		text-align: center;
+		li {
+			display: block;
+		}
+	}
+	.text-section1	{
+	margin-top: 300px; 
+}
+	footer {
+		text-align: center;
+		li {
+			display: block;
+		}
+	}
+	#design {
+		padding-top: 200px;
+	}
+}
+@media screen and (max-width:320px) {
+	body {
+		min-width: 320px;
+	}
+	nav	{
+		min-width: 320px;
+	}
+}*/
+
+/*# sourceMappingURL=css.css.map */

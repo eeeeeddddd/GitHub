@@ -1,0 +1,79 @@
+* {padding 0px; margin: 0px;}
+
+nav {
+	/*position: fixed;
+	top:20px;
+	right: 10%;
+	left: 10%;*/
+	
+	position: relative;
+    background-color: #F5F5F5;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;/*stops 40px */
+    line-height: 10px;
+}
+
+/*background color*/
+
+nav ul li {
+    display: inline-block;
+    color: blue;
+    background-color: #F5F5F5;
+    width: 100px;
+    /*border*/
+}
+
+/*text color*/
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/*keeps rolled over effect*/
+nav ul li:hover > a {
+    background-color: gray;
+    color: white;
+}
+
+/*dropdown*/
+
+nav ul li ul {
+	position: absolute;
+    visibility: hidden;/*or display:none;*/
+}
+
+nav ul li:hover ul {
+    display: block;
+    visibility: visible;/*not needed display:none;*/
+}
+
+/*dropdown background color*/
+
+nav ul li ul li {
+    display: block;
+    width: 100px;
+	background-color: #F5F5F5;
+}
+
+/*dropdown text color*/
+
+nav ul li ul li a {
+	display: block;
+	color: black;
+}
+
+/*hover dropdown background color & text color*/
+
+nav ul li ul li:hover > a{
+    background-color: gray;
+    color: white;
+}

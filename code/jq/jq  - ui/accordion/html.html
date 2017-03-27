@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="edward Fellows"/>
+    <link rel="stylesheet" href="css/css.css" />
+    <!--link rel="stylesheet" href="js/script.js"/-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.css" /><!--jquery-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.structure.css"/><!--jquery-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.theme.css" /><!--jquery-->
+    <title>jQuery - Ui (accordion)</title>
+</head>
+
+<body>
+
+<div id="wrapper">
+	    
+			<div id="panels">
+				<h2>one</h2>
+				<div>one</div>
+				
+				<h2>two</h2>
+				<div>two</div>
+				
+				<h2>two</h2>
+				<div>three</div>
+			</div>
+			
+</div><!-- wrapper -->
+
+<script type="text/javascript" src="jq/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="jq/ui/jquery-ui.js"></script><!--jquery after jq-->
+<script>
+	
+	$(document).ready (function() {
+
+			$("#panels").accordion ();
+			
+	});
+
+//			$("#panels").accordion({collapsible: true});		---unsure---
+//			$("#panels").accordion({animate: 900});		---changes delay or 0---
+//			$("#panels").accordion({event: "mouseover"});		---simple mouseover---
+//			$("#panels").accordion({active: 1});		---changes default to the 2nd panel starts at 0---
+//			$("#panels").accordion({active: 1},{hightStyle: "content"});	---will now size to stop scroll bars---
+
+
+// 			$("#panels").accordion ({icons: {
+// 							header: "ui-icon-plus",	//closed panels
+// 							activeHeader: "ui-icon-minus"} //open panels
+
+
+
+
+</script>	
+</body>
+</html>
+
+
+
+
+
+

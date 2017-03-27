@@ -1,0 +1,22 @@
+*	{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Antic';
+	box-sizing: border-box;
+}
+
+body	{
+}
+
+#wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.draggable	{
+	border: 2px solid blue;
+	width: 500px;
+}
+
+
+

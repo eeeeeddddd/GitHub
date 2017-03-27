@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="edward Fellows"/>
+    <link rel="stylesheet" href="css/css.css" />
+    <title>jQuery - click slideup & down</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+	    
+		<button>button one</button>
+		<button id="button2">button two</button>
+
+		<div id="box">box</div>
+
+</div><!-- wrapper -->
+	
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+	$(document).ready (function() {
+		
+		$("button").click (function() {	
+
+			$("#box").slideUp();
+		
+    	});
+
+		$("#button2").click (function() {	
+
+			$("#box").slideDown();
+		
+    	});		
+	});
+
+</script>	
+</body>
+</html>
+
+
+
+
+
+

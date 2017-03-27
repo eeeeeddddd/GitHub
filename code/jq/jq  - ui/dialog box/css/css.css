@@ -1,0 +1,23 @@
+*	{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Antic';
+	box-sizing: border-box;
+}
+
+body	{
+}
+
+#wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
+
+#box	{
+	width: 400px;<!--does not matter-->
+	height: 400px;<!--does not matter-->
+}
+

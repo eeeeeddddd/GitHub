@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="edward Fellows"/>
+    <link rel="stylesheet" href="css/css.css" />
+    <!--link rel="stylesheet" href="js/script.js"/-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.css" /><!--jquery-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.structure.css"/><!--jquery-->
+    <link rel="stylesheet" href="jq/ui/jquery-ui.theme.css" /><!--jquery-->
+    <title>jQuery - Ui (datepicker)</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+		<div id="date">
+			
+			Calalandar <input type="text" id="cal" /><br>
+<!-- 			<button id="btn">click me!</button> -->
+			
+		</div>
+
+</div><!-- wrapper -->
+
+<script type="text/javascript" src="jq/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="jq/ui/jquery-ui.js"></script><!--jquery after jq-->
+<script>
+	
+	$(document).ready (function() {
+
+			$("#cal").datepicker({showButtonPanel: true});		
+	});
+	
+	
+	
+//			$("#cal").datepicker({numberOfMonths: 3});		--show 3 months at once--	
+//			$("#cal").datepicker({changeMonth: true});		--dropdown--
+//			$("#cal").datepicker({changeYear: true});	--dropdown--
+//			$("#cal").datepicker({showWeek: "week"});	--header--
+//			$("#cal").datepicker({showOtherMonths: true});	--show last months days--
+//			$("#cal").datepicker({minDate: new Date (2015, 11, 25)});		--min back in time--	
+//			$("#cal").datepicker({minDate: new Date (2015, 11, 25)});		--max future in time--	
+	
+</script>	
+</body>
+</html>
+
+
+
+
+
+
