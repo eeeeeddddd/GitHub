@@ -1,0 +1,23 @@
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+  
+}
+.unslider-nav ol li {
+	position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid lime; /*color*/
+  cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+  background: lime;
+  cursor: default;
+}
+

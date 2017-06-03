@@ -1,0 +1,227 @@
+/*colour of outter background plus 20% lighter on expandable pages & toggle button*/
+/*colour of text*/
+/*nav color*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+  background-color: #444444;
+}
+
+#wrapper {
+  width: 100%;
+  background-color: #444444;
+}
+
+.change {
+  display: none;
+}
+
+nav {
+  background-color: #444444;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin: 0;
+}
+
+nav ul {
+  text-align: center;
+  position: relative;
+  list-style: none;
+  line-height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  color: blue;
+  background-color: #444444;
+  width: 100px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover > a {
+  background-color: #515151;
+  color: white;
+}
+
+.toggle {
+  display: none;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#edwardfellows {
+  position: absolute;
+  top: 200px;
+  left: 20%;
+  right: 20%;
+  width: 60%;
+  min-width: 200px;
+  opacity: 0.2;
+  background: #444444;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 5px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+#edwardfellows:hover {
+  opacity: 1;
+  background: white;
+  color: #444444;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: -99;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+#sectionone {
+  margin-top: 500px;
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+fieldset {
+  border: solid 1px #444444;
+  margin-top: 40px;
+  padding: 20px;
+  color: #444444;
+}
+
+#description {
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+#sectiontwo {
+  height: 500px;
+  width: 100%;
+  background-color: #373737;
+}
+
+#sectionthree {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#sectionfour {
+  height: 500px;
+  width: 100%;
+  background-color: #373737;
+}
+
+#sectionfive {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#design {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Aladin', cursive;
+  line-height: 6px;
+  color: white;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+  .toggle {
+    display: block;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+    padding-top: 70px;
+  }
+  .edwardfellows {
+    font-size: 18px;
+  }
+  #section1 {
+    margin-top: 200px;
+    width: 100%;
+  }
+  #section2 {
+    width: 100%;
+  }
+  #section3 {
+    width: 100%;
+  }
+  #section4 {
+    width: 100%;
+  }
+  #section5 {
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */
