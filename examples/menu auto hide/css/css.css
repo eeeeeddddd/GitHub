@@ -44,7 +44,7 @@ header {
 .loader {
   margin: 0 auto;
   border: 2px solid #444444;
-  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   border-radius: 50%;
   width: 40px;
   height: 40px;
