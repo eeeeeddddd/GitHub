@@ -1,0 +1,208 @@
+/*colour of outter background plus 20% lighter on expandable pages & toggle button*/
+/*colour of text*/
+/*nav color*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: #ed5419;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.ab {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
+nav {
+  background-color: #ed5419;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin: 0;
+}
+
+nav ul {
+  text-align: center;
+  position: relative;
+  list-style: none;
+  line-height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  color: blue;
+  background-color: #ed5419;
+  width: 100px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover > a {
+  background-color: #f8bda7;
+  color: white;
+}
+
+.toggle {
+  display: none;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+header {
+  text-align: center;
+  background: #ed5419;
+  height: 400px;
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  padding-top: 90px;
+  z-index: -99;
+}
+
+#sectionone {
+  margin-top: 400px;
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+fieldset {
+  border: solid 1px #ed5419;
+  margin-top: 40px;
+  padding: 20px;
+  color: #ed5419;
+}
+
+#description {
+  color: #ed5419;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+#sectiontwo {
+  height: 500px;
+  width: 100%;
+  background-color: #db4911;
+}
+
+#sectionthree {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#sectionfour {
+  height: 500px;
+  width: 100%;
+  background-color: #db4911;
+}
+
+#sectionfive {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#design {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Aladin', cursive;
+  line-height: 6px;
+  color: white;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+  .toggle {
+    display: block;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+    padding-top: 70px;
+  }
+  .edwardfellows {
+    font-size: 18px;
+  }
+  #section1 {
+    margin-top: 200px;
+    width: 100%;
+  }
+  #section2 {
+    width: 100%;
+  }
+  #section3 {
+    width: 100%;
+  }
+  #section4 {
+    width: 100%;
+  }
+  #section5 {
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */
