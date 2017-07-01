@@ -1,0 +1,101 @@
+/*colour of text*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Shrikhand', cursive;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+header {
+  background: #0000ed;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+.ab {
+  display: none;
+  font-size: 36px;
+  color: white;
+  padding-top: 150px;
+}
+
+#sectionone {
+  height: 1000px;
+  width: 100%;
+  background: white;
+}
+
+#description {
+  color: #0000ed;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+footer {
+  background: #0000ed;
+  height: 100px;
+}
+
+#design {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Shrikhand', cursive;
+  line-height: 6px;
+  color: white;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 320px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  header {
+    height: 150px;
+  }
+  #ab {
+    height: 200px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  #sectionone {
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */

@@ -1,0 +1,106 @@
+/*colour of text*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+header {
+  background: linear-gradient(to top, blue, white);
+  text-align: center;
+  height: 400px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: -99;
+}
+
+.ab {
+  display: none;
+  font-size: 36px;
+  color: white;
+  margin-top: 150px;
+}
+
+#sectionone {
+  margin-top: 400px;
+  height: 1000px;
+  width: 100%;
+  background: white;
+}
+
+#description {
+  color: #0000ed;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+footer {
+  background: linear-gradient(to top, white, blue);
+  height: 100px;
+}
+
+#design {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Aladin', cursive;
+  line-height: 6px;
+  color: white;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 320px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  header {
+    height: 150px;
+  }
+  #ab {
+    height: 200px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  #sectionone {
+    margin-top: 150px;
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */

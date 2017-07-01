@@ -1,0 +1,243 @@
+/*colour of outter background plus 20% lighter on expandable pages & toggle button*/
+/*colour of text*/
+/*nav color*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: #ed5419;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.ab {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  color: white;
+  display: none;
+}
+
+header {
+  text-align: center;
+  background: #ed5419;
+  height: 400px;
+  width: 100%;
+  padding-top: 150px;
+}
+
+/*nav top*/
+#nav {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  background-color: #ed5419;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0px;
+  /*stops 40px */
+  line-height: 10px;
+}
+
+/*background color*/
+#nav ul li {
+  display: inline-block;
+  color: blue;
+  background-color: #ed5419;
+  width: 100px;
+  /*border*/
+}
+
+/*text color*/
+#nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+/*keeps rolled over effect*/
+#nav ul li:hover > a {
+  background-color: #f8bda7;
+  color: white;
+}
+
+/*dropup*/
+#nav ul li ul {
+  position: absolute;
+  visibility: hidden;
+  /*or display:none;*/
+}
+
+#nav ul li:hover ul {
+  display: block;
+  visibility: visible;
+  /*not needed display:none;*/
+}
+
+/*dropup background color*/
+#nav ul li ul li {
+  display: block;
+  width: 100px;
+  background-color: #f8bda7;
+}
+
+/*dropup text color*/
+#nav ul li ul li a {
+  display: block;
+  color: white;
+}
+
+/*hover dropup background color & text color*/
+#nav ul li ul li:hover > a {
+  background-color: #f49a78;
+  color: white;
+}
+
+.toggle {
+  display: none;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+#sectionone {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+fieldset {
+  border: solid 1px #ed5419;
+  margin-top: 40px;
+  padding: 20px;
+  color: #ed5419;
+}
+
+#description {
+  color: #ed5419;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+#sectiontwo {
+  height: 500px;
+  width: 100%;
+  background-color: #db4911;
+}
+
+#sectionthree {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#sectionfour {
+  height: 500px;
+  width: 100%;
+  background-color: #db4911;
+}
+
+#sectionfive {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#design {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Aladin', cursive;
+  line-height: 6px;
+  color: white;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #nav {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #nav ul {
+    display: none;
+  }
+  #nav ul li {
+    display: block;
+    width: 100%;
+  }
+  .toggle {
+    display: block;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+    padding-top: 70px;
+  }
+  .edwardfellows {
+    font-size: 18px;
+  }
+  #section1 {
+    margin-top: 200px;
+    width: 100%;
+  }
+  #section2 {
+    width: 100%;
+  }
+  #section3 {
+    width: 100%;
+  }
+  #section4 {
+    width: 100%;
+  }
+  #section5 {
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */

@@ -1,0 +1,51 @@
+* {padding 0px; margin: 0px;}
+
+#nav {
+	position: fixed;
+	top:0px;
+	right: 0;
+	left: 0;
+    background-color: #F5F5F5;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0px;/*stops 40px */
+    line-height: 10px;
+}
+
+#nav ul li ul {
+    display: none;
+}
+
+#nav ul li:hover ul	{
+	display: block;
+}
+
+/*background color*/
+
+#nav ul li {
+    color: blue;
+    background-color: #F5F5F5;
+    width: 150px;/*same as nav width*/
+    /*border*/
+}
+
+/*text color*/
+
+#nav ul li a {
+    display: block;
+    padding:30px;
+    text-decoration: none;
+    color: black;
+}
+
+/*keeps rolled over effect*/
+#nav ul li:hover > a {
+    background-color: gray;
+    color: white;
+}
+
