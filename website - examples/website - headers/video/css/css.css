@@ -172,9 +172,6 @@ footer {
   background: #444444;
 }
 
-/*nav footer*/
-/*footer ul {	position: relative;	text-align: center;	min-width: 100px;	li {		&:hover {			background-color: darken($color, 5%);			ul {				display: block;			}		}		a {			display: block;			text-decoration: none;			color: $color2;			min-width: 100px;			padding: 15px;			&:hover {				color: $color2;			}		}ul {			position: absolute;			display: none;			background: darken($color, 5%);			text-align: center;			min-width: 100px;						top: auto;			bottom: 100% !important;/*not sure why this works*/
-/*			li {				display: block;				&:hover {						background-color: lighten($color, 10%);				}			}		}	}}*/
 #design {
   padding-top: 30px;
   padding-bottom: 70px;
