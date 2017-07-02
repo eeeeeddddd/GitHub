@@ -22,7 +22,7 @@ body {
   bottom: 0px;
   right: 0;
   left: 0;
-  background-color: #edfe54;
+  background-color: yellow;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -41,7 +41,7 @@ body {
 /*background color*/
 #nav ul li {
   display: inline-block;
-  background-color: #edfe54;
+  background-color: yellow;
   width: 100px;
   /*border*/
 }
@@ -51,13 +51,13 @@ body {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #788501;
+  color: #333300;
 }
 
 /*keeps rolled over effect*/
 #nav ul li:hover > a {
-  background-color: #d3eb01;
-  color: #788501;
+  background-color: #999900;
+  color: #333300;
 }
 
 /*dropup*/
@@ -77,18 +77,18 @@ body {
 #nav ul li ul li {
   display: block;
   width: 100px;
-  background-color: #d3eb01;
+  background-color: #999900;
 }
 
 /*dropup text color*/
 #nav ul li ul li a {
   display: block;
-  color: #788501;
+  color: #333300;
 }
 
 /*hover dropup background color & text color*/
 #nav ul li ul li:hover > a {
-  background-color: #a6b801;
+  background-color: #666600;
   color: white;
 }
 
@@ -96,25 +96,18 @@ header {
   width: 100%;
   height: 400px;
   text-align: center;
-  background: #edfe54;
+  background: yellow;
 }
 
-.ab {
+.title {
   padding-top: 150px;
   font-family: 'Sofia', cursive;
   font-size: 46px;
-  color: #788501;
-  transition: 2s;
-}
-
-.ab:hover {
-  font-family: 'Amatic SC', cursive;
-  font-size: 100px;
-  color: white;
+  color: #333300;
 }
 
 #description {
-  color: #788501;
+  color: #333300;
   padding: 5%;
   box-sizing: border-box;
   text-align: center;
@@ -133,24 +126,6 @@ header {
 #sectiontwo {
   width: 100%;
   height: 400px;
-  background: #edfe54;
-}
-
-#sectionthree {
-  width: 100%;
-  height: 400px;
-  background: white;
-}
-
-#sectionfour {
-  width: 100%;
-  height: 500px;
-  background: #edfe54;
-}
-
-#sectionfive {
-  width: 100%;
-  height: 400px;
   background: white;
 }
 
@@ -167,7 +142,7 @@ header {
   font-size: 8px;
   font-family: 'Gloria Hallelujah', cursive;
   line-height: 6px;
-  color: #788501;
+  color: #ebeb00;
 }
 
 #design a {
@@ -189,9 +164,6 @@ header {
   nav ul li {
     display: block;
     width: 100%;
-  }
-  .toggle {
-    display: block;
   }
   header {
     height: 120px;

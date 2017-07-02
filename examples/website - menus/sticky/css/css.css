@@ -8,15 +8,10 @@
   font-family: 'Aladin', cursive;
 }
 
-body {
-  background-color: #3BFF00;
-}
-
 #wrapper {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  background-color: #2fcc00;
   text-align: center;
 }
 
@@ -28,21 +23,21 @@ body {
 
 header {
   text-align: center;
-  background: #3BFF00;
+  background: lime;
   width: 100%;
   height: 400px;
   padding-top: 150px;
   box-sizing: border-box;
 }
 
-.ab {
+.title {
   font-family: 'Aladin', cursive;
   font-size: 46px;
-  color: #186600;
+  color: #006600;
 }
 
 nav {
-  background: #3BFF00;
+  background: lime;
 }
 
 nav ul {
@@ -56,7 +51,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #186600;
+  background-color: #006600;
 }
 
 nav ul li:hover ul {
@@ -66,7 +61,7 @@ nav ul li:hover ul {
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: #186600;
+  color: #006600;
   min-width: 100px;
   padding: 15px;
 }
@@ -101,7 +96,7 @@ hr {
 }
 
 #description {
-  color: #239900;
+  color: #009900;
   padding: 5%;
   box-sizing: border-box;
   text-align: center;
@@ -112,47 +107,12 @@ hr {
 }
 
 #sectiontwo {
-  height: 500px;
+  height: 650px;
   width: 100%;
   box-sizing: border-box;
   background-color: white;
 }
 
-#sectionthree {
-  height: 500px;
-  width: 100%;
-  padding-top: 100px;
-  box-sizing: border-box;
-  background-color: #35e600;
-}
-
-#sectionfour {
-  height: 500px;
-  width: 100%;
-  padding-top: 100px;
-  box-sizing: border-box;
-  background-color: white;
-}
-
-#sectionfive {
-  height: 500px;
-  width: 100%;
-  padding-top: 100px;
-  box-sizing: border-box;
-  background-color: #35e600;
-}
-
-#sectionsix {
-  height: 500px;
-  width: 100%;
-  padding-top: 100px;
-  box-sizing: border-box;
-  background-color: white;
-}
-
-/*nav footer*/
-/*footer ul {	position: relative;	text-align: center;	min-width: 100px;	li {		&:hover {			background-color: darken($color, 5%);			ul {				display: block;			}		}		a {			display: block;			text-decoration: none;			color: $color2;			min-width: 100px;			padding: 15px;			&:hover {				color: $color2;			}		}ul {			position: absolute;			display: none;			background: darken($color, 5%);			text-align: center;			min-width: 100px;						top: auto;			bottom: 100% !important;/*not sure why this works*/
-/*			li {				display: block;				&:hover {						background-color: lighten($color, 10%);				}			}		}	}}*/
 #design {
   padding-top: 30px;
   padding-bottom: 70px;
@@ -162,7 +122,7 @@ hr {
   font-size: 8px;
   font-family: 'Aladin', cursive;
   line-height: 6px;
-  color: white;
+  color: lime;
 }
 
 #design a {
@@ -174,7 +134,7 @@ hr {
   height: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   .toggle {
     display: block;
   }
@@ -190,19 +150,6 @@ hr {
   nav ul li {
     display: block;
     width: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-  nav {
-    min-width: 320px;
-  }
-  wrapper {
-    min-width: 320px;
-  }
-  body {
-    min-width: 320px;
-    overflow-x: hidden;
   }
 }
 

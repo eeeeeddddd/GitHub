@@ -21,29 +21,18 @@ hr {
 header {
   background: linear-gradient(to top, blue, white);
   text-align: center;
-  height: 400px;
-  position: fixed;
-  top: 0px;
+  height: 500px;
   width: 100%;
-  z-index: -99;
-}
-
-.ab {
-  display: none;
-  font-size: 36px;
-  color: white;
-  margin-top: 150px;
 }
 
 #sectionone {
-  margin-top: 400px;
-  height: 1000px;
+  height: 500px;
   width: 100%;
   background: white;
 }
 
 #description {
-  color: #0000ed;
+  color: blue;
   padding: 5%;
   box-sizing: border-box;
   text-align: center;
@@ -51,11 +40,6 @@ header {
 
 #description ul {
   list-style: none;
-}
-
-footer {
-  background: linear-gradient(to top, white, blue);
-  height: 100px;
 }
 
 #design {
@@ -69,7 +53,7 @@ footer {
   font-size: 8px;
   font-family: 'Aladin', cursive;
   line-height: 6px;
-  color: white;
+  color: blue;
 }
 
 #design a {
@@ -89,13 +73,7 @@ footer {
   header {
     height: 150px;
   }
-  #ab {
-    height: 200px;
-    width: 100%;
-    margin-top: 50px;
-  }
   #sectionone {
-    margin-top: 150px;
     width: 100%;
   }
   #design {

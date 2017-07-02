@@ -8,13 +8,8 @@
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-body {
-  background-color: #643400;
-}
-
 #wrapper {
   width: 100%;
-  background-color: #643400;
 }
 
 .change {
@@ -65,29 +60,6 @@ nav ul li:hover > a {
   text-align: center;
 }
 
-#ab {
-  position: absolute;
-  top: 200px;
-  left: 20%;
-  right: 20%;
-  width: 60%;
-  min-width: 200px;
-  opacity: 0.5;
-  background: #643400;
-  color: white;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 5px;
-  border-radius: 20px;
-  transition: 1s;
-}
-
-#ab:hover {
-  opacity: 1;
-  background: white;
-  color: #643400;
-}
-
 hr {
   width: 100%;
   margin: 0 auto;
@@ -125,30 +97,6 @@ fieldset {
   list-style: none;
 }
 
-#sectiontwo {
-  height: 500px;
-  width: 100%;
-  background-color: #4b2700;
-}
-
-#sectionthree {
-  height: 500px;
-  width: 100%;
-  background: white;
-}
-
-#sectionfour {
-  height: 500px;
-  width: 100%;
-  background-color: #4b2700;
-}
-
-#sectionfive {
-  height: 500px;
-  width: 100%;
-  background: white;
-}
-
 #design {
   text-align: center;
   width: 100%;
@@ -160,7 +108,7 @@ fieldset {
   font-size: 8px;
   font-family: 'Aladin', cursive;
   line-height: 6px;
-  color: white;
+  color: #643400;
 }
 
 #design a {
@@ -172,46 +120,21 @@ fieldset {
   height: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   #wrapper {
     width: 100%;
     margin-left: 0px;
-  }
-  nav {
-    width: 100%;
-    margin-left: 0px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    display: block;
-    width: 100%;
   }
   .toggle {
     display: block;
   }
   header {
-    height: 500px;
+    height: 200px;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 0px;
   }
-  .edwardfellows {
-    font-size: 18px;
-  }
-  #section1 {
-    width: 100%;
-  }
-  #section2 {
-    width: 100%;
-  }
-  #section3 {
-    width: 100%;
-  }
-  #section4 {
-    width: 100%;
-  }
-  #section5 {
+  #sectionone {
+    margin-top: 50px;
     width: 100%;
   }
   #design {

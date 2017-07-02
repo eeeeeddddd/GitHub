@@ -1,17 +1,17 @@
-
-$(document).ready(function() {
-
-// Hide the div
-$("#a , #b").hide();
-
-// Show the div in 5s
-$("#a , #b").delay(200).fadeIn(2000);
-
-// split
-$("#a").animate({right: '120px'});
-$("#b").animate({left: '130px'});
-
-});
+// 
+// $(document).ready(function() {
+// 
+// // Hide the div
+// $("#a , #b").hide();
+// 
+// // Show the div in 5s
+// $("#a , #b").delay(200).fadeIn(2000);
+// 
+// // split
+// $("#a").animate({top: '120px'});
+// $("#b").animate({bottom '130px'});
+// 
+// });
 
 //two changes two classes
 
@@ -19,7 +19,7 @@ $("#b").animate({left: '130px'});
 	   
     var scroll = $(window).scrollTop();
      
-    if (scroll >= 320) {	
+    if (scroll >= 450) {	
         $(".loader").addClass("change");} 
 
     else {
@@ -34,7 +34,7 @@ $("#b").animate({left: '130px'});
 	   
     var scrolltext = $(window).scrollTop();
      
-    if (scrolltext >= 820) {	
+    if (scrolltext >= 950) {	
         $(".loader").addClass("change1");} 
 
     else {
@@ -47,7 +47,7 @@ $("#b").animate({left: '130px'});
 	   
     var scrolltext = $(window).scrollTop();
      
-    if (scrolltext >= 1320) {	
+    if (scrolltext >= 1450) {	
         $(".loader").addClass("change2");} 
 
     else {
@@ -60,7 +60,7 @@ $("#b").animate({left: '130px'});
 	   
     var scrolltext = $(window).scrollTop();
      
-    if (scrolltext >= 1820) {	
+    if (scrolltext >= 1950) {	
         $(".loader").addClass("change3");} 
 
     else {

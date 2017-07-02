@@ -8,7 +8,6 @@
 
 body {
   text-align: center;
-  background-color: #0000ed;
 }
 
 #wrapper {
@@ -16,7 +15,6 @@ body {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  background-color: #0000ed;
 }
 
 .change {
@@ -30,7 +28,7 @@ header {
   padding-top: 150px;
 }
 
-.ab {
+.title {
   font-family: 'Give You Glory', cursive;
   font-size: 46px;
   color: white;
@@ -156,150 +154,6 @@ hr {
   color: white;
 }
 
-#section2 {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: white;
-}
-
-#box1 {
-  width: 50%;
-  height: 500px;
-  background: #6A6565;
-  opacity: 0.6;
-  position: absolute;
-}
-
-#box1:hover {
-  opacity: 1.0;
-}
-
-#box2 {
-  width: 50%;
-  height: 500px;
-  background: #0000ed;
-  opacity: 0.6;
-  position: absolute;
-  margin-left: 50%;
-}
-
-#box2:hover {
-  opacity: 1.0;
-}
-
-#section3 {
-  height: 200px;
-  width: 100%;
-  background: white;
-  color: #0000ed;
-  padding-top: 50px;
-}
-
-#section33 {
-  position: relative;
-  display: none;
-  height: 200px;
-  width: 100%;
-  background: white;
-  color: #0000ed;
-  padding-top: 80px;
-}
-
-#btn {
-  height: 100px;
-  width: 100px;
-  padding: 0px;
-  font-size: 18px;
-  background: #0000ed;
-  color: white;
-  border: 0px;
-  border-radius: 50%;
-}
-
-#btn:hover {
-  color: white;
-  box-shadow: 0px 5px 10px black;
-}
-
-#section4 {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: white;
-}
-
-#box3 {
-  z-index: 2;
-  width: 25%;
-  height: 500px;
-  background: #0000ed;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#box3:hover {
-  opacity: 1.0;
-  width: 100%;
-}
-
-#box4 {
-  z-index: 1;
-  width: 25%;
-  height: 500px;
-  background: #6A6565;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 25%;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#box4:hover {
-  opacity: 1.0;
-  width: 75%;
-}
-
-.show {
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  font-size: 42px;
-  opacity: 0.0;
-  color: white;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.show:hover {
-  display: block;
-  opacity: 1.0;
-  padding-top: 200px;
-  color: white;
-}
-
-#section5 {
-  height: 400px;
-  width: 100%;
-  background: white;
-}
-
-#section55 {
-  position: relative;
-  display: none;
-  height: 400px;
-  width: 100%;
-  background: #0000ed;
-  color: white;
-  padding-top: 350px;
-}
-
 footer {
   background: #0000ed;
 }
@@ -313,14 +167,14 @@ footer {
   font-size: 8px;
   font-family: 'Give You Glory', cursive;
   line-height: 6px;
-  color: white;
+  color: #0000ed;
 }
 
 #design a {
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   #wrapper {
     width: 100%;
     margin-left: 0px;
@@ -343,9 +197,6 @@ footer {
     height: 250px;
     width: 100%;
     padding-top: 70px;
-  }
-  .edwardfellows {
-    font-size: 18px;
   }
   #section1 {
     margin-top: 200px;

@@ -1,6 +1,5 @@
 /*colour of outter background plus 20% lighter on expandable pages & toggle button*/
 /*colour of text*/
-/*nav color*/
 * {
   margin: 0px;
   padding: 0px;
@@ -8,24 +7,19 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-body {
-  background-color: #ed5419;
-}
-
 #wrapper {
   width: 100%;
 }
 
-.ab {
+.title {
   font-family: 'Orbitron', sans-serif;
   font-size: 36px;
   color: white;
-  display: none;
 }
 
 header {
   text-align: center;
-  background: #ed5419;
+  background: red;
   height: 400px;
   width: 100%;
   padding-top: 150px;
@@ -37,7 +31,7 @@ header {
   top: 0px;
   right: 0;
   left: 0;
-  background-color: #ed5419;
+  background-color: red;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -54,7 +48,7 @@ header {
 #nav ul li {
   display: inline-block;
   color: blue;
-  background-color: #ed5419;
+  background-color: red;
   width: 100px;
   /*border*/
 }
@@ -69,7 +63,7 @@ header {
 
 /*keeps rolled over effect*/
 #nav ul li:hover > a {
-  background-color: #f8bda7;
+  background-color: #ff9999;
   color: white;
 }
 
@@ -90,7 +84,7 @@ header {
 #nav ul li ul li {
   display: block;
   width: 100px;
-  background-color: #f8bda7;
+  background-color: #ff9999;
 }
 
 /*dropup text color*/
@@ -101,7 +95,7 @@ header {
 
 /*hover dropup background color & text color*/
 #nav ul li ul li:hover > a {
-  background-color: #f49a78;
+  background-color: #ff6666;
   color: white;
 }
 
@@ -127,15 +121,8 @@ hr {
   background: white;
 }
 
-fieldset {
-  border: solid 1px #ed5419;
-  margin-top: 40px;
-  padding: 20px;
-  color: #ed5419;
-}
-
 #description {
-  color: #ed5419;
+  color: red;
   padding: 5%;
   box-sizing: border-box;
   text-align: center;
@@ -143,30 +130,6 @@ fieldset {
 
 #description ul {
   list-style: none;
-}
-
-#sectiontwo {
-  height: 500px;
-  width: 100%;
-  background-color: #db4911;
-}
-
-#sectionthree {
-  height: 500px;
-  width: 100%;
-  background: white;
-}
-
-#sectionfour {
-  height: 500px;
-  width: 100%;
-  background-color: #db4911;
-}
-
-#sectionfive {
-  height: 500px;
-  width: 100%;
-  background: white;
 }
 
 #design {
@@ -180,7 +143,7 @@ fieldset {
   font-size: 8px;
   font-family: 'Aladin', cursive;
   line-height: 6px;
-  color: white;
+  color: red;
 }
 
 #design a {
@@ -192,7 +155,7 @@ fieldset {
   height: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   #wrapper {
     width: 100%;
     margin-left: 0px;
@@ -212,27 +175,12 @@ fieldset {
     display: block;
   }
   header {
-    height: 200px;
+    height: 250px;
     width: 100%;
     padding-top: 70px;
   }
-  .edwardfellows {
-    font-size: 18px;
-  }
   #section1 {
     margin-top: 200px;
-    width: 100%;
-  }
-  #section2 {
-    width: 100%;
-  }
-  #section3 {
-    width: 100%;
-  }
-  #section4 {
-    width: 100%;
-  }
-  #section5 {
     width: 100%;
   }
   #design {

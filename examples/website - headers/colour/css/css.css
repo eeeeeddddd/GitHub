@@ -19,27 +19,20 @@ hr {
 }
 
 header {
-  background: #0000ed;
+  background: blue;
   text-align: center;
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
-.ab {
-  display: none;
-  font-size: 36px;
-  color: white;
-  padding-top: 150px;
-}
-
 #sectionone {
-  height: 1000px;
+  height: 500px;
   width: 100%;
   background: white;
 }
 
 #description {
-  color: #0000ed;
+  color: blue;
   padding: 5%;
   box-sizing: border-box;
   text-align: center;
@@ -47,11 +40,6 @@ header {
 
 #description ul {
   list-style: none;
-}
-
-footer {
-  background: #0000ed;
-  height: 100px;
 }
 
 #design {
@@ -65,7 +53,7 @@ footer {
   font-size: 8px;
   font-family: 'Shrikhand', cursive;
   line-height: 6px;
-  color: white;
+  color: blue;
 }
 
 #design a {
@@ -84,11 +72,6 @@ footer {
   }
   header {
     height: 150px;
-  }
-  #ab {
-    height: 200px;
-    width: 100%;
-    margin-top: 50px;
   }
   #sectionone {
     width: 100%;
