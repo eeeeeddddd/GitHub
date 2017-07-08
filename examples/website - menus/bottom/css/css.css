@@ -165,6 +165,10 @@ header {
     display: block;
     width: 100%;
   }
+  .title {
+    padding-top: 20px;
+    font-size: 24px;
+  }
   header {
     height: 120px;
     width: 100%;

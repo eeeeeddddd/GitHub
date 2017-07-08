@@ -1,0 +1,193 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Antic';
+  box-sizing: border-box;
+  font-family: 'Give You Glory', cursive;
+}
+
+body {
+  text-align: center;
+}
+
+#wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.change {
+  visibility: hidden;
+}
+
+header {
+  background: #0000ed;
+  width: 100%;
+  height: 400px;
+  padding-top: 150px;
+}
+
+.title {
+  font-family: 'Give You Glory', cursive;
+  font-size: 46px;
+  color: white;
+}
+
+.loader {
+  margin: 0 auto;
+  border: 2px solid #0000ed;
+  border-bottom: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear 2;
+  animation: spin 1s linear 2;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#nav {
+  background-color: #0000ed;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin: 0;
+}
+
+#nav ul {
+  text-align: center;
+  position: relative;
+  list-style: none;
+  line-height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav ul li {
+  display: inline-block;
+  color: blue;
+  background-color: #0000ed;
+  width: 100px;
+}
+
+#nav ul li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+#nav ul li:hover > a {
+  background-color: #0707ff;
+  color: white;
+}
+
+.toggle {
+  display: none;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+#section1 {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+#description {
+  color: #0000ed;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+footer {
+  background: #0000ed;
+}
+
+#design {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Give You Glory', cursive;
+  line-height: 6px;
+  color: #0000ed;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #nav {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #nav ul {
+    display: none;
+  }
+  #nav ul li {
+    display: block;
+    width: 100%;
+  }
+  .toggle {
+    display: block;
+  }
+  header {
+    height: 250px;
+    width: 100%;
+    padding-top: 70px;
+  }
+  #section1 {
+    margin-top: 200px;
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */

@@ -1,0 +1,163 @@
+#splash {
+	position: absolute;
+	width: 1000px;
+	height: 2000px;
+	background-color: #F5F5F5;
+}
+
+#splashinner {
+	position: absolute;
+	top: 190px;
+	left: 100px;
+	width: 800px;
+	height: 300px;
+	background-color: gray;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px #696969;
+	font-size: 36px;
+	color: white; 
+	line-height: 25px
+}
+
+#splash-text	{
+	position: relative;
+	top: 120px;
+	color: white;
+	font-family: 'Homemade Apple';
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Antic';
+	color: #808080;
+}
+
+body {
+	background-color: #F5F5F5;
+	text-align: center;
+}
+
+#wrapper {
+	background-color: #F5F5F5;
+	margin: 0 auto;
+	width: 1000px;
+	height: auto;
+}
+
+header {
+	background: white;
+	width: 1000px;
+	height: 150px;
+}
+
+#headinner {
+	margin-top: 0px;
+	line-height: 8px;
+	padding-top: 65px;
+}
+
+#headinner a {
+	font-size: 14px;
+}
+
+nav {
+	width: 1000px;
+	height: 100px;
+	background-color: #F5F5F5;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+nav ul {
+	height: 36px;
+	width: 1000px;
+	background-color: #F5F5F5;
+	box-sizing: border-box;
+}
+
+nav li {
+	list-style-type: none;
+	width: 90px;
+	display: inline-block;
+	text-align: center;
+}
+
+nav li a {
+	text-decoration: none;
+	font-family: 'Antic';
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+	line-height: 38px;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.nav-placeholder {
+	margin-left: 0px;
+}
+
+/*main*/
+
+section {
+	background-color: white;
+	height: auto;
+	width: 860px;
+	margin: 0 auto;
+	padding: 50px;
+	color: #808080;
+	box-shadow: 0px 14px 20px #696969;
+	box-sizing: border-box;
+	/*nice fix*/
+}
+
+fieldset {
+	text-align: left;
+	border: 2px solid #808080;
+	border-radius: 6px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: 'Antic';
+	font-size: 14px;
+}
+
+a {
+	font-family: 'Antic';
+	font-size: 14px;
+	text-decoration: none;
+	color: white;
+}
+
+.design a {
+	text-decoration: none;
+	font-size: 12px;
+	font-family: 'Antic';
+}
+
+#design {
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+
+#design p {
+	font-size: 8px;
+	font-family: 'Homemade Apple';
+	line-height: 6px;
+}
+
+.pipe {
+	width: 10px;
+	height: 10px;
+}
