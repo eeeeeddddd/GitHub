@@ -1,0 +1,35 @@
+*			{
+			padding: 0px;
+			margin:0px;
+			border: 0px;
+			}
+
+body		{
+			background-color: #333333;
+			color: black;
+			font-family: arial;
+			}
+			
+			
+.email		{
+			position:relative;
+			left: 1050px;			
+			bottom: 140px;
+			width: 100px;
+			}/* don't forget width on positions*/
+
+#container	{
+			Padding-top: 30px;
+			background: #333333;
+			width: 1000px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2px;
+			text-align: center;
+			}
+			
+h3			{
+			color:#999999;
+			font-size: 11px;
+			}		 	 

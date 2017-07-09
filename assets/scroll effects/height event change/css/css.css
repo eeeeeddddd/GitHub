@@ -117,26 +117,4 @@ footer {
   height: 10px;
 }
 
-#design {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 70px;
-}
-
-#design p {
-  font-size: 8px;
-  font-family: 'Gloria Hallelujah', cursive;
-  line-height: 6px;
-  color: #444444;
-}
-
-#design a {
-  text-decoration: none;
-}
-
-.pipe {
-  width: 10px;
-  height: 10px;
-}
-
 /*# sourceMappingURL=css.map */
