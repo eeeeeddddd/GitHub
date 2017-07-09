@@ -305,7 +305,7 @@ table {
 }
 
 #cv {
-  -webkit-box-ordinal-group: 2;
+  -webkit-box-ordinal-group: 1;
       -ms-flex-order: 1;
           order: 1;
   width: 150px;
@@ -313,19 +313,17 @@ table {
   margin: 20px; /*only with two*/
 }
 
-/*
 #ml {
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+      -ms-flex-order: 3;
+          order: 3;
   width: 150px;
   height: 200px;
   margin: 20px;
 }
-*/
 
 #loop {
-  -webkit-box-ordinal-group: 3;
+  -webkit-box-ordinal-group: 2;
       -ms-flex-order: 2;
           order: 2;
   width: 150px;
