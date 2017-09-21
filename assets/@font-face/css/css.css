@@ -1,0 +1,14 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/bootcamp-regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p	{
+	font-family: myFirstFont;
+	font-weight: normal;
+    font-style: normal;
+    font-size: 90px;
+    text-align: center;
+	}
