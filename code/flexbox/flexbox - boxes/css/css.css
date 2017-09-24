@@ -8,12 +8,6 @@ body {
 	border: solid silver 5px;
 	height: 400px;
 	display: flex;
-	
-
-
-
-
-	
 }
 
 .box	{
@@ -35,7 +29,7 @@ body {
 }
 .box4	{
 	background: purple;
-	order: 4;
+	order: 8;
 }
 .box5	{
 	background: yellow;
@@ -52,7 +46,7 @@ body {
 .box8	{
 	background: black;
 	color: white;
-	order: 8;
+	order: 4;
 }
 .box9	{
 	background: tomato;
