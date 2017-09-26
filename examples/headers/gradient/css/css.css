@@ -10,19 +10,27 @@
   width: 100%;
 }
 
-hr {
-  width: 100%;
-  margin: 0 auto;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+header {
+  background-image: linear-gradient(180deg, rgba(255, 4, 0, 0.5), rgba(255, 0, 4, 0.5));
+  height: 300px;
+  width: 99vw;
+  animation: hue 3s infinite alternate;
 }
 
-header {
-  background: linear-gradient(to top, blue, white);
-  text-align: center;
-  height: 500px;
-  width: 100%;
+@keyframes hue {
+  /* 	100% {filter: hue-rotate(360deg);}} */
+  from {
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+  }
 }
 
 #sectionone {
