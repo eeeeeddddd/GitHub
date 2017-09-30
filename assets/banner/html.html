@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>banner</title>
+	<style>
+		#banner	{
+	position: absolute;
+	top: 50px;
+	margin: 0 auto;
+}
+
+#middle {
+  position: absolute;
+  top: 9px;
+  left: 140px;
+  width: 400px;
+  height: 60px;
+  border: 4px solid gray;
+  line-height: 55px;
+  text-align: center;
+  color: white;
+  background: lime;
+  border-radius: 2px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset, 0 6px 10px rgba(0,0,0,.15);
+}
+
+#left {
+  position: absolute;
+  z-index: -1;
+  left: 68px;
+  top: 46px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid red;
+  border-right: 20px solid blue;
+  border-bottom-color: black;
+  border-left-color: transparent;
+  transform: rotate(-4deg);
+}
+
+#right {  
+  position: absolute;
+  z-index: -1;
+  left: 528px;
+  top: 46px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid red;
+  border-right: 20px solid blue;
+  border-bottom-color: black;
+  border-left-color: transparent;
+  transform: rotate(-176deg);
+}
+	</style>
+</head>
+
+<body>
+	<div id="banner">
+		<div id="left"></div><div id="middle">edward Fellows</div><div id="right"></div>
+	</div>
+</body>
+    
+</html>
