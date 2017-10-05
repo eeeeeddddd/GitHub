@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-4215 -370 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_15);
+      }
+
+      .cls-2 {
+        fill: #95989a;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: rgba(149,152,154,0.31);
+        stroke-width: 8px;
+      }
+
+      .cls-4 {
+        font-size: 188px;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        font-family: HiraKakuPro-W3, Hiragino Kaku Gothic Pro;
+      }
+
+      .cls-5 {
+        font-size: 118px;
+      }
+
+      .cls-6 {
+        font-size: 51px;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_15">
+      <rect x="-4215" y="-370" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_15" data-name="Artboard – 15" class="cls-1">
+    <rect class="cls-7" x="-4215" y="-370" width="1920" height="1920"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-2" width="135.336" height="15.616" transform="translate(-3821 580.208)"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" class="cls-2" width="135.336" height="15.616" transform="matrix(0.883, -0.469, 0.469, 0.883, -3749.077, 866.211)"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" class="cls-2" width="135.336" height="15.616" transform="matrix(0.883, -0.469, 0.469, 0.883, -2853.777, 359.569)"/>
+    <rect id="Rectangle_27" data-name="Rectangle 27" class="cls-2" width="135.336" height="15.616" transform="matrix(0.545, -0.839, 0.839, 0.545, -3541.678, 1086.429)"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" class="cls-2" width="135.336" height="15.616" transform="matrix(0.545, -0.839, 0.839, 0.545, -3024.625, 198.07)"/>
+    <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-2" width="135.336" height="15.616" transform="translate(-2790.364 580.208)"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-2" width="135.336" height="15.616" transform="matrix(0.875, 0.485, -0.485, 0.875, -3741.063, 293.324)"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" class="cls-2" width="135.336" height="15.616" transform="matrix(0.875, 0.485, -0.485, 0.875, -2845.762, 803.437)"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-2" width="135.336" height="15.616" transform="translate(-3526.435 81.812) rotate(59)"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-2" width="135.336" height="15.616" transform="translate(-3007.646 973.642) rotate(59)"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-2" width="135.336" height="15.616" transform="translate(-3230.206 8.5) rotate(90)"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-2" width="135.336" height="15.616" transform="translate(-3230.206 1035.666) rotate(90)"/>
+    <path id="Path_31" data-name="Path 31" class="cls-3" d="M-3358.085,384.047l190.005,317.344-218.2,126.841" transform="translate(-72.574 -110.866)"/>
+    <text id="COMING" class="cls-4" transform="translate(-3631.876 589.17)"><tspan x="0" y="0">COMING</tspan></text>
+    <text id="SOON" class="cls-5" transform="translate(-3401.111 700.883)"><tspan x="0" y="0">SOON</tspan></text>
+    <text id="our_new_site_is" data-name="our new site is" class="cls-6" transform="translate(-3394.171 372.417)"><tspan x="0" y="0">our new site is</tspan></text>
+  </g>
+</svg>

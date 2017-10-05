@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-11469 4474 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_18);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+        font-size: 130px;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        font-family: AndaleMono, Andale Mono;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: #95989a;
+      }
+
+      .cls-4 {
+        font-size: 54px;
+      }
+
+      .cls-5 {
+        font-size: 17px;
+      }
+
+      .cls-6 {
+        font-size: 50px;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_18">
+      <rect x="-11469" y="4474" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_18" data-name="Artboard – 18" class="cls-1">
+    <rect class="cls-7" x="-11469" y="4474" width="1920" height="1920"/>
+    <path id="Path_20" data-name="Path 20" class="cls-2" d="M-6093.343,10165.741h250.531" transform="translate(-4785 -4722)"/>
+    <path id="Path_22" data-name="Path 22" class="cls-2" d="M-6093.343,10165.741h72.351" transform="translate(-4785 -4637)"/>
+    <path id="Path_23" data-name="Path 23" class="cls-2" d="M-6093.343,10165.741h72.351" transform="translate(-4696 -4637)"/>
+    <path id="Path_24" data-name="Path 24" class="cls-2" d="M-6093.343,10165.741h72.351" transform="translate(-4607 -4637)"/>
+    <path id="Path_21" data-name="Path 21" class="cls-2" d="M-5859.945,10098.435h71.154v152.683h-34.45" transform="translate(-4785 -4722)"/>
+    <text id="_100" data-name="100" class="cls-3" transform="translate(-10898 5424)"><tspan x="0" y="0">100</tspan></text>
+    <text id="_18" data-name="18" class="cls-4" transform="translate(-10888 5521)"><tspan x="0" y="0">18</tspan></text>
+    <text id="HOURS" class="cls-5" transform="translate(-10881 5554)"><tspan x="0" y="0">HOURS</tspan></text>
+    <text id="MINTES" class="cls-5" transform="translate(-10789 5554)"><tspan x="0" y="0">MINTES</tspan></text>
+    <text id="SECONDS" class="cls-5" transform="translate(-10700 5554)"><tspan x="0" y="0">SECONDS</tspan></text>
+    <text id="COMING_SOON" data-name="COMING SOON" class="cls-6" transform="translate(-10358 5451)"><tspan x="0" y="0">COMING SOON</tspan></text>
+    <text id="_39" data-name="39" class="cls-4" transform="translate(-10794 5521)"><tspan x="0" y="0">39</tspan></text>
+    <text id="_44" data-name="44" class="cls-4" transform="translate(-10710 5521)"><tspan x="0" y="0">44</tspan></text>
+    <line id="Line_4" data-name="Line 4" class="cls-2" y1="427" x2="75" transform="translate(-10503.5 5220.5)"/>
+  </g>
+</svg>

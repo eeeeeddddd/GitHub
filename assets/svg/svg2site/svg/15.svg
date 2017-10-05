@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-4215 2042 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_21);
+      }
+
+      .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #95989a;
+        stroke: #95989a;
+        font-family: Impact;
+      }
+
+      .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-6, .cls-9 {
+        font-size: 226px;
+      }
+
+      .cls-3 {
+        opacity: 0.9;
+      }
+
+      .cls-4 {
+        opacity: 0.8;
+      }
+
+      .cls-5, .cls-7, .cls-8 {
+        font-size: 227px;
+      }
+
+      .cls-5 {
+        opacity: 0.7;
+      }
+
+      .cls-6 {
+        opacity: 0.6;
+      }
+
+      .cls-7 {
+        opacity: 0.5;
+      }
+
+      .cls-8 {
+        opacity: 0.45;
+      }
+
+      .cls-9 {
+        opacity: 0.4;
+      }
+
+      .cls-10 {
+        opacity: 0.35;
+      }
+
+      .cls-11 {
+        opacity: 0.3;
+      }
+
+      .cls-12 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_21">
+      <rect x="-4215" y="2042" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_21" data-name="Artboard – 21" class="cls-1">
+    <rect class="cls-12" x="-4215" y="2042" width="1920" height="1920"/>
+    <text id="C" class="cls-2" transform="translate(-3877 3096.5)"><tspan x="0" y="0">C</tspan></text>
+    <text id="O" class="cls-3" transform="translate(-3751.706 3096.5)"><tspan x="0" y="0">O</tspan></text>
+    <text id="M" class="cls-4" transform="translate(-3627.2 3096.5)"><tspan x="0" y="0">M</tspan></text>
+    <text id="I" class="cls-5" transform="translate(-3464.081 3097.5)"><tspan x="0" y="0">I</tspan></text>
+    <text id="N" class="cls-6" transform="translate(-3397.888 3096.5)"><tspan x="0" y="0">N</tspan></text>
+    <text id="G" class="cls-7" transform="translate(-3274.958 3097.5)"><tspan x="0" y="0">G</tspan></text>
+    <text id="S" class="cls-8" transform="translate(-3081.894 3097.5)"><tspan x="0" y="0">S</tspan></text>
+    <text id="O-2" data-name="O" class="cls-9" transform="translate(-2963.692 3096.5)"><tspan x="0" y="0">O</tspan></text>
+    <text id="O-3" data-name="O" class="cls-10" transform="translate(-2839.974 3096.5)"><tspan x="0" y="0">O</tspan></text>
+    <text id="N-2" data-name="N" class="cls-11" transform="translate(-2715.468 3096.5)"><tspan x="0" y="0">N</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9051 4474 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_14);
+      }
+
+      .cls-10, .cls-12, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-10, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #95989a;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        opacity: 0.197;
+      }
+
+      .cls-3 {
+        opacity: 0.499;
+      }
+
+      .cls-4 {
+        opacity: 0.504;
+      }
+
+      .cls-5 {
+        opacity: 0.5;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #95989a;
+        font-family: JosefinSlab-Regular, Josefin Slab;
+      }
+
+      .cls-6 {
+        font-size: 43px;
+      }
+
+      .cls-7 {
+        font-size: 209px;
+      }
+
+      .cls-8 {
+        font-size: 53px;
+      }
+
+      .cls-9 {
+        font-size: 163px;
+      }
+
+      .cls-10 {
+        stroke-width: 20px;
+      }
+
+      .cls-11 {
+        stroke: none;
+      }
+
+      .cls-13 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_14">
+      <rect x="-9051" y="4474" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_14" data-name="Artboard – 14" class="cls-1">
+    <rect class="cls-13" x="-9051" y="4474" width="1920" height="1920"/>
+    <g id="Ellipse_18" data-name="Ellipse 18" class="cls-2" transform="translate(-8719 5495)">
+      <circle class="cls-11" cx="144.5" cy="144.5" r="144.5"/>
+      <circle class="cls-12" cx="144.5" cy="144.5" r="139.5"/>
+    </g>
+    <g id="Ellipse_19" data-name="Ellipse 19" class="cls-3" transform="translate(-8389 5495)">
+      <circle class="cls-11" cx="144.5" cy="144.5" r="144.5"/>
+      <circle class="cls-12" cx="144.5" cy="144.5" r="139.5"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" class="cls-4" transform="translate(-8059 5495)">
+      <circle class="cls-11" cx="144.5" cy="144.5" r="144.5"/>
+      <circle class="cls-12" cx="144.5" cy="144.5" r="139.5"/>
+    </g>
+    <g id="Ellipse_21" data-name="Ellipse 21" class="cls-5" transform="translate(-7729 5495)">
+      <circle class="cls-11" cx="144.5" cy="144.5" r="144.5"/>
+      <circle class="cls-12" cx="144.5" cy="144.5" r="139.5"/>
+    </g>
+    <text id="seconds" class="cls-6" transform="translate(-7649 5721)"><tspan x="0" y="0">seconds</tspan></text>
+    <text id="we_re_coming_soon" data-name="we’re coming soon" class="cls-7" transform="translate(-8892 5187)"><tspan x="0" y="0">we’re coming soon</tspan></text>
+    <text id="we_are_working_very_hard_on_a_new_version_of_our_site" data-name="we are working very hard on a new version of our site" class="cls-8" transform="translate(-8090 5354)"><tspan x="-613.846" y="0">we are working very hard on a new version of our site</tspan></text>
+    <text id="It_will_bring_a_lot_of_new_features._Stay_tuned_" data-name="It will bring a lot of new features. Stay tuned!" class="cls-8" transform="translate(-8090 5407)"><tspan x="-510.046" y="0">It will bring a lot of new features. Stay tuned!</tspan></text>
+    <text id="hours" class="cls-6" transform="translate(-8301 5721)"><tspan x="0" y="0">hours</tspan></text>
+    <text id="minutes" class="cls-6" transform="translate(-7984 5721)"><tspan x="0" y="0">minutes</tspan></text>
+    <text id="days" class="cls-6" transform="translate(-8622 5721)"><tspan x="0" y="0">days</tspan></text>
+    <text id="_18" data-name="18" class="cls-9" transform="translate(-8642 5670)"><tspan x="0" y="0">18</tspan></text>
+    <text id="_09" data-name="09" class="cls-9" transform="translate(-8346 5670)"><tspan x="0" y="0">09</tspan></text>
+    <text id="_30" data-name="30" class="cls-9" transform="translate(-7999 5670)"><tspan x="0" y="0">30</tspan></text>
+    <text id="_25" data-name="25" class="cls-9" transform="translate(-7670 5670)"><tspan x="0" y="0">25</tspan></text>
+    <path id="Path_27" data-name="Path 27" class="cls-10" d="M-8576.285,5500.012c34.02-.9,61.979,10.347,81.493,25.007"/>
+    <path id="Path_28" data-name="Path 28" class="cls-10" d="M-8576.285,5500.012c25.878-.207,139.486,25.226,138.539,147.325-2.416,49.155-36.372,132.075-138.539,132.075-22.185.338-143.154-8.985-143.154-148.33" transform="translate(335)"/>
+    <path id="Path_29" data-name="Path 29" class="cls-10" d="M-7914,5499.15c60.5,1.749,137.446,48.895,139.827,138.379S-7855.119,5781.08-7914,5780.213"/>
+    <path id="Path_30" data-name="Path 30" class="cls-10" d="M-7914,5499.15c60.5,1.749,137.446,48.895,139.827,138.379s-64.164,126.106-92.371,139.171" transform="translate(325 -4)"/>
+  </g>
+</svg>

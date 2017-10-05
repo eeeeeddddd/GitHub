@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-4215 4454 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_9);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #95989a;
+      }
+
+      .cls-3 {
+        font-size: 96px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: HiraKakuPro-W3, Hiragino Kaku Gothic Pro;
+      }
+
+      .cls-4 {
+        font-size: 18px;
+      }
+
+      .cls-5 {
+        font-size: 45px;
+        font-family: HomemadeApple, Homemade Apple;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-8 {
+        fill: #f5f4f4;
+      }
+    </style>
+    <clipPath id="clip-Artboard_9">
+      <rect x="-4215" y="4454" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_9" data-name="Artboard – 9" class="cls-1">
+    <rect class="cls-8" x="-4215" y="4454" width="1920" height="1920"/>
+    <g id="Rectangle_15" data-name="Rectangle 15" class="cls-2" transform="translate(-3811 4967)">
+      <rect class="cls-6" width="1113" height="720"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="1112" height="719"/>
+    </g>
+    <text id="COMING_SOON" data-name="COMING SOON" class="cls-3" transform="translate(-3621 5184)"><tspan x="0" y="0">COMING SOON</tspan></text>
+    <text id="SORRY_OUR_WEBSITE_IS_CURRENTLY_GETTING_A_FACE_LIFT." data-name="SORRY OUR WEBSITE IS CURRENTLY GETTING A FACE LIFT." class="cls-4" transform="translate(-3528 5297)"><tspan x="0" y="0">SORRY OUR WEBSITE IS CURRENTLY GETTING A FACE LIFT.</tspan></text>
+    <text id="CHECK_BACK_SOON_FOR_OUR_NEW_AND_IMPROVED_SITE." data-name="CHECK BACK SOON FOR OUR NEW AND IMPROVED SITE." class="cls-4" transform="translate(-3518 5328)"><tspan x="0" y="0">CHECK BACK SOON FOR OUR NEW AND IMPROVED SITE.</tspan></text>
+    <text id="Paul_Smith" data-name="Paul  Smith" class="cls-5" transform="translate(-3397 5483)"><tspan x="0" y="0" xml:space="preserve">Paul  Smith</tspan></text>
+  </g>
+</svg>

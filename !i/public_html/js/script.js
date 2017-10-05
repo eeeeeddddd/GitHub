@@ -26,21 +26,20 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-
-    $("#mark1").on('click', function () {
-        $("#mark2").slideToggle(1000);
-    }); 
-});
-
-$(document).ready(function () {
-
-    $("#max1").on('click', function () {
-        $("#max2").slideToggle(1000);
-    });
-
-});
-
+// $(document).ready(function () {
+// 
+//     $("#mark1").on('click', function () {
+//         $("#mark2").slideToggle(1000);
+//     }); 
+// });
+// 
+// $(document).ready(function () {
+// 
+//     $("#max1").on('click', function () {
+//         $("#max2").slideToggle(1000);
+//     });
+// 
+// });
 // $(document).ready(function () {
 // 
 //     $("#roadhouse1").on('click', function () {

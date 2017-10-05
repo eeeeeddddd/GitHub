@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13887 -370 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_1);
+      }
+
+      .cls-2 {
+        fill: #95989a;
+        font-size: 161px;
+        font-family: Didot-Bold, Didot;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_1">
+      <rect x="-13887" y="-370" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" class="cls-1">
+    <rect class="cls-3" x="-13887" y="-370" width="1920" height="1920"/>
+    <text id="COMING_SOON" data-name="COMING SOON" class="cls-2" transform="translate(-13523 402)"><tspan x="0" y="0">COMING SOON</tspan></text>
+    <text id="TO_A_SCREEN" data-name="TO A SCREEN" class="cls-2" transform="translate(-13469 584)"><tspan x="0" y="0">TO A SCREEN</tspan></text>
+    <text id="NEAR_TOU_" data-name="NEAR TOU!" class="cls-2" transform="translate(-13362 787)"><tspan x="0" y="0">NEAR TOU!</tspan></text>
+  </g>
+</svg>

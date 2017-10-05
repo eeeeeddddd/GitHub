@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-11469 -390 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_11);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #95989a;
+        font-family: Impact;
+      }
+
+      .cls-2, .cls-3, .cls-7 {
+        font-size: 156px;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #95989a;
+      }
+
+      .cls-4 {
+        font-size: 157px;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7 {
+        font-family: Megrim;
+      }
+
+      .cls-5 {
+        font-size: 46px;
+      }
+
+      .cls-6 {
+        font-size: 47px;
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_11">
+      <rect x="-11469" y="-390" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_11" data-name="Artboard – 11" class="cls-1">
+    <rect class="cls-8" x="-11469" y="-390" width="1920" height="1920"/>
+    <text id="Coming_back" data-name="Coming back" class="cls-2" transform="translate(-11092.5 562.5)"><tspan x="0" y="0">Coming back</tspan></text>
+    <text id="SOON_" data-name="SOON…" class="cls-3" transform="translate(-10227.652 562.5)"><tspan x="0" y="0">SOON…</tspan></text>
+    <text id="_353" data-name="353" class="cls-4" transform="translate(-11025.532 765.692)"><tspan x="0" y="0">353</tspan></text>
+    <text id="DAYS" class="cls-5" transform="translate(-10948.589 868.686)"><tspan x="0" y="0">DAYS</tspan></text>
+    <text id="HOURS" class="cls-6" transform="translate(-10669.082 869.686)"><tspan x="0" y="0">HOURS</tspan></text>
+    <text id="MINUTES" class="cls-6" transform="translate(-10427.262 869.686)"><tspan x="0" y="0">MINUTES</tspan></text>
+    <text id="SECONDS" class="cls-6" transform="translate(-10143.045 869.686)"><tspan x="0" y="0">SECONDS</tspan></text>
+    <text id="_01" data-name="01" class="cls-4" transform="translate(-10658.091 765.692)"><tspan x="0" y="0">01</tspan></text>
+    <text id="_05" data-name="05" class="cls-4" transform="translate(-10144.615 765.692)"><tspan x="0" y="0">05</tspan></text>
+    <text id="_55" data-name="55" class="cls-7" transform="translate(-10419.41 764.692)"><tspan x="0" y="0">55</tspan></text>
+  </g>
+</svg>
