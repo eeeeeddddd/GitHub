@@ -9,25 +9,31 @@
 		<meta name="keywords" content="me"/>
 		<meta name="description" content="">
 		<meta name="author" content=""/>
-		<title>transition property</title>
+		<title>transition / transform</title>
 <style>
-#wrapper {padding: 20px;}
+#wrapper {padding: 20px;
+}
+
 #box	{
 	position: relative;
 	width: 100px;
 	height: 100px;
 	background: red;
-	transition: opacity 1s ease-in-out;} /*or all*/
+	transition: transform 1s ease-in-out;
+}
 
-#box:hover	{opacity: 0.3;}
+#box:hover	{transform: rotate(360deg);}
+/* #box:hover	{transform:skew(10deg,10deg);} */
+/* #box:hover	{transform:scale(2);} */
+/* #box:hover	{transform: translate(200px, 200px);} */
 
 </style>
-	</head>
+</head>
 	
     <body>
 
 		<div id="wrapper">
-			<div id="box">box</div>
+			<div id="box"></div>
 		</div>
 		
     </body>
