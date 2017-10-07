@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>affect another</title>
+		<style>
+            #wrapper  {
+                background: red;
+                width:200px;
+            }
+            #box1   {
+                width: 100px;
+                height: 100px;
+                background: blue;
+            }
+            #wrapper:hover > #box1, #wrapper:hover > #box3 {background: yellow;}
+            /* > for a sibbling?*/
+            
+            #wrapper:hover ~ #outsidebox {background: black;}
+            /* ~ not for a sibbling*/            
+            
+/*
+If the cube is directly inside the container:
+#container:hover > #cube { background-color: yellow; }
+            
+If cube is next to (after containers closing tag) the container:
+#container:hover + #cube { background-color: yellow; }
+            
+If the cube is somewhere inside the container:
+#container:hover #cube { background-color: yellow; }
+            
+If the cube is a sibling of the container:
+#container:hover ~ #cube { background-color: yellow; } 
+            
+https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-a-div-is-hovered            
+*/            
+            
+            #box2   {
+                width: 100px;
+                height: 100px;
+                background: pink;
+            }
+            #box3   {
+                width: 100px;
+                height: 100px;
+                background: lime;
+            }
+            
+            #outsidebox  {
+                width: 100px;
+                height: 100px;
+                background: lightblue;
+            }
+		</style>
+
+</head>
+
+	<body>
+		    
+<div id="wrapper">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</div>
+    <div id="outsidebox"></div>
+	        
+	</body>
+    
+</html>
