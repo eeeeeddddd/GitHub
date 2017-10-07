@@ -11,16 +11,16 @@
 	<meta name="author" content="me"/>
 	<title>pop</title>
 <style>
-		#box	{
+		.heart	{
+			position: absolute;
+			left: 100px;
+			top: 100px;
 			width: 100px;
 			height: 100px;
-			margin: 10%;
-			border-radius: 50%;
-			background-color: red;
-			animation: pop 1s 0s linear 5; /*or infinite*/
+			animation: beat 1s 0s linear infinite;
 }
 		
-@keyframes pop {
+@keyframes beat {
 	0% {transform: scale(1,1);	}
 	50% {transform: scale(1.2, 1.2);}
 	100% {transform: scale(1,1);
@@ -33,7 +33,7 @@
 
 <body>
 		    
-	<div id="box"></div>	
+	<img class="heart" src="heart.png">
 	        
 </body>
     
