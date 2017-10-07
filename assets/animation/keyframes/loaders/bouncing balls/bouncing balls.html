@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="keywords" content="me"/>
+		<meta name="description" content="">
+		<meta name="author" content=""/>
+		<title>bouncing balls</title>
+<style>
+#wrapper	{position: absolute; margin-left: 37%; margin-right: 50%;}
+.ball1	{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray; 
+	animation: bounce 1s ease-in-out 3;
+}
+
+.ball2	{
+	position: absolute;
+	top: 100px;
+	left: 140px;		
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray; 
+	animation: bounce 1s ease-in-out 0.22s 5;
+}
+
+.ball3	{
+	position: absolute;
+	top: 100px;
+	left: 180px;		
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray;
+	animation: bounce 1s ease-in-out 0.44s 7;
+}
+.ball4	{
+	position: absolute;
+	top: 100px;
+	left: 220px;	
+	display: block;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray;
+	animation: bounce 1s ease-in-out 0.66s 5;
+}
+.ball5	{
+	position: absolute;
+	top: 100px;
+	left: 260px;	
+	display: block;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray;
+	animation: bounce 1s ease-in-out 0.88s 3;
+}
+
+@keyframes bounce {
+ 0%, 100% {transform: translateY(0px)}
+ 50% {transform: translateY(-40px)}
+ }
+ 
+</style>
+
+</head>
+
+<body>
+	<div id="wrapper">		
+		<div class='ball1'></div>
+		<div class="ball2"></div>
+		<div class="ball3"></div>
+		<div class="ball4"></div>
+		<div class="ball5"></div>
+	</div>				
+</body>
+		
+    </body>
+    
+</html>

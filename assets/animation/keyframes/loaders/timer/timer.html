@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="keywords" content="me"/>
+		<meta name="description" content="">
+		<meta name="author" content=""/>
+		<title>timer</title>
+<style>
+
+.face	{
+  position: relative;
+  top: 50px;
+  height: 100px;
+  width: 100px;
+  border: solid 4px #f5f5f5;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.hand	{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  width: 5px;
+  height: 60px;
+  background: red;
+  transform-origin: top center;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+ from {transform: rotate(0deg);}
+ to{transform: rotate(360deg);}
+}
+
+</style>
+
+</head>
+
+	<body>
+
+<div class="face">
+  <div class="hand"></div>
+</div>
+
+</body>
+		    
+</html>

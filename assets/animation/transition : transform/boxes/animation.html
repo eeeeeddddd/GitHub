@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="keywords" content="me"/>
+		<meta name="description" content="">
+		<meta name="author" content=""/>
+		<title>animation</title>
+<style>
+#wrapper {padding: 20px;}
+#box	{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	
+/*short hand*/	
+/* 	animation: dogs 2s linear 0s infinite alternate; */
+
+/*long hand*/
+	animation-name: pig;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;/*or infinite*/
+	animation-direction: normal;/*reverse - alternate*/
+	animation-fill-mode: forwards;/*finish state or normal*/
+	animation-play-state: running; /*paused?*/
+	}
+
+@keyframes pig	 {
+	
+	0%		{width: 200px;}			
+	100%		{width: 400px;}
+}
+/*or from to
+	can still use:
+{transform: rotate(360deg);}
+{transform:skew(10deg,10deg);}
+{transform:scale(2);}
+{transform: translate(200px, 200px);}
+*/
+
+</style>
+	</head>
+	
+    <body>
+
+		<div id="wrapper">
+			<div id="box">box</div>
+		</div>
+		
+    </body>
+    
+</html>
