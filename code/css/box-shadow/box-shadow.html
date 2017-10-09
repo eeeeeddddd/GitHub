@@ -10,15 +10,28 @@
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
 	<title>box shadow</title>
-		<style>
+	<style>
 #box	{
+	position: relative;
+	top: 50px;
+	left: 50%;
+	right: 50%;
+	margin-left: -50px;
 	width: 100px;
 	height: 100px;
 	border: 2px solid gray;
-	box-shadow: 10px 10px 10px #888888;
-	/*right bottom blur colour*/
-}				
-		</style>
+	transition: all ease-in-out 300ms; 
+	box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+	/*+or- X   +or-Y   blur    spread    colour*/
+}
+
+/*
+#box:hover	{
+	box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+	transform: translate(0px, -10px);
+}	
+*/			
+	</style>
 
 </head>
 

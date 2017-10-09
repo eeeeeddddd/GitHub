@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>animation - pipe</title>
+	
+    <style>  
+	  #wrapper	{
+		  position: relative;
+		  top: 50px;
+		  left: 50%;
+		  right: 50%;
+		  margin-left: -100px;
+	  }  
+      .new {
+	    width: 200px;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 0;
+        animation: dash 4s linear infinite 1s; /*forwards;*/
+      }
+      
+@keyframes dash 	{
+	from	{
+		stroke-dashoffset: 2000;
+	}
+	to	{
+		stroke-dashoffset: 0;
+	}
+}
+</style>	
+</head>
+
+<body>
+
+<div id="wrapper">    
+<svg class="new" id="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 433.92 199.78">
+  <path d="M16,24C3,93,13,151,33,175c23,27.59,60.84,30,80,30C227,205,278.89,86.94,335.35,60,373,42,396.82,39,425,40c0,0,16.28,8,15-10-1-14-17-15-21-9-9-1-68.6-8-126,17-65.5,28.58-123.71,94.31-151.77,86.68C124,120,147,87,130,20,125.8,3.44,9,8,18,20c8.16,10.88,91.26,10.31,109,3" transform="translate(-8.15 -7.22)" 
+style="fill: none;stroke: lightgray; stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 4px"/>
+</svg>
+</div>    
+
+</body>
+    
+</html>
+
+
