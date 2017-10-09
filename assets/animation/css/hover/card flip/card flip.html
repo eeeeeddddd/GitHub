@@ -13,39 +13,50 @@
 	<style>
 	
 .flip	{
-		width:240px;
-		height:200px;
-		margin:10px;
-		float:left;/*stacking*/
+	position: relative;
+	top: 50px;
+	left: 50%;
+	right: 50%;
+	margin-left: -100px;
+	width:200px;
+	height:200px;
 }
 
-.flip > .front		{
-	position:	absolute;
-	transform: perspective(600px) rotateY(0deg);
+.flip > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
 	background: lightgray;
 	width:200px;
 	height:200px;
-	border-radius: 10px;
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.flip > .back		{
+
+.flip > .back{
 	position:absolute;
-	transform: perspective(600px) rotateY(180deg);
-	background: gray;
-	width:200px;
-	height:200px;
-	border-radius: 10px;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: gray; 
+	width:200px; 
+	height:200px; 
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.flip:hover > .front	{
-	transform: perspective(600px) rotateY(-180deg);
+.flip:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
 }
-.flip:hover > .back		{
-	transform: perspective(600px) rotateY(0deg);
-}
-	</style>
+.flip:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}	
+
+</style>
 
 </head>
 	<body>
