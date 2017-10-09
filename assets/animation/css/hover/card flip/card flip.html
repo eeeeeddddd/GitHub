@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>card flip</title>
+	<style>
+	
+.flip	{
+		width:240px;
+		height:200px;
+		margin:10px;
+		float:left;/*stacking*/
+}
+
+.flip > .front		{
+	position:	absolute;
+	transform: perspective(600px) rotateY(0deg);
+	background: lightgray;
+	width:200px;
+	height:200px;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip > .back		{
+	position:absolute;
+	transform: perspective(600px) rotateY(180deg);
+	background: gray;
+	width:200px;
+	height:200px;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip:hover > .front	{
+	transform: perspective(600px) rotateY(-180deg);
+}
+.flip:hover > .back		{
+	transform: perspective(600px) rotateY(0deg);
+}
+	</style>
+
+</head>
+	<body>
+		<div class="flip">
+				<div class="front"></div>
+			  <div class="back"></div>
+		</div>
+<!--
+		<div class="flip">
+				<div class="front">front</div>
+			  <div class="back">back</div>
+		</div>
+-->
+	</body>
+	
+</html>
+
