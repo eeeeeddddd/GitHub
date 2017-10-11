@@ -1,1 +1,0 @@
-<?php	$name = $_POST['name'];$email = $_POST['email'];$message = $_POST['message'];$email_message = "name: ".$name."email: ".$email."message: ".$message."";mail ("email@edwardfellows.co.uk" , "job offer" , $email_message );header("location: http://www.edwardfellows.co.uk/sent.html")	?>
