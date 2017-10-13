@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>www</title>
+		<style>
+#wrapper	{
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	margin-left: -50px;
+	top: 50px;
+}
+#circle	{
+	position: absolute;
+	top: 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: solid 2px black;
+}
+#circle-inner	{
+	position: relative;
+	top: 0px;
+	left: 40px;
+	width: 120px;
+	height: 200px;
+	border-radius: 60px / 100px;
+	border: solid 1px black;	
+}
+#center	{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	width: 0.1px;
+	height: 200px;
+	border: solid 1px black;	
+}
+#line-top	{
+	position: absolute;
+	top: -41px;
+	left: 100px;
+	width: 0px;
+	height: 160px;
+	border: solid 1px black;	
+	transform: rotateZ(90deg);
+}
+#line-middle	{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	height: 200px;
+	border: solid 1px black;	
+	transform: rotateZ(90deg);
+}
+#line-bottom	{
+	position: absolute;
+	top: 79px;
+	left: 100px;
+	height: 160px;
+	border: solid 1px black;	
+	transform: rotateZ(90deg);
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="circle">
+		<div id="circle-inner"></div>
+		<div id="center"></div>
+		<div id="line-top"></div>
+		<div id="line-middle"></div>
+		<div id="line-bottom"></div>
+	</div>   
+</div>
+
+<!--
+<div id="wrapper-open">
+	<div id="envelope"></div>
+	<div id="lick-left-open"></div>
+	<div id="lick-right-open"></div>   
+</div>
+-->	     
+</body>
+    
+</html>

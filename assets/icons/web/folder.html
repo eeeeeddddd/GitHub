@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>folder</title>
+<style>			
+#wrapper	{
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -100px;
+	top: 50px;
+}
+/*
+#wrapper:hover	> #folder {
+	background: red;
+}
+*/
+#folder	{
+	position: absolute;
+	top: 50px;
+	width: 200px;
+	height: 130px;
+	border-radius: 10px;
+	border: solid 1px black;
+	background: white;
+/* 	transition: 1s, background ease-in-out; */
+}	
+#fold	{
+	position: absolute;
+	top: 70px;
+	width: 200px;
+	height: 110px;
+	border-radius: 10px;
+	border: solid 1px black;
+	background: white;
+}	
+#title{
+	position: absolute;
+	top: 30px;
+	width: 70px;
+	height: 30px;
+	border-radius: 10px 10px 0px 0px ;
+	border: solid 1px black;
+	z-index: -1;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="folder"></div>
+	<div id="title"></div>
+	<div id="fold"></div>
+</div>
+     
+</body>
+    
+</html>
