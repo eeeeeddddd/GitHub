@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+    <title>css change</title>
+<style>
+#wrapper {
+  text-align: center;
+}
+#click	{
+	background: red;
+	color: white;
+	padding: 20px;
+	width: 400px;
+}
+#one, #two, #three	{
+	float: left;
+	background: blue;
+	width: 100px;
+	padding: 20px;
+	margin-right: 10px;
+}
+</style>	
+</head>
+<body>
+    <div id="wrapper">
+
+	    <div id="click">click</div>
+        <div id="div">
+			<div id="one">edward </div>
+			<div id="two">edward </div>
+			<div id="three">edward</div>
+        </div>
+</div>
+	
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+	$(document).ready (function() {
+		
+		$("#click").click (function() {	
+			$("#one, #two").css ({color: "white" ,  background: "lime"});
+			$("#three").css ({color: "white" ,  background: "blue"});		
+    	});
+	});
+
+</script>	
+</body>
+</html>
+
+
+
+
+
+
