@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>flexbox</title>
+<style>
+#wrapper {
+			margin-top: 200px;
+			border: solid 2px black;
+			height: 400px;
+			display: flex;
+/*X*/	justify-content: flex-start; /*flex-end / flex-start or center or space-between / space around*/
+/*Y*/	align-items: flex-start; /*stretch (with no height)*/
+			flex-direction: row; /*or column or reverse (both)*/
+			flex-wrap: wrap; /*nowrap*/
+}
+.box	{
+	height: 100px;
+	flex-basis: 100px;
+}
+.box1	{
+ 	background: red;
+ 	order: 1;
+}
+.box2	{
+	background: blue;
+	order: 2;
+}
+.box3	{
+	background: gold;
+	order: 3;
+}
+.box4	{
+	background: purple;
+	order: 4;
+}
+.box5	{
+	background: yellow;
+	order: 5;
+}
+</style>	
+</head>
+
+<body>
+	
+    <div id="wrapper">
+
+       <div class="box box1">1</div>
+       <div class="box box2">2</div>
+       <div class="box box3">3</div>
+       <div class="box box4">4</div>
+       <div class="box box5">5</div>
+  
+    </div>
+    
+</body>
+
+</html>
+

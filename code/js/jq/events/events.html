@@ -9,65 +9,49 @@
     <meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
-    <title>click & hover effects</title>
+    <title>events</title>
 </head>
 <style>
 	#wrapper	{
 		text-align: center;
 	}
-	#toggle	{
+	#box1	{
 		float: left;
-		width: 150px;
+		width: 200px;
 		background: red;
-		padding: 20px;
+		height: 50px;
+		line-height: 50px;
 	}
-	#show	{
+	#box2	{
 		float: left;
-		width: 150px;
+		width: 200px;
 		background: lightgray;
-		padding: 20px;		
-	}
-</style>
+		height: 50px;	
+		line-height: 50px;			
+	}</style>
 <body>
 
     <div id="wrapper">
-		<div id="toggle">toggle</div>
-		<div id="show">show</div>
+		<div id="box1">box1</div>
+		<div id="box2">box2</div>
 </div>
 	
 <script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
 <script>
 	
-//or hover
-	
 	$(document).ready (function() {
-		$("#toggle").click (function() {	
-        $("#show").animate({
-            opacity: '0.5',
-            height: '200px',
-            width: '200px'
-        });
+		$("#box1").mouseup (function() {	
+        $("#box2") .slideToggle(1000);
     });
 });
 
-//multiple
-// .slideToggle(3000);
-// .fadeToggle(3000);
-
-//single
-// .fadeOut(3000);
-// .fadeIn(3000);
-// .show(3000);
-// .hide(3000);
-// .slideUp();
-// .slideDown();
-//.animate({});
-
-//chaining multiple
-//.css("color", "red").slideUp(2000).slideDown(2000);
-
-
-
+// .click
+// .hover
+// .dblclick
+// .mouseenter
+// .mouseleave
+// .mousedown
+// .mouseup
 
 </script>	
 </body>

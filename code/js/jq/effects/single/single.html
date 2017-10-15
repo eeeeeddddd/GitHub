@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+    <title>single</title>
+</head>
+<style>
+	#wrapper	{
+		text-align: center;
+	}
+	#box1	{
+		float: left;
+		width: 200px;
+		background: red;
+		height: 50px;
+		line-height: 50px;
+	}
+	#box2	{
+		float: left;
+		width: 200px;
+		background: lightgray;
+		height: 50px;	
+		line-height: 50px;			
+	}
+</style>
+<body>
+
+    <div id="wrapper">
+		<div id="box1">box1</div>
+		<div id="box2">box2</div>
+</div>
+	
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+//or hover
+	
+	$(document).ready (function() {
+		$("#box1").click (function() {	
+        $("#box2").fadeOut(1000);
+    });
+});
+
+//single
+// .fadeOut(3000);
+// .fadeIn(3000);
+// .show(3000);
+// .hide(3000);
+// .slideUp();
+// .slideDown();
+//.animate({});
+
+</script>	
+</body>
+</html>
+
+
+
+
+
+
