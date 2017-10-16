@@ -8,25 +8,59 @@
 	<meta name="robots" content="noindex,nofollow">
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
-	<meta name="author" content="edward fellows"/>
-	<link rel="stylesheet" href="css.css"/>
+	<meta name="author" content="me"/>
 	<title>grid</title>
+<style>	
+#wrapper	{
+	height: 1000px
+}
+#content	{
+	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr;   /*grid-template-rows: repeat(9, 200px); or px typed 9 times */
+ 	grid-auto-rows: minmax(50px, auto);
+ 	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#one	{
+	background: blue;
+	grid-column: 1/4;
+	grid-row:1/1;
+}
+#two		{
+	background-color: gray;	
+	grid-column: 1/5;
+	grid-row: 2/2;
+}
+#three	{
+	background-color: lime;
+	grid-column: 1/5;
+	grid-row: 3/3;	
+}
+#four		{
+	background-color: red;	
+	grid-column: 1/5;
+	grid-row: 4/4;
+}
+#five		{
+	background-color: yellow;	
+	grid-column: 1/5;
+	grid-row: 5/5
+}
+
+</style>		
 </head>
 
 <body>
 	<div id="wrapper">
 		<div id="content">
-
 			<div id="one">1</div>
 			<div id="two">2</div>
 			<div id="three">3</div>
 			<div id="four">4</div>
 			<div id="five">5</div>
-			<div id="six">6</div>
-			<div id="seven">7</div>
-			<div id="eight">8</div>
-			<div id="nine">9</div>
-
 		</div>
 
 
