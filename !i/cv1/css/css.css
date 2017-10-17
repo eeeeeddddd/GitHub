@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Germania+One';
 * {
   margin: 0px;
 }
@@ -17,26 +18,47 @@
 #section1 {
   grid-column: 1/5;
   grid-row: 1/1;
-  height: 50px;
-}
-
-.menu {
-  color: white;
+  background-color: white;
 }
 
 .nav {
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0px;
   right: 0;
   left: 0;
   text-align: center;
   width: 100%;
-  height: 50px;
   margin: 0 auto;
-  background-color: blue;
+  background-color: white;
+  background-image: linear-gradient(180deg, rgba(255, 4, 0, 0.5), rgba(255, 0, 4, 0.5));
+  animation: hue 10s infinite alternate;
+}
+
+@keyframes hue {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.menu {
+  color: black;
+}
+
+.menuchange {
+  color: lightgray;
 }
 
 .nav ul {
+  display: flex;
+  min-width: 10%;
   margin-top: 0px;
   list-style: none;
   padding: 0px;
@@ -44,20 +66,19 @@
 }
 
 .nav ul li {
-  display: inline-block;
+  flex: 1;
   width: 120px;
 }
 
 .nav ul li a {
   display: block;
-  height: 50px;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .nav ul li:hover > a {
-  background-color: gray;
-  color: yellow;
+  background-color: white;
+  color: gray;
 }
 
 .toggle {
@@ -68,20 +89,18 @@
   text-align: center;
 }
 
-/*scroll*/
-.navchangebg {
-  background-color: red;
-}
-
-.navchangetext {
-  color: black;
-}
-
 #section2 {
   background-color: white;
   grid-column: 1/5;
   grid-row: 2/2;
   height: 200px;
+  text-align: center;
+}
+
+.edward {
+  font-family: 'Germania One';
+  font-size: 60px;
+  line-height: 200px;
 }
 
 #section3 {
