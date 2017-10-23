@@ -12,17 +12,15 @@
 	<title>flexbox</title>
 <style>
 #wrapper {
-			margin-top: 200px;
 			border: solid 2px black;
-			height: 400px;
 			display: flex;
-/*X*/	justify-content: flex-start; /*flex-end / flex-start or center or space-between / space around*/
+/*X*/	justify-content: center; /*flex-end / flex-start or center or space-between / space around*/
 /*Y*/	align-items: flex-start; /*stretch (with no height)*/
 			flex-direction: row; /*or column or reverse (both)*/
 			flex-wrap: wrap; /*nowrap*/
 }
 .box	{
-/* 	flex: 1; */
+/* 	flex: 1; */ /*will fill wrapper area*/ 
 	height: 100px;
 	flex-basis: 100px;
 }

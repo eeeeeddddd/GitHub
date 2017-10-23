@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding:0;
+border: 0;
+}
+
+body {
+    text-align: center;
+}
+
+#wrapper {
+    background-color: white;
+    margin: 0 auto;
+    width: 960px;
+    height: auto;
+    box-sizing: border-box;/*padding*/
+}
+
+section	{
+	text-align: left;
+}
