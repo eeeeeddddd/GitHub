@@ -9,11 +9,14 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
-	<title>burger</title>
+	<title>burger arrow left</title>
 	
 <style>
-	
+
 #bun		{
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
 	padding-top: 30px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -22,35 +25,58 @@
 	box-sizing: border-box;
 }
 
-#burger1, #burger2, #burger3	{
+#burger1	{
 	width: 90px;
 	height: 10px;
 	border-radius: 5px;
 	background-color: black;
 	margin-bottom: 5px;
-	transition: 0.35s ease-in-out;
+	transition: 0.5s ease;
+}
+
+#burger2	{
+	width: 90px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: black;
+	margin-bottom: 5px;
+	transition: 0.5s ease;	
+}
+
+#burger3	{
+	width: 90px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: black;
+	margin-bottom: 5px;
+	transition: 0.5s ease;
 }
 
 #bun:hover		{
-	padding-top: 45px;
 	box-sizing: border-box;
 }
 
 #bun:hover #burger1	{
-	  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          margin-bottom: -10px;
+	position: relative;
+	top: -7px;
+	left: -6px;
+	width: 45px;
+	transform: translate(0px, 10px) rotate(-45deg);/*up*/
 }
-
 #bun:hover #burger2	{
-	display: none;
+	transition: 0.5s ease; /*ease out*/
+	width: 60px;
+}
+#bun:hover #burger3	{
+	position: relative;
+	top: -10px;
+	left: -5px;
+	width: 45px;
+	transform: translate(0px, 10px) rotate(45deg);/*up -*/
 }
 
-#bun:hover #burger3	{
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
 </style>
+
 </head>
 
 <body>

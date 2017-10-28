@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="keywords" content=""/>
+		<meta name="description" content="">
+		<meta name="author" content="me"/>
+		<title>slinky</title>
+<style>
+#container {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+}
+
+#slinky {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-top-color: lightgray;
+  border-right-color: lightgray;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotate 4s ease-in-out infinite;
+  transform: rotate(-200deg)
+}
+@keyframes rotate {
+  0% { 	border-width: 20px; }
+  25% { 	border-width: 10px; }
+  50% { 	transform: rotate(115deg); 
+    		border-width: 20px;}
+  75% { 	border-width: 10px;}
+  100% {border-width: 20px;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+  <div id="slinky"></div>  
+</div>
+
+</body>
+		    
+</html>

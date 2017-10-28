@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>burger - text</title>	
+<style>
+#wrapper	{
+	position: absolute;
+	background: aqua;
+	width: 500px;
+	height: 500px;
+	transition: 1s ease-in-out;
+}	
+#menu	{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: red;
+	border: solid 1px red;
+	z-index: 99;
+}
+#box1	{
+	position: absolute;
+	top:25px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: blue;
+	transition: 1s ease-in-out;	
+	z-index: -99;
+} 
+#box2	{
+	position: absolute;
+	top:25px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: yellow;
+	transition: 1s ease-in-out;	
+	z-index: -99;
+} 
+#box3	{
+	position: absolute;
+	top:25px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: pink;
+	transition: 1s ease-in-out;	
+	z-index: -99;
+} 
+#box4	{
+	position: absolute;
+	top:25px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: lime;
+	transition: 1s ease-in-out;	
+	z-index: -99;
+} 
+#box5	{
+	position: absolute;
+	top:25px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: green;
+	transition: 1s ease-in-out;	
+	z-index: -99;
+} 
+
+
+	
+#wrapper:hover  {
+	transform: rotate(360deg);
+}
+#wrapper:hover #menu #box1 {
+	transform: translateX(-110px) translateY(-40px);
+}
+#wrapper:hover #menu #box2 {
+	transform: translateX(80px) translateY(90px);
+}
+#wrapper:hover #menu #box3 {
+	transform: translateX(-88px) translateY(84px);
+}
+#wrapper:hover #menu #box4 {
+	transform: translateX(0px) translateY(-120px);
+}
+#wrapper:hover #menu #box5 {
+	transform: translateX(100px) translateY(-30px);
+}
+</style>
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		<div id="menu">kmkmk
+		<div id="box1">1</div>
+		<div id="box2">2</div>
+		<div id="box3">3</div>
+		<div id="box4">4</div>
+		<div id="box5">5</div>
+		</div>
+	</div>
+   
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
