@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="keywords" content="me"/>
+		<meta name="description" content="">
+		<meta name="author" content=""/>
+		<title>loading balls</title>
+<style>
+	
+#wrapper {
+  width: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left:-200px;
+}
+
+.ball1	{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray; 
+	animation: bounce 2s linear infinite 0.2s;
+}
+
+.ball2	{
+	position: absolute;
+	top: 100px;
+	left: 140px;		
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray; 
+	animation: bounce 2s linear infinite 0.4s;
+}
+
+.ball3	{
+	position: absolute;
+	top: 100px;
+	left: 180px;		
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray;
+	animation: bounce 2s linear infinite 0.6s; 
+}
+.ball4	{
+	position: absolute;
+	top: 100px;
+	left: 220px;	
+	display: block;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray;
+	animation: bounce 2s linear infinite 0.8s;
+}
+.ball5	{
+	position: absolute;
+	top: 100px;
+	left: 260px;	
+	display: block;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: gray;
+	animation: bounce 2s linear infinite 1s;
+}
+
+@keyframes bounce {
+ 0%, 100% {opacity: 0.2}
+ 50% {opacity: 1}
+ }
+ 
+</style>
+
+</head>
+
+<body>
+	<div id="wrapper">		
+		<div class="ball1"></div>
+		<div class="ball2"></div>
+		<div class="ball3"></div>
+		<div class="ball4"></div>
+		<div class="ball5"></div>
+	</div>				
+</body>
+		
+    </body>
+    
+</html>
