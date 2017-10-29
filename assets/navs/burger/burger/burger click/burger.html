@@ -9,11 +9,11 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
-	<title>burger</title>
+	<title>burger click</title>
 	
 <style>
 	
-#bun		{
+.bun		{
 	padding-top: 30px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -22,7 +22,7 @@
 	box-sizing: border-box;
 }
 
-#burger1, #burger2, #burger3	{
+.burger1, .burger2, .burger3	{
 	width: 90px;
 	height: 10px;
 	border-radius: 5px;
@@ -31,39 +31,53 @@
 	transition: 0.35s ease-in-out;
 }
 
-#bun:hover		{
+.click	{
 	padding-top: 45px;
 	box-sizing: border-box;
 }
 
-#bun:hover #burger1	{
-	  -webkit-transform: rotate(-45deg);
+.clickone	{
           transform: rotate(-45deg);
           margin-bottom: -10px;
 }
 
-#bun:hover #burger2	{
+.clicktwo		{
 	display: none;
 }
 
-#bun:hover #burger3	{
-  -webkit-transform: rotate(45deg);
+.clickthree	{
           transform: rotate(45deg);
 }
+
+
 </style>
 
 </head>
 
 <body>
 	    
-		<div id="bun">
-			<div id="burger1"></div>
- 			<div id="burger2"></div>
-			<div id="burger3"></div>		
+		<div class="bun">
+			<div class="burger1"></div>
+ 			<div class="burger2"></div>
+			<div class="burger3"></div>		
 		</div>
-        
+<div class="box"></div>
+
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+	$(document).ready (function() {
+		$(".bun").click (function() {	
+			$(".burger1").toggleClass("clickone");	
+			$(".burger2").toggleClass("clicktwo");	
+			$(".burger3").toggleClass("clickthree");
+			$(".bun").toggleClass("click");	
+    	});
+	});
+
+</script>        
 </body>
-    
+
 </html>
 
 
