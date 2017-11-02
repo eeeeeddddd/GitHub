@@ -16,17 +16,33 @@
 	width: 0px;
 	height: 0px;
 	background: black;
-	border-left: 100px solid yellow;
-	border-right: 100px solid lime;
-	border-top: 100px solid blue;
-	border-bottom: 100px solid red;
+	border-left: 50px solid yellow;
+	border-right: 50px solid lime;
+	border-top: 50px solid blue;
+	border-bottom: 50px solid red;
 }		
 #half-circle	{
      height:50px;
      width:100px;
      border-radius: 100px 100px 0 0;
      background: red;
-}		
+}
+
+#quartercircle		{
+     width:100px; 
+     height:100px; 
+     background: blue;
+     border-radius: 90px 0 0 0;
+}	
+#pac	{
+     width:0;
+     height:0;
+     border-right:60px solid transparent;
+     border-top:60px solid yellow;
+     border-left:60px solid yellow;
+     border-bottom:60px solid yellow;
+     border-radius: 60px;
+}	
 </style>
 
 </head>
@@ -35,7 +51,9 @@
 		
 		<div id="wrapper">
 			<div id="shape"></div><br>
-			<div id="half-circle"></div>		    
+			<div id="half-circle"></div><br>
+			<div id="quartercircle"></div>	<br>	
+			<div id="pac"></div>	<br>	    
 		</div>
 	
 </body>

@@ -9,28 +9,26 @@
 		<meta name="keywords" content=""/>
 		<meta name="description" content="">
 		<meta name="author" content="me"/>
-		<title>loader (2)</title>
+		<link rel="stylesheet" href="css/css.css"/>
+		<title>4 colour</title>
 		<style>
-#wrapper	{
-	text-align: center;
-}
-
 .loader {
-    border: 3px solid gray;
-    border-top: 3px solid transparent;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 10%;
-    animation: spin 2s 0s linear infinite;
+  border-radius: 50%;
+  border-top: 10px solid black;
+  border-right: 10px dotted gray;
+  border-bottom: 10px double black;
+  border-left: 10px dashed gray;
+  width: 100px;
+  height: 100px;
+  margin: 10%;
+  animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}			
+  0% 		{ 	transform: rotate(0deg) scale(1); }
+  100% { 	transform: rotate(360deg) scale(1.5); }/*0 makes reverse*/
+}		
 		</style>
-		
 	</head>
 	
     <body>
