@@ -11,33 +11,39 @@
 		<meta name="author" content="me"/>
 		<title>timer</title>
 <style>
-
 .face	{
   position: relative;
-  top: 50px;
+  top: 70px;
   height: 100px;
   width: 100px;
   border: solid 4px black;
   border-radius: 50%;
   margin: 0 auto;
-  background: white;
 }
-
+.top  {
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  margin-left: -11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 4px black;
+}
 .hand	{
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -3px;
   width: 5px;
-  height: 60px;
+  height: 50px;
   background: gray;
   transform-origin: top center;
   animation: rotate 5s linear infinite;
 }
-.hand:hover {
+.face:hover > .hand {
   animation-play-state: paused;
 }
-
 @keyframes rotate {
  from {transform: rotate(0deg);}
  to{transform: rotate(360deg);}
@@ -46,11 +52,11 @@
 
 </head>
 
-	<body>
-<div class="box"></div>
-<div class="face">
-  <div class="hand"></div>
-</div>
+<body>
+	<div class='face'>
+	  <div class="hand"></div>
+	</div>
+	<div class="top"></div>
 
 </body>
 		    
