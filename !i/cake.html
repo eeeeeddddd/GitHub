@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>cake</title>
+		<style>
+#wrapper  {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin-left: -50px;
+}
+#circle-top	{
+    height:44px;
+    width:100px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border: 2px solid gray;
+    border-bottom: 0;
+}
+#circle-left	{
+    position: relative;
+    top: 52px;
+    left: -120px;
+    height:14px;
+    width:25px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border: 2px solid gray;
+    border-bottom: 0;
+    transform: rotate(-110deg);
+    background: white;
+}
+#circle-right	{
+    position: relative;
+    top: 52px;
+    left: -42px;
+    height:14px;
+    width:25px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border: 2px solid gray;
+    border-bottom: 0;
+    transform: rotate(110deg);
+    background: white;
+}
+#circle	{
+    position: relative;
+    top: 64px;
+    left: -151px;
+    height:13px;
+    width:24px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border: 2px solid gray;
+    border-top: 0;
+    background: white;
+}
+#cherry   {
+  position: absolute;
+  top: -18px;
+  left: 37px;
+  width: 30px;
+  height: 28px;
+  background: red;
+  border-radius: 50%;
+}
+#case {
+  position: absolute;
+  left: 1px;
+  top: 68px;
+	border-top: 60px solid gray;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	height: 0;
+	width: 74px;
+  z-index: -99;
+}
+</style>
+
+</head>
+
+<body>
+	
+<div id="wrapper">
+	  <div id="circle-top"></div>
+	  <div id="circle-left"></div>
+	  <div id="circle-right"></div>
+	  <div id="circle"></div>
+	  <div id="circle"></div> 
+	  <div id="circle"></div> 
+	  <div id="bottom"></div>
+	  <div id="cherry"></div>
+	  <div id="case"></div>  
+</div>
+	     
+</body>
+    
+</html>

@@ -15,17 +15,19 @@
 #shape	{
 	width: 0px;
 	height: 0px;
-	background: black;
 	border-left: 50px solid yellow;
 	border-right: 50px solid lime;
 	border-top: 50px solid blue;
 	border-bottom: 50px solid red;
 }		
 #half-circle	{
-     height:50px;
-     width:100px;
-     border-radius: 100px 100px 0 0;
-     background: red;
+    height:50px;
+    width:100px;
+    background: red;
+    border-top-left-radius: 60px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 60px; /* 100px of height + 10px of border */
+    border: 10px solid gray;
+    border-bottom: 0;
 }
 
 #quartercircle		{
@@ -43,6 +45,7 @@
      border-bottom:60px solid yellow;
      border-radius: 60px;
 }	
+
 </style>
 
 </head>
