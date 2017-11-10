@@ -9,7 +9,7 @@
 		<meta name="keywords" content="me"/>
 		<meta name="description" content="">
 		<meta name="author" content="me"/>
-		<title>bouncing balls</title>
+		<title>lelt-hit</title>
 <style>
 #wrapper {
 	position: relative;
@@ -29,31 +29,38 @@
 }
 .ball.ball1	{
 	left: 100px;
-	animation: bounce 1.2s ease-in-out 3;
+	animation: bounce-left 2.5s ease-in-out infinite;
 }
 .ball.ball2	{
-	left: 160px;
-	animation: bounce 1.2s ease-in-out 0.22s 5;
+	left: 150px;
 }
 .ball.ball3	{
-	left: 220px;	
-	animation: bounce 1.2s ease-in-out 0.44s 7;
+	left: 200px;	
 }
 .ball.ball4	{
-	left: 280px;		
-	animation: bounce 1.2s ease-in-out 0.66s 5;
+	left: 250px;	
 }
 .ball.ball5	{
-	left: 340px;		
-	animation: bounce 1.2s ease-in-out 0.88s 3;	
+	left: 300px;		
+	animation: bounce-right 2.5s ease-in-out infinite;	
 }
-@keyframes bounce {
-	0%, 100% {transform: translateY(0px)}
-	50% {transform: translateY(-100px);
-	 	background: red;
-	 	opacity: 0.6;
-	 }
-}
+@keyframes bounce-left {
+	0% {transform: translateX(0px) translateY(0px);}
+	25% {transform: translateX(-80px) translateY(0px);
+			background: red;
+	}
+	50% {transform: translateX(0px) translateY(0px);}
+	75% {transform: translateX(0px) translateY(0px);}
+	100% {transform: translateX(0px) translateY(0px);}
+ }
+@keyframes bounce-right {
+	0% {transform: translateX(0px) translateY(0px);}
+	25% {transform: translateX(0px) translateY(0px);}
+	50% {transform: translateX(0px) translateY(0px);}
+	75% {transform: translateX(80px) translateY(0px);}
+	100% {transform: translateX(0px) translateY(0px);}
+ }
+ 
 </style>
 
 </head>
