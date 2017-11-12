@@ -1,1 +1,0 @@
-body {  background: #424344;}svg {  position: absolute;  top: 10%;  width: 100%;  height: 75%;}#seconds-hand, #minute-hand, #hour-hand {  -webkit-transform-origin: center bottom;  -moz-transform-origin: center bottom;  -ms-transform-origin: center bottom;  -o-transform-origin: center bottom;  transform-origin: center bottom;}

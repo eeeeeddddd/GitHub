@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>burger click</title>
+	
+<style>
+	
+.bun		{
+	padding-top: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+}
+
+.burger1, .burger2, .burger3	{
+	width: 90px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: black;
+	margin-bottom: 5px;
+	transition: 0.35s ease-in-out;
+}
+
+.click	{
+	padding-top: 45px;
+	box-sizing: border-box;
+}
+
+.clickone	{
+          transform: rotate(-45deg);
+          margin-bottom: -10px;
+}
+
+.clicktwo		{
+	display: none;
+}
+
+.clickthree	{
+          transform: rotate(45deg);
+}
+
+
+</style>
+
+</head>
+
+<body>
+	    
+		<div class="bun">
+			<div class="burger1"></div>
+ 			<div class="burger2"></div>
+			<div class="burger3"></div>		
+		</div>
+
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+	$(document).ready (function() {
+		$(".bun").click (function() {	
+			$(".burger1").toggleClass("clickone");	
+			$(".burger2").toggleClass("clicktwo");	
+			$(".burger3").toggleClass("clickthree");
+			$(".bun").toggleClass("click");	
+    	});
+	});
+
+</script>        
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
