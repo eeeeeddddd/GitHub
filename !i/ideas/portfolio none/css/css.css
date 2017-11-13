@@ -106,12 +106,63 @@ nav ul li:hover > a {
 }
 
 #section8 {
-  background-color: #f5f5f5;
-  height: 500px;
+  background-color: white;
+  height: 800px;
+  width: 100%;
+}
+
+.portfolio {
+  display: block;
+  width: 80%;
+  height: 33.3%;
+  margin: 0 auto;
+  background: red;
+}
+
+.box {
+  width: 33.3%;
+  height: 33.3%;
+  float: left;
+}
+
+.box1 {
+  background: blue;
+}
+
+.box2 {
+  background: pink;
+}
+
+.box3 {
+  background: gold;
+}
+
+.box4 {
+  background: purple;
+}
+
+.box5 {
+  background: yellow;
+}
+
+.box6 {
+  background: blue;
+}
+
+.box7 {
+  background: gray;
+}
+
+.box8 {
+  background: black;
+}
+
+.box9 {
+  background: lime;
 }
 
 #section9 {
-  background-color: #f5f5f5;
+  background-color: #d51f1f;
   height: 500px;
 }
 
