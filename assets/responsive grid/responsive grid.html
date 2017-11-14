@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>responsive grid</title>
+		<style>
+body  {
+  margin: 0;
+}
+
+#wrapper  {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  background: yellow;
+  text-align: center;
+}
+.box   {
+    display: inline-block;
+    border: 1px solid red;
+    position: relative;
+    text-align: center;
+    width: 33%;
+    margin: -5px -5px 0px 0px;
+}
+  .box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+</style>
+
+</head>
+
+<div id="wrapper">
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+  <div class="box box6"></div>
+  <div class="box box7"></div>
+  <div class="box box8"></div>
+  <div class="box box9"></div>
+</div>
+
+	     
+</body>
+    
+</html>
