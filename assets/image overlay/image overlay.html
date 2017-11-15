@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+    <title>image overlay</title>
+<style>
+.wrapper {
+	position: relative;
+	width: 50%;
+}
+.image {
+	width: 100%;
+	height: 100%;
+}
+.wrapper:hover .image {
+	filter: blur(5px);
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgba(0,0,0, .7);
+}
+.wrapper:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <img src="image.jpeg" alt="Avatar" class="image">
+	  <div class="overlay">
+	    <div class="text">Hello World</div>
+	  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+

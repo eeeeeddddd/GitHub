@@ -47,7 +47,7 @@ nav {
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: pink;
+  background-color: #292929;
   z-index: 99;
 }
 
@@ -69,7 +69,7 @@ nav ul li a {
   display: block;
   text-decoration: none;
   line-height: 40px;
-  color: lime;
+  color: #F7484E;
   font-size: 12px;
 }
 
@@ -137,15 +137,15 @@ nav ul li:hover > a {
 
 #section7 {
   /*portfolio*/
+  padding-top: 100px;
   background-color: white;
 }
 
 #portfolio {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: 100%;
   text-align: center;
-  padding: 20px 20px 20px 16px;
 }
 
 .port {
@@ -166,6 +166,32 @@ nav ul li:hover > a {
   height: 100%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.port:hover .overlay {
+  opacity: 1;
+}
+
+.porttext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #section8 {
   /*files*/
   background: white;
@@ -176,14 +202,14 @@ nav ul li:hover > a {
   width: 80%;
   height: 100%;
   text-align: center;
-  padding: 5%, 5%, 5%, 5%;
+  padding: 3% 3% 5% 3%;
 }
 
 .sky {
   display: inline-block;
   position: relative;
   text-align: center;
-  width: 6%;
+  width: 7%;
   margin: 0px 2% 0px 2%;
 }
 
@@ -343,8 +369,41 @@ hr {
 
 #section13 {
   /*footer*/
-  background: gray;
   height: 100px;
+}
+
+.mouse {
+  margin: 50px auto;
+  width: 20px;
+  height: 35px;
+  border: 2px solid red;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.mouse:hover {
+  border: 1px solid gray;
+}
+
+#scroll {
+  width: 3px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: gray;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  animation: scroll 1.5s infinite both;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
 }
 
 #section14 {
