@@ -1,0 +1,10 @@
+<svg id="codepen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>codepen</title>
+  <g>
+    <path d="M83,173.75,247.57,66.46a25.34,25.34,0,0,1,27.85.11l161.8,107.3A25.34,25.34,0,0,1,448.55,195l-.14,102.47A25.34,25.34,0,0,1,437,318.61L275.64,425.18a25.34,25.34,0,0,1-27.73.13L83.22,318.7a25.34,25.34,0,0,1-11.57-21.25L71.54,195A25.34,25.34,0,0,1,83,173.75Z" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 10px"/>
+    <path d="M72.07,307.89,248.87,191a25.34,25.34,0,0,1,28.25.2L446.87,306.87" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 10px"/>
+    <line x1="262.04" y1="59.4" x2="262.04" y2="186.46" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 10px"/>
+    <path d="M72.07,178.51,248,300a25.34,25.34,0,0,0,28.5.2L448.92,184.67" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 10px"/>
+    <line x1="262.04" y1="305.84" x2="262.04" y2="432.91" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 10px"/>
+  </g>
+</svg>
