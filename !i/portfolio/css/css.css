@@ -1,4 +1,4 @@
-/*gray*/
+/*white*/
 /*red*/
 /*dk gray*/
 /*svg*/
@@ -6,6 +6,10 @@
 body {
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 #wrapper {
@@ -67,7 +71,6 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  text-decoration: none;
   line-height: 40px;
   color: #F7484E;
   font-size: 12px;
@@ -85,12 +88,14 @@ nav ul li:hover > a {
   left: 0;
 }
 
+/*--------------------------------*/
 #section3 {
   /*about*/
-  background-color: #f5f5f5;
+  background-color: white;
   height: 500px;
 }
 
+/*--------------------------------*/
 #section4 {
   /*hobbies*/
   background: #292929;
@@ -123,27 +128,29 @@ nav ul li:hover > a {
   height: 100%;
 }
 
+/*--------------------------------*/
 #section5 {
   /*expertise*/
-  background-color: #f5f5f5;
+  background-color: white;
   height: 500px;
 }
 
+/*--------------------------------*/
 #section6 {
   /*qualifications*/
-  background: #f5f5f5;
+  background: white;
   height: 500px;
 }
 
+/*--------------------------------*/
 #section7 {
   /*portfolio*/
   padding-top: 100px;
-  background-color: white;
 }
 
 #portfolio {
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   height: 100%;
   text-align: center;
 }
@@ -152,7 +159,7 @@ nav ul li:hover > a {
   display: inline-block;
   position: relative;
   text-align: center;
-  width: 33%;
+  width: 33.333333333%;
   margin: -4px -4px 0px 0px;
 }
 
@@ -192,17 +199,18 @@ nav ul li:hover > a {
   transform: translate(-50%, -50%);
 }
 
+/*--------------------------------*/
 #section8 {
   /*files*/
-  background: white;
+  padding: 30px 20px 20px 20px;
+  background: #292929;
 }
 
 #cloud {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: 100%;
   text-align: center;
-  padding: 3% 3% 5% 3%;
 }
 
 .sky {
@@ -219,7 +227,7 @@ nav ul li:hover > a {
 }
 
 .cc {
-  stroke: black;
+  stroke: white;
 }
 
 .sky:hover .cc {
@@ -231,12 +239,12 @@ nav ul li:hover > a {
 }
 
 .ccc {
-  stroke: black;
-  fill: black;
+  stroke: white;
+  fill: white;
 }
 
 .codepen {
-  stroke: black;
+  stroke: white;
 }
 
 .sky:hover .codepen {
@@ -244,7 +252,7 @@ nav ul li:hover > a {
 }
 
 .be {
-  stroke: black;
+  stroke: white;
 }
 
 .sky:hover .be {
@@ -252,7 +260,7 @@ nav ul li:hover > a {
 }
 
 .git {
-  stroke: black;
+  stroke: white;
 }
 
 .sky:hover .git {
@@ -260,7 +268,7 @@ nav ul li:hover > a {
 }
 
 .xd {
-  stroke: black;
+  stroke: white;
 }
 
 .sky:hover .xd {
@@ -268,35 +276,76 @@ nav ul li:hover > a {
 }
 
 .dribbble {
-  stroke: black;
+  stroke: white;
 }
 
 .sky:hover .dribbble {
   stroke: #b3335a;
 }
 
+/*--------------------------------*/
 #section9 {
   /*experience*/
-  background-color: #f5f5f5;
+  background-color: white;
   height: 500px;
 }
 
-#section10 {
-  /*reference*/
-  background: #e8e8e8;
-  height: 200px;
-}
-
+/*--------------------------------*/
+/*--------------------------------*/
 #section11 {
-  /*cv*/
+  /*cv download*/
   background: #292929;
   height: 200px;
-  color: white;
 }
 
+/*--------------------------------*/
+#cv {
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.hvr-curl-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: white;
+  width: 75px;
+  height: 100px;
+  border-radius: 3px;
+}
+
+.hvr-curl-top-right:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 0;
+  top: 0;
+  right: 0;
+  background: linear-gradient(225deg, #292929 45%, #aaa 50%, #ccc 56%, white 80%);
+  /*bachground*/
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.3s;
+  transition-property: width, height;
+}
+
+.hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+.cv-text {
+  position: relative;
+  top: 18px;
+  font-size: 14px;
+}
+
+/*--------------------------------*/
 #section12 {
   /*contact*/
-  background: #e8e8e8;
   height: 500px;
   text-align: center;
   padding: 50px;
@@ -316,7 +365,7 @@ input {
   padding: 10px;
   font-size: 16px;
   border-radius: 10px;
-  background: #e8e8e8;
+  background: white;
   border: transparent;
 }
 
@@ -331,7 +380,7 @@ textarea {
   border-radius: 10px;
   background: #F7484E;
   border: transparent;
-  background: #e8e8e8;
+  background: white;
 }
 
 textarea:hover {
@@ -367,13 +416,19 @@ hr {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
 }
 
+/*--------------------------------*/
 #section13 {
-  /*footer*/
+  /*mouse*/
+  position: relative;
+  background: #f5f5f5;
   height: 100px;
 }
 
 .mouse {
-  margin: 50px auto;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -10px;
   width: 20px;
   height: 35px;
   border: 2px solid red;
@@ -382,7 +437,7 @@ hr {
 }
 
 .mouse:hover {
-  border: 1px solid gray;
+  border: 2px solid gray;
 }
 
 #scroll {
@@ -406,21 +461,29 @@ hr {
   }
 }
 
+/*--------------------------------*/
 #section14 {
-  height: 70px;
-}
-
-#design {
-  text-align: center;
+  /*draw*/
+  height: 100px;
+  background: red;
+  margin: 0px;
 }
 
 .draw {
-  display: inline-block;
-  width: 25px;
+  position: relative;
+  top: 50px;
+  left: 50%;
+  margin-left: -10px;
+  width: 28px;
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
   animation: dash 3s linear infinite 0.5s;
   /*forwards;*/
+}
+
+.byme {
+  font-size: 10px;
+  display: inline-block;
 }
 
 @keyframes dash {
@@ -430,10 +493,6 @@ hr {
   to {
     stroke-dashoffset: 0;
   }
-}
-
-.byme {
-  font-size: 10px;
 }
 
 /*# sourceMappingURL=css.map */
