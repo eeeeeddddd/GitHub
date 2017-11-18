@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>download</title>
+  <g id="download">
+    <line x1="261.11" y1="38.03" x2="261.11" y2="442.8" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10"/>
+    <line x1="379.29" y1="325.25" x2="261.29" y2="443.25" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10"/>
+    <line x1="344.54" y1="483.35" x2="177.67" y2="483.35" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10"/>
+    <line x1="260.22" y1="443.34" x2="142.22" y2="325.34" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10"/>
+  </g>
+</svg>

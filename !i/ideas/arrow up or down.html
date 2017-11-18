@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>burger arrow up or down</title>
+	
+<style>
+
+#bun		{
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	background: yellow;
+}
+
+#burger1	{
+	width: 90px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: black;
+	margin-bottom: 5px;
+	transition: 0.5s ease;
+}
+
+#burger2	{
+	width: 90px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: red;
+	margin-bottom: 5px;
+	transition: 0.5s ease;	
+}
+
+#burger3	{
+	width: 90px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: lime;
+	margin-bottom: 5px;
+	transition: 0s ease;
+}
+#burger4	{
+	position: absolute;
+	top: 34px;
+	left: 19px;
+	width: 60px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: pink;
+	transition: 0.5s ease;
+	transform: rotate(90deg);
+	opacity: 0;
+}
+
+#bun:hover		{
+	box-sizing: border-box;
+}
+
+#bun:hover #burger1	{
+	position: relative;
+	top: 5px;
+	left: 34px;
+	width: 45px;
+	transform: translate(0px, 16px) rotate(-45deg);/*up*/
+}
+
+#bun:hover #burger2	{
+	position: relative;
+	top: 5px;
+	left: 34px;
+	width: 45px;
+	transform: translate(-12px, 28px);/*up*/
+}
+#bun:hover #burger3	{
+	position: relative;
+	top: -25px;
+	left: 9px;
+	width: 45px;
+	transform: translate(0px, 16px) rotate(45deg);/*up -*/
+}
+#bun:hover #burger4	{
+	opacity: 1;
+}
+
+</style>
+
+</head>
+
+<body>
+	    
+		<div id="bun">
+			<div id="burger1"></div>
+ 			<div id="burger2"></div>
+			<div id="burger3"></div>
+			<div id="burger4"></div>		
+		</div>
+        
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+

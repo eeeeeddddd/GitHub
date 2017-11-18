@@ -9,8 +9,11 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
-	<title>cake</title>
+	<title>expertise</title>
 <style>
+body	{
+	width: 100%;
+}
 .table	{
 	width: 300px;
 	background-color: yellow;
@@ -53,6 +56,8 @@
 	left: 20%;
 	margin-left: -50px;
 }
+/*=======loader-------------*/
+
 .loader	{
 	position: absolute;
   	border-radius: 50%;
@@ -78,7 +83,40 @@
     border-left: 10px solid transparent;
 	transform: rotate(45deg);
 }
-
+/*----------bubble----------*/
+#bubble	{
+   width: 100%;
+   min-height: 100px;
+   border: solid 2px gray;
+   position: relative;
+   border-radius: 10px;
+   padding: 20px;
+   background: red;
+}	
+#talk	{
+   position: absolute;
+   right: 100%;
+   top: 20px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid gray;
+   border-bottom: 13px solid transparent;
+}	
+#bubble-cont	{
+	position: relative;
+	top: 200px;
+	left: 30%;
+	background: yellow;
+	width: 40%;
+}
+#hidden	{
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 500px;
+	background: blue;
+}
 </style>
 
 </head>
@@ -122,8 +160,6 @@
 		<td class="tablecol"><div class="underline"><div class="line line-100percent"></div></div></td>
 	</tr>
 </table>
-
-
 <div class="dog">
 <div class="loader bottom"></div>
 <div class="loader middle"></div>
@@ -131,6 +167,16 @@
 </div>
 
 
+<div id="bubble-cont">
+	<div id="bubble">talk to me!!!
+		<div id="talk"></div><!--tri-->
+		<div id="hidden"></div>
+	</div>
+</div>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
     
 </html>

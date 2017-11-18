@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>camera</title>
+<style>
+#wrapper	{
+	display: inline-block;
+	position: relative;
+	top: 50px;
+	left: 50%;
+	margin-left: -100px;
+}
+#head	{
+	position: relative;
+	width: 190px;
+	height: 200px;
+	border-radius: 50%;
+	border-bottom: solid 14px transparent;
+	border-top: solid 18px red;
+	border-right: solid 18px red;
+	border-left: solid 18px red
+	
+}
+#sponge	{
+	position: relative;
+	top:-216px;
+	left: 14px;
+	width: 173px;
+	height: 200px;
+	border-radius: 50%;
+	border-bottom: solid 12px transparent;
+	border-top: solid 12px gray;
+	border-right: solid 12px transparent;
+	border-left: solid 12px transparent
+}
+#left	{
+	position: absolute;
+	top: 120px;
+	left: -20px;
+	height: 100px;
+    width: 55px;
+    border-radius: 100px 30px 30px 100px;
+    border-right:20px solid gray;
+    background: red;
+    animation: beat 800ms  linear  infinite;
+/*     transform: rotate(-10deg); */
+}
+#right	{
+	position: absolute;
+	top: 2px;
+	left: 190px;
+	height: 100px;
+    width: 55px;
+    border-radius: 30px 100px 100px 30px;
+    border-left: 20px solid gray;
+    background: red;
+    animation: beat 800ms linear  infinite;
+/*     transform: rotate(10deg); */
+}
+@keyframes beat	 {
+	
+	0%		{transform:scale(1);}			
+	100%		{transform:scale(1.02);}
+}
+
+</style>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="head"></div>
+		<div id="sponge"></div>
+		<div id="left"><div>
+		<div id="right"><div>
+	</div>
+     
+</body>
+    
+</html>

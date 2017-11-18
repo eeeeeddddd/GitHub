@@ -1,17 +1,3 @@
-// toggle function
-$(document).ready(function()	{
-    $(".toggle").click (function () {
-        $("nav ul").slideToggle ();
-    });
-
-// makes nav reappear
-    $(window).resize(function (){
-	    if ( $(window) .width () > 500 ) {
-		$('nav ul').removeAttr("style")  
-	    }
-    })
-});
-
 //smooth scroll
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
@@ -77,8 +63,30 @@ $(document).ready(function () {
 //form active
 $(document).ready (function() {
 	$("textarea, input").click (function() {	
-		$("textarea, input").css ({background: "white"});	})
+		$("textarea, input").css ({background: "#f5f5f5"});	})
 ;});
+
+
+
+
+
+
+
+
+
+// toggle function
+$(document).ready(function()	{
+    $(".toggle").click (function () {
+        $("nav ul").slideToggle ();
+    });
+
+// makes nav reappear
+    $(window).resize(function (){
+	    if ( $(window) .width () > 500 ) {
+		$('nav ul').removeAttr("style")  
+	    }
+    })
+});
 
 
 

@@ -1,6 +1,6 @@
 /*white*/
-/*red*/
 /*dk gray*/
+/*red*/
 /*svg*/
 @import 'https://fonts.googleapis.com/css?family=Antic" rel="stylesheet';
 body {
@@ -22,7 +22,6 @@ a {
   /*header*/
   height: 600px;
   background: #292929;
-  color: white;
 }
 
 #header {
@@ -31,32 +30,38 @@ a {
   text-align: center;
 }
 
-.edwardfellows {
+.title {
   font-size: 80px;
   margin: 0px;
+  color: white;
 }
 
-.edwardfellows-subtitle {
+.subtitle {
   position: relative;
-  color: #F7484E;
+  color: white;
 }
 
 #section2 {
   /*nav*/
 }
 
+#section2 .navbg {
+  background-color: yellow;
+}
+
+#section2 .navtext {
+  color: black;
+}
+
 nav {
-  display: flex;
-  justify-content: center;
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: #292929;
+  background-color: #F7484E;
   z-index: 99;
 }
 
 nav ul {
-  display: flex;
   margin-top: 0px;
   list-style: none;
   padding: 0px;
@@ -64,21 +69,20 @@ nav ul {
 }
 
 nav ul li {
-  position: relative;
-  flex: 1;
+  display: inline-block;
   width: 80px;
 }
 
 nav ul li a {
   display: block;
   line-height: 40px;
-  color: #F7484E;
+  color: #292929;
   font-size: 12px;
 }
 
 nav ul li:hover > a {
-  background-color: #363636;
-  color: #F7484E;
+  background-color: #f86066;
+  color: white;
 }
 
 .stickytop {
@@ -88,39 +92,29 @@ nav ul li:hover > a {
   left: 0;
 }
 
-/*--------------------------------*/
 #section3 {
   /*about*/
   background-color: white;
   height: 500px;
 }
 
-/*--------------------------------*/
 #section4 {
   /*hobbies*/
   background: #292929;
+  padding: 20px;
 }
 
 #hobbies {
-  margin: 0 auto;
-  width: 80%;
-  height: 100%;
+  width: 100%;
   text-align: center;
-  padding: 20px;
+  background: lime;
 }
 
 .hobbie {
   display: inline-block;
-  position: relative;
-  text-align: center;
-  width: 6%;
+  width: 10%;
   margin: 0px 2% 0px 2%;
   background: yellow;
-}
-
-.hobbie:after {
-  content: "";
-  display: block;
 }
 
 .hobbieimg {
@@ -128,44 +122,35 @@ nav ul li:hover > a {
   height: 100%;
 }
 
-/*--------------------------------*/
 #section5 {
   /*expertise*/
   background-color: white;
   height: 500px;
 }
 
-/*--------------------------------*/
 #section6 {
   /*qualifications*/
   background: white;
   height: 500px;
 }
 
-/*--------------------------------*/
 #section7 {
   /*portfolio*/
   padding-top: 100px;
+  background: #292929;
 }
 
 #portfolio {
   margin: 0 auto;
   width: 90%;
-  height: 100%;
   text-align: center;
 }
 
 .port {
   display: inline-block;
   position: relative;
-  text-align: center;
   width: 33.333333333%;
   margin: -4px -4px 0px 0px;
-}
-
-.port:after {
-  content: "";
-  display: block;
 }
 
 .portimg {
@@ -199,10 +184,9 @@ nav ul li:hover > a {
   transform: translate(-50%, -50%);
 }
 
-/*--------------------------------*/
 #section8 {
   /*files*/
-  padding: 30px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   background: #292929;
 }
 
@@ -215,135 +199,110 @@ nav ul li:hover > a {
 
 .sky {
   display: inline-block;
-  position: relative;
-  text-align: center;
-  width: 7%;
+  width: 10%;
   margin: 0px 2% 0px 2%;
+  transition: all 0.5s ease;
 }
 
-.sky:after {
-  content: "";
-  display: block;
-}
-
-.cc {
+.stylecc {
   stroke: white;
+  fill: none;
+  stroke-width: 8px;
+  transition: all 0.5s ease-in;
 }
 
-.sky:hover .cc {
+.stylecc:hover {
   stroke: red;
+  transition: 0.3s ease-in;
 }
 
-.sky:hover .ccc {
-  fill: red;
-}
-
-.ccc {
+.stylecodepen {
   stroke: white;
-  fill: white;
+  fill: none;
+  stroke-width: 10px;
+  transition: all 0.5s ease-in;
 }
 
-.codepen {
-  stroke: white;
-}
-
-.sky:hover .codepen {
+.stylecodepen:hover {
   stroke: lime;
+  transition: 0.3s ease-in;
 }
 
-.be {
+.stylebe {
   stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  transition: all 0.5s ease-in;
 }
 
-.sky:hover .be {
+.stylebe:hover {
   stroke: #1969fb;
+  transition: 0.3s ease-in;
 }
 
-.git {
+.stylegithub {
   stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  transition: all 0.5s ease-in;
 }
 
-.sky:hover .git {
+.stylegithub:hover {
   stroke: purple;
+  transition: 0.3s ease-in;
 }
 
-.xd {
+.stylexd {
   stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  transition: all 0.5s ease-in;
 }
 
-.sky:hover .xd {
+.stylexd:hover {
   stroke: #e750b9;
+  transition: 0.3s ease-in;
 }
 
-.dribbble {
+.styledribbble {
   stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  transition: all 0.5s ease-in;
 }
 
-.sky:hover .dribbble {
+.styledribbble:hover {
   stroke: #b3335a;
+  transition: 0.3s ease-in;
 }
 
-/*--------------------------------*/
 #section9 {
   /*experience*/
   background-color: white;
   height: 500px;
 }
 
-/*--------------------------------*/
-/*--------------------------------*/
 #section11 {
   /*cv download*/
+  position: relative;
   background: #292929;
-  height: 200px;
+  padding: 6%;
 }
 
-/*--------------------------------*/
 #cv {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  border: 1px solid gray;
   position: relative;
   text-align: center;
-  padding-top: 50px;
+  width: 10%;
+  margin: -5px -5px 0px 0px;
+  background: red;
+  padding-bottom: 10%;
 }
 
-.hvr-curl-top-right {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  background: white;
-  width: 75px;
-  height: 100px;
-  border-radius: 3px;
-}
-
-.hvr-curl-top-right:before {
-  pointer-events: none;
-  position: absolute;
-  content: '';
-  height: 10px;
-  width: 0;
-  top: 0;
-  right: 0;
-  background: linear-gradient(225deg, #292929 45%, #aaa 50%, #ccc 56%, white 80%);
-  /*bachground*/
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
-  transition-duration: 0.3s;
-  transition-property: width, height;
-}
-
-.hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
-  width: 25px;
-  height: 25px;
-}
-
-.cv-text {
-  position: relative;
-  top: 18px;
-  font-size: 14px;
-}
-
-/*--------------------------------*/
 #section12 {
   /*contact*/
   height: 500px;
@@ -352,7 +311,6 @@ nav ul li:hover > a {
   font-family: 'Antic';
 }
 
-/*contact form*/
 form {
   position: relative;
   top: 50px;
@@ -378,7 +336,7 @@ textarea {
   padding: 10px;
   font-size: 16px;
   border-radius: 10px;
-  background: #F7484E;
+  background: #292929;
   border: transparent;
   background: white;
 }
@@ -391,7 +349,7 @@ textarea:hover {
   width: 100px;
   height: 40px;
   border-radius: 10px;
-  border: solid 4px #F7484E;
+  border: solid 2px #F7484E;
   font-size: 16px;
   line-height: 5px;
   margin-top: 10px;
@@ -403,12 +361,8 @@ textarea:hover {
   box-shadow: 0px 10px 10px #696969;
 }
 
-.sent {
-  background: lime;
-}
-
 hr {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   border: 0;
   height: 1px;
@@ -416,35 +370,36 @@ hr {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
 }
 
-/*--------------------------------*/
 #section13 {
   /*mouse*/
   position: relative;
-  background: #f5f5f5;
+  background: white;
   height: 100px;
+  font-family: 'Antic';
 }
 
 .mouse {
   position: absolute;
   top: 25px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -14px;
   width: 20px;
   height: 35px;
-  border: 2px solid red;
+  border: 2px solid lightgray;
   border-radius: 20px;
   text-align: center;
+  transition: all 0.3s;
 }
 
 .mouse:hover {
-  border: 2px solid gray;
+  border: 2px solid #F7484E;
 }
 
 #scroll {
   width: 3px;
   height: 3px;
   margin: 5px auto;
-  background-color: gray;
+  background-color: #F7484E;
   border: 1px solid transparent;
   border-radius: 5px;
   animation: scroll 1.5s infinite both;
@@ -461,29 +416,22 @@ hr {
   }
 }
 
-/*--------------------------------*/
 #section14 {
   /*draw*/
   height: 100px;
-  background: red;
-  margin: 0px;
+  background: #F7484E;
 }
 
 .draw {
   position: relative;
-  top: 50px;
+  top: 40px;
   left: 50%;
-  margin-left: -10px;
-  width: 28px;
+  margin-left: -14px;
+  width: 30px;
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
-  animation: dash 3s linear infinite 0.5s;
+  animation: dash 4s linear infinite 0.5s;
   /*forwards;*/
-}
-
-.byme {
-  font-size: 10px;
-  display: inline-block;
 }
 
 @keyframes dash {
@@ -492,6 +440,21 @@ hr {
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #sectionone {
+    height: 200px;
+  }
+  #header {
+    height: 100px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 10px;
   }
 }
 
