@@ -17,7 +17,7 @@ $(document).ready(function(){
 //fixtop
 $(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 600) {
+        if ($(this).scrollTop() >= 800) {
             $('nav').addClass('stickytop');
         }
         else {

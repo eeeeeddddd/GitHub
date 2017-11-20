@@ -20,25 +20,23 @@ a {
 
 #section1 {
   /*header*/
-  height: 600px;
+  height: 800px;
   background: #292929;
 }
 
 #header {
   position: relative;
-  top: 250px;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 300px;
 }
 
-.title {
-  font-size: 80px;
-  margin: 0px;
-  color: white;
-}
-
-.subtitle {
-  position: relative;
-  color: white;
+#ted {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #section2 {
@@ -46,18 +44,18 @@ a {
 }
 
 #section2 .navbg {
-  background-color: yellow;
+  background-color: #F7484E;
 }
 
 #section2 .navtext {
-  color: black;
+  color: #F7484E;
 }
 
 nav {
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: #F7484E;
+  background-color: #292929;
   z-index: 99;
 }
 
@@ -77,12 +75,12 @@ nav ul li a {
   display: block;
   line-height: 40px;
   color: #292929;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 nav ul li:hover > a {
-  background-color: #f86066;
-  color: white;
+  background-color: #434343;
+  color: #F7484E;
 }
 
 .stickytop {
@@ -95,7 +93,8 @@ nav ul li:hover > a {
 #section3 {
   /*about*/
   background-color: white;
-  height: 500px;
+  padding: 100px;
+  text-align: center;
 }
 
 #section4 {
@@ -107,19 +106,167 @@ nav ul li:hover > a {
 #hobbies {
   width: 100%;
   text-align: center;
-  background: lime;
 }
 
 .hobbie {
   display: inline-block;
-  width: 10%;
+  width: 4%;
   margin: 0px 2% 0px 2%;
-  background: yellow;
 }
 
 .hobbieimg {
   width: 100%;
   height: 100%;
+}
+
+.coffeecup {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.steam {
+  stroke: white;
+  fill: white;
+  stroke-width: 12px;
+  animation: steam 2s infinite linear;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.pie {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.bite {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  animation: bite 8s infinite linear;
+}
+
+.nobite {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  animation: nobite 8s infinite linear;
+}
+
+@keyframes bite {
+  0% {
+    opacity: 0;
+  }
+  1%, 49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nobite {
+  0% {
+    opacity: 1;
+  }
+  1%, 49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.camera {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.flash {
+  fill: white;
+  animation: flash 3s infinite linear;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.video {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.leftreel {
+  stroke: white;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: reel 3s infinite linear;
+}
+
+.rightreel {
+  stroke: white;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: reel 3s infinite linear;
+}
+
+@keyframes reel {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
+  }
+}
+
+.imac {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.screen {
+  stroke: white;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: mac 2s infinite linear;
+}
+
+@keyframes mac {
+  0% {
+    stroke: white;
+  }
+  50% {
+    stroke: gray;
+  }
+  100% {
+    stroke: white;
+  }
 }
 
 #section5 {
@@ -199,7 +346,7 @@ nav ul li:hover > a {
 
 .sky {
   display: inline-block;
-  width: 10%;
+  width: 7%;
   margin: 0px 2% 0px 2%;
   transition: all 0.5s ease;
 }
@@ -286,7 +433,7 @@ nav ul li:hover > a {
   /*cv download*/
   position: relative;
   background: #292929;
-  padding: 6%;
+  padding: 5%;
 }
 
 #cv {
@@ -295,12 +442,12 @@ nav ul li:hover > a {
   transform: translate(-50%);
   display: inline-block;
   border: 1px solid gray;
+  border-radius: 5px;
   position: relative;
   text-align: center;
   width: 10%;
-  margin: -5px -5px 0px 0px;
   background: red;
-  padding-bottom: 10%;
+  padding-bottom: 2%;
 }
 
 #section12 {
@@ -324,6 +471,7 @@ input {
   font-size: 16px;
   border-radius: 10px;
   background: white;
+  transition: all 0.5s ease-in;
   border: transparent;
 }
 
@@ -339,6 +487,7 @@ textarea {
   background: #292929;
   border: transparent;
   background: white;
+  transition: all 0.5s ease-in;
 }
 
 textarea:hover {
@@ -353,7 +502,7 @@ textarea:hover {
   font-size: 16px;
   line-height: 5px;
   margin-top: 10px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .btn:hover {
@@ -419,10 +568,10 @@ hr {
 #section14 {
   /*draw*/
   height: 100px;
-  background: #F7484E;
+  background: #292929;
 }
 
-.draw {
+.pipe {
   position: relative;
   top: 40px;
   left: 50%;
@@ -443,18 +592,12 @@ hr {
   }
 }
 
-@media (max-width: 400px) {
-  #sectionone {
+@media (max-width: 600px) {
+  #section1 {
     height: 200px;
   }
   #header {
     height: 100px;
-  }
-  .title {
-    font-size: 40px;
-  }
-  .subtitle {
-    font-size: 10px;
   }
 }
 
