@@ -19,7 +19,7 @@ a {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: lime;
+  background: pink;
 }
 
 #section1 {
@@ -43,13 +43,11 @@ a {
 .title {
   font-size: 5vw;
   margin: 0;
-  background: red;
 }
 
 .subtitle {
   font-size: 2vw;
   margin: 0;
-  background: red;
 }
 
 /*nav*/
@@ -138,7 +136,7 @@ nav ul li:hover > a {
 }
 
 #steam {
-  stroke: white;
+  stroke: #F7484E;
   fill: white;
   stroke-width: 12px;
   animation: steam 2s infinite linear;
@@ -162,7 +160,7 @@ nav ul li:hover > a {
 }
 
 #bite {
-  stroke: white;
+  stroke: #F7484E;
   fill: none;
   stroke-width: 10px;
   animation: bite 8s infinite linear;
@@ -212,7 +210,7 @@ nav ul li:hover > a {
 }
 
 #flash {
-  fill: white;
+  fill: #F7484E;
   animation: flash 3s infinite linear;
 }
 
@@ -232,14 +230,14 @@ nav ul li:hover > a {
 }
 
 #leftreel {
-  stroke: white;
+  stroke: #F7484E;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
 }
 
 #rightreel {
-  stroke: white;
+  stroke: #F7484E;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
@@ -263,7 +261,7 @@ nav ul li:hover > a {
 }
 
 #screen {
-  stroke: white;
+  stroke: #F7484E;
   stroke-width: 8px;
   fill: transparent;
   animation: mac 2s infinite linear;
@@ -271,13 +269,13 @@ nav ul li:hover > a {
 
 @keyframes mac {
   0% {
-    stroke: white;
+    stroke: #F7484E;
   }
   50% {
     stroke: gray;
   }
   100% {
-    stroke: white;
+    stroke: #F7484E;
   }
 }
 
@@ -310,6 +308,7 @@ nav ul li:hover > a {
   position: relative;
   width: 33.333333333%;
   margin: -4px -4px 0px 0px;
+  font-size: 0px;
 }
 
 .portimg {
@@ -459,7 +458,8 @@ nav ul li:hover > a {
   text-align: center;
   width: 10%;
   background: red;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
+  font-size: 0px;
 }
 
 #section12 {
@@ -534,6 +534,74 @@ hr {
 }
 
 #section13 {
+  /*hello*/
+  background: white;
+}
+
+#hello {
+  width: 100%;
+  text-align: center;
+  background: #F7484E;
+}
+
+.you {
+  display: inline-block;
+  width: 5%;
+  margin: 0px 2% 0px 2%;
+  font-size: 0px;
+}
+
+#emailiconbox {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+}
+
+#envelop {
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+}
+
+#open {
+  opacity: 0;
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.1s ease-in;
+}
+
+#close {
+  opacity: 1;
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.1s ease-in;
+}
+
+.you:hover #open {
+  opacity: 1;
+}
+
+.you:hover #close {
+  opacity: 0;
+}
+
+#facebook {
+  fill: none;
+  stroke: white;
+  stroke-width: 13px;
+  transition: all 0.1s ease-in;
+}
+
+#at {
+  fill: none;
+  stroke: white;
+  stroke-width: 13px;
+  transition: all 0.1s ease-in;
+}
+
+#section14 {
   /*mouse*/
   position: relative;
   background: white;
@@ -542,10 +610,10 @@ hr {
 }
 
 .mouse {
-  position: absolute;
+  position: relative;
   top: 25px;
   left: 50%;
-  margin-left: -14px;
+  margin-left: -12px;
   width: 20px;
   height: 35px;
   border: 2px solid lightgray;
@@ -579,9 +647,9 @@ hr {
   }
 }
 
-#section14 {
+#section15 {
   /*draw*/
-  height: 100px;
+  padding: 100px;
   background: #292929;
 }
 
@@ -610,6 +678,9 @@ hr {
   #section1 {
     height: 200px;
   }
+  #section3 {
+    font-size: 12px;
+  }
   #header {
     top: 60%;
   }
@@ -618,10 +689,10 @@ hr {
     top: 0;
   }
   .sky {
-    width: 11%;
+    width: 10%;
   }
   .hobbie {
-    width: 8%;
+    width: 10%;
   }
 }
 
