@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>imac</title>
+  <g id="imac">
+    <path id="screen" d="M64.92,118.83H435.08a12.6,12.6,0,0,1,12.6,12.6V304.61a0,0,0,0,1,0,0H52.32a0,0,0,0,1,0,0V131.43A12.6,12.6,0,0,1,64.92,118.83Z" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    <g id="mac">
+      <rect x="23.81" y="85.08" width="452.39" height="271.43" rx="16.29" ry="16.29" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+      <polygon points="151.42 414.03 212.97 356.52 286.03 356.52 348.24 414.04 151.42 414.03" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+      <circle cx="250" cy="331.13" r="12.37" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    </g>
+  </g>
+</svg>

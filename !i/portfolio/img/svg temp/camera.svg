@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>camera</title>
+  <g id="camera">
+    <g id="camera-2" data-name="camera">
+      <rect x="22.64" y="138.3" width="452.39" height="271.43" rx="16.29" ry="16.29" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+      <path d="M193.48,94.27h110.7A25.74,25.74,0,0,1,329.92,120v17.55a0,0,0,0,1,0,0H167.74a0,0,0,0,1,0,0V120A25.74,25.74,0,0,1,193.48,94.27Z" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+      <circle cx="248.83" cy="274.02" r="101.02" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    </g>
+    <circle id="flash" cx="71.21" cy="183.7" r="24.08" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+  </g>
+</svg>

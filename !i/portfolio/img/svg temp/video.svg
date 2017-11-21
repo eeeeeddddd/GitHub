@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>video</title>
+  <g id="video">
+    <g id="video-2" data-name="video">
+      <rect x="46.6" y="189.97" width="270.76" height="221.98" rx="20.76" ry="20.76" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+      <polygon points="317.97 311.11 455.52 189.6 455.55 412.85 317.97 311.11" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    </g>
+    <g id="left_reel" data-name="left reel">
+      <circle cx="168.5" cy="118.83" r="6.39" style="stroke: #000;stroke-miterlimit: 10"/>
+      <circle cx="100.54" cy="118.47" r="68.01" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    </g>
+    <g id="right_reel" data-name="right reel">
+      <circle cx="185.93" cy="118.12" r="6.39" style="stroke: #000;stroke-miterlimit: 10"/>
+      <circle cx="253.88" cy="118.47" r="68.01" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    </g>
+  </g>
+</svg>

@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Antic" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet');
+@import url("");
 /*white*/
-/*dk gray*/
+/*gray*/
 /*red*/
 /*svg*/
-@import 'https://fonts.googleapis.com/css?family=Antic" rel="stylesheet';
-body {
+html body {
   margin: 0px;
   padding: 0px;
+  background: pink;
 }
 
 a {
@@ -16,38 +19,45 @@ a {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  background: lime;
 }
 
 #section1 {
   /*header*/
   height: 800px;
   background: #292929;
+  margin: 0;
+  padding: 0;
 }
 
 #header {
   position: relative;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
+  text-align: center;
+  color: white;
   width: 100%;
-  height: 300px;
+  font-family: "Poiret One";
 }
 
-#ted {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.title {
+  font-size: 5vw;
+  margin: 0;
+  background: red;
 }
 
-#section2 {
-  /*nav*/
+.subtitle {
+  font-size: 2vw;
+  margin: 0;
+  background: red;
 }
 
-#section2 .navbg {
+/*nav*/
+.navbg {
   background-color: #F7484E;
 }
 
-#section2 .navtext {
+.navtext {
   color: #F7484E;
 }
 
@@ -75,7 +85,8 @@ nav ul li a {
   display: block;
   line-height: 40px;
   color: #292929;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "Poiret One";
 }
 
 nav ul li:hover > a {
@@ -93,8 +104,9 @@ nav ul li:hover > a {
 #section3 {
   /*about*/
   background-color: white;
-  padding: 100px;
+  padding: 8%  5%  8% 5%;
   text-align: center;
+  font-size: 18px;
 }
 
 #section4 {
@@ -119,13 +131,13 @@ nav ul li:hover > a {
   height: 100%;
 }
 
-.coffeecup {
+#coffeecup {
   stroke: white;
   fill: none;
   stroke-width: 10px;
 }
 
-.steam {
+#steam {
   stroke: white;
   fill: white;
   stroke-width: 12px;
@@ -143,20 +155,20 @@ nav ul li:hover > a {
   }
 }
 
-.pie {
+#pie {
   stroke: white;
   fill: none;
   stroke-width: 10px;
 }
 
-.bite {
+#bite {
   stroke: white;
   fill: none;
   stroke-width: 10px;
   animation: bite 8s infinite linear;
 }
 
-.nobite {
+#nobite {
   stroke: white;
   fill: none;
   stroke-width: 10px;
@@ -193,13 +205,13 @@ nav ul li:hover > a {
   }
 }
 
-.camera {
+#camera {
   stroke: white;
   fill: none;
   stroke-width: 10px;
 }
 
-.flash {
+#flash {
   fill: white;
   animation: flash 3s infinite linear;
 }
@@ -213,20 +225,20 @@ nav ul li:hover > a {
   }
 }
 
-.video {
+#video {
   stroke: white;
   fill: none;
   stroke-width: 10px;
 }
 
-.leftreel {
+#leftreel {
   stroke: white;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
 }
 
-.rightreel {
+#rightreel {
   stroke: white;
   stroke-width: 8px;
   fill: transparent;
@@ -244,13 +256,13 @@ nav ul li:hover > a {
   }
 }
 
-.imac {
+#imac {
   stroke: white;
   fill: none;
   stroke-width: 10px;
 }
 
-.screen {
+#screen {
   stroke: white;
   stroke-width: 8px;
   fill: transparent;
@@ -351,74 +363,74 @@ nav ul li:hover > a {
   transition: all 0.5s ease;
 }
 
-.stylecc {
+.cc {
   stroke: white;
   fill: none;
   stroke-width: 8px;
   transition: all 0.5s ease-in;
 }
 
-.stylecc:hover {
+.sky:hover .cc {
   stroke: red;
   transition: 0.3s ease-in;
 }
 
-.stylecodepen {
+.codepen {
   stroke: white;
   fill: none;
   stroke-width: 10px;
   transition: all 0.5s ease-in;
 }
 
-.stylecodepen:hover {
+.sky:hover .codepen {
   stroke: lime;
   transition: 0.3s ease-in;
 }
 
-.stylebe {
+.be {
   stroke: white;
   fill: none;
   stroke-width: 10px;
   transition: all 0.5s ease-in;
 }
 
-.stylebe:hover {
+.sky:hover .be {
   stroke: #1969fb;
   transition: 0.3s ease-in;
 }
 
-.stylegithub {
+.github {
   stroke: white;
   fill: none;
   stroke-width: 10px;
   transition: all 0.5s ease-in;
 }
 
-.stylegithub:hover {
+.sky:hover .github {
   stroke: purple;
   transition: 0.3s ease-in;
 }
 
-.stylexd {
+.xd {
   stroke: white;
   fill: none;
   stroke-width: 10px;
   transition: all 0.5s ease-in;
 }
 
-.stylexd:hover {
+.sky:hover .xd {
   stroke: #e750b9;
   transition: 0.3s ease-in;
 }
 
-.styledribbble {
+.dribbble {
   stroke: white;
   fill: none;
   stroke-width: 10px;
   transition: all 0.5s ease-in;
 }
 
-.styledribbble:hover {
+.sky:hover .dribbble {
   stroke: #b3335a;
   transition: 0.3s ease-in;
 }
@@ -455,7 +467,7 @@ nav ul li:hover > a {
   height: 500px;
   text-align: center;
   padding: 50px;
-  font-family: 'Antic';
+  background: white;
 }
 
 form {
@@ -469,6 +481,7 @@ input {
   height: 10px;
   padding: 10px;
   font-size: 16px;
+  font-family: "Poiret One";
   border-radius: 10px;
   background: white;
   transition: all 0.5s ease-in;
@@ -483,6 +496,7 @@ textarea {
   width: 40%;
   padding: 10px;
   font-size: 16px;
+  font-family: "Poiret One";
   border-radius: 10px;
   background: #292929;
   border: transparent;
@@ -597,7 +611,17 @@ hr {
     height: 200px;
   }
   #header {
-    height: 100px;
+    top: 60%;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+  }
+  .sky {
+    width: 11%;
+  }
+  .hobbie {
+    width: 8%;
   }
 }
 
