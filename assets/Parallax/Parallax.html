@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>social spinner</title>	
+<style>
+	
+.scroll {
+    background:url(a.jpeg) fixed;
+    width:500px;
+    height:300px;
+    line-height:300px;
+    margin:0 auto;
+    margin-top:150px;
+    text-align:center;
+    color:#fff;
+    font-family:'Open Sans' sans-serif;
+}
+body {
+    min-height:3000px;
+}
+a {
+    margin-top:20px;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    font-family:'Open Sans' sans-serif;
+    color:#666;
+    -webkit-transition:opacity .5s;
+    transition:opacity .5s;
+}
+a:hover {
+     -webkit-transition:opacity .5s;
+    transition:opacity .5s;
+    opacity:.5;
+}
+
+</style>
+
+</head>
+
+<body>
+	
+	<div class="scroll">
+	     <h1>Text on parralax background</h1>
+	</div>
+  
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+//Parallax 
+function simpleParallax() {
+    //This variable is storing the distance scrolled
+    var scrolled = $(window).scrollTop() + 1;
+
+    //Every element with the class "scroll" will have parallax background 
+    //Change the "0.3" for adjusting scroll speed.
+    $('.scroll').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+}
+//Everytime we scroll, it will fire the function
+$(window).scroll(function (e) {
+    simpleParallax();
+});
+
+</script>        
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
