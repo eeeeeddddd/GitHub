@@ -72,7 +72,6 @@ a	{text-decoration: none;}
 #section2		{}/*nav*///don't forget the script
 // .navbg	{background-color: $color1;}
 // .navtext	{color: $color1;}
-.navtext	{opacity: 1;}
 nav {
 	text-align: center;
 	width: 100%;
@@ -87,14 +86,15 @@ nav ul {
 }
 nav ul li {
 	display: inline-block;
- 	width: 110px;
+ 	width: 120px;
 }
 nav ul li a {
 	display: block;
 	line-height: 40px;
 	color: $color;
-	font-size: 24px;
+	font-size: 22px;
 	font-family: $fontNav;
+	font-weight: 600;
 	opacity: 0.5;
 }
 nav ul li:hover > a {
@@ -410,11 +410,20 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
     margin: 0px 2% 0px 2%;
     transition: all .5s ease;
 }
-#envelop	{stroke:$svg; fill: none;stroke-width: 12px;}
-#open	{opacity: 0;stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s ease-in;}
-#close	{opacity: 1; stroke:$svg;fill:none;stroke-width: 12px;transition: all 0.3s ease-in;}
-.network:hover  #open {opacity: 1;}
-.network:hover  #close	{opacity: 0;}
+.networkenvelop   {
+	@extend .network;
+}
+#facebook {stroke:$svg; fill: none;stroke-width: 12px;}
+#twitter {stroke:$svg; fill: none;stroke-width: 12px;}
+#facetime {stroke:$svg; fill: none;stroke-width: 12px;}
+#envelop {stroke:$svg; fill: none;stroke-width: 12px;}
+#open {opacity: 0;stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s ease-in;}
+#close {opacity: 1; stroke:$svg;fill:none;stroke-width: 12px;transition: all 0.3s ease-in;}
+.networkenvelop:hover  #open {opacity: 1;}
+.networkenvelop:hover  #close	{opacity: 0;}
+#g {stroke:$svg; fill: none;stroke-width: 12px;}
+#youtube {stroke:$svg; fill: none;stroke-width: 12px;}
+#skype	{stroke:$svg; fill: none;stroke-width: 10px;}
 
 #section14		{/*mouse*/
 	position: relative;

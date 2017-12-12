@@ -1,267 +1,341 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Antic");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600");
 /*white*/
 /*gray*/
 /*red*/
 /*svg*/
 @font-face {
   font-family: 'mywoff';
-  src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff"); }
+  src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff");
+}
+
 @font-face {
   font-family: 'myotf';
-  src: url("../font/Lucinda.otf") format("opentype");
-  font-weight: normal; }
+  src: url("../font/Angelface.otf") format("opentype");
+  font-weight: normal;
+}
+
 @font-face {
   font-family: 'myttf';
-  src: url("../font/Aamonoline.ttf") format("truetype"); }
+  src: url("../font/Aamonoline.ttf") format("truetype");
+}
+
 html body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 #wrapper {
   width: 100%;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .text {
   font-family: "Poiret One";
   font-size: 18px;
   color: #292929;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 #section1 {
   /*header*/
   height: 100vh;
   background: #292929;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 #header {
   position: relative;
   top: 50%;
   transform: translate(0%, -50%);
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 .headername {
-  font-family: 'myttf';
+  font-family: 'mywoff';
   font-size: 7vw;
   margin: 0;
-  color: white; }
+  color: white;
+}
 
 .quote {
-  font-family: 'myotf';
+  font-family: 'Josefin Slab';
+  font-weight: 400;
   font-size: 2.5vw;
   color: #F7484E;
-  margin: 0; }
+  margin: 0;
+}
 
 /*nav*/
-.navbg {
-  background-color: #F7484E; }
-
 .navtext {
-  color: #F7484E; }
+  opacity: 1;
+}
 
 nav {
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: #292929;
-  z-index: 99; }
+  background-color: #F7484E;
+  z-index: 99;
+}
 
 nav ul {
   margin-top: 0px;
   list-style: none;
   padding: 0px;
-  /*stops 40px */ }
+  /*stops 40px */
+}
 
 nav ul li {
   display: inline-block;
-  width: 110px; }
+  width: 110px;
+}
 
 nav ul li a {
   display: block;
   line-height: 40px;
   color: #292929;
-  font-size: 20px;
-  font-family: "Poiret One"; }
+  font-size: 24px;
+  font-family: "Poiret One";
+  opacity: 0.5;
+}
 
 nav ul li:hover > a {
   background-color: #434343;
-  color: #F7484E; }
+  color: #F7484E;
+  font-weight: 600;
+}
 
 .stickytop {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+}
 
 #section3 {
   /*about*/
-  background-color: red;
+  background-color: #f5f5f5;
   padding: 5%  10%  5% 10%;
-  text-align: center; }
+  text-align: center;
+}
 
 #section4 {
   /*hobbies*/
   background: #292929;
-  padding: 20px; }
+  padding: 20px;
+}
 
 #hobbies {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .hobbie {
   display: inline-block;
   width: 5%;
-  margin: 0px 2% 0px 2%; }
+  margin: 0px 2% 0px 2%;
+}
 
 .hobbieimg {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 #coffeecup {
   stroke: white;
   fill: none;
-  stroke-width: 10px; }
+  stroke-width: 10px;
+}
 
 #steam {
   stroke: #F7484E;
   fill: white;
   stroke-width: 12px;
-  animation: steam 2s infinite linear; }
+  animation: steam 2s infinite linear;
+}
 
 @keyframes steam {
   0% {
     opacity: 1;
-    transform: translateY(0px); }
+    transform: translateY(0px);
+  }
   100% {
     opacity: 0;
-    transform: translateY(-30px); } }
+    transform: translateY(-30px);
+  }
+}
+
 #pie {
   stroke: white;
   fill: none;
-  stroke-width: 10px; }
+  stroke-width: 10px;
+}
 
 #bite {
   stroke: #F7484E;
   fill: none;
   stroke-width: 10px;
-  animation: bite 6s infinite linear; }
+  animation: bite 6s infinite linear;
+}
 
 #nobite {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  animation: nobite 6s infinite linear; }
+  animation: nobite 6s infinite linear;
+}
 
 @keyframes bite {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   1%, 49% {
-    opacity: 1; }
+    opacity: 1;
+  }
   50% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
+
 @keyframes nobite {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   1%, 49% {
-    opacity: 0; }
+    opacity: 0;
+  }
   50% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
 #camera {
   stroke: white;
   fill: none;
-  stroke-width: 10px; }
+  stroke-width: 10px;
+}
 
 #flash {
   fill: #F7484E;
-  animation: flash 2s infinite linear; }
+  animation: flash 2s infinite linear;
+}
 
 @keyframes flash {
   0%, 90% {
-    opacity: 0.1; }
+    opacity: 0.1;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
 #video {
   stroke: white;
   fill: none;
-  stroke-width: 10px; }
+  stroke-width: 10px;
+}
 
 #leftreel {
   stroke: #F7484E;
   stroke-width: 8px;
   fill: transparent;
-  animation: reel 3s infinite linear; }
+  animation: reel 3s infinite linear;
+}
 
 #rightreel {
   stroke: #F7484E;
   stroke-width: 8px;
   fill: transparent;
-  animation: reel 3s infinite linear; }
+  animation: reel 3s infinite linear;
+}
 
 @keyframes reel {
   0% {
     transform-origin: 50% 50%;
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
     transform-origin: 50% 50%;
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
+
 #imac {
   stroke: white;
   fill: none;
-  stroke-width: 10px; }
+  stroke-width: 10px;
+}
 
 #screen {
   stroke: #F7484E;
   stroke-width: 8px;
   fill: transparent;
-  animation: mac 2s infinite linear; }
+  animation: mac 2s infinite linear;
+}
 
 @keyframes mac {
   0% {
-    stroke: #F7484E; }
+    stroke: #F7484E;
+  }
   50% {
-    stroke: white; }
+    stroke: white;
+  }
   100% {
-    stroke: #F7484E; } }
+    stroke: #F7484E;
+  }
+}
+
 #section5 {
   /*expertise*/
-  background-color: red;
-  height: 500px; }
+  background-color: #f5f5f5;
+  height: 500px;
+}
 
 #section6 {
   /*qualifications*/
-  background: red;
-  height: 500px; }
+  background: #f5f5f5;
+  height: 500px;
+}
 
 #section7 {
   /*portfolio*/
   padding-top: 6%;
-  background: #292929; }
+  background: #292929;
+}
 
 #portfolio {
   margin: 0 auto;
   width: 80%;
-  text-align: center; }
+  text-align: center;
+}
 
 .port {
   display: inline-block;
   position: relative;
   width: 33.333333333%;
-  margin: -4px -4px -0px 0px;
-  font-size: 0px; }
+  margin: -4px -4px 0px 0px;
+  font-size: 0px;
+}
 
 .portimg {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .overlay {
   position: absolute;
@@ -272,11 +346,13 @@ nav ul li:hover > a {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(0, 0, 0, 0.7); }
+  transition: 0s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
 .port:hover .overlay {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .porttext {
   color: white;
@@ -284,90 +360,107 @@ nav ul li:hover > a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 #section8 {
   /*files*/
   padding: 20px;
-  background: #292929; }
+  background: #292929;
+}
 
 #cloud {
   margin: 0 auto;
   width: 100%;
   height: 100%;
   text-align: center;
-  background: #292929; }
+  background: #292929;
+}
 
 .sky {
   display: inline-block;
   width: 7%;
   margin: 0px 2% 0px 2%;
-  transition: all .5s ease; }
+  transition: all 0.5s ease;
+}
 
 .cc {
   stroke: white;
   fill: none;
   stroke-width: 8px;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+}
 
 .sky:hover .cc {
   stroke: red;
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+}
 
 .codepen {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+}
 
 .sky:hover .codepen {
   stroke: lime;
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+}
 
 .be {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+}
 
 .sky:hover .be {
   stroke: #1969fb;
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+}
 
 .github {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+}
 
 .sky:hover .github {
   stroke: purple;
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+}
 
 .xd {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+}
 
 .sky:hover .xd {
   stroke: #e750b9;
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+}
 
 .dribbble {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+}
 
 .sky:hover .dribbble {
   stroke: #b3335a;
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+}
 
 #section9 {
   /*experience*/
-  background-color: red;
-  height: 500px; }
+  background-color: #f5f5f5;
+  height: 500px;
+}
 
 #section11 {
   /*cv download*/
@@ -375,69 +468,86 @@ nav ul li:hover > a {
   height: auto;
   padding: 7%;
   background: #292929;
-  text-align: center; }
+  text-align: center;
+}
 
 #cv {
   position: relative;
   display: inline-block;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 10%;
   background: red;
   padding-bottom: 3%;
-  font-size: 0px; }
+  font-size: 0px;
+}
 
 #section12 {
   /*contact*/
   height: 500px;
   text-align: center;
   padding: 50px;
-  background: red; }
+  background: #f5f5f5;
+}
 
 form {
   position: relative;
   top: 50px;
-  text-align: center; }
+  text-align: center;
+}
 
 input {
   width: 50%;
   height: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Poiret One";
+  font-weight: 400;
   border-radius: 10px;
-  background: red;
+  background: #f5f5f5;
   transition: all 0.5s ease-in;
-  border: transparent; }
-  input:hover {
-    background: #F7484E; }
+  border: transparent;
+}
+
+input:hover {
+  background: #F7484E;
+}
 
 textarea {
   width: 50%;
   padding: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Poiret One";
+  font-weight: 400;
   border-radius: 10px;
   background: #292929;
   border: transparent;
-  background: red;
-  transition: all 0.5s ease-in; }
-  textarea:hover {
-    background: #F7484E; }
+  background: #f5f5f5;
+  transition: all 0.5s ease-in;
+}
+
+textarea:hover {
+  background: #F7484E;
+}
 
 .btn {
   width: 100px;
   height: 40px;
   border-radius: 10px;
   border: solid 2px #F7484E;
-  font-size: 20px;
-  line-height: 5px;
+  font-size: 22px;
+  font-family: "Poiret One";
+  font-weight: 400;
+  line-height: 3px;
   margin-top: 10px;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  color: gray;
+}
 
 .btn:hover {
   color: white;
-  box-shadow: 0px 10px 10px #696969; }
+  box-shadow: 0px 10px 10px #696969;
+}
 
 hr {
   width: 50%;
@@ -445,55 +555,65 @@ hr {
   border: 0;
   height: 1px;
   background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
 
 #section13 {
   /*hello*/
   background: #F7484E;
-  padding: 20px; }
+  padding: 20px;
+}
 
 #social {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .network {
   display: inline-block;
   width: 5%;
   margin: 0px 2% 0px 2%;
-  transition: all .5s ease; }
+  transition: all 0.5s ease;
+}
 
 #envelop {
   stroke: white;
   fill: none;
-  stroke-width: 12px; }
+  stroke-width: 12px;
+}
 
 #open {
   opacity: 0;
   stroke: white;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease-in;
+}
 
 #close {
   opacity: 1;
   stroke: white;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease-in;
+}
 
 .network:hover #open {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .network:hover #close {
-  opacity: 0; }
+  opacity: 0;
+}
 
 #section14 {
   /*mouse*/
   position: relative;
-  background: red;
-  height: 100px; }
+  background: #f5f5f5;
+  height: 100px;
+}
 
 .mousetext {
   font-family: 'Poiret One';
@@ -501,7 +621,8 @@ hr {
   color: gray;
   margin-top: 30px;
   font-weight: bold;
-  margin-left: -1px; }
+  margin-left: -1px;
+}
 
 .mouse {
   position: relative;
@@ -513,9 +634,12 @@ hr {
   border: 2px solid lightgray;
   border-radius: 20px;
   text-align: center;
-  transition: all 0.3s; }
-  .mouse:hover {
-    border: 2px solid #F7484E; }
+  transition: all 0.3s;
+}
+
+.mouse:hover {
+  border: 2px solid #F7484E;
+}
 
 #scroll {
   width: 3px;
@@ -525,18 +649,24 @@ hr {
   background-color: #F7484E;
   border: 2px solid transparent;
   border-radius: 5px;
-  animation: scroll 1.5s infinite both; }
+  animation: scroll 1.5s infinite both;
+}
 
 @keyframes scroll {
   0% {
     opacity: 1;
-    transform: translateY(15px); }
+    transform: translateY(15px);
+  }
   100% {
     opacity: 0.2;
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+  }
+}
+
 #section144 {
   height: 400px;
-  background: transparent; }
+  background: transparent;
+}
 
 #section15 {
   /*draw*/
@@ -546,25 +676,29 @@ hr {
   height: 400px;
   background: #292929;
   z-index: -1;
-  text-align: center; }
+  text-align: center;
+}
 
 #footer {
   position: relative;
   top: 40%;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 #footername {
   font-family: "mywoff";
   font-size: 40px;
   margin: 0;
-  color: white; }
+  color: white;
+}
 
 #designby {
   position: relative;
   color: white;
   font-size: 10px;
-  font-family: 'Poiret One'; }
+  font-family: 'Poiret One';
+}
 
 .pipe {
   position: relative;
@@ -574,52 +708,59 @@ hr {
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
   animation: dash 4s linear infinite 0.5s;
-  /*forwards;*/ }
+  /*forwards;*/
+}
 
 @keyframes dash {
   from {
-    stroke-dashoffset: 2000; }
+    stroke-dashoffset: 2000;
+  }
   to {
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: 0;
+  }
+}
+
 @media (max-width: 600px) {
   #section1 {
-    height: 200px; }
-
+    height: 200px;
+  }
   #header {
-    top: 60%; }
-
+    top: 60%;
+  }
   nav ul li {
-    width: 80px; }
-
+    width: 80px;
+  }
   nav ul li a {
-    font-size: 16px; }
-
+    font-size: 16px;
+  }
   #section3 {
-    font-size: 12px; }
-
+    font-size: 12px;
+  }
   nav {
     position: fixed;
-    top: 0; }
-
+    top: 0;
+  }
   .sky {
-    width: 10%; }
-
+    width: 10%;
+  }
   .hobbie {
-    width: 10%; }
-
+    width: 10%;
+  }
   #section7 {
-    padding-top: 10%; }
-
+    padding-top: 10%;
+  }
   #section12 {
-    padding: 0px; }
-
+    padding: 0px;
+  }
   input {
-    width: 70%; }
-
+    width: 70%;
+  }
   textarea {
-    width: 70%; }
-
+    width: 70%;
+  }
   hr {
-    width: 70%; } }
+    width: 70%;
+  }
+}
 
-/*# sourceMappingURL=css.css.map */
+/*# sourceMappingURL=css.map */

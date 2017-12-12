@@ -75,10 +75,6 @@ a {
 }
 
 /*nav*/
-.navtext {
-  opacity: 1;
-}
-
 nav {
   text-align: center;
   width: 100%;
@@ -96,15 +92,16 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 110px;
+  width: 120px;
 }
 
 nav ul li a {
   display: block;
   line-height: 40px;
   color: #292929;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Poiret One";
+  font-weight: 600;
   opacity: 0.5;
 }
 
@@ -571,11 +568,29 @@ hr {
   text-align: center;
 }
 
-.network {
+.network, .networkenvelop {
   display: inline-block;
   width: 5%;
   margin: 0px 2% 0px 2%;
   transition: all 0.5s ease;
+}
+
+#facebook {
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+}
+
+#twitter {
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+}
+
+#facetime {
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
 }
 
 #envelop {
@@ -600,12 +615,30 @@ hr {
   transition: all 0.3s ease-in;
 }
 
-.network:hover #open {
+.networkenvelop:hover #open {
   opacity: 1;
 }
 
-.network:hover #close {
+.networkenvelop:hover #close {
   opacity: 0;
+}
+
+#g {
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+}
+
+#youtube {
+  stroke: white;
+  fill: none;
+  stroke-width: 12px;
+}
+
+#skype {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
 }
 
 #section14 {
