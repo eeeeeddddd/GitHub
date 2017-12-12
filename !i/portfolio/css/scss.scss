@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Antic');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600');
 
 $fontForm: 'Poiret One';
-$fontNav: 'Poiret One';
+$fontNav:  'Poiret One';
 $fontTitle: 'mywoff';
 $fontText: 'Poiret One';
 
-$bg-color: red;/*white*/
+$bg-color: #f5f5f5;/*white*/
 $color: #292929; /*gray*/
 $color1: #F7484E; /*red*/
 $svg: white; /*svg*/
@@ -19,7 +20,7 @@ $svg: white; /*svg*/
           url('../font/bootcamp-regular-webfont.woff') format('woff');
 }
 @font-face { font-family: 'myotf';
-    src: url('../font/Lucinda.otf') format("opentype");
+    src: url('../font/Angelface.otf') format("opentype");
     font-weight: normal;
 }
 @font-face { font-family: 'myttf';
@@ -56,26 +57,27 @@ a	{text-decoration: none;}
 	width: 100%;
 }
 .headername	{
-	font-family: 'myttf';
+	font-family: 'mywoff';
 	font-size: 7vw;
 	margin: 0;
 	color: white;
 }
 .quote	{
-	font-family: 'myotf';
+	font-family: 'Josefin Slab';
+	font-weight: 400;		
 	font-size: 2.5vw;
 	color: $color1;
 	margin: 0;
 }
-
 #section2		{}/*nav*///don't forget the script
-.navbg	{background-color: $color1;}
-.navtext	{color: $color1;}
+// .navbg	{background-color: $color1;}
+// .navtext	{color: $color1;}
+.navtext	{opacity: 1;}
 nav {
 	text-align: center;
 	width: 100%;
 	height: 40px;
-	background-color: $color;
+	background-color: $color1;
 	z-index: 99;
 }
 nav ul {
@@ -91,12 +93,14 @@ nav ul li a {
 	display: block;
 	line-height: 40px;
 	color: $color;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: $fontNav;
+	opacity: 0.5;
 }
 nav ul li:hover > a {
 	background-color: lighten($color, 10%);
 	color: $color1;
+	font-weight: 600;
 }
 .stickytop {
     position: fixed;
@@ -192,7 +196,7 @@ nav ul li:hover > a {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: 0.5s ease;
+	transition: 0s ease;
 	background-color: rgba(0,0,0, .7);
 }
 .port:hover .overlay {
@@ -263,7 +267,7 @@ nav ul li:hover > a {
 	position: relative;
     display: inline-block;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 10%;
     background: red;
     padding-bottom: 3%;
@@ -345,8 +349,9 @@ input	{
 	width: 50%;
 	height: 10px;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: $fontForm;
+	font-weight: 400;
 	border-radius: 10px;
 	background: $bg-color;
 	transition: all 0.5s ease-in;
@@ -358,8 +363,9 @@ input	{
 textarea {
   	width: 50%;
   	padding: 10px;
-  	font-size: 20px;
+  	font-size: 24px;
 	font-family: $fontForm;
+	font-weight: 400;	
   	border-radius: 10px;
 	background: $color;
 	border: transparent;
@@ -374,10 +380,13 @@ textarea {
   height: 40px;
   border-radius: 10px;
   border: solid 2px $color1;
-  font-size: 20px;
-  line-height: 5px;
+  font-size: 22px;
+  font-family: $fontForm;
+  font-weight: 400;  
+  line-height: 3px;
   margin-top: 10px;
   transition: all 0.5s;
+  color: gray;
 }
 .btn:hover {
   color: white;

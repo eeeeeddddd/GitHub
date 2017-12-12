@@ -17,7 +17,7 @@ $(document).ready(function(){
 //fixtop
 $(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 800) {
+        if ($(this).scrollTop() >= 700) {
             $('nav').addClass('stickytop');
         }
         else {
@@ -51,10 +51,10 @@ $(document).ready(function () {
        var currentScroll = $(this).scrollTop();
        
        if (currentScroll > previousScroll){
-           $("nav ul li a").addClass("navtext");} 
+           $("nav ul li a").removeClass("navtext");} 
        
        else {
-	   $("nav ul li a").removeClass("navtext");}
+	   $("nav ul li a").addClass("navtext");}
        previousScroll = currentScroll;
        
     });
