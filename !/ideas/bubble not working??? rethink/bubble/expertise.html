@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>expertise</title>
+<style>
+body	{
+	width: 100%;
+}
+.table	{
+	width: 300px;
+	background-color: yellow;
+	font-size: 16px;
+}
+.tablecol	{
+	width: 100px;
+	padding: 5px 0px 5px 20px;
+}
+.underline	{
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 10px;
+	background: lightgray;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.line	{
+	position: absolute;
+	height: 10px;
+	background: red;
+	border-radius: 10px;	
+}
+.line-100percent	{width: 100%;}
+.line-95percent	{width: 95%;}
+.line-90percent	{width: 90%;}
+.line-85percent	{width: 85%;}
+.line-80percent	{width: 80%;}
+.line-75percent	{width: 75%;}
+.line-70percent	{width: 70%;}
+.line-65percent	{width: 65%;}
+.line-60percent	{width: 60%;}
+
+
+
+.dog	{
+	position: relative;
+	top: 50px;
+	left: 20%;
+	margin-left: -50px;
+}
+/*=======loader-------------*/
+
+.loader	{
+	position: absolute;
+  	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	transform: rotate(85deg);
+}
+.bottom {
+	border: 10px solid lightgray;
+	z-index: -1;
+}
+.middle {
+  	border-top: 10px solid gray;
+    border-bottom: 10px solid red;
+    border-right: 10px solid gray;
+    border-left: 10px solid transparent;
+	transform: rotate(85deg);
+}
+.top {
+  	border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    border-right: 10px solid gray;
+    border-left: 10px solid transparent;
+	transform: rotate(45deg);
+}
+/*----------bubble----------*/
+#bubble	{
+   width: 100%;
+   min-height: 100px;
+   border: solid 2px gray;
+   position: relative;
+   border-radius: 10px;
+   padding: 20px;
+   background: red;
+}	
+#talk	{
+   position: absolute;
+   right: 100%;
+   top: 20px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid gray;
+   border-bottom: 13px solid transparent;
+}	
+#bubble-cont	{
+	position: relative;
+	top: 200px;
+	left: 30%;
+	background: yellow;
+	width: 40%;
+}
+#hidden	{
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 500px;
+	background: blue;
+}
+</style>
+
+</head>
+
+<body>
+<table class="table">
+	<tr>
+		<td class="tablecol">Adobe Photoshop:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-85percent"></div></div></td>
+	</tr>
+	<tr>
+		<td class="tablecol">Adobe illustrator:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-90percent"></div></div></td>
+	</tr>	
+	<tr>
+		<td class="tablecol">Adobe Indesign:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-80percent"></div></div></td>
+	</tr>
+		<tr>
+		<td class="tablecol">Premier Pro:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-70percent"></div></div></td>
+	</tr>
+		<tr>
+		<td class="tablecol">After effects:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-60percent"></div></div></td>
+	</tr>				
+	<tr>
+		<td class="tablecol">HTML:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-80percent"></div></div></td>
+	</tr>
+		<tr>
+		<td class="tablecol">CSS:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-80percent"></div></div></td>
+	</tr>
+		<tr>
+		<td class="tablecol">JQ:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-65percent"></div></div></td>
+	</tr>
+		<tr>
+		<td class="tablecol">nice guy:</td>
+		<td class="tablecol"><div class="underline"><div class="line line-100percent"></div></div></td>
+	</tr>
+</table>
+<div class="dog">
+<div class="loader bottom"></div>
+<div class="loader middle"></div>
+<div class="loader top"></div>
+</div>
+
+
+<div id="bubble-cont">
+	<div id="bubble">talk to me!!!
+		<div id="talk"></div><!--tri-->
+		<div id="hidden"></div>
+	</div>
+</div>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+    
+</html>
