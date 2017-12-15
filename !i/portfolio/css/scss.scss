@@ -143,9 +143,9 @@ nav ul li:hover > a {
 @keyframes bite{0%{opacity:0}1%, 49%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
-#camera	{stroke:$svg;fill: none;stroke-width: 10px;}
-#flash	{fill:$svg; animation: flash 2s infinite linear}
-@keyframes flash{0%, 90%{opacity:0.1}100%{opacity:1;}}
+#camera	{stroke:$svg;fill: none; stroke-width: 10px;}
+#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear}
+@keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #video	{stroke:$svg;fill: none;stroke-width: 10px;}
 #leftreel	{stroke: $svg;stroke-width: 8px; fill: transparent; animation: reel 3s infinite linear}
@@ -421,9 +421,6 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #twitter {stroke:$svg; fill: transparent; stroke-width: 12px;}
 .network:hover #twitter {fill: $svg; transition: 0.2s linear;}
 
-#facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
-.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.2s linear;}
-
 #envelop {stroke:$svg; fill: transparent; stroke-width: 12px;}
 #open {opacity: 0;stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.2s ease-in;}
 #close {opacity: 1; stroke:$svg;fill:none;stroke-width: 12px;transition: all 0.2s ease-in;}
@@ -431,22 +428,30 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 .networkenvelop:hover  #close	{fill: $color1;}
 .networkenvelop:hover #envelop {fill: $svg;}
 
-#g {stroke:$svg; fill: transparent; stroke-width: 12px;}
-#ginner {stroke:$svg; fill: $color1; stroke-width: 12px;}
-#gplus {stroke:$svg; fill: red; stroke-width: 12px;}
-.network:hover #ginner {fill: $color1; transition: 0.2s linear;}
-.network:hover #g {fill: $svg; transition: 0.2s linear;}
-.network:hover #gplus { fill: $svg; transition: 0.2s linear;}
+#facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
+.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.2s linear;}
 
-#youtube {stroke:$svg; fill: $color1;stroke-width: 12px;}
-#play {stroke:$svg; fill: $color1;stroke-width: 12px;}
-.network:hover #youtube{fill: $svg; transition: 0.2s linear;}
-.network:hover #play {stroke: $color1; fill: $color1; transition: 0.2s linear;}
+#instagram {stroke:$svg; fill: transparent; stroke-width: 12px;}
+#instagramlens {stroke:$svg; fill: transparent; stroke-width: 12px;}
+.network:hover #instagram {stroke: $svg; fill: $svg; transition: 0.2s linear;}
+.network:hover #instagramlens {stroke: $color1; transition: 0.2s linear;}
 
-#skype	{stroke:$svg; fill: transparent; stroke-width: 10px;}
-#s	{stroke:$svg; fill: transparent; stroke-width: 10px;}
-.network:hover #skype {fill: $svg; transition: 0.2s linear;}
-.network:hover #s {fill: $color1; transition: 0.2s linear;}
+// #g {stroke:$svg; fill: transparent; stroke-width: 12px;}
+// #ginner {stroke:$svg; fill: $color1; stroke-width: 12px;}
+// #gplus {stroke:$svg; fill: red; stroke-width: 12px;}
+// .network:hover #ginner {fill: $color1; transition: 0.2s linear;}
+// .network:hover #g {fill: $svg; transition: 0.2s linear;}
+// .network:hover #gplus { fill: $svg; transition: 0.2s linear;}
+// 
+// #youtube {stroke:$svg; fill: $color1;stroke-width: 12px;}
+// #play {stroke:$svg; fill: $color1;stroke-width: 12px;}
+// .network:hover #youtube{fill: $svg; transition: 0.2s linear;}
+// .network:hover #play {stroke: $color1; fill: $color1; transition: 0.2s linear;}
+// 
+// #skype	{stroke:$svg; fill: transparent; stroke-width: 10px;}
+// #s	{stroke:$svg; fill: transparent; stroke-width: 10px;}
+// .network:hover #skype {fill: $svg; transition: 0.2s linear;}
+// .network:hover #s {fill: $color1; transition: 0.2s linear;}
 
 #section14		{/*mouse*/
 	position: relative;

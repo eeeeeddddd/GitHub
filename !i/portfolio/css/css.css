@@ -228,16 +228,18 @@ nav ul li:hover > a {
 }
 
 #flash {
-  fill: white;
+  stroke: white;
+  fill: transparent;
+  stroke-width: 10px;
   animation: flash 2s infinite linear;
 }
 
 @keyframes flash {
   0%, 90% {
-    opacity: 0.1;
+    fill: transparent;
   }
   100% {
-    opacity: 1;
+    fill: white;
   }
 }
 
@@ -608,18 +610,6 @@ hr {
   transition: 0.2s linear;
 }
 
-#facetime {
-  stroke: white;
-  fill: transparent;
-  stroke-width: 12px;
-}
-
-.network:hover #facetime, .networkenvelop:hover #facetime {
-  stroke: transparent;
-  fill: white;
-  transition: 0.2s linear;
-}
-
 #envelop {
   stroke: white;
   fill: transparent;
@@ -655,81 +645,38 @@ hr {
   fill: white;
 }
 
-#g {
+#facetime {
   stroke: white;
   fill: transparent;
   stroke-width: 12px;
 }
 
-#ginner {
-  stroke: white;
-  fill: #F7484E;
-  stroke-width: 12px;
-}
-
-#gplus {
-  stroke: white;
-  fill: red;
-  stroke-width: 12px;
-}
-
-.network:hover #ginner, .networkenvelop:hover #ginner {
-  fill: #F7484E;
-  transition: 0.2s linear;
-}
-
-.network:hover #g, .networkenvelop:hover #g {
+.network:hover #facetime, .networkenvelop:hover #facetime {
+  stroke: transparent;
   fill: white;
   transition: 0.2s linear;
 }
 
-.network:hover #gplus, .networkenvelop:hover #gplus {
+#instagram {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+#instagramlens {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.network:hover #instagram, .networkenvelop:hover #instagram {
+  stroke: white;
   fill: white;
   transition: 0.2s linear;
 }
 
-#youtube {
-  stroke: white;
-  fill: #F7484E;
-  stroke-width: 12px;
-}
-
-#play {
-  stroke: white;
-  fill: #F7484E;
-  stroke-width: 12px;
-}
-
-.network:hover #youtube, .networkenvelop:hover #youtube {
-  fill: white;
-  transition: 0.2s linear;
-}
-
-.network:hover #play, .networkenvelop:hover #play {
+.network:hover #instagramlens, .networkenvelop:hover #instagramlens {
   stroke: #F7484E;
-  fill: #F7484E;
-  transition: 0.2s linear;
-}
-
-#skype {
-  stroke: white;
-  fill: transparent;
-  stroke-width: 10px;
-}
-
-#s {
-  stroke: white;
-  fill: transparent;
-  stroke-width: 10px;
-}
-
-.network:hover #skype, .networkenvelop:hover #skype {
-  fill: white;
-  transition: 0.2s linear;
-}
-
-.network:hover #s, .networkenvelop:hover #s {
-  fill: #F7484E;
   transition: 0.2s linear;
 }
 
