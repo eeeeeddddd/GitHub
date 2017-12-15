@@ -125,7 +125,7 @@ nav ul li:hover > a {
 }
 .hobbie   {
     display: inline-block;
-    width: 5%;
+    width: 4%;
     margin: 0px 2% 0px 2%;
 }
 .hobbieimg	{//temp
@@ -134,27 +134,30 @@ nav ul li:hover > a {
 }
 
 #coffeecup	{stroke:$svg;fill: none;stroke-width: 10px;}
-#steam	{stroke:$color1;fill: $svg;stroke-width: 12px; animation: steam 2s infinite linear}
+#steam	{stroke:$svg;fill: $svg;stroke-width: 12px; animation: steam 2s infinite linear}
 @keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
 
 #pie	{stroke:$svg;fill: none;stroke-width: 10px;}
-#bite	{stroke:$color1;fill: none;stroke-width: 10px; animation: bite 6s infinite linear}
-#nobite	{stroke:$svg;fill: none;stroke-width: 10px; animation: nobite 6s infinite linear}
+#bite	{stroke:$svg;fill: none;stroke-width: 10px; animation: bite 3s infinite linear}
+#nobite	{stroke:$svg;fill: none;stroke-width: 10px; animation: nobite 3s infinite linear}
 @keyframes bite{0%{opacity:0}1%, 49%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
 #camera	{stroke:$svg;fill: none;stroke-width: 10px;}
-#flash	{fill:$color1; animation: flash 2s infinite linear}
+#flash	{fill:$svg; animation: flash 2s infinite linear}
 @keyframes flash{0%, 90%{opacity:0.1}100%{opacity:1;}}
 
 #video	{stroke:$svg;fill: none;stroke-width: 10px;}
-#leftreel	{stroke: $color1;stroke-width: 8px; fill: transparent; animation: reel 3s infinite linear}
-#rightreel	{stroke: $color1; stroke-width: 8px; fill:transparent; animation: reel 3s infinite linear}
+#leftreel	{stroke: $svg;stroke-width: 8px; fill: transparent; animation: reel 3s infinite linear}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; animation: reel 3s infinite linear}
 @keyframes reel{0%{transform-origin: 50% 50%; transform: rotate(0deg);}100%{transform-origin: 50% 50%; transform: rotate(360deg);}}
 
 #imac	{stroke:$svg;fill: none;stroke-width: 10px;}
 #screen	{stroke: $color1;stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear}
-@keyframes mac{0%{stroke: $color1;}50%{stroke: white;}100%{stroke: $color1}}
+@keyframes mac{0%{stroke: $svg;}50%{stroke: gray;}100%{stroke: $svg;}}
+
+#headphones	{stroke:$svg;fill: none; stroke-width: 10px; animation: headphones 1s infinite linear}
+@keyframes headphones{0% {transform:scale(1);transform-origin: center center;}	100%	 {transform:scale(1.04);transform-origin: center center;}}
 
 #section5		{/*expertise*/
  	background-color: $bg-color;
@@ -224,27 +227,26 @@ nav ul li:hover > a {
 }
 .sky  {
 	display: inline-block;
-    width: 7%;
+    width: 6%;
     margin: 0px 2% 0px 2%;
-    transition: all .5s ease;
 }
-.cc	{stroke:$svg;fill: none;stroke-width: 8px;transition: all 0.5s ease-in;}
-.sky:hover  .cc	{stroke: red; transition: 0.3s ease-in;}
+.cc	{stroke:$svg; fill: none; stroke-width: 8px;}
+.sky:hover  .cc	{stroke: red;  transition: 0.4s linear;}
 
-.codepen	{stroke: $svg;fill: none;stroke-width: 10px;transition: all 0.5s ease-in;}
-.sky:hover .codepen	{stroke: lime; transition: 0.3s ease-in;}
+.codepen {stroke:$svg; fill: none; stroke-width: 8px;}
+.sky:hover  .codepen {stroke: #4ebefb; transition: 0.4s linear;}
 
-.be	{stroke: $svg;fill: none;stroke-width: 10px;transition: all 0.5s ease-in;}
-.sky:hover .be	{stroke: #1969fb; transition: 0.3s ease-in;}
+.be	{stroke: $svg; fill: none; stroke-width: 10px;}
+.sky:hover .be	{stroke: #1969fb; transition: 0.4s linear;}
 
-.github	{stroke: $svg;fill: none;stroke-width: 10px;transition: all 0.5s ease-in;}
-.sky:hover .github	{stroke: purple; transition: 0.3s ease-in;}
+.github	{stroke: $svg; fill: none; stroke-width: 10px;}
+.sky:hover .github	{stroke: #f4cab2;  transition: 0.4s linear;}
 
-.xd	 {stroke:$svg;fill: none;stroke-width: 10px;transition: all 0.5s ease-in;}
-.sky:hover .xd	{stroke: #e750b9; transition: 0.3s ease-in;}
+.xd	 {stroke:$svg; fill: none; stroke-width: 10px;}
+.sky:hover .xd	{stroke: #e750b9; transition: 0.4s linear;}
 
-.dribbble	{stroke: $svg;fill: none;stroke-width: 10px;transition: all 0.5s ease-in;}
-.sky:hover .dribbble	{stroke: #b3335a; transition: 0.3s ease-in;}
+.dribbble	{stroke: $svg; fill: none; stroke-width: 10px;}
+.sky:hover .dribbble	{stroke: #b3335a; transition: 0.4s linear;}
 
 #section9		{/*experience*/
 	background-color: $bg-color;
@@ -406,24 +408,45 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 }
 .network   {
 	display: inline-block;
-    width: 5%;
+    width: 4%;
     margin: 0px 2% 0px 2%;
-    transition: all .5s ease;
+    transition: all;
 }
 .networkenvelop   {
 	@extend .network;
 }
-#facebook {stroke:$svg; fill: none;stroke-width: 12px;}
-#twitter {stroke:$svg; fill: none;stroke-width: 12px;}
-#facetime {stroke:$svg; fill: none;stroke-width: 12px;}
-#envelop {stroke:$svg; fill: none;stroke-width: 12px;}
-#open {opacity: 0;stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s ease-in;}
-#close {opacity: 1; stroke:$svg;fill:none;stroke-width: 12px;transition: all 0.3s ease-in;}
-.networkenvelop:hover  #open {opacity: 1;}
-.networkenvelop:hover  #close	{opacity: 0;}
-#g {stroke:$svg; fill: none;stroke-width: 12px;}
-#youtube {stroke:$svg; fill: none;stroke-width: 12px;}
-#skype	{stroke:$svg; fill: none;stroke-width: 10px;}
+#facebook {stroke:$svg; fill: transparent; stroke-width: 12px;}
+.network:hover #facebook {fill: $svg; transition: 0.2s linear;}
+
+#twitter {stroke:$svg; fill: transparent; stroke-width: 12px;}
+.network:hover #twitter {fill: $svg; transition: 0.2s linear;}
+
+#facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
+.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.2s linear;}
+
+#envelop {stroke:$svg; fill: transparent; stroke-width: 12px;}
+#open {opacity: 0;stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.2s ease-in;}
+#close {opacity: 1; stroke:$svg;fill:none;stroke-width: 12px;transition: all 0.2s ease-in;}
+.networkenvelop:hover  #open {opacity: 1; fill: $svg;}
+.networkenvelop:hover  #close	{fill: $color1;}
+.networkenvelop:hover #envelop {fill: $svg;}
+
+#g {stroke:$svg; fill: transparent; stroke-width: 12px;}
+#ginner {stroke:$svg; fill: $color1; stroke-width: 12px;}
+#gplus {stroke:$svg; fill: red; stroke-width: 12px;}
+.network:hover #ginner {fill: $color1; transition: 0.2s linear;}
+.network:hover #g {fill: $svg; transition: 0.2s linear;}
+.network:hover #gplus { fill: $svg; transition: 0.2s linear;}
+
+#youtube {stroke:$svg; fill: $color1;stroke-width: 12px;}
+#play {stroke:$svg; fill: $color1;stroke-width: 12px;}
+.network:hover #youtube{fill: $svg; transition: 0.2s linear;}
+.network:hover #play {stroke: $color1; fill: $color1; transition: 0.2s linear;}
+
+#skype	{stroke:$svg; fill: transparent; stroke-width: 10px;}
+#s	{stroke:$svg; fill: transparent; stroke-width: 10px;}
+.network:hover #skype {fill: $svg; transition: 0.2s linear;}
+.network:hover #s {fill: $color1; transition: 0.2s linear;}
 
 #section14		{/*mouse*/
 	position: relative;

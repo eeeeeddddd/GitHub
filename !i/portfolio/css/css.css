@@ -138,7 +138,7 @@ nav ul li:hover > a {
 
 .hobbie {
   display: inline-block;
-  width: 5%;
+  width: 4%;
   margin: 0px 2% 0px 2%;
 }
 
@@ -154,7 +154,7 @@ nav ul li:hover > a {
 }
 
 #steam {
-  stroke: #F7484E;
+  stroke: white;
   fill: white;
   stroke-width: 12px;
   animation: steam 2s infinite linear;
@@ -178,17 +178,17 @@ nav ul li:hover > a {
 }
 
 #bite {
-  stroke: #F7484E;
+  stroke: white;
   fill: none;
   stroke-width: 10px;
-  animation: bite 6s infinite linear;
+  animation: bite 3s infinite linear;
 }
 
 #nobite {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  animation: nobite 6s infinite linear;
+  animation: nobite 3s infinite linear;
 }
 
 @keyframes bite {
@@ -228,7 +228,7 @@ nav ul li:hover > a {
 }
 
 #flash {
-  fill: #F7484E;
+  fill: white;
   animation: flash 2s infinite linear;
 }
 
@@ -248,14 +248,14 @@ nav ul li:hover > a {
 }
 
 #leftreel {
-  stroke: #F7484E;
+  stroke: white;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
 }
 
 #rightreel {
-  stroke: #F7484E;
+  stroke: white;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
@@ -287,13 +287,31 @@ nav ul li:hover > a {
 
 @keyframes mac {
   0% {
-    stroke: #F7484E;
-  }
-  50% {
     stroke: white;
   }
+  50% {
+    stroke: gray;
+  }
   100% {
-    stroke: #F7484E;
+    stroke: white;
+  }
+}
+
+#headphones {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+  animation: headphones 1s infinite linear;
+}
+
+@keyframes headphones {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(1.04);
+    transform-origin: center center;
   }
 }
 
@@ -376,81 +394,74 @@ nav ul li:hover > a {
 
 .sky {
   display: inline-block;
-  width: 7%;
+  width: 6%;
   margin: 0px 2% 0px 2%;
-  transition: all 0.5s ease;
 }
 
 .cc {
   stroke: white;
   fill: none;
   stroke-width: 8px;
-  transition: all 0.5s ease-in;
 }
 
 .sky:hover .cc {
   stroke: red;
-  transition: 0.3s ease-in;
+  transition: 0.4s linear;
 }
 
 .codepen {
   stroke: white;
   fill: none;
-  stroke-width: 10px;
-  transition: all 0.5s ease-in;
+  stroke-width: 8px;
 }
 
 .sky:hover .codepen {
-  stroke: lime;
-  transition: 0.3s ease-in;
+  stroke: #4ebefb;
+  transition: 0.4s linear;
 }
 
 .be {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in;
 }
 
 .sky:hover .be {
   stroke: #1969fb;
-  transition: 0.3s ease-in;
+  transition: 0.4s linear;
 }
 
 .github {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in;
 }
 
 .sky:hover .github {
-  stroke: purple;
-  transition: 0.3s ease-in;
+  stroke: #f4cab2;
+  transition: 0.4s linear;
 }
 
 .xd {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in;
 }
 
 .sky:hover .xd {
   stroke: #e750b9;
-  transition: 0.3s ease-in;
+  transition: 0.4s linear;
 }
 
 .dribbble {
   stroke: white;
   fill: none;
   stroke-width: 10px;
-  transition: all 0.5s ease-in;
 }
 
 .sky:hover .dribbble {
   stroke: #b3335a;
-  transition: 0.3s ease-in;
+  transition: 0.4s linear;
 }
 
 #section9 {
@@ -570,32 +581,48 @@ hr {
 
 .network, .networkenvelop {
   display: inline-block;
-  width: 5%;
+  width: 4%;
   margin: 0px 2% 0px 2%;
-  transition: all 0.5s ease;
+  transition: all;
 }
 
 #facebook {
   stroke: white;
-  fill: none;
+  fill: transparent;
   stroke-width: 12px;
+}
+
+.network:hover #facebook, .networkenvelop:hover #facebook {
+  fill: white;
+  transition: 0.2s linear;
 }
 
 #twitter {
   stroke: white;
-  fill: none;
+  fill: transparent;
   stroke-width: 12px;
+}
+
+.network:hover #twitter, .networkenvelop:hover #twitter {
+  fill: white;
+  transition: 0.2s linear;
 }
 
 #facetime {
   stroke: white;
-  fill: none;
+  fill: transparent;
   stroke-width: 12px;
+}
+
+.network:hover #facetime, .networkenvelop:hover #facetime {
+  stroke: transparent;
+  fill: white;
+  transition: 0.2s linear;
 }
 
 #envelop {
   stroke: white;
-  fill: none;
+  fill: transparent;
   stroke-width: 12px;
 }
 
@@ -604,7 +631,7 @@ hr {
   stroke: white;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 #close {
@@ -612,33 +639,98 @@ hr {
   stroke: white;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .networkenvelop:hover #open {
   opacity: 1;
+  fill: white;
 }
 
 .networkenvelop:hover #close {
-  opacity: 0;
+  fill: #F7484E;
+}
+
+.networkenvelop:hover #envelop {
+  fill: white;
 }
 
 #g {
   stroke: white;
-  fill: none;
+  fill: transparent;
   stroke-width: 12px;
+}
+
+#ginner {
+  stroke: white;
+  fill: #F7484E;
+  stroke-width: 12px;
+}
+
+#gplus {
+  stroke: white;
+  fill: red;
+  stroke-width: 12px;
+}
+
+.network:hover #ginner, .networkenvelop:hover #ginner {
+  fill: #F7484E;
+  transition: 0.2s linear;
+}
+
+.network:hover #g, .networkenvelop:hover #g {
+  fill: white;
+  transition: 0.2s linear;
+}
+
+.network:hover #gplus, .networkenvelop:hover #gplus {
+  fill: white;
+  transition: 0.2s linear;
 }
 
 #youtube {
   stroke: white;
-  fill: none;
+  fill: #F7484E;
   stroke-width: 12px;
+}
+
+#play {
+  stroke: white;
+  fill: #F7484E;
+  stroke-width: 12px;
+}
+
+.network:hover #youtube, .networkenvelop:hover #youtube {
+  fill: white;
+  transition: 0.2s linear;
+}
+
+.network:hover #play, .networkenvelop:hover #play {
+  stroke: #F7484E;
+  fill: #F7484E;
+  transition: 0.2s linear;
 }
 
 #skype {
   stroke: white;
-  fill: none;
+  fill: transparent;
   stroke-width: 10px;
+}
+
+#s {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 10px;
+}
+
+.network:hover #skype, .networkenvelop:hover #skype {
+  fill: white;
+  transition: 0.2s linear;
+}
+
+.network:hover #s, .networkenvelop:hover #s {
+  fill: #F7484E;
+  transition: 0.2s linear;
 }
 
 #section14 {
