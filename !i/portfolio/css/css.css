@@ -880,13 +880,14 @@ hr {
     top: 60%;
   }
   .headername {
-    font-size: 9vw;
+    font-size: 10vw;
+    text-shadow: 0px 0px 0px;
+  }
+  .quote {
+    font-size: 5vw;
   }
   nav ul li {
     width: 80px;
-  }
-  nav ul li a {
-    font-size: 16px;
   }
   #section3 {
     font-size: 12px;
@@ -898,11 +899,11 @@ hr {
   .sky {
     width: 10%;
   }
-  .hobbie {
-    width: 10%;
-  }
   #section7 {
     padding-top: 10%;
+  }
+  .hobbie {
+    width: 10%;
   }
   #section12 {
     padding: 0px;
@@ -915,6 +916,9 @@ hr {
   }
   hr {
     width: 70%;
+  }
+  .network, .networkenvelop {
+    width: 10%;
   }
 }
 

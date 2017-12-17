@@ -550,18 +550,20 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 @keyframes dash 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}
 
 @media (max-width: 600px) {
-#section1	{height: 200px;}
-#header		{top: 60%;}
-.headername	{font-size: 9vw;}//check this
-	nav ul li 	{width: 80px;}
-	nav ul li a {	font-size: 16px;}
-#section3	{font-size: 12px;}
-	nav		{position: fixed; top:0;}
-	.sky		{width: 10%;}
-	.hobbie	{width: 10%;}
-#section7	{padding-top: 10%;}//maybe
-#section12	{padding: 0px;}
-	input		{width: 70%;}
-	textarea	{width: 70%;}
-	hr 			{width: 70%;}
+#section1		{height: 200px;}
+#header			{top: 60%;}
+.headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this
+.quote	{font-size: 5vw;}
+		nav ul li 		{width: 80px;}
+// 	nav ul li a 	{font-size: 16px;}
+#section3		{font-size: 12px;}
+	nav			{position: fixed; top:0;}
+	.sky			{width: 10%;}
+#section7		{padding-top: 10%;}//maybe
+	.hobbie		{width: 10%;}
+#section12		{padding: 0px;}
+	input			{width: 70%;}
+	textarea		{width: 70%;}
+	hr 				{width: 70%;}
+	.network		{width: 10%;}	
 }
