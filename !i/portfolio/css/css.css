@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
+/*'Poiret One'*/
 @import url("https://fonts.googleapis.com/css?family=Antic");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600");
+/*'Antic'*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+/*'Roboto Condensed'*/
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500");
+/*'Advent Pro'*/
 /*white*/
+/*gray*/
 /*gray*/
 /*red*/
 /*svg*/
@@ -24,6 +30,7 @@
 html body {
   margin: 0px;
   padding: 0px;
+  font-family: "Advent Pro";
 }
 
 #wrapper {
@@ -37,9 +44,8 @@ a {
 }
 
 .text {
-  font-family: "Poiret One";
   font-size: 18px;
-  color: #292929;
+  color: gray;
   font-weight: 300;
 }
 
@@ -64,10 +70,11 @@ a {
   font-size: 7vw;
   margin: 0;
   color: white;
+  text-shadow: 1px 1px 10px white;
 }
 
 .quote {
-  font-family: 'Josefin Slab';
+  font-family: 'Advent Pro';
   font-weight: 400;
   font-size: 2.5vw;
   color: #F7484E;
@@ -75,6 +82,9 @@ a {
 }
 
 /*nav*/
+/*don't forget the script
+	.navbg	{background-color: $color1;}
+	.navtext	{color: $color1;}*/
 nav {
   text-align: center;
   width: 100%;
@@ -96,19 +106,52 @@ nav ul li {
 }
 
 nav ul li a {
+  position: relative;
   display: block;
   line-height: 40px;
   color: #292929;
-  font-size: 22px;
-  font-family: "Poiret One";
-  font-weight: 600;
-  opacity: 0.5;
+  font-size: 20px;
+  font-family: "Advent Pro";
+  font-weight: 300;
 }
 
-nav ul li:hover > a {
-  background-color: #434343;
-  color: #F7484E;
-  font-weight: 600;
+.underline::after, .left::after, .left:hover::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: #292929;
+  position: absolute;
+  bottom: 2px;
+  transition: 0.5s ease;
+}
+
+.underline:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
+  width: 100%;
+}
+
+.left::after {
+  right: 0px;
+}
+
+.left:hover::after {
+  right: 0px;
+}
+
+.center::after {
+  left: 50%;
+  right: 50%;
+}
+
+.center:hover::after {
+  left: 0px;
+}
+
+.right::after {
+  left: 0px;
+}
+
+.right:hover::after {
+  left: 0px;
 }
 
 .stickytop {
@@ -120,7 +163,7 @@ nav ul li:hover > a {
 
 #section3 {
   /*about*/
-  background-color: #f5f5f5;
+  background-color: white;
   padding: 5%  10%  5% 10%;
   text-align: center;
 }
@@ -319,13 +362,13 @@ nav ul li:hover > a {
 
 #section5 {
   /*expertise*/
-  background-color: #f5f5f5;
+  background-color: white;
   height: 500px;
 }
 
 #section6 {
   /*qualifications*/
-  background: #f5f5f5;
+  background: white;
   height: 500px;
 }
 
@@ -468,7 +511,7 @@ nav ul li:hover > a {
 
 #section9 {
   /*experience*/
-  background-color: #f5f5f5;
+  background-color: white;
   height: 500px;
 }
 
@@ -497,7 +540,7 @@ nav ul li:hover > a {
   height: 500px;
   text-align: center;
   padding: 50px;
-  background: #f5f5f5;
+  background: white;
 }
 
 form {
@@ -512,9 +555,9 @@ input {
   padding: 10px;
   font-size: 24px;
   font-family: "Poiret One";
-  font-weight: 400;
+  font-weight: bold;
   border-radius: 10px;
-  background: #f5f5f5;
+  background: white;
   transition: all 0.5s ease-in;
   border: transparent;
 }
@@ -528,35 +571,37 @@ textarea {
   padding: 10px;
   font-size: 24px;
   font-family: "Poiret One";
-  font-weight: 400;
+  font-weight: bold;
   border-radius: 10px;
-  background: #292929;
   border: transparent;
-  background: #f5f5f5;
+  background: white;
   transition: all 0.5s ease-in;
 }
 
 textarea:hover {
   background: #F7484E;
+  color: lime;
 }
 
 .btn {
   width: 100px;
   height: 40px;
   border-radius: 10px;
-  border: solid 2px #F7484E;
+  border: solid 2px lightgray;
   font-size: 22px;
   font-family: "Poiret One";
   font-weight: 400;
   line-height: 3px;
   margin-top: 10px;
-  transition: all 0.5s;
-  color: gray;
+  transition: all 0.2s;
+  color: #292929;
+  box-shadow: 0px 5px 10px lightgray;
 }
 
 .btn:hover {
-  color: white;
-  box-shadow: 0px 10px 10px #696969;
+  background-color: transparent;
+  border: solid 2px lime;
+  box-shadow: 0px 5px 10px gray;
 }
 
 hr {
@@ -570,7 +615,7 @@ hr {
 
 #section13 {
   /*hello*/
-  background: #F7484E;
+  background: #292929;
   padding: 20px;
 }
 
@@ -638,7 +683,7 @@ hr {
 }
 
 .networkenvelop:hover #close {
-  fill: #F7484E;
+  fill: #292929;
 }
 
 .networkenvelop:hover #envelop {
@@ -676,14 +721,14 @@ hr {
 }
 
 .network:hover #instagramlens, .networkenvelop:hover #instagramlens {
-  stroke: #F7484E;
+  stroke: #292929;
   transition: 0.2s linear;
 }
 
 #section14 {
   /*mouse*/
   position: relative;
-  background: #f5f5f5;
+  background: white;
   height: 100px;
 }
 
@@ -691,7 +736,7 @@ hr {
   font-family: 'Poiret One';
   font-size: 14px;
   color: gray;
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: bold;
   margin-left: -1px;
 }
@@ -701,37 +746,38 @@ hr {
   top: 25px;
   left: 50%;
   margin-left: -12px;
-  width: 21px;
+  width: 22px;
   height: 35px;
   border: 2px solid lightgray;
   border-radius: 20px;
   text-align: center;
+  box-shadow: 0px 0px 5px lightgray;
   transition: all 0.3s;
 }
 
 .mouse:hover {
   border: 2px solid #F7484E;
+  box-shadow: 0px 0px 5px gray;
 }
 
 #scroll {
-  width: 3px;
-  height: 3px;
-  margin: 5px auto;
+  width: 0px;
+  height: 0px;
   margin-left: 7px;
-  background-color: #F7484E;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #F7484E;
   animation: scroll 1.5s infinite both;
 }
 
 @keyframes scroll {
   0% {
     opacity: 1;
-    transform: translateY(15px);
+    transform: translateY(20px);
   }
   100% {
-    opacity: 0.2;
-    transform: translateY(0px);
+    opacity: 0.4;
+    transform: translateY(6px);
   }
 }
 
@@ -746,7 +792,7 @@ hr {
   bottom: 0;
   width: 100%;
   height: 400px;
-  background: #292929;
+  background: #F7484E;
   z-index: -1;
   text-align: center;
 }
@@ -761,7 +807,7 @@ hr {
 #footername {
   font-family: "mywoff";
   font-size: 40px;
-  margin: 0;
+  margin: 0px 0px 0px 8px;
   color: white;
 }
 
@@ -774,7 +820,8 @@ hr {
 
 .pipe {
   position: relative;
-  top: -10px;
+  top: -8px;
+  margin-left: 5px;
   display: inline;
   width: 30px;
   stroke-dasharray: 2000;
@@ -798,6 +845,9 @@ hr {
   }
   #header {
     top: 60%;
+  }
+  .headername {
+    font-size: 9vw;
   }
   nav ul li {
     width: 80px;

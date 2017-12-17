@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>arrows scroll</title>
+<style>
+body {
+  background-color: #333;
+}
+#container{
+  text-align: center;
+}
+#mouse{
+   margin-top: 90px;
+   display: inline-block;
+   width:3.5em;
+   height:6em;
+   background-color:rgba(255,255,255,0);
+   border-radius: 100px;
+   border:2px solid white;
+}
+.scroll2{
+  opacity:0;
+   margin-left:auto;
+   margin-right:auto;
+   width:0px;
+   height:0px;
+  border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid white;
+   -webkit-animation: down2 1s infinite;
+   animation: down2 1s infinite;
+}
+.scroll3{
+   opacity:0;
+   margin-left:auto;
+   margin-right:auto;
+   width:0px;
+   height:0px;
+  border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid white;
+   animation: down 1s infinite;
+}
+.scroll{
+  margin-top: 40px;
+  opacity:0;
+  margin-left: auto;
+  margin-right: auto;
+   width:0px;
+   height:0px;
+  border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid white;
+  animation: down3 1s infinite;
+}
+
+@keyframes down{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    transform: translateY(-20px);
+  }
+}
+@keyframes down2{
+  40%{
+    opacity:0;
+  }
+  100%{
+    opacity:0.5;
+    transform: translateY(-20px);
+  }
+}
+@keyframes down3{
+  60%{
+    opacity:0;
+  }
+  100%{
+    opacity:0.2;
+    transform: translateY(-20px);
+  }
+}
+</style>
+</head>
+
+	<body>
+
+	  	<div id="container">
+			<div id="mouse">
+				<div class="scroll"></div>
+			    <div class="scroll2"></div>
+			    <div class="scroll3"></div>
+			</div>
+		</div>
+	
+	</body>
+</html>
