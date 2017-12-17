@@ -9,7 +9,7 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
-	<title>animation - pipe</title>
+	<title>animation - pipe hover</title>
 	
     <style>  
 	  #wrapper	{
@@ -21,18 +21,29 @@
 	  }  
       .pipe {
 	    width: 200px;
-        stroke-dasharray: 2000;
-        stroke-dashoffset: 0;
-        animation: draw 4s linear infinite 1s; /*forwards;*/
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0; 
       }
-      
+
+#wrapper:hover .pipe {
+  animation: 4s draw linear forwards;
+}
 @keyframes draw 	{
-	from	{
-		stroke-dashoffset: 2000;
-	}
-	to	{
-		stroke-dashoffset: 0;
-	}
+  0% {
+    stroke-dasharray: 0 2000;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
+  80%, 81% {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
+   100% {
+    stroke-dasharray: 0 2000;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
 }
 </style>	
 </head>

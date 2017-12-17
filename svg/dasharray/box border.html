@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>box border</title>
+ <style>
+
+.svg-wrapper {
+  height: 80px;
+  background: yellow;
+  width: 440px;
+}
+.shape {
+  fill: red;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 5px;
+  stroke: #19f6e8;
+}
+/*
+.text {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+*/
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 5px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
+}
+.svg-wrapper:hover .shape {
+  animation: 1s draw linear forwards;
+}
+
+</style>
+</head>
+
+<body>
+	
+	  	<div class="svg-wrapper">
+		  
+		  	<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+				<rect class="shape" height="60" width="320" />
+			</svg><!--    <div class="text">...</div> -->
+	    
+		</div>
+  
+	</body>
+</html>

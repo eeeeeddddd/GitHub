@@ -249,23 +249,27 @@ nav ul li a {
     width: 6%;
     margin: 0px 2% 0px 2%;
 }
-.cc	{stroke:$svg; fill: none; stroke-width: 8px;}
-.sky:hover  .cc	{stroke: red;  transition: 0.4s linear;}
+@keyframes draw 	{0% {stroke-dasharray: 0 3000; stroke-dashoffset: 0;}
+  80%, 90% {stroke-dasharray: 3000; stroke-dashoffset: 0;}
+   100% {stroke-dasharray: 0 3000; stroke-dashoffset: 0;}}
 
-.codepen {stroke:$svg; fill: none; stroke-width: 8px;}
-.sky:hover  .codepen {stroke: #4ebefb; transition: 0.4s linear;}
+.cc	{stroke:$svg; fill: none; stroke-width: 8px; stroke-dasharray: 0; stroke-dashoffset: 0; }
+.sky:hover  .cc	{stroke: red;  transition: 0.4s linear; animation: 3s draw linear forwards;}
 
-.be	{stroke: $svg; fill: none; stroke-width: 10px;}
-.sky:hover .be	{stroke: #1969fb; transition: 0.4s linear;}
+.codepen {stroke:$svg; fill: none; stroke-width: 8px; stroke-dasharray: 0; stroke-dashoffset: 0; }
+.sky:hover  .codepen {stroke: #4ebefb; transition: 0.4s linear; animation: 3s draw linear forwards;}
 
-.github	{stroke: $svg; fill: none; stroke-width: 10px;}
-.sky:hover .github	{stroke: #f4cab2;  transition: 0.4s linear;}
+.be	{stroke: $svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
+.sky:hover .be	{stroke: #1969fb; transition: 0.4s linear; animation: 3s draw linear forwards;}
 
-.xd	 {stroke:$svg; fill: none; stroke-width: 10px;}
-.sky:hover .xd	{stroke: #e750b9; transition: 0.4s linear;}
+.github	{stroke: $svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
+.sky:hover .github	{stroke: #f4cab2;  transition: 0.4s linear; animation: 3s draw linear forwards;}
 
-.dribbble	{stroke: $svg; fill: none; stroke-width: 10px;}
-.sky:hover .dribbble	{stroke: #b3335a; transition: 0.4s linear;}
+.xd	 {stroke:$svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
+.sky:hover .xd	{stroke: #e750b9; transition: 0.4s linear; animation: 3s draw linear forwards;}
+
+.dribbble	{stroke: $svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
+.sky:hover .dribbble	{stroke: #b3335a; transition: 0.4s linear; animation: 3s draw linear forwards;}
 
 #section9		{/*experience*/
 	background-color: $bg-color;
