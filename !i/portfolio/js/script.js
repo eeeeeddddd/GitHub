@@ -1,3 +1,4 @@
+
 //smooth scroll
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
@@ -29,40 +30,40 @@ $(function(){
 //change background
 $(document).ready(function () {
     var previousScroll = 0;
-    
+
     $(window).scroll(function () {
        var currentScroll = $(this).scrollTop();
-       
+
        if (currentScroll > previousScroll){
-           $("nav").removeClass("navbg");} 
-       
+           $("nav").removeClass("navbg");}
+
        else {
 	   $("nav").addClass("navbg");}
        previousScroll = currentScroll;
-       
+
     });
 }());
 
 //text change
 $(document).ready(function () {
     var previousScroll = 0;
-    
+
     $(window).scroll(function () {
        var currentScroll = $(this).scrollTop();
-       
+
        if (currentScroll > previousScroll){
-           $("nav ul li a").removeClass("navtext");} 
-       
+           $("nav ul li a").removeClass("navtext");}
+
        else {
 	   $("nav ul li a").addClass("navtext");}
        previousScroll = currentScroll;
-       
+
     });
 }());
 
 //form active
 $(document).ready (function() {
-	$("textarea, input").click (function() {	
+	$("textarea, input").click (function() {
 		$("textarea, input").css ({background: "#f5f5f5"});	})
 ;});
 
@@ -83,19 +84,7 @@ $(document).ready(function()	{
 // makes nav reappear
     $(window).resize(function (){
 	    if ( $(window) .width () > 500 ) {
-		$('nav ul').removeAttr("style")  
+		$('nav ul').removeAttr("style")
 	    }
     })
 });
-
-
-
-
-
-
-
-
-
-
-
-
