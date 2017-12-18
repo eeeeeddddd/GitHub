@@ -31,6 +31,9 @@ html body {
   margin: 0px;
   padding: 0px;
   font-family: "Advent Pro";
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 #wrapper {
@@ -41,12 +44,6 @@ html body {
 
 a {
   text-decoration: none;
-}
-
-.text {
-  font-size: 18px;
-  color: gray;
-  font-weight: 300;
 }
 
 #section1 {
@@ -70,7 +67,7 @@ a {
   font-size: 7vw;
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 10px white;
+  text-shadow: 0.5px 0.5px 3px white;
 }
 
 .quote {
@@ -88,8 +85,8 @@ a {
 nav {
   text-align: center;
   width: 100%;
-  height: 40px;
-  background-color: #F7484E;
+  height: 30px;
+  background-color: #f5f5f5;
   z-index: 99;
 }
 
@@ -108,7 +105,7 @@ nav ul li {
 nav ul li a {
   position: relative;
   display: block;
-  line-height: 40px;
+  line-height: 30px;
   color: #292929;
   font-size: 20px;
   font-family: "Advent Pro";
@@ -119,9 +116,9 @@ nav ul li a {
   content: '';
   width: 0px;
   height: 2px;
-  background: #292929;
+  background: #F7484E;
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
   transition: 0.5s ease;
 }
 
@@ -170,7 +167,7 @@ nav ul li a {
 
 #section4 {
   /*hobbies*/
-  background: #292929;
+  background: #f5f5f5;
   padding: 20px;
 }
 
@@ -191,14 +188,14 @@ nav ul li a {
 }
 
 #coffeecup {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #steam {
-  stroke: white;
-  fill: white;
+  stroke: #707070;
+  fill: #707070;
   stroke-width: 12px;
   animation: steam 2s infinite linear;
 }
@@ -215,20 +212,20 @@ nav ul li a {
 }
 
 #pie {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #bite {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: bite 3s infinite linear;
 }
 
 #nobite {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: nobite 3s infinite linear;
@@ -265,13 +262,13 @@ nav ul li a {
 }
 
 #camera {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #flash {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
   animation: flash 2s infinite linear;
@@ -282,43 +279,12 @@ nav ul li a {
     fill: transparent;
   }
   100% {
-    fill: white;
-  }
-}
-
-#video {
-  stroke: white;
-  fill: none;
-  stroke-width: 10px;
-}
-
-#leftreel {
-  stroke: white;
-  stroke-width: 8px;
-  fill: transparent;
-  animation: reel 3s infinite linear;
-}
-
-#rightreel {
-  stroke: white;
-  stroke-width: 8px;
-  fill: transparent;
-  animation: reel 3s infinite linear;
-}
-
-@keyframes reel {
-  0% {
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-  }
-  100% {
-    transform-origin: 50% 50%;
-    transform: rotate(360deg);
+    fill: #707070;
   }
 }
 
 #imac {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
@@ -332,18 +298,18 @@ nav ul li a {
 
 @keyframes mac {
   0% {
-    stroke: white;
+    stroke: #707070;
   }
   50% {
-    stroke: gray;
+    stroke: lightgray;
   }
   100% {
-    stroke: white;
+    stroke: #707070;
   }
 }
 
 #headphones {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: headphones 1s infinite linear;
@@ -357,6 +323,37 @@ nav ul li a {
   100% {
     transform: scale(1.04);
     transform-origin: center center;
+  }
+}
+
+#video {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#leftreel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: reel 3s infinite linear;
+}
+
+#rightreel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: reel 3s infinite linear;
+}
+
+@keyframes reel {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
   }
 }
 
@@ -375,7 +372,7 @@ nav ul li a {
 #section7 {
   /*portfolio*/
   padding-top: 6%;
-  background: #292929;
+  background: #f5f5f5;
 }
 
 #portfolio {
@@ -407,7 +404,7 @@ nav ul li a {
   width: 100%;
   opacity: 0;
   transition: 0s ease;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .port:hover .overlay {
@@ -426,7 +423,7 @@ nav ul li a {
 #section8 {
   /*files*/
   padding: 20px;
-  background: #292929;
+  background: #f5f5f5;
 }
 
 #cloud {
@@ -434,112 +431,79 @@ nav ul li a {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: #292929;
 }
 
 .sky {
   display: inline-block;
-  width: 6%;
+  width: 7%;
   margin: 0px 2% 0px 2%;
-}
-
-@keyframes draw {
-  0% {
-    stroke-dasharray: 0 3000;
-    stroke-dashoffset: 0;
-  }
-  80%, 90% {
-    stroke-dasharray: 3000;
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dasharray: 0 3000;
-    stroke-dashoffset: 0;
-  }
+  transition: all 0.5s linear;
 }
 
 .cc {
-  stroke: white;
+  stroke: #707070;
   fill: none;
-  stroke-width: 8px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-width: 11px;
 }
 
 .sky:hover .cc {
   stroke: red;
-  transition: 0.4s linear;
-  animation: 3s draw linear forwards;
+  transition: 0.5s linear;
 }
 
 .codepen {
-  stroke: white;
+  stroke: #707070;
   fill: none;
-  stroke-width: 8px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-width: 11px;
 }
 
 .sky:hover .codepen {
-  stroke: #4ebefb;
-  transition: 0.4s linear;
-  animation: 3s draw linear forwards;
+  stroke: lime;
+  transition: 0.5s linear;
 }
 
 .be {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
 }
 
 .sky:hover .be {
   stroke: #1969fb;
-  transition: 0.4s linear;
-  animation: 3s draw linear forwards;
+  transition: 0.5s linear;
 }
 
 .github {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
 }
 
 .sky:hover .github {
-  stroke: #f4cab2;
-  transition: 0.4s linear;
-  animation: 3s draw linear forwards;
+  stroke: purple;
+  transition: 0.5s linear;
 }
 
 .xd {
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
 }
 
 .sky:hover .xd {
   stroke: #e750b9;
-  transition: 0.4s linear;
-  animation: 3s draw linear forwards;
+  transition: 0.5s linear;
 }
 
 .dribbble {
-  stroke: white;
+  stroke: #707070;
   fill: none;
-  stroke-width: 10px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-width: 11px;
 }
 
 .sky:hover .dribbble {
   stroke: #b3335a;
-  transition: 0.4s linear;
-  animation: 3s draw linear forwards;
+  transition: 0.5s linear;
 }
 
 #section9 {
@@ -553,7 +517,7 @@ nav ul li a {
   position: relative;
   height: auto;
   padding: 7%;
-  background: #292929;
+  background: #f5f5f5;
   text-align: center;
 }
 
@@ -587,8 +551,7 @@ input {
   height: 10px;
   padding: 10px;
   font-size: 24px;
-  font-family: "Poiret One";
-  font-weight: bold;
+  font-family: "Advent Pro";
   border-radius: 10px;
   background: white;
   transition: all 0.5s ease-in;
@@ -596,15 +559,14 @@ input {
 }
 
 input:hover {
-  background: #F7484E;
+  background: #f5f5f5;
 }
 
 textarea {
   width: 50%;
   padding: 10px;
   font-size: 24px;
-  font-family: "Poiret One";
-  font-weight: bold;
+  font-family: "Advent Pro";
   border-radius: 10px;
   border: transparent;
   background: white;
@@ -612,8 +574,7 @@ textarea {
 }
 
 textarea:hover {
-  background: #F7484E;
-  color: lime;
+  background: #f5f5f5;
 }
 
 .btn {
@@ -622,18 +583,15 @@ textarea:hover {
   border-radius: 10px;
   border: solid 2px lightgray;
   font-size: 22px;
-  font-family: "Poiret One";
-  font-weight: 400;
+  font-family: "Advent Pro";
   line-height: 3px;
   margin-top: 10px;
   transition: all 0.2s;
-  color: #292929;
   box-shadow: 0px 5px 10px lightgray;
 }
 
 .btn:hover {
   background-color: transparent;
-  border: solid 2px lime;
   box-shadow: 0px 5px 10px gray;
 }
 
@@ -648,7 +606,7 @@ hr {
 
 #section13 {
   /*hello*/
-  background: #292929;
+  background: #f5f5f5;
   padding: 20px;
 }
 
@@ -663,105 +621,105 @@ hr {
   display: inline-block;
   width: 4%;
   margin: 0px 2% 0px 2%;
-  transition: all;
+  transition: all 0.5s linear;
 }
 
 #facebook {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #facebook, .networkenvelop:hover #facebook {
-  fill: white;
-  transition: 0.2s linear;
+  fill: #707070;
+  transition: 0.5s linear;
 }
 
 #twitter {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #twitter, .networkenvelop:hover #twitter {
-  fill: white;
-  transition: 0.2s linear;
+  fill: #707070;
+  transition: 0.5s linear;
 }
 
 #envelop {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 #open {
   opacity: 0;
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s linear;
 }
 
 #close {
   opacity: 1;
-  stroke: white;
+  stroke: #707070;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s linear;
 }
 
 .networkenvelop:hover #open {
   opacity: 1;
-  fill: white;
+  fill: #707070;
 }
 
 .networkenvelop:hover #close {
-  fill: #292929;
-}
-
-.networkenvelop:hover #envelop {
   fill: white;
 }
 
+.networkenvelop:hover #envelop {
+  fill: #707070;
+}
+
 #facetime {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #facetime, .networkenvelop:hover #facetime {
   stroke: transparent;
-  fill: white;
-  transition: 0.2s linear;
+  fill: #707070;
+  transition: 0.5s linear;
 }
 
 #instagram {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 #instagramlens {
-  stroke: white;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #instagram, .networkenvelop:hover #instagram {
   stroke: white;
-  fill: white;
-  transition: 0.2s linear;
+  fill: #707070;
+  transition: 0.5s linear;
 }
 
 .network:hover #instagramlens, .networkenvelop:hover #instagramlens {
-  stroke: #292929;
-  transition: 0.2s linear;
+  stroke: white;
+  transition: 0.5s linear;
 }
 
 #section14 {
   /*mouse*/
   position: relative;
-  background: white;
+  background: #f5f5f5;
   height: 100px;
 }
 
@@ -778,7 +736,7 @@ hr {
   position: relative;
   top: 25px;
   left: 50%;
-  margin-left: -12px;
+  margin-left: -13px;
   width: 22px;
   height: 35px;
   border: 2px solid lightgray;
@@ -825,7 +783,7 @@ hr {
   bottom: 0;
   width: 100%;
   height: 400px;
-  background: #F7484E;
+  background: #292929;
   z-index: -1;
   text-align: center;
 }
@@ -840,7 +798,7 @@ hr {
 #footername {
   font-family: "mywoff";
   font-size: 40px;
-  margin: 0px 0px 0px 8px;
+  margin: 0px 0px 0px 7px;
   color: white;
 }
 

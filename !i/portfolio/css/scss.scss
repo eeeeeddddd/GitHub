@@ -6,13 +6,14 @@
 $fontTitle: 'mywoff';
 $fontNav:  'Advent Pro';
 $fontText: 'Advent Pro';
-$fontForm: 'Poiret One';
+$fontForm: 'Advent Pro';
 
 $bg-color: white;/*white*/
-$bg-color1: #292929;/*gray*/
+$bg-color1: #f5f5f5;/*gray*/
+$bg-color2: #292929;
 $color: #292929; /*gray*/
 $color1: #F7484E; /*red*/
-$svg: white; /*svg*/
+$svg: #707070; /*svg*/
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
@@ -35,6 +36,9 @@ html body	{
 	margin: 0px;
 	padding: 0px;
 	font-family: $fontText;
+	color: gray;
+	font-size: 20px;
+	font-weight: 300;
 }
 #wrapper	{
 	width: 100%;
@@ -42,14 +46,10 @@ html body	{
 	padding: 0px;
 }
 a	{text-decoration: none;}
-.text	{
-	font-size: 18px;
-	color: gray;
-	font-weight: 300;
-}
+
 #section1	{/*header*/
 	height: 100vh;
-	background: $bg-color1;
+	background: $bg-color2;
 	margin: 0;
 	padding: 0;
 }
@@ -65,7 +65,7 @@ a	{text-decoration: none;}
 	font-size: 7vw;
 	margin: 0;
 	color: white;
-	text-shadow: 1px 1px 10px white;
+	text-shadow: 0.5px 0.5px 3px white;
 }
 .quote	{
 	font-family: 'Advent Pro';
@@ -81,8 +81,8 @@ a	{text-decoration: none;}
 nav {
 	text-align: center;
 	width: 100%;
-	height: 40px;
-	background-color: $color1;
+	height: 30px;
+	background-color: $bg-color1;
 	z-index: 99;
 }
 nav ul {
@@ -97,7 +97,7 @@ nav ul li {
 nav ul li a {
 	position: relative;
 	display: block;
-	line-height: 40px;
+	line-height: 30px;
 	color: $color;
 	font-size: 20px;
 	font-family: $fontNav;
@@ -107,9 +107,9 @@ nav ul li a {
     content: '';
     width: 0px;
     height: 2px;
-    background: $color;
+    background: $color1;
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
     transition: 0.5s ease;
 }
 .underline:hover::after {width: 100%;}
@@ -166,17 +166,17 @@ nav ul li a {
 #flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear}
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
+#imac	{stroke:$svg; fill: none; stroke-width: 10px;}
+#screen	{stroke: $color1; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear}
+@keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
+
+#headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 1s infinite linear}
+@keyframes headphones{0% {transform:scale(1);transform-origin: center center;}	100%	 {transform:scale(1.04);transform-origin: center center;}}
+
 #video	{stroke:$svg; fill: none; stroke-width: 10px;}
 #leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; animation: reel 3s infinite linear}
 #rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; animation: reel 3s infinite linear}
 @keyframes reel{0%{transform-origin: 50% 50%; transform: rotate(0deg);}100%{transform-origin: 50% 50%; transform: rotate(360deg);}}
-
-#imac	{stroke:$svg; fill: none; stroke-width: 10px;}
-#screen	{stroke: $color1; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear}
-@keyframes mac{0%{stroke: $svg;}50%{stroke: gray;}100%{stroke: $svg;}}
-
-#headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 1s infinite linear}
-@keyframes headphones{0% {transform:scale(1);transform-origin: center center;}	100%	 {transform:scale(1.04);transform-origin: center center;}}
 
 #section5		{/*expertise*/
  	background-color: $bg-color;
@@ -219,7 +219,7 @@ nav ul li a {
 	width: 100%;
 	opacity: 0;
 	transition: 0s ease;
-	background-color: rgba(0,0,0, .7);
+	background-color: rgba(0,0,0, .5);
 }
 .port:hover .overlay {
   opacity: 1;
@@ -242,34 +242,30 @@ nav ul li a {
  	width: 100%;
  	height: 100%;
  	text-align: center;
- 	background: $color;
 }
 .sky  {
 	display: inline-block;
-    width: 6%;
+    width: 7%;
     margin: 0px 2% 0px 2%;
+     transition: all 0.5s linear;
 }
-@keyframes draw 	{0% {stroke-dasharray: 0 3000; stroke-dashoffset: 0;}
-  80%, 90% {stroke-dasharray: 3000; stroke-dashoffset: 0;}
-   100% {stroke-dasharray: 0 3000; stroke-dashoffset: 0;}}
+.cc	{stroke:$svg;fill: none;stroke-width: 11px;}
+.sky:hover  .cc	{stroke: red;  transition: 0.5s linear;}
 
-.cc	{stroke:$svg; fill: none; stroke-width: 8px; stroke-dasharray: 0; stroke-dashoffset: 0; }
-.sky:hover  .cc	{stroke: red;  transition: 0.4s linear; animation: 3s draw linear forwards;}
+.codepen	{stroke: $svg;fill: none;stroke-width: 11px;}
+.sky:hover .codepen	{stroke: lime;  transition: 0.5s linear;}
 
-.codepen {stroke:$svg; fill: none; stroke-width: 8px; stroke-dasharray: 0; stroke-dashoffset: 0; }
-.sky:hover  .codepen {stroke: #4ebefb; transition: 0.4s linear; animation: 3s draw linear forwards;}
+.be	{stroke: $svg;fill: none;stroke-width: 10px;}
+.sky:hover .be	{stroke: #1969fb;  transition: 0.5s linear;}
 
-.be	{stroke: $svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
-.sky:hover .be	{stroke: #1969fb; transition: 0.4s linear; animation: 3s draw linear forwards;}
+.github	{stroke: $svg;fill: none;stroke-width: 10px;}
+.sky:hover .github	{stroke: purple;  transition: 0.5s linear;}
 
-.github	{stroke: $svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
-.sky:hover .github	{stroke: #f4cab2;  transition: 0.4s linear; animation: 3s draw linear forwards;}
+.xd	 {stroke:$svg;fill: none;stroke-width: 10px;}
+.sky:hover .xd	{stroke: #e750b9;  transition: 0.5s linear;}
 
-.xd	 {stroke:$svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
-.sky:hover .xd	{stroke: #e750b9; transition: 0.4s linear; animation: 3s draw linear forwards;}
-
-.dribbble	{stroke: $svg; fill: none; stroke-width: 10px; stroke-dasharray: 0; stroke-dashoffset: 0; }
-.sky:hover .dribbble	{stroke: #b3335a; transition: 0.4s linear; animation: 3s draw linear forwards;}
+.dribbble	{stroke: $svg;fill: none;stroke-width: 11px;}
+.sky:hover .dribbble	{stroke: #b3335a;  transition: 0.5s linear;}
 
 #section9		{/*experience*/
 	background-color: $bg-color;
@@ -376,13 +372,12 @@ input	{
 	padding: 10px;
 	font-size: 24px;
 	font-family: $fontForm;
-	font-weight: bold;
 	border-radius: 10px;
 	background: $bg-color;
 	transition: all 0.5s ease-in;
 	border: transparent;
 	&:hover	{
-		background: $color1;
+		background: $bg-color1;
 	}
 }
 textarea {
@@ -390,14 +385,12 @@ textarea {
   	padding: 10px;
   	font-size: 24px;
 	font-family: $fontForm;
-	font-weight: bold;	
   	border-radius: 10px;
 	border: transparent;
 	background: $bg-color;
 	transition: all 0.5s ease-in;
 	&:hover	{
-		background: $color1;
-		color: lime;
+		background: $bg-color1;
 	}
 }
 .btn {
@@ -406,17 +399,14 @@ textarea {
   border-radius: 10px;
   border: solid 2px lightgray;
   font-size: 22px;
-  font-family: $fontForm;
-  font-weight: 400;  
+  font-family: $fontForm; 
   line-height: 3px;
   margin-top: 10px;
   transition: all 0.2s;
-  color: $color;
   box-shadow: 0px 5px 10px lightgray;
 }
 .btn:hover {
   background-color: transparent;
-  border: solid 2px lime;
   box-shadow: 0px 5px 10px gray;
 }
 hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
@@ -435,35 +425,35 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	display: inline-block;
     width: 4%;
     margin: 0px 2% 0px 2%;
-    transition: all;
+     transition: all 0.5s linear;
 }
 .networkenvelop   {
 	 @extend .network;
 }
 #facebook {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #facebook {fill: $svg; transition: 0.2s linear;}
+.network:hover #facebook {fill: $svg; transition: 0.5s linear;}
 
 #twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #twitter {fill: $svg; transition: 0.2s linear;}
+.network:hover #twitter {fill: $svg; transition: 0.5s linear;}
 
 #envelop {stroke: $svg; fill: transparent; stroke-width: 12px;}
-#open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.2s ease-in;}
-#close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.2s ease-in;}
+#open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.5s linear;}
+#close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.5s linear;}
 .networkenvelop:hover  #open {opacity: 1; fill: $svg;}
-.networkenvelop:hover  #close	{fill: $color;}
+.networkenvelop:hover  #close	{fill: $bg-color;}
 .networkenvelop:hover #envelop {fill: $svg;}
 
 #facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
-.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.2s linear;}
+.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.5s linear;}
 
 #instagram {stroke: $svg; fill: transparent; stroke-width: 12px;}
 #instagramlens {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #instagram {stroke: $svg; fill: $svg; transition: 0.2s linear;}
-.network:hover #instagramlens {stroke: $color; transition: 0.2s linear;}
+.network:hover #instagram {stroke: $bg-color; fill: $svg; transition: 0.5s linear;}
+.network:hover #instagramlens {stroke: $bg-color; transition: 0.5s linear;}
 
 #section14		{/*mouse*/
 	position: relative;
-	background: $bg-color;
+	background: $bg-color1;
 	height: 100px;
 }
 .mousetext	{
@@ -478,7 +468,7 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	position: relative;
 	top: 25px;
 	left: 50%;
-	margin-left: -12px;
+	margin-left: -13px;
 	width: 22px;
 	height: 35px;
 	border:2px solid lightgray;
@@ -515,7 +505,7 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	bottom: 0;
 	width: 100%;
 	height: 400px;
-	background: $color1;
+	background: $bg-color2;
 	z-index: -1;
 	text-align: center;
 }
@@ -528,7 +518,7 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #footername	{
 	font-family: $fontTitle;
 	font-size: 40px;
-	margin: 0px 0px 0px 8px;
+	margin: 0px 0px 0px 7px;
 	color: white;
 }
 #designby	{
