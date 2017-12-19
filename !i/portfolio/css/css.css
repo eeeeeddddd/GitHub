@@ -31,7 +31,7 @@ html body {
   margin: 0px;
   padding: 0px;
   font-family: "Advent Pro";
-  color: gray;
+  color: #707070;
   font-size: 20px;
   font-weight: 300;
 }
@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-#section1 {
+#sectionHeader {
   /*header*/
   height: 100vh;
   background: #292929;
@@ -78,16 +78,35 @@ a {
   margin: 0;
 }
 
-/*nav*/
-/*don't forget the script
-	.navbg	{background-color: $color1;}
-	.navtext	{color: $color1;}*/
+.navscroll {
+  height: 60px;
+  line-height: 60px;
+}
+
+.navscrolltext {
+  font-size: 25px;
+}
+
+.stickytop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.stickytoptext {
+  color: #292929;
+}
+
 nav {
   text-align: center;
   width: 100%;
-  height: 30px;
+  height: 40px;
+  line-height: 40px;
   background-color: #f5f5f5;
   z-index: 99;
+  transition: 0.3s ease;
 }
 
 nav ul {
@@ -105,14 +124,14 @@ nav ul li {
 nav ul li a {
   position: relative;
   display: block;
-  line-height: 30px;
   color: #292929;
   font-size: 20px;
   font-family: "Advent Pro";
   font-weight: 300;
+  transition: 0.3s ease;
 }
 
-.underline::after, .left::after, .left:hover::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
+.underlineNav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
   content: '';
   width: 0px;
   height: 2px;
@@ -122,15 +141,11 @@ nav ul li a {
   transition: 0.5s ease;
 }
 
-.underline:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
+.underlineNav:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
   width: 100%;
 }
 
 .left::after {
-  right: 0px;
-}
-
-.left:hover::after {
   right: 0px;
 }
 
@@ -151,21 +166,14 @@ nav ul li a {
   left: 0px;
 }
 
-.stickytop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-#section3 {
+#sectionAbout {
   /*about*/
   background-color: white;
   padding: 5%  10%  5% 10%;
   text-align: center;
 }
 
-#section4 {
+#sectionHobbies {
   /*hobbies*/
   background: #f5f5f5;
   padding: 20px;
@@ -188,14 +196,30 @@ nav ul li a {
 }
 
 #coffeecup {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
 
+#coffee {
+  stroke: #292929;
+  fill: none;
+  stroke-width: 10px;
+  animation: coffee 15s infinite linear;
+}
+
+@keyframes coffee {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(230px);
+  }
+}
+
 #steam {
-  stroke: #707070;
-  fill: #707070;
+  stroke: #292929;
+  fill: #292929;
   stroke-width: 12px;
   animation: steam 2s infinite linear;
 }
@@ -212,20 +236,20 @@ nav ul li a {
 }
 
 #pie {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
 
 #bite {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
   animation: bite 3s infinite linear;
 }
 
 #nobite {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
   animation: nobite 3s infinite linear;
@@ -262,13 +286,13 @@ nav ul li a {
 }
 
 #camera {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
 
 #flash {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 10px;
   animation: flash 2s infinite linear;
@@ -279,12 +303,12 @@ nav ul li a {
     fill: transparent;
   }
   100% {
-    fill: #707070;
+    fill: #292929;
   }
 }
 
 #imac {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
@@ -298,18 +322,18 @@ nav ul li a {
 
 @keyframes mac {
   0% {
-    stroke: #707070;
+    stroke: #292929;
   }
   50% {
     stroke: lightgray;
   }
   100% {
-    stroke: #707070;
+    stroke: #292929;
   }
 }
 
 #headphones {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
   animation: headphones 1s infinite linear;
@@ -327,20 +351,20 @@ nav ul li a {
 }
 
 #video {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
 
 #leftreel {
-  stroke: #707070;
+  stroke: #292929;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
 }
 
 #rightreel {
-  stroke: #707070;
+  stroke: #292929;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
@@ -357,27 +381,103 @@ nav ul li a {
   }
 }
 
-#section5 {
+#sectionExpertise {
   /*expertise*/
   background-color: white;
-  height: 500px;
+  padding: 5%  10%  5% 10%;
+  text-align: center;
 }
 
-#section6 {
+#tableleft {
+  display: inline-block;
+}
+
+#tableright {
+  display: inline-block;
+}
+
+.table {
+  position: relative;
+  font-size: 20px;
+}
+
+.tablecol {
+  width: 150px;
+  padding: 5px 0px 5px 20px;
+  text-align: left;
+}
+
+.underline {
+  position: relative;
+  width: 100px;
+  height: 10px;
+  background: lightgray;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.line {
+  position: relative;
+  height: 10px;
+  width: 10%;
+  background: red;
+  border-radius: 10px;
+  transition: all 1s ease-in;
+}
+
+.percent100 {
+  width: 100%;
+}
+
+.percent90 {
+  width: 90%;
+}
+
+.percent85 {
+  width: 85%;
+}
+
+.percent80 {
+  width: 80%;
+}
+
+.percent75 {
+  width: 75%;
+}
+
+.percent70 {
+  width: 70%;
+}
+
+#sectionExpertiseCircles {
+  /*circle*/
+  padding: 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.circles {
+  display: inline-block;
+  width: 7%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.5s linear;
+}
+
+#sectionQualifications {
   /*qualifications*/
   background: white;
   height: 500px;
+  padding: 5%  10%  5% 10%;
 }
 
-#section7 {
+#sectionPortfolio {
   /*portfolio*/
-  padding-top: 6%;
   background: #f5f5f5;
 }
 
 #portfolio {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
@@ -420,7 +520,7 @@ nav ul li a {
   transform: translate(-50%, -50%);
 }
 
-#section8 {
+#sectionCloud {
   /*files*/
   padding: 20px;
   background: #f5f5f5;
@@ -441,7 +541,7 @@ nav ul li a {
 }
 
 .cc {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 11px;
 }
@@ -452,7 +552,7 @@ nav ul li a {
 }
 
 .codepen {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 11px;
 }
@@ -463,7 +563,7 @@ nav ul li a {
 }
 
 .be {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
@@ -474,7 +574,7 @@ nav ul li a {
 }
 
 .github {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
@@ -485,7 +585,7 @@ nav ul li a {
 }
 
 .xd {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 10px;
 }
@@ -496,7 +596,7 @@ nav ul li a {
 }
 
 .dribbble {
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 11px;
 }
@@ -506,33 +606,28 @@ nav ul li a {
   transition: 0.5s linear;
 }
 
-#section9 {
+#sectionExperience {
   /*experience*/
   background-color: white;
   height: 500px;
+  padding: 5%  10%  5% 10%;
 }
 
-#section11 {
+#sectionCv {
   /*cv download*/
-  position: relative;
-  height: auto;
-  padding: 7%;
+  padding: 20px;
   background: #f5f5f5;
   text-align: center;
 }
 
 #cv {
-  position: relative;
   display: inline-block;
-  border: 1px solid gray;
-  border-radius: 10px;
-  width: 10%;
-  background: red;
-  padding-bottom: 3%;
-  font-size: 0px;
+  width: 7%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.5s linear;
 }
 
-#section12 {
+#sectionContact {
   /*contact*/
   height: 500px;
   text-align: center;
@@ -596,7 +691,7 @@ textarea:hover {
 }
 
 hr {
-  width: 50%;
+  width: 52%;
   margin: 0 auto;
   border: 0;
   height: 1px;
@@ -604,8 +699,8 @@ hr {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
 }
 
-#section13 {
-  /*hello*/
+#sectionSocial {
+  /*social*/
   background: #f5f5f5;
   padding: 20px;
 }
@@ -621,56 +716,56 @@ hr {
   display: inline-block;
   width: 4%;
   margin: 0px 2% 0px 2%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 #facebook {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #facebook, .networkenvelop:hover #facebook {
-  fill: #707070;
-  transition: 0.5s linear;
+  fill: #292929;
+  transition: 0.3s linear;
 }
 
 #twitter {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #twitter, .networkenvelop:hover #twitter {
-  fill: #707070;
-  transition: 0.5s linear;
+  fill: #292929;
+  transition: 0.3s linear;
 }
 
 #envelop {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 12px;
 }
 
 #open {
   opacity: 0;
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 #close {
   opacity: 1;
-  stroke: #707070;
+  stroke: #292929;
   fill: none;
   stroke-width: 12px;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 .networkenvelop:hover #open {
   opacity: 1;
-  fill: #707070;
+  fill: #292929;
 }
 
 .networkenvelop:hover #close {
@@ -678,48 +773,48 @@ hr {
 }
 
 .networkenvelop:hover #envelop {
-  fill: #707070;
+  fill: #292929;
 }
 
 #facetime {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #facetime, .networkenvelop:hover #facetime {
   stroke: transparent;
-  fill: #707070;
-  transition: 0.5s linear;
+  fill: #292929;
+  transition: 0.3s linear;
 }
 
 #instagram {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 12px;
 }
 
 #instagramlens {
-  stroke: #707070;
+  stroke: #292929;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #instagram, .networkenvelop:hover #instagram {
   stroke: white;
-  fill: #707070;
-  transition: 0.5s linear;
+  fill: #292929;
+  transition: 0.3s linear;
 }
 
 .network:hover #instagramlens, .networkenvelop:hover #instagramlens {
   stroke: white;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
-#section14 {
+#sectionMouse {
   /*mouse*/
   position: relative;
-  background: #f5f5f5;
+  background: blue;
   height: 100px;
 }
 
@@ -772,17 +867,17 @@ hr {
   }
 }
 
-#section144 {
-  height: 400px;
+#sectionTransparent {
+  height: 200px;
   background: transparent;
 }
 
-#section15 {
-  /*draw*/
+#sectionFooter {
+  /*footer*/
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 400px;
+  height: 200px;
   background: #292929;
   z-index: -1;
   text-align: center;
@@ -790,7 +885,7 @@ hr {
 
 #footer {
   position: relative;
-  top: 40%;
+  top: 30%;
   text-align: center;
   width: 100%;
 }
@@ -798,7 +893,7 @@ hr {
 #footername {
   font-family: "mywoff";
   font-size: 40px;
-  margin: 0px 0px 0px 7px;
+  margin: 0px;
   color: white;
 }
 
@@ -831,7 +926,7 @@ hr {
 }
 
 @media (max-width: 600px) {
-  #section1 {
+  #sectionHeader {
     height: 200px;
   }
   #header {
@@ -844,36 +939,39 @@ hr {
   .quote {
     font-size: 5vw;
   }
-  nav ul li {
-    width: 80px;
-  }
-  #section3 {
-    font-size: 12px;
-  }
   nav {
     position: fixed;
     top: 0;
   }
-  .sky {
-    width: 10%;
+  nav ul li {
+    width: 80px;
   }
-  #section7 {
-    padding-top: 10%;
+  #sectionAbout {
+    font-size: 12px;
   }
   .hobbie {
     width: 10%;
   }
-  #section12 {
+  .circles {
+    width: 10%;
+  }
+  .sky {
+    width: 10%;
+  }
+  .cv {
+    width: 10%;
+  }
+  #sectionContact {
     padding: 0px;
   }
   input {
-    width: 70%;
+    width: 80%;
   }
   textarea {
-    width: 70%;
+    width: 80%;
   }
   hr {
-    width: 70%;
+    width: 80%;
   }
   .network, .networkenvelop {
     width: 10%;

@@ -1,4 +1,3 @@
-
 //smooth scroll
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
@@ -18,7 +17,7 @@ $(document).ready(function(){
 //fixtop
 $(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 700) {
+        if ($(this).scrollTop() >= 790) {
             $('nav').addClass('stickytop');
         }
         else {
@@ -26,46 +25,92 @@ $(function(){
         }
     });
 });
+//fixtoptext
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 790) {
+            $('nav ul li a').addClass('stickytoptext');
+        }
+        else {
+            $('nav ul li a').removeClass('stickytoptext');
+        }
+    });
+});
 
-//change background
+//nav scroll size
 $(document).ready(function () {
     var previousScroll = 0;
-
+    
     $(window).scroll(function () {
        var currentScroll = $(this).scrollTop();
-
+       
        if (currentScroll > previousScroll){
-           $("nav").removeClass("navbg");}
-
+           $("nav").removeClass("navscroll");} 
+       
        else {
-	   $("nav").addClass("navbg");}
+	   $("nav").addClass("navscroll");}
        previousScroll = currentScroll;
-
+       
     });
 }());
 
-//text change
+//nac scroll text
 $(document).ready(function () {
     var previousScroll = 0;
-
+    
     $(window).scroll(function () {
        var currentScroll = $(this).scrollTop();
-
+       
        if (currentScroll > previousScroll){
-           $("nav ul li a").removeClass("navtext");}
-
+           $("nav ul li a").removeClass("navscrolltext");} 
+       
        else {
-	   $("nav ul li a").addClass("navtext");}
+	   $("nav ul li a").addClass("navscrolltext");}
        previousScroll = currentScroll;
-
+       
     });
 }());
 
 //form active
 $(document).ready (function() {
-	$("textarea, input").click (function() {
+	$("textarea, input").click (function() {	
 		$("textarea, input").css ({background: "#f5f5f5"});	})
 ;});
+
+//------------------------------
+
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 700) {
+            $('.line1').addClass('percent85');
+            $('.line2').addClass('percent90');
+            $('.line3').addClass('percent85');
+            $('.line4').addClass('percent75');
+            $('.line5').addClass('percent70');
+            $('.line6').addClass('percent85');
+            $('.line7').addClass('percent85');
+            $('.line8').addClass('percent70');
+            $('.line9').addClass('percent70');
+            $('.line10').addClass('percent70');            
+        }
+        else {
+            $('.line1').removeClass('percent85');
+            $('.line2').removeClass('percent90');
+            $('.line3').removeClass('percent85');
+            $('.line4').removeClass('percent75');
+            $('.line5').removeClass('percent70');
+            $('.line6').removeClass('percent85');
+            $('.line7').removeClass('percent85');
+            $('.line8').removeClass('percent70');
+            $('.line9').removeClass('percent70');
+            $('.line10').removeClass('percent70');            
+        }
+    });
+});
+
+
+
+
 
 
 
@@ -84,7 +129,19 @@ $(document).ready(function()	{
 // makes nav reappear
     $(window).resize(function (){
 	    if ( $(window) .width () > 500 ) {
-		$('nav ul').removeAttr("style")
+		$('nav ul').removeAttr("style")  
 	    }
     })
 });
+
+
+
+
+
+
+
+
+
+
+
+

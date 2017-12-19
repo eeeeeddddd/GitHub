@@ -13,7 +13,8 @@ $bg-color1: #f5f5f5;/*gray*/
 $bg-color2: #292929;
 $color: #292929; /*gray*/
 $color1: #F7484E; /*red*/
-$svg: #707070; /*svg*/
+$fontColour: #707070;
+$svg: #292929; /*svg*/
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
@@ -36,7 +37,7 @@ html body	{
 	margin: 0px;
 	padding: 0px;
 	font-family: $fontText;
-	color: gray;
+	color: $fontColour;
 	font-size: 20px;
 	font-weight: 300;
 }
@@ -47,7 +48,7 @@ html body	{
 }
 a	{text-decoration: none;}
 
-#section1	{/*header*/
+#sectionHeader	{/*header*/
 	height: 100vh;
 	background: $bg-color2;
 	margin: 0;
@@ -74,16 +75,23 @@ a	{text-decoration: none;}
 	color: $color1;
 	margin: 0;
 }
-#section2		{}/*nav*/
-/*don't forget the script
-	.navbg	{background-color: $color1;}
-	.navtext	{color: $color1;}*/
+#sectionNav		{
+// 	border-bottom: solid 2px $color1;
+}
+
+.navscroll	{height: 60px; line-height: 60px;}
+.navscrolltext	{font-size: 25px;}
+.stickytop {position: fixed; top:0; right: 0; left: 0; background-color: $bg-color1;}
+.stickytoptext {color: $color;}
+
 nav {
 	text-align: center;
 	width: 100%;
-	height: 30px;
+	height: 40px;
+	line-height: 40px;	
 	background-color: $bg-color1;
 	z-index: 99;
+	transition: 0.3s ease;
 }
 nav ul {
 	margin-top: 0px;
@@ -97,13 +105,13 @@ nav ul li {
 nav ul li a {
 	position: relative;
 	display: block;
-	line-height: 30px;
 	color: $color;
 	font-size: 20px;
 	font-family: $fontNav;
 	font-weight: 300;
+	transition: 0.3s ease;
 }
-.underline::after {
+.underlineNav::after {
     content: '';
     width: 0px;
     height: 2px;
@@ -112,29 +120,21 @@ nav ul li a {
     bottom: 0px;
     transition: 0.5s ease;
 }
-.underline:hover::after {width: 100%;}
+.underlineNav:hover::after {width: 100%;}
 
-.left::after  {@extend .underline; right: 0px;}
-.left:hover::after  {@extend .underline; right: 0px;}
-.center::after  {@extend .underline; left: 50%; right: 50%;}
-.center:hover::after  {@extend .underline; left: 0px;}
-.right::after  {@extend .underline; left: 0px;}
-.right:hover::after  {@extend .underline; left: 0px;}
+.left::after  {@extend .underlineNav; right: 0px;}
+.center::after  {@extend .underlineNav; left: 50%; right: 50%;}
+.center:hover::after  {@extend .underlineNav; left: 0px;}
+.right::after  {@extend .underlineNav; left: 0px;}
+.right:hover::after  {@extend .underlineNav; left: 0px;}
 
-.stickytop {
-    position: fixed;
-    top:0;
-    right: 0;
-    left: 0;
-}
-
-#section3	{/*about*/
+#sectionAbout	{/*about*/
 	background-color: $bg-color;
 	padding: 5%  10%  5% 10%;
 	text-align: center;
 }
 
-#section4		{/*hobbies*/
+#sectionHobbies		{/*hobbies*/
 	background: $bg-color1;
 	padding: 20px;
 }
@@ -153,7 +153,10 @@ nav ul li a {
 }
 
 #coffeecup	{stroke:$svg; fill: none;stroke-width: 10px;}
-#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 2s infinite linear}
+#coffee	{stroke:$svg; fill: none;stroke-width: 10px; animation: coffee 15s infinite linear;}
+@keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}
+}
+#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 2s infinite linear;}
 @keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
 
 #pie	{stroke:$svg; fill: none; stroke-width: 10px;}
@@ -178,24 +181,84 @@ nav ul li a {
 #rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; animation: reel 3s infinite linear}
 @keyframes reel{0%{transform-origin: 50% 50%; transform: rotate(0deg);}100%{transform-origin: 50% 50%; transform: rotate(360deg);}}
 
-#section5		{/*expertise*/
+#sectionExpertise	{/*expertise*/
  	background-color: $bg-color;
-	height: 500px;
-// 	box-shadow: inset 0 -10px 40px rgba(0, 0, 0, 0.3);
+	padding: 5%  10%  5% 10%;
+	text-align: center;
+	
+}
+#tableleft	{display: inline-block;}
+#tableright	{display: inline-block;}
+
+.table	{
+	position: relative;
+	font-size: 20px;
+}
+.tablecol	{
+	width: 150px;
+	padding: 5px 0px 5px 20px;
+	text-align: left;
+}
+.underline	{
+	position: relative;
+	width: 100px;
+	height: 10px;
+	background: lightgray;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.line	{
+	position: relative;
+	height: 10px;
+	width: 10%;
+	background: red;
+	border-radius: 10px;
+	transition: all 1s ease-in;
 }
 
-#section6	{/*qualifications*/
+.line1	{}
+.line2	{}
+.line3	{}
+.line4	{}
+.line5	{}
+.line6	{}
+.line7	{}
+.line8	{}
+.line9	{}
+.line10{}
+
+.percent100	{width: 100%;}
+.percent90	{width: 90%;}
+.percent85	{width: 85%;}
+.percent80	{width: 80%;}
+.percent75	{width: 75%;}
+.percent70	{width: 70%;}
+
+#sectionExpertiseCircles	{/*circle*/
+	padding: 20px;
+	background: $bg-color1;
+	text-align: center;
+}
+.circles   {
+	display: inline-block;
+    width: 7%;
+    margin: 0px 2% 0px 2%;
+    transition: all 0.5s linear;
+}
+
+#sectionQualifications	{/*qualifications*/
 	background: $bg-color;
 	height: 500px;
+	padding: 5%  10%  5% 10%;
 }
 
-#section7	{/*portfolio*/
-	padding-top: 6%;
+#sectionPortfolio	{/*portfolio*/
+// 	padding-top: 10%;
 	background: $bg-color1;
 }
 #portfolio  {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 .port   {
@@ -232,8 +295,7 @@ nav ul li a {
  	left: 50%;
  	transform: translate(-50%, -50%);
 }
-
-#section8		{/*files*/
+#sectionCloud		{/*files*/
 	padding: 20px;
 	background: $bg-color1;
 }
@@ -250,7 +312,7 @@ nav ul li a {
      transition: all 0.5s linear;
 }
 .cc	{stroke:$svg;fill: none;stroke-width: 11px;}
-.sky:hover  .cc	{stroke: red;  transition: 0.5s linear;}
+.sky:hover  .cc	{stroke: red; transition: 0.5s linear;}
 
 .codepen	{stroke: $svg;fill: none;stroke-width: 11px;}
 .sky:hover .codepen	{stroke: lime;  transition: 0.5s linear;}
@@ -267,95 +329,25 @@ nav ul li a {
 .dribbble	{stroke: $svg;fill: none;stroke-width: 11px;}
 .sky:hover .dribbble	{stroke: #b3335a;  transition: 0.5s linear;}
 
-#section9		{/*experience*/
+#sectionExperience		{/*experience*/
 	background-color: $bg-color;
 	height: 500px;
+	padding: 5%  10%  5% 10%;
 }
 
-// #section10		{/*reference*/
-// 	background: $bg-color;
-// 	height: 200px;
-// }
-
-#section11		{/*cv download*/
-	position: relative;
-	height: auto;
-	padding: 7%;
+#sectionCv		{/*cv download*/
+	padding: 20px;
 	background: $bg-color1;
 	text-align: center;
 }
 #cv   {
-	position: relative;
-    display: inline-block;
-    border: 1px solid gray;
-    border-radius: 10px;
-    width: 10%;
-    background: red;
-    padding-bottom: 3%;
-    font-size: 0px;
+	display: inline-block;
+    width: 7%;
+    margin: 0px 2% 0px 2%;
+    transition: all 0.5s linear;
 }
 
-//-----------------not sure-----------
-// #cv	{
-// 	position: relative;
-// 	top: 50px;
-// 	left: 50%;
-// 	margin-left: -30px;
-// 	width: 60px;
-// }
-// #cv:hover .cv-text	{
-// 	opacity: 0;
-// }
-// #cv:hover .download	{
-// 	opacity: 1;
-// }
-// .cv-text	{
-// 	position: relative;
-// 	top: 20px;
-// 	font-size: 14px;
-// 	text-align: center;
-// 	transition: 0.3s linear;
-// }
-// .download	{
-// 	position: absolute;
-// 	top: 24px;
-// 	left: 8px;
-// 	width: 60px;
-// 	opacity: 0;
-// 	stroke: lime;
-// 	stroke-width: 2px;
-// 	transition: 0.3s linear;
-// }
-// .hvr-curl-top-right {
-//   display: inline-block;
-//   vertical-align: middle;
-//   transform: perspective(1px) translateZ(0);
-//   box-shadow: 0 0 1px transparent;
-//   position: relative;
-//   background: white;
-//   width: 75px;
-//   height: 100px;
-//   border-radius: 5px;
-// }
-// .hvr-curl-top-right:before {
-//   pointer-events: none;
-//   position: absolute;
-//   content: '';
-//   height: 10px;
-//   width: 0;
-//   top: 0;
-//   right: 0;
-//   background: linear-gradient(225deg, $color1 45%, #aaa 50%, #ccc 56%, white 80%);/*bachground*/
-//   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
-//   transition-duration: 0.3s;
-//   transition-property: width, height;
-// }
-// .hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
-//   width: 25px;
-//   height: 25px;
-// }
-
-#section12		{/*contact*/
+#sectionContact {/*contact*/
 	height: 500px;
 	text-align: center;
 	padding: 50px;
@@ -409,9 +401,9 @@ textarea {
   background-color: transparent;
   box-shadow: 0px 5px 10px gray;
 }
-hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 
-#section13		{/*hello*/
+#sectionSocial		{/*social*/
 	background: $bg-color1;
 	padding: 20px;
 }
@@ -425,35 +417,35 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	display: inline-block;
     width: 4%;
     margin: 0px 2% 0px 2%;
-     transition: all 0.5s linear;
+     transition: all 0.3s linear;
 }
 .networkenvelop   {
 	 @extend .network;
 }
 #facebook {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #facebook {fill: $svg; transition: 0.5s linear;}
+.network:hover #facebook {fill: $svg; transition: 0.3s linear;}
 
 #twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #twitter {fill: $svg; transition: 0.5s linear;}
+.network:hover #twitter {fill: $svg; transition: 0.3s linear;}
 
 #envelop {stroke: $svg; fill: transparent; stroke-width: 12px;}
-#open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.5s linear;}
-#close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.5s linear;}
+#open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s linear;}
+#close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.3s linear;}
 .networkenvelop:hover  #open {opacity: 1; fill: $svg;}
 .networkenvelop:hover  #close	{fill: $bg-color;}
 .networkenvelop:hover #envelop {fill: $svg;}
 
 #facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
-.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.5s linear;}
+.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.3s linear;}
 
 #instagram {stroke: $svg; fill: transparent; stroke-width: 12px;}
 #instagramlens {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #instagram {stroke: $bg-color; fill: $svg; transition: 0.5s linear;}
-.network:hover #instagramlens {stroke: $bg-color; transition: 0.5s linear;}
+.network:hover #instagram {stroke: $bg-color; fill: $svg; transition: 0.3s linear;}
+.network:hover #instagramlens {stroke: $bg-color; transition: 0.3s linear;}
 
-#section14		{/*mouse*/
+#sectionMouse		{/*mouse*/
 	position: relative;
-	background: $bg-color1;
+	background: blue;
 	height: 100px;
 }
 .mousetext	{
@@ -482,43 +474,37 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	width: 0px;
 	height: 0px;
 	margin-left: 7px;
-// 	margin-left: 5px;
-// 	background-color: $color1;
-// 	border:2px solid transparent;
-
     border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 	border-bottom: 4px solid $color1;
-	
-// 	border-radius: 5px;
 	animation: scroll 1.5s infinite both;
 }
 @keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
 
-#section144		{
-	height: 400px;
+#sectionTransparent		{
+	height: 200px;
 	background: transparent;
 }
 
-#section15		{/*draw*/
+#sectionFooter		{/*footer*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	background: $bg-color2;
 	z-index: -1;
 	text-align: center;
 }
 #footer		{
 	position: relative;
-	top: 40%;
+	top: 30%;
 	text-align: center;
 	width: 100%;
 }
 #footername	{
 	font-family: $fontTitle;
 	font-size: 40px;
-	margin: 0px 0px 0px 7px;
+	margin: 0px;
 	color: white;
 }
 #designby	{
@@ -540,20 +526,21 @@ hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 @keyframes dash 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}
 
 @media (max-width: 600px) {
-#section1		{height: 200px;}
+	
+#sectionHeader		{height: 200px;}
 #header			{top: 60%;}
 .headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this
-.quote	{font-size: 5vw;}
-		nav ul li 		{width: 80px;}
-// 	nav ul li a 	{font-size: 16px;}
-#section3		{font-size: 12px;}
-	nav			{position: fixed; top:0;}
-	.sky			{width: 10%;}
-#section7		{padding-top: 10%;}//maybe
+	.quote		{font-size: 5vw;}
+	nav			{position: fixed; top:0;}	
+	nav ul li 		{width: 80px;}	
+#sectionAbout		{font-size: 12px;}
 	.hobbie		{width: 10%;}
-#section12		{padding: 0px;}
-	input			{width: 70%;}
-	textarea		{width: 70%;}
-	hr 				{width: 70%;}
+	.circles   	{width: 10%;}
+	.sky			{width: 10%;}
+	.cv				{width: 10%;}	
+#sectionContact		{padding: 0px;}
+	input			{width: 80%;}
+	textarea		{width: 80%;}
+	hr 				{width: 80%;}
 	.network		{width: 10%;}	
 }
