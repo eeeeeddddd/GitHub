@@ -6,10 +6,12 @@
 /*'Roboto Condensed'*/
 @import url("https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500");
 /*'Advent Pro'*/
-/*white*/
+/*needed*/
+/*main*/
 /*gray*/
-/*gray*/
+/*header & footer*/
 /*red*/
+/*gray*/
 /*svg*/
 @font-face {
   font-family: 'mywoff';
@@ -34,6 +36,7 @@ html body {
   color: #707070;
   font-size: 20px;
   font-weight: 300;
+  background: #292929;
 }
 
 #wrapper {
@@ -71,7 +74,7 @@ a {
 }
 
 .quote {
-  font-family: 'Advent Pro';
+  font-family: 'myotf';
   font-weight: 400;
   font-size: 2.5vw;
   color: #F7484E;
@@ -93,10 +96,6 @@ a {
   right: 0;
   left: 0;
   background-color: #f5f5f5;
-}
-
-.stickytoptext {
-  color: #292929;
 }
 
 nav {
@@ -124,7 +123,7 @@ nav ul li {
 nav ul li a {
   position: relative;
   display: block;
-  color: #292929;
+  color: #707070;
   font-size: 20px;
   font-family: "Advent Pro";
   font-weight: 300;
@@ -196,13 +195,13 @@ nav ul li a {
 }
 
 #coffeecup {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #coffee {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: coffee 15s infinite linear;
@@ -218,8 +217,8 @@ nav ul li a {
 }
 
 #steam {
-  stroke: #292929;
-  fill: #292929;
+  stroke: #707070;
+  fill: #707070;
   stroke-width: 12px;
   animation: steam 2s infinite linear;
 }
@@ -236,20 +235,20 @@ nav ul li a {
 }
 
 #pie {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #bite {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: bite 3s infinite linear;
 }
 
 #nobite {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: nobite 3s infinite linear;
@@ -286,13 +285,13 @@ nav ul li a {
 }
 
 #camera {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #flash {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
   animation: flash 2s infinite linear;
@@ -303,18 +302,18 @@ nav ul li a {
     fill: transparent;
   }
   100% {
-    fill: #292929;
+    fill: #707070;
   }
 }
 
 #imac {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #screen {
-  stroke: #F7484E;
+  stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
   animation: mac 2s infinite linear;
@@ -322,18 +321,18 @@ nav ul li a {
 
 @keyframes mac {
   0% {
-    stroke: #292929;
+    stroke: #707070;
   }
   50% {
     stroke: lightgray;
   }
   100% {
-    stroke: #292929;
+    stroke: #707070;
   }
 }
 
 #headphones {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
   animation: headphones 1s infinite linear;
@@ -351,20 +350,20 @@ nav ul li a {
 }
 
 #video {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 #leftreel {
-  stroke: #292929;
+  stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
 }
 
 #rightreel {
-  stroke: #292929;
+  stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
   animation: reel 3s infinite linear;
@@ -423,6 +422,46 @@ nav ul li a {
   background: red;
   border-radius: 10px;
   transition: all 1s ease-in;
+}
+
+.line1 {
+  background: #56c9fb;
+}
+
+.line2 {
+  background: #ff7100;
+}
+
+.line3 {
+  background: #ff008b;
+}
+
+.line4 {
+  background: #e55ffe;
+}
+
+.line5 {
+  background: #e55ffe;
+}
+
+.line6 {
+  background: blue;
+}
+
+.line7 {
+  background: blue;
+}
+
+.line8 {
+  background: blue;
+}
+
+.line9 {
+  background: blue;
+}
+
+.line10 {
+  background: #00ff18;
 }
 
 .percent100 {
@@ -541,7 +580,7 @@ nav ul li a {
 }
 
 .cc {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 11px;
 }
@@ -552,7 +591,7 @@ nav ul li a {
 }
 
 .codepen {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 11px;
 }
@@ -563,18 +602,19 @@ nav ul li a {
 }
 
 .be {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
 .sky:hover .be {
   stroke: #1969fb;
+  fill: #1969fb;
   transition: 0.5s linear;
 }
 
 .github {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
@@ -585,7 +625,7 @@ nav ul li a {
 }
 
 .xd {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
@@ -596,7 +636,7 @@ nav ul li a {
 }
 
 .dribbble {
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 11px;
 }
@@ -703,7 +743,7 @@ hr {
   /*social*/
   background: #f5f5f5;
   padding: 20px;
-  margin-bottom: 700px;
+  margin-bottom: 200px;
 }
 
 #social {
@@ -721,36 +761,36 @@ hr {
 }
 
 #facebook {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #facebook, .networkenvelop:hover #facebook {
-  fill: #292929;
+  fill: #707070;
   transition: 0.3s linear;
 }
 
 #twitter {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #twitter, .networkenvelop:hover #twitter {
-  fill: #292929;
+  fill: #707070;
   transition: 0.3s linear;
 }
 
 #envelop {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 #open {
   opacity: 0;
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 12px;
   transition: all 0.3s linear;
@@ -758,7 +798,7 @@ hr {
 
 #close {
   opacity: 1;
-  stroke: #292929;
+  stroke: #707070;
   fill: none;
   stroke-width: 12px;
   transition: all 0.3s linear;
@@ -766,7 +806,7 @@ hr {
 
 .networkenvelop:hover #open {
   opacity: 1;
-  fill: #292929;
+  fill: #707070;
 }
 
 .networkenvelop:hover #close {
@@ -774,36 +814,36 @@ hr {
 }
 
 .networkenvelop:hover #envelop {
-  fill: #292929;
+  fill: #707070;
 }
 
 #facetime {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #facetime, .networkenvelop:hover #facetime {
   stroke: transparent;
-  fill: #292929;
+  fill: #707070;
   transition: 0.3s linear;
 }
 
 #instagram {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 #instagramlens {
-  stroke: #292929;
+  stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
 .network:hover #instagram, .networkenvelop:hover #instagram {
   stroke: white;
-  fill: #292929;
+  fill: #707070;
   transition: 0.3s linear;
 }
 
@@ -812,68 +852,12 @@ hr {
   transition: 0.3s linear;
 }
 
-#sectionMouse {
-  /*mouse*/
-  position: relative;
-  background: #292929;
-  height: 100px;
-}
-
-.mousetext {
-  font-family: 'Poiret One';
-  font-size: 14px;
-  color: white;
-  margin-top: 40px;
-  font-weight: bold;
-  margin-left: -1px;
-}
-
-.mouse {
-  position: relative;
-  top: 25px;
-  left: 50%;
-  margin-left: -13px;
-  width: 22px;
-  height: 35px;
-  border: 2px solid lightgray;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0px 0px 5px lightgray;
-  transition: all 0.3s;
-}
-
-.mouse:hover {
-  border: 2px solid #F7484E;
-  box-shadow: 0px 0px 5px gray;
-}
-
-#scroll {
-  width: 0px;
-  height: 0px;
-  margin-left: 7px;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 4px solid #F7484E;
-  animation: scroll 1.5s infinite both;
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 0.4;
-    transform: translateY(6px);
-  }
-}
-
 #sectionFooter {
   /*footer*/
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 700px;
+  height: 200px;
   background: #292929;
   z-index: -1;
   text-align: center;
@@ -881,7 +865,7 @@ hr {
 
 #footer {
   position: relative;
-  top: 70%;
+  top: 25%;
   text-align: center;
   width: 100%;
 }
@@ -939,8 +923,11 @@ hr {
     position: fixed;
     top: 0;
   }
+  nav ul li {
+    width: 90px;
+  }
   #sectionAbout {
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   .hobbie {
     width: 10%;
@@ -951,11 +938,17 @@ hr {
   .sky {
     width: 10%;
   }
-  .cv {
+  #sectionExperience {
+    padding: 5%;
+  }
+  #cv {
     width: 10%;
   }
   #sectionContact {
-    padding: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
   }
   input {
     width: 80%;

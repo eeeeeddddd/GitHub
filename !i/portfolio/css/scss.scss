@@ -6,15 +6,19 @@
 $fontTitle: 'mywoff';
 $fontNav:  'Advent Pro';
 $fontText: 'Advent Pro';
-$fontForm: 'Advent Pro';
+$fontForm: 'Advent Pro'; /*needed*/
 
-$bg-color: white;/*white*/
+$bg-color: white; /*main*/
 $bg-color1: #f5f5f5;/*gray*/
-$bg-color2: #292929;
-$color: #292929; /*gray*/
-$color1: #F7484E; /*red*/
-$fontColour: #707070;
-$svg: #292929; /*svg*/
+$bg-color2: #292929;/*header & footer*/
+
+$color:;
+$color1:;
+$color2: #F7484E; /*red*/
+
+$fontColor: #707070;/*gray*/
+$svg: #707070; /*svg*/
+
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
@@ -37,9 +41,10 @@ html body	{
 	margin: 0px;
 	padding: 0px;
 	font-family: $fontText;
-	color: $fontColour;
+	color: $fontColor;
 	font-size: 20px;
 	font-weight: 300;
+	background: $bg-color2;
 }
 #wrapper	{
 	width: 100%;
@@ -69,20 +74,18 @@ a	{text-decoration: none;}
 	text-shadow: 0.5px 0.5px 3px white;
 }
 .quote	{
-	font-family: 'Advent Pro';
+	font-family: 'myotf';
 	font-weight: 400;		
 	font-size: 2.5vw;
-	color: $color1;
+	color: $color2;
 	margin: 0;
 }
-#sectionNav		{
-// 	border-bottom: solid 2px $color1;
-}
+#sectionNav		{}
 
 .navscroll	{height: 60px; line-height: 60px;}
 .navscrolltext	{font-size: 25px;}
 .stickytop {position: fixed; top:0; right: 0; left: 0; background-color: $bg-color1;}
-.stickytoptext {color: $color;}
+.stickytoptext {}
 
 nav {
 	text-align: center;
@@ -105,7 +108,7 @@ nav ul li {
 nav ul li a {
 	position: relative;
 	display: block;
-	color: $color;
+	color: $fontColor;
 	font-size: 20px;
 	font-family: $fontNav;
 	font-weight: 300;
@@ -115,7 +118,7 @@ nav ul li a {
     content: '';
     width: 0px;
     height: 2px;
-    background: $color1;
+    background: $color2;
     position: absolute;
     bottom: 0px;
     transition: 0.5s ease;
@@ -170,7 +173,7 @@ nav ul li a {
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
-#screen	{stroke: $color1; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear}
+#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear}
 @keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
 
 #headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 1s infinite linear}
@@ -216,16 +219,16 @@ nav ul li a {
 	transition: all 1s ease-in;
 }
 
-.line1	{}
-.line2	{}
-.line3	{}
-.line4	{}
-.line5	{}
-.line6	{}
-.line7	{}
-.line8	{}
-.line9	{}
-.line10{}
+.line1	{ background: #56c9fb;}
+.line2	{ background: #ff7100;}
+.line3	{ background: #ff008b;}
+.line4	{ background: #e55ffe;}
+.line5	{ background: #e55ffe;}
+.line6	{ background: blue;}
+.line7	{ background: blue;}
+.line8	{ background: blue;}
+.line9	{ background: blue;}
+.line10{ background: #00ff18;}
 
 .percent100	{width: 100%;}
 .percent90	{width: 90%;}
@@ -318,7 +321,7 @@ nav ul li a {
 .sky:hover .codepen	{stroke: lime;  transition: 0.5s linear;}
 
 .be	{stroke: $svg;fill: none;stroke-width: 10px;}
-.sky:hover .be	{stroke: #1969fb;  transition: 0.5s linear;}
+.sky:hover .be	{stroke: #1969fb; fill: #1969fb;  transition: 0.5s linear;}
 
 .github	{stroke: $svg;fill: none;stroke-width: 10px;}
 .sky:hover .github	{stroke: purple;  transition: 0.5s linear;}
@@ -406,7 +409,7 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #sectionSocial		{/*social*/
 	background: $bg-color1;
 	padding: 20px;
-	margin-bottom: 700px;
+	margin-bottom: 200px;
 }
 #social  {
  	margin: 0 auto;
@@ -444,61 +447,56 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 .network:hover #instagram {stroke: $bg-color; fill: $svg; transition: 0.3s linear;}
 .network:hover #instagramlens {stroke: $bg-color; transition: 0.3s linear;}
 
-#sectionMouse		{/*mouse*/
-	position: relative;
-	background: $bg-color2;
-	height: 100px;
-}
-.mousetext	{
-	font-family: 'Poiret One';
-	font-size: 14px;
-	color: white;
-	margin-top: 40px;
-	font-weight: bold;
-	margin-left: -1px;
-}
-.mouse{
-	position: relative;
-	top: 25px;
-	left: 50%;
-	margin-left: -13px;
-	width: 22px;
-	height: 35px;
-	border:2px solid lightgray;
-	border-radius: 20px;
-  	text-align: center;
-  	box-shadow: 0px 0px 5px lightgray;
-  	transition: all 0.3s;
-  	&:hover	{border: 2px solid $color1; box-shadow: 0px 0px 5px gray;}
-}
-#scroll{
-	width: 0px;
-	height: 0px;
-	margin-left: 7px;
-    border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
-	border-bottom: 4px solid $color1;
-	animation: scroll 1.5s infinite both;
-}
-@keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
-
-// #sectionTransparent		{
-// 	height: 200px;
-// 	background: transparent;
+// #mouse		{/*mouse*/
+// 	position: relative;
+// 	background: $bg-color2;
+// 	height: 100px;
 // }
+// .mousetext	{
+// 	font-family: 'Poiret One';
+// 	font-size: 14px;
+// 	color: white;
+// 	margin-top: 40px;
+// 	font-weight: bold;
+// 	margin-left: -1px;
+// }
+// .mouse{
+// 	position: relative;
+// 	top: 25px;
+// 	left: 50%;
+// 	margin-left: -13px;
+// 	width: 22px;
+// 	height: 35px;
+// 	border:2px solid lightgray;
+// 	border-radius: 20px;
+//   	text-align: center;
+//   	box-shadow: 0px 0px 5px lightgray;
+//   	transition: all 0.3s;
+//   	&:hover	{border: 2px solid $color2; box-shadow: 0px 0px 5px gray;}
+// }
+// #scroll{
+// 	width: 0px;
+// 	height: 0px;
+// 	margin-left: 7px;
+//     border-left: 4px solid transparent;
+// 	border-right: 4px solid transparent;
+// 	border-bottom: 4px solid $color2;
+// 	animation: scroll 1.5s infinite both;
+// }
+// @keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
 
 #sectionFooter		{/*footer*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 700px;
+	height: 200px;
 	background: $bg-color2;
 	z-index: -1;
 	text-align: center;
 }
 #footer		{
 	position: relative;
-	top: 70%;
+	top: 25%;
 	text-align: center;
 	width: 100%;
 }
@@ -533,15 +531,16 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 .headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this
 	.quote		{font-size: 5vw;}
 	nav			{position: fixed; top:0;}	
-// 	nav ul li 		{width: 80px;}	
-#sectionAbout		{font-size: 12px;}
+	nav ul li 		{width: 90px;}	
+#sectionAbout		{/* font-size: 12px; */}
 	.hobbie		{width: 10%;}
 	.circles   	{width: 10%;}
 	.sky			{width: 10%;}
-	.cv				{width: 10%;}	
-#sectionContact		{padding: 0px;}
+#sectionExperience		{padding: 5%;} //check others	
+	#cv				{width: 10%;}	
+#sectionContact		{padding-top: 0px; padding-right: 0px; padding-bottom: 50px; padding-left: 0px;}
 	input			{width: 80%;}
 	textarea		{width: 80%;}
 	hr 				{width: 80%;}
-	.network		{width: 10%;}	
+	.network		{width: 10%;}		
 }
