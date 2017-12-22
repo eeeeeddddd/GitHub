@@ -81,7 +81,7 @@ $(document).ready (function() {
 
 $(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 700) {
+        if ($(this).scrollTop() >= 300) {
             $('.line1').addClass('percent85');
             $('.line2').addClass('percent90');
             $('.line3').addClass('percent85');
