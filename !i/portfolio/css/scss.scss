@@ -71,13 +71,13 @@ a	{text-decoration: none;}
 	font-size: 7vw;
 	margin: 0;
 	color: white;
-	text-shadow: 0.5px 0.5px 3px white;
+	text-shadow: 0.1px 0.1px 1px white;
 }
 .quote	{
-	font-family: 'myotf';
+	font-family: $fontText;
 	font-weight: 400;		
 	font-size: 2.5vw;
-	color: $color2;
+	color: white;
 	margin: 0;
 }
 #sectionNav		{}
@@ -113,6 +113,13 @@ nav ul li a {
 	font-family: $fontNav;
 	font-weight: 300;
 	transition: 0.3s ease;
+}
+.toggle	{
+	display: none;
+	font-size: 25px;
+	color: red;
+	text-decoration: none;
+	text-align: center;
 }
 .underlineNav::after {
     content: '';
@@ -321,7 +328,7 @@ nav ul li a {
 .sky:hover .codepen	{stroke: lime;  transition: 0.5s linear;}
 
 .be	{stroke: $svg;fill: none;stroke-width: 10px;}
-.sky:hover .be	{stroke: #1969fb; fill: #1969fb;  transition: 0.5s linear;}
+.sky:hover .be	{stroke: #1969fb; transition: 0.5s linear;}
 
 .github	{stroke: $svg;fill: none;stroke-width: 10px;}
 .sky:hover .github	{stroke: purple;  transition: 0.5s linear;}
@@ -369,7 +376,7 @@ input	{
 	font-family: $fontForm;
 	border-radius: 10px;
 	background: $bg-color;
-	transition: all 0.5s ease-in;
+	transition: all 0.2s ease-in;
 	border: transparent;
 	&:hover	{
 		background: $bg-color1;
@@ -382,8 +389,8 @@ textarea {
 	font-family: $fontForm;
   	border-radius: 10px;
 	border: transparent;
-	background: $bg-color;
-	transition: all 0.5s ease-in;
+	background:$bg-color;
+	transition: all 0.2s ease-in;
 	&:hover	{
 		background: $bg-color1;
 	}
@@ -396,20 +403,21 @@ textarea {
   font-size: 22px;
   font-family: $fontForm; 
   line-height: 3px;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   transition: all 0.2s;
-  box-shadow: 0px 5px 10px lightgray;
+  box-shadow: 0px 5px 10px #f5f5f5;
 }
 .btn:hover {
   background-color: transparent;
-  box-shadow: 0px 5px 10px gray;
+  box-shadow: 0px 5px 10px #dcdcdc;
 }
 hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 
 #sectionSocial		{/*social*/
-	background: $bg-color1;
+	background: $bg-color;
 	padding: 20px;
-	margin-bottom: 200px;
+	margin-bottom: 400px;
 }
 #social  {
  	margin: 0 auto;
@@ -439,13 +447,13 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 .networkenvelop:hover  #close	{fill: $bg-color;}
 .networkenvelop:hover #envelop {fill: $svg;}
 
-#facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
-.network:hover #facetime {stroke: transparent; fill: $svg; transition: 0.3s linear;}
-
 #instagram {stroke: $svg; fill: transparent; stroke-width: 12px;}
 #instagramlens {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.network:hover #instagram {stroke: $bg-color; fill: $svg; transition: 0.3s linear;}
+.network:hover #instagram {fill: $svg; transition: 0.3s linear;}
 .network:hover #instagramlens {stroke: $bg-color; transition: 0.3s linear;}
+
+#facetime {stroke:$svg; fill: transparent; stroke-width: 12px;}
+.network:hover #facetime {fill: $svg; transition: 0.3s linear;}
 
 // #mouse		{/*mouse*/
 // 	position: relative;
@@ -489,14 +497,14 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 200px;
+	height: 400px;
 	background: $bg-color2;
 	z-index: -1;
 	text-align: center;
 }
 #footer		{
 	position: relative;
-	top: 25%;
+	top:40%;
 	text-align: center;
 	width: 100%;
 }
@@ -530,9 +538,11 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #header			{top: 60%;}
 .headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this
 	.quote		{font-size: 5vw;}
-	nav			{position: fixed; top:0;}	
-	nav ul li 		{width: 90px;}	
-#sectionAbout		{/* font-size: 12px; */}
+	nav			{position: fixed; top:0;}
+	nav ul		{display: none; background: $bg-color1;}	
+// 	nav ul li 		{width: 90px;}
+	.toggle		{display: block;}		
+#sectionAbout	{}
 	.hobbie		{width: 10%;}
 	.circles   	{width: 10%;}
 	.sky			{width: 10%;}

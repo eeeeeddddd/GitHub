@@ -1,17 +1,22 @@
-//smooth scroll
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
+// toggle function
 
-	    var target = this.hash;
-	    var $target = $(target);
+$(document).ready(function()	{
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 1000, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
+    $(".toggle").click (function () {
+        $("nav ul").slideToggle (1);
+    });
+
+// makes nav reappear
+    
+    $(window).resize(function (){
+	    
+	    if ( $(window) .width () > 500 ) {
+		    
+		$('nav ul').removeAttr("style")  
+		  
+	    }
+    })
+
 });
 
 //fixtop
@@ -85,7 +90,7 @@ $(function(){
             $('.line1').addClass('percent85');
             $('.line2').addClass('percent90');
             $('.line3').addClass('percent85');
-            $('.line4').addClass('percent75');
+            $('.line4').addClass('percent70');
             $('.line5').addClass('percent70');
             $('.line6').addClass('percent85');
             $('.line7').addClass('percent85');
@@ -97,7 +102,7 @@ $(function(){
             $('.line1').removeClass('percent85');
             $('.line2').removeClass('percent90');
             $('.line3').removeClass('percent85');
-            $('.line4').removeClass('percent75');
+            $('.line4').removeClass('percent70');
             $('.line5').removeClass('percent70');
             $('.line6').removeClass('percent85');
             $('.line7').removeClass('percent85');
@@ -108,30 +113,20 @@ $(function(){
     });
 });
 
+// //smooth scroll
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
 
+	    var target = this.hash;
+	    var $target = $(target);
 
-
-
-
-
-
-
-
-
-
-
-// toggle function
-$(document).ready(function()	{
-    $(".toggle").click (function () {
-        $("nav ul").slideToggle ();
-    });
-
-// makes nav reappear
-    $(window).resize(function (){
-	    if ( $(window) .width () > 500 ) {
-		$('nav ul').removeAttr("style")  
-	    }
-    })
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1000, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 });
 
 

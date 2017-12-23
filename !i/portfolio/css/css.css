@@ -70,14 +70,14 @@ a {
   font-size: 7vw;
   margin: 0;
   color: white;
-  text-shadow: 0.5px 0.5px 3px white;
+  text-shadow: 0.1px 0.1px 1px white;
 }
 
 .quote {
-  font-family: 'myotf';
+  font-family: "Advent Pro";
   font-weight: 400;
   font-size: 2.5vw;
-  color: #F7484E;
+  color: white;
   margin: 0;
 }
 
@@ -128,6 +128,14 @@ nav ul li a {
   font-family: "Advent Pro";
   font-weight: 300;
   transition: 0.3s ease;
+}
+
+.toggle {
+  display: none;
+  font-size: 25px;
+  color: red;
+  text-decoration: none;
+  text-align: center;
 }
 
 .underlineNav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
@@ -609,7 +617,6 @@ nav ul li a {
 
 .sky:hover .be {
   stroke: #1969fb;
-  fill: #1969fb;
   transition: 0.5s linear;
 }
 
@@ -689,7 +696,7 @@ input {
   font-family: "Advent Pro";
   border-radius: 10px;
   background: white;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
   border: transparent;
 }
 
@@ -705,7 +712,7 @@ textarea {
   border-radius: 10px;
   border: transparent;
   background: white;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 textarea:hover {
@@ -720,14 +727,15 @@ textarea:hover {
   font-size: 22px;
   font-family: "Advent Pro";
   line-height: 3px;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   transition: all 0.2s;
-  box-shadow: 0px 5px 10px lightgray;
+  box-shadow: 0px 5px 10px #f5f5f5;
 }
 
 .btn:hover {
   background-color: transparent;
-  box-shadow: 0px 5px 10px gray;
+  box-shadow: 0px 5px 10px #dcdcdc;
 }
 
 hr {
@@ -741,9 +749,9 @@ hr {
 
 #sectionSocial {
   /*social*/
-  background: #f5f5f5;
+  background: white;
   padding: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 
 #social {
@@ -817,18 +825,6 @@ hr {
   fill: #707070;
 }
 
-#facetime {
-  stroke: #707070;
-  fill: transparent;
-  stroke-width: 12px;
-}
-
-.network:hover #facetime, .networkenvelop:hover #facetime {
-  stroke: transparent;
-  fill: #707070;
-  transition: 0.3s linear;
-}
-
 #instagram {
   stroke: #707070;
   fill: transparent;
@@ -842,7 +838,6 @@ hr {
 }
 
 .network:hover #instagram, .networkenvelop:hover #instagram {
-  stroke: white;
   fill: #707070;
   transition: 0.3s linear;
 }
@@ -852,12 +847,23 @@ hr {
   transition: 0.3s linear;
 }
 
+#facetime {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.network:hover #facetime, .networkenvelop:hover #facetime {
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
 #sectionFooter {
   /*footer*/
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 400px;
   background: #292929;
   z-index: -1;
   text-align: center;
@@ -865,7 +871,7 @@ hr {
 
 #footer {
   position: relative;
-  top: 25%;
+  top: 40%;
   text-align: center;
   width: 100%;
 }
@@ -923,11 +929,12 @@ hr {
     position: fixed;
     top: 0;
   }
-  nav ul li {
-    width: 90px;
+  nav ul {
+    display: none;
+    background: #f5f5f5;
   }
-  #sectionAbout {
-    /* font-size: 12px; */
+  .toggle {
+    display: block;
   }
   .hobbie {
     width: 10%;
