@@ -176,7 +176,7 @@ nav ul li a {
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
 #camera	{stroke:$svg; fill: none; stroke-width: 10px;}
-#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear}
+#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 1.5s infinite linear}
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
@@ -184,12 +184,20 @@ nav ul li a {
 @keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
 
 #headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 1s infinite linear}
-@keyframes headphones{0% {transform:scale(1);transform-origin: center center;}	100%	 {transform:scale(1.04);transform-origin: center center;}}
+@keyframes headphones{0% {transform:scale(1);transform-origin: center center;}	100%	 {transform:scale(1.06);transform-origin: center center;}}
 
 #video	{stroke:$svg; fill: none; stroke-width: 10px;}
 #leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; animation: reel 3s infinite linear}
 #rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; animation: reel 3s infinite linear}
 @keyframes reel{0%{transform-origin: 50% 50%; transform: rotate(0deg);}100%{transform-origin: 50% 50%; transform: rotate(360deg);}}
+
+#frame	{stroke:$svg; fill: none; stroke-width: 8px;}
+#tube	{stroke:$svg; fill: none; stroke-width: 10px;}
+#seat	{stroke:$svg; fill: none; stroke-width: 18px;}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; animation: wheel 1s infinite linear}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; animation: wheel 1s infinite linear}
+#peadle {stroke: $svg; stroke-width: 8px; fill:transparent; animation: wheel 1s infinite linear}
+@keyframes wheel {0%{transform-origin: 50% 50%; transform: rotate(0deg);}100%{transform-origin: 50% 50%; transform: rotate(-360deg);}}
 
 #sectionExpertise	{/*expertise*/
  	background-color: $bg-color;
@@ -328,7 +336,7 @@ nav ul li a {
 .sky:hover .codepen	{stroke: lime;  transition: 0.5s linear;}
 
 .be	{stroke: $svg;fill: none;stroke-width: 10px;}
-.sky:hover .be	{stroke: #1969fb; transition: 0.5s linear;}
+.sky:hover .be	{stroke: #1969fb; fill: #1969fb;  transition: 0.5s linear;}
 
 .github	{stroke: $svg;fill: none;stroke-width: 10px;}
 .sky:hover .github	{stroke: purple;  transition: 0.5s linear;}
@@ -406,11 +414,11 @@ textarea {
   margin-top: 50px;
   margin-bottom: 50px;
   transition: all 0.2s;
-  box-shadow: 0px 5px 10px #f5f5f5;
+  box-shadow: 0px 5px 10px lightgray;
 }
 .btn:hover {
   background-color: transparent;
-  box-shadow: 0px 5px 10px #dcdcdc;
+  box-shadow: 0px 5px 10px gray;
 }
 hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 
@@ -540,9 +548,9 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	.quote		{font-size: 5vw;}
 	nav			{position: fixed; top:0;}
 	nav ul		{display: none; background: $bg-color1;}	
-// 	nav ul li 		{width: 90px;}
+	nav ul li 		{width: 90px;}
 	.toggle		{display: block;}		
-#sectionAbout	{}
+#sectionAbout	{	padding: 1%  10%  1% 10%;}
 	.hobbie		{width: 10%;}
 	.circles   	{width: 10%;}
 	.sky			{width: 10%;}

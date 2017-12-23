@@ -302,7 +302,7 @@ nav ul li a {
   stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
-  animation: flash 2s infinite linear;
+  animation: flash 1.5s infinite linear;
 }
 
 @keyframes flash {
@@ -352,7 +352,7 @@ nav ul li a {
     transform-origin: center center;
   }
   100% {
-    transform: scale(1.04);
+    transform: scale(1.06);
     transform-origin: center center;
   }
 }
@@ -385,6 +385,56 @@ nav ul li a {
   100% {
     transform-origin: 50% 50%;
     transform: rotate(360deg);
+  }
+}
+
+#frame {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#tube {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#seat {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 18px;
+}
+
+#frontwheel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: wheel 1s infinite linear;
+}
+
+#rearwheel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: wheel 1s infinite linear;
+}
+
+#peadle {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: wheel 1s infinite linear;
+}
+
+@keyframes wheel {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(-360deg);
   }
 }
 
@@ -617,6 +667,7 @@ nav ul li a {
 
 .sky:hover .be {
   stroke: #1969fb;
+  fill: #1969fb;
   transition: 0.5s linear;
 }
 
@@ -730,12 +781,12 @@ textarea:hover {
   margin-top: 50px;
   margin-bottom: 50px;
   transition: all 0.2s;
-  box-shadow: 0px 5px 10px #f5f5f5;
+  box-shadow: 0px 5px 10px lightgray;
 }
 
 .btn:hover {
   background-color: transparent;
-  box-shadow: 0px 5px 10px #dcdcdc;
+  box-shadow: 0px 5px 10px gray;
 }
 
 hr {
@@ -933,8 +984,14 @@ hr {
     display: none;
     background: #f5f5f5;
   }
+  nav ul li {
+    width: 90px;
+  }
   .toggle {
     display: block;
+  }
+  #sectionAbout {
+    padding: 1%  10%  1% 10%;
   }
   .hobbie {
     width: 10%;
