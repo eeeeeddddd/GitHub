@@ -343,16 +343,16 @@ nav ul li a {
   fill: none;
   stroke-width: 10px;
   animation: headphones 1s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
 }
 
 @keyframes headphones {
   0% {
     transform: scale(1);
-    transform-origin: center center;
   }
   100% {
     transform: scale(1.06);
-    transform-origin: center center;
   }
 }
 
@@ -366,6 +366,8 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
   animation: reel 3s infinite linear;
 }
 
@@ -373,16 +375,16 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
   animation: reel 3s infinite linear;
 }
 
 @keyframes reel {
   0% {
-    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
   100% {
-    transform-origin: 50% 50%;
     transform: rotate(360deg);
   }
 }
@@ -409,6 +411,8 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
   animation: wheel 1s infinite linear;
 }
 
@@ -416,6 +420,8 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
   animation: wheel 1s infinite linear;
 }
 
@@ -423,16 +429,16 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
   animation: wheel 1s infinite linear;
 }
 
 @keyframes wheel {
   0% {
-    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
   100% {
-    transform-origin: 50% 50%;
     transform: rotate(-360deg);
   }
 }
@@ -475,74 +481,57 @@ nav ul li a {
 .line {
   position: relative;
   height: 10px;
-  width: 10%;
-  background: red;
   border-radius: 10px;
   transition: all 1s ease-in;
 }
 
 .line1 {
   background: #56c9fb;
+  width: 100%;
 }
 
 .line2 {
   background: #ff7100;
+  width: 85%;
 }
 
 .line3 {
   background: #ff008b;
+  width: 85%;
 }
 
 .line4 {
   background: #e55ffe;
+  width: 85%;
 }
 
 .line5 {
   background: #e55ffe;
+  width: 85%;
 }
 
 .line6 {
   background: blue;
+  width: 85%;
 }
 
 .line7 {
   background: blue;
+  width: 85%;
 }
 
 .line8 {
   background: blue;
+  width: 85%;
 }
 
 .line9 {
   background: blue;
+  width: 85%;
 }
 
 .line10 {
   background: #00ff18;
-}
-
-.percent100 {
-  width: 100%;
-}
-
-.percent90 {
-  width: 90%;
-}
-
-.percent85 {
-  width: 85%;
-}
-
-.percent80 {
-  width: 80%;
-}
-
-.percent75 {
-  width: 75%;
-}
-
-.percent70 {
-  width: 70%;
 }
 
 #sectionExpertiseCircles {
@@ -644,7 +633,7 @@ nav ul li a {
 
 .sky:hover .cc {
   stroke: red;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .codepen {
@@ -654,8 +643,8 @@ nav ul li a {
 }
 
 .sky:hover .codepen {
-  stroke: lime;
-  transition: 0.5s linear;
+  stroke: black;
+  transition: 0.3s linear;
 }
 
 .be {
@@ -666,8 +655,7 @@ nav ul li a {
 
 .sky:hover .be {
   stroke: #1969fb;
-  fill: #1969fb;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .github {
@@ -678,7 +666,7 @@ nav ul li a {
 
 .sky:hover .github {
   stroke: purple;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .xd {
@@ -689,7 +677,7 @@ nav ul li a {
 
 .sky:hover .xd {
   stroke: #e750b9;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .dribbble {
@@ -700,7 +688,7 @@ nav ul li a {
 
 .sky:hover .dribbble {
   stroke: #b3335a;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 #sectionExperience {
@@ -804,14 +792,14 @@ hr {
   margin-bottom: 400px;
 }
 
-#social {
+#socials {
   margin: 0 auto;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
-.network, .networkenvelop {
+.social, .socialenvelop {
   display: inline-block;
   width: 4%;
   margin: 0px 2% 0px 2%;
@@ -824,18 +812,7 @@ hr {
   stroke-width: 12px;
 }
 
-.network:hover #facebook, .networkenvelop:hover #facebook {
-  fill: #707070;
-  transition: 0.3s linear;
-}
-
-#twitter {
-  stroke: #707070;
-  fill: transparent;
-  stroke-width: 12px;
-}
-
-.network:hover #twitter, .networkenvelop:hover #twitter {
+.social:hover #facebook, .socialenvelop:hover #facebook {
   fill: #707070;
   transition: 0.3s linear;
 }
@@ -862,48 +839,26 @@ hr {
   transition: all 0.3s linear;
 }
 
-.networkenvelop:hover #open {
+.socialenvelop:hover #open {
   opacity: 1;
   fill: #707070;
 }
 
-.networkenvelop:hover #close {
+.socialenvelop:hover #close {
   fill: white;
 }
 
-.networkenvelop:hover #envelop {
+.socialenvelop:hover #envelop {
   fill: #707070;
 }
 
-#instagram {
+#twitter {
   stroke: #707070;
   fill: transparent;
   stroke-width: 12px;
 }
 
-#instagramlens {
-  stroke: #707070;
-  fill: transparent;
-  stroke-width: 12px;
-}
-
-.network:hover #instagram, .networkenvelop:hover #instagram {
-  fill: #707070;
-  transition: 0.3s linear;
-}
-
-.network:hover #instagramlens, .networkenvelop:hover #instagramlens {
-  stroke: white;
-  transition: 0.3s linear;
-}
-
-#facetime {
-  stroke: #707070;
-  fill: transparent;
-  stroke-width: 12px;
-}
-
-.network:hover #facetime, .networkenvelop:hover #facetime {
+.social:hover #twitter, .socialenvelop:hover #twitter {
   fill: #707070;
   transition: 0.3s linear;
 }
@@ -1022,7 +977,7 @@ hr {
   hr {
     width: 80%;
   }
-  .network, .networkenvelop {
+  .network {
     width: 10%;
   }
 }
