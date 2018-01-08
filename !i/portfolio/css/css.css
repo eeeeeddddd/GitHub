@@ -540,7 +540,7 @@ nav ul li a {
 .circles {
   display: inline-block;
   width: 3%;
-  margin: 0px 2% 0px 2%;
+  margin: 5px 2% 0px 2%;
   transition: all 0.5s linear;
 }
 
@@ -610,7 +610,7 @@ nav ul li a {
 .clouds {
   display: inline-block;
   width: 3%;
-  margin: 0px 1% 0px 1%;
+  margin: 5px 2% 0px 2%;
   transition: all 0.5s linear;
 }
 
@@ -697,7 +697,7 @@ nav ul li a {
 #cv {
   display: inline-block;
   width: 6%;
-  margin: 0px 2% 0px 2%;
+  margin: 5px 2% 0px 2%;
   transition: all 0.5s linear;
 }
 
@@ -785,7 +785,7 @@ hr {
 .socials, .socialsenvelop {
   display: inline-block;
   width: 3%;
-  margin: 0px 2% 0px 2%;
+  margin: 5px 2% 0px 2%;
   transition: all 0.3s linear;
 }
 
