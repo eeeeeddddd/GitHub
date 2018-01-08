@@ -7,16 +7,11 @@ $(document).ready(function()	{
     });
 
 // makes nav reappear
-    
-    $(window).resize(function (){
-	    
-	    if ( $(window) .width () > 500 ) {
-		    
-		$('nav ul').removeAttr("style")  
-		  
+$(window).resize(function (){    
+	if ( $(window) .width () > 500 ) {	    
+			$('nav ul').removeAttr("style")  		  
 	    }
     })
-
 });
 
 //fixtop
@@ -30,6 +25,7 @@ $(function(){
         }
     });
 });
+
 //fixtoptext
 $(function(){
     $(window).scroll(function() {
@@ -54,12 +50,11 @@ $(document).ready(function () {
        
        else {
 	   $("nav").addClass("navscroll");}
-       previousScroll = currentScroll;
-       
+       previousScroll = currentScroll;      
     });
 }());
 
-//nac scroll text
+//nav scroll text
 $(document).ready(function () {
     var previousScroll = 0;
     
@@ -71,17 +66,16 @@ $(document).ready(function () {
        
        else {
 	   $("nav ul li a").addClass("navscrolltext");}
-       previousScroll = currentScroll;
-       
+       previousScroll = currentScroll;     
     });
 }());
 
 //form active
 $(document).ready (function() {
 	$("textarea, input").click (function() {	
-		$("textarea, input").css ({background: "#f5f5f5"});	})
+		$("textarea, input").css ({background: "#f5f5f5"});
+	})
 ;});
-
 
 // //smooth scroll
 $(document).ready(function(){
