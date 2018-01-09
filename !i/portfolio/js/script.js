@@ -1,5 +1,4 @@
 // toggle function
-
 $(document).ready(function()	{
 
     $(".toggle").click (function () {
@@ -17,7 +16,7 @@ $(window).resize(function (){
 //fixtop
 $(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 790) {
+        if ($(this).scrollTop() >= 780) {
             $('nav').addClass('stickytop');
         }
         else {
@@ -26,7 +25,7 @@ $(function(){
     });
 });
 
-//fixtoptext
+// fixtoptext
 $(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 790) {

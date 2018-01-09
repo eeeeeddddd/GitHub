@@ -49,6 +49,21 @@ a {
   text-decoration: none;
 }
 
+.dasharray:hover {
+  animation: 1s draw linear forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0 2000;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+  }
+}
+
 #sectionHeader {
   /*header*/
   height: 100vh;
@@ -82,12 +97,8 @@ a {
 }
 
 .navscroll {
-  height: 60px;
-  line-height: 60px;
-}
-
-.navscrolltext {
-  font-size: 25px;
+  height: 100px;
+  line-height: 100px;
 }
 
 .stickytop {
@@ -124,9 +135,9 @@ nav ul li a {
   position: relative;
   display: block;
   color: #707070;
-  font-size: 20px;
-  font-family: "Advent Pro";
-  font-weight: 300;
+  font-size: 25px;
+  font-family: "mywoff";
+  text-transform: uppercase;
   transition: 0.3s ease;
 }
 
@@ -176,20 +187,21 @@ nav ul li a {
 #sectionAbout {
   /*about*/
   background-color: white;
-  padding: 5%  10%  5% 10%;
+  padding: 5%  5%  1% 5%;
   text-align: center;
 }
 
 #sectionHobbies {
   /*hobbies*/
-  background: #f5f5f5;
+  background: white;
   text-align: center;
+  padding: 1%;
 }
 
 .hobbie {
   display: inline-block;
-  width: 3%;
-  margin: 5px 2% 0px 2%;
+  width: 2%;
+  margin: 0% 1% 0% 1%;
 }
 
 .hobbieimg {
@@ -223,7 +235,7 @@ nav ul li a {
   stroke: #707070;
   fill: #707070;
   stroke-width: 12px;
-  animation: steam 2s infinite linear;
+  animation: steam 5s infinite linear;
 }
 
 @keyframes steam {
@@ -247,14 +259,14 @@ nav ul li a {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: bite 3s infinite linear;
+  animation: bite 5s infinite linear;
 }
 
 #nobite {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: nobite 3s infinite linear;
+  animation: nobite 5s infinite linear;
 }
 
 @keyframes bite {
@@ -297,7 +309,7 @@ nav ul li a {
   stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
-  animation: flash 1.5s infinite linear;
+  animation: flash 5s infinite linear;
 }
 
 @keyframes flash {
@@ -319,7 +331,7 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
-  animation: mac 2s infinite linear;
+  animation: mac 5s infinite linear;
 }
 
 @keyframes mac {
@@ -338,7 +350,7 @@ nav ul li a {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: headphones 1s infinite linear;
+  animation: headphones 5s infinite linear;
   transform-origin: center center;
   transform-box: fill-box;
 }
@@ -364,7 +376,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 3s infinite linear;
+  animation: reel 5s infinite linear;
 }
 
 #rightreel {
@@ -373,7 +385,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 3s infinite linear;
+  animation: reel 5s infinite linear;
 }
 
 @keyframes reel {
@@ -409,7 +421,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 1s infinite linear;
+  animation: wheel 5s infinite linear;
 }
 
 #rearwheel {
@@ -418,7 +430,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 1s infinite linear;
+  animation: wheel 5s infinite linear;
 }
 
 #peadle {
@@ -427,7 +439,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 1s infinite linear;
+  animation: wheel 5s infinite linear;
 }
 
 @keyframes wheel {
@@ -456,12 +468,11 @@ nav ul li a {
 
 .tableExpertise {
   position: relative;
-  font-size: 20px;
 }
 
 .tableExpertisecolumn {
   width: 150px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 0px;
   text-align: left;
 }
 
@@ -530,18 +541,30 @@ nav ul li a {
   background: #00ff18;
 }
 
-#sectionExpertiseCircles {
+#sectionSoftware {
   /*circle*/
-  padding: 20px;
-  background: #f5f5f5;
+  padding: 1%;
+  background: white;
   text-align: center;
 }
 
-.circles {
+.software {
   display: inline-block;
   width: 3%;
-  margin: 5px 2% 0px 2%;
+  margin: 0px 1% 0px 1%;
   transition: all 0.5s linear;
+}
+
+.adobe {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#psd {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 5px;
 }
 
 #sectionQualifications {
@@ -602,82 +625,84 @@ nav ul li a {
 
 #sectionCloud {
   /*files*/
-  padding: 20px;
+  padding: 1%;
   background: #f5f5f5;
   text-align: center;
 }
 
 .clouds {
   display: inline-block;
-  width: 3%;
-  margin: 5px 2% 0px 2%;
+  width: 4%;
+  margin: 5px 1.5% 0px 1.5%;
   transition: all 0.5s linear;
 }
 
-.cc {
+#cc {
   stroke: #707070;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover .cc {
+.clouds:hover #cc {
   stroke: red;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
-.codepen {
+#codepen {
   stroke: #707070;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover .codepen {
+.clouds:hover #codepen {
   stroke: black;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
-.be {
+#be {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
-.clouds:hover .be {
+.clouds:hover #be {
   stroke: #1969fb;
-  transition: 0.3s linear;
+  fill: none;
+  transition: 0.1s linear;
 }
 
-.github {
+#github {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
-.clouds:hover .github {
+.clouds:hover #github {
   stroke: black;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
-.xd {
+#xd {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
 }
 
-.clouds:hover .xd {
+.clouds:hover #xd {
   stroke: #e750b9;
-  transition: 0.3s linear;
+  fill: none;
+  transition: 0.1s linear;
 }
 
-.dribbble {
+#dribbble {
   stroke: #707070;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover .dribbble {
+.clouds:hover #dribbble {
   stroke: #b3335a;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
 #sectionExperience {
@@ -689,14 +714,14 @@ nav ul li a {
 
 #sectionCv {
   /*cv download*/
-  padding: 20px;
+  padding: 5%;
   background: #f5f5f5;
   text-align: center;
 }
 
 #cv {
   display: inline-block;
-  width: 6%;
+  width: 10%;
   margin: 5px 2% 0px 2%;
   transition: all 0.5s linear;
 }
@@ -719,7 +744,7 @@ input {
   width: 50%;
   height: 10px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Advent Pro";
   border-radius: 10px;
   background: white;
@@ -734,7 +759,7 @@ input:hover {
 textarea {
   width: 50%;
   padding: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Advent Pro";
   border-radius: 10px;
   border: transparent;
@@ -979,6 +1004,9 @@ hr {
   nav ul li {
     width: 90px;
   }
+  nav ul li a {
+    font-size: 16px;
+  }
   .toggle {
     display: block;
   }
@@ -986,13 +1014,13 @@ hr {
     padding: 1%  10%  1% 10%;
   }
   .hobbie {
-    width: 10%;
+    width: 8%;
   }
   .circles {
-    width: 10%;
+    width: 8%;
   }
   .clouds {
-    width: 10%;
+    width: 8%;
   }
   #sectionExperience {
     padding: 5%;
@@ -1017,6 +1045,9 @@ hr {
   }
   .network {
     width: 10%;
+  }
+  .socials, .socialsenvelop {
+    width: 8%;
   }
 }
 
