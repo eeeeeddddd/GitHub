@@ -59,6 +59,22 @@ a	{text-decoration: none;}
    100% {stroke-dasharray: 2000; stroke-dashoffset: 0;}
 }
 
+#sectiontitle	{/*titles*/
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	z-index: 999;
+}
+.title	{
+	font-family: 'mywoff';
+	font-size: 25px;
+	line-height: 40px;
+	text-transform: uppercase;
+	background-color: $bg-color1;
+	font-weight: 100;
+	z-index: 99;
+}
+
 #sectionHeader	{/*header*/
 	height: 100vh;
 	background: $bg-color2;
@@ -82,204 +98,125 @@ a	{text-decoration: none;}
 .quote	{
 	font-family: $fontText;
 	font-weight: 400;		
-	font-size: 2.5vw;
+	font-size: 2vw;
 	color: white;
 	margin: 0;
 }
-#sectionNav		{}
-
-.navscroll	{height: 100px; line-height: 100px;}//size
-.navscrolltext	{}//text
-
-.stickytop {position: fixed; top:0; right: 0; left: 0; background-color: $bg-color1;}
+// #sectionNav		{}
+// .navscroll	{height: 100px; line-height: 100px;}//size
+// .navscrolltext	{}//text
+// .stickytop {position: fixed; top:0; right: 0; left: 0; background-color: $bg-color1;}
 // .stickytoptext {}//script
-
-nav {
-	text-align: center;
-	width: 100%;
-	height: 40px;
-	line-height: 40px;	
-	background-color: $bg-color1;
-	z-index: 99;
-	transition: 0.3s ease;
-}
-nav ul {
-	margin-top: 0px;
-	list-style: none;
-	padding: 0px;/*stops 40px */
-}
-nav ul li {
-	display: inline-block;
- 	width: 120px;
-}
-nav ul li a {
-	position: relative;
-	display: block;
-	color: $fontColor;
-	font-size: 25px;
-	font-family: $fontNav;
-	text-transform: uppercase;
-// 	font-weight: 300;
-	transition: 0.3s ease;
-}
-.toggle	{
-	display: none;
-	font-size: 25px;
-	color: red;
-	text-decoration: none;
-	text-align: center;
-}
-.underlineNav::after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    background: $color2;
-    position: absolute;
-    bottom: 0px;
-    transition: 0.5s ease;
-}
-.underlineNav:hover::after {width: 100%;}
-
-.left::after  {@extend .underlineNav; right: 0px;}
-.center::after  {@extend .underlineNav; left: 50%; right: 50%;}
-.center:hover::after  {@extend .underlineNav; left: 0px;}
-.right::after  {@extend .underlineNav; left: 0px;}
-.right:hover::after  {@extend .underlineNav; left: 0px;}
+// nav {
+// 	text-align: center;
+// 	width: 100%;
+// 	height: 40px;
+// 	line-height: 40px;	
+// 	background-color: $bg-color1;
+// 	z-index: 99;
+// 	transition: 0.3s ease;
+// }
+// nav ul {
+// 	margin-top: 0px;
+// 	list-style: none;
+// 	padding: 0px;/*stops 40px */
+// }
+// nav ul li {
+// 	display: inline-block;
+//  	width: 120px;
+// }
+// nav ul li a {
+// 	position: relative;
+// 	display: block;
+// 	color: $fontColor;
+// 	font-size: 25px;
+// 	font-family: $fontNav;
+// 	text-transform: uppercase;
+// // 	font-weight: 300;
+// 	transition: 0.3s ease;
+// }
+// .toggle	{
+// 	display: none;
+// 	font-size: 25px;
+// 	color: red;
+// 	text-decoration: none;
+// 	text-align: center;
+// }
+// .underlineNav::after {
+//     content: '';
+//     width: 0px;
+//     height: 2px;
+//     background: $color2;
+//     position: absolute;
+//     bottom: 0px;
+//     transition: 0.5s ease;
+// }
+// .underlineNav:hover::after {width: 100%;}
+// 
+// .left::after  {@extend .underlineNav; right: 0px;}
+// .center::after  {@extend .underlineNav; left: 50%; right: 50%;}
+// .center:hover::after  {@extend .underlineNav; left: 0px;}
+// .right::after  {@extend .underlineNav; left: 0px;}
+// .right:hover::after  {@extend .underlineNav; left: 0px;}
 
 #sectionAbout	{/*about*/
 	background-color: $bg-color;
-	padding: 5%  5%  1% 5%;
+	padding: 4%  2%  1% 2%;
 	text-align: center;
 }
 
 #sectionHobbies		{/*hobbies*/
 	background: $bg-color;
 	text-align: center;
-	padding: 1%;
+	padding: 0% 1% 5% 1%;
 }
 .hobbie   {
     display: inline-block;
-    width: 2%;
-    margin: 0% 1% 0% 1%;
-}
-.hobbieimg	{//temp
-	width: 100%;
-	height: 100%;
+    width: 3%;
+    margin: 1% 1% 0% 1%;
 }
 
 #coffeecup	{stroke:$svg; fill: none;stroke-width: 10px;}
 #coffee	{stroke:$svg; fill: none;stroke-width: 10px; animation: coffee 20s infinite linear;}
 @keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}
 }
-#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 5s infinite linear;}
+#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 1s infinite linear;}
 @keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
 
 #pie	{stroke:$svg; fill: none; stroke-width: 10px;}
-#bite	{stroke:$svg; fill: none; stroke-width: 10px; animation: bite 5s infinite linear;}
-#nobite	{stroke:$svg; fill: none; stroke-width: 10px; animation: nobite 5s infinite linear;}
+#bite	{stroke:$svg; fill: none; stroke-width: 10px; animation: bite 3s infinite linear;}
+#nobite	{stroke:$svg; fill: none; stroke-width: 10px; animation: nobite 3s infinite linear;}
 @keyframes bite{0%{opacity:0}1%, 49%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
 #camera	{stroke:$svg; fill: none; stroke-width: 10px;}
-#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 5s infinite linear;}
+#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 3s infinite linear;}
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
-#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: mac 5s infinite linear;}
+#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear;}
 @keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
 
-#headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 5s infinite linear; transform-origin: center center; transform-box: fill-box;}
-@keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.97);}}
+#headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 2s infinite linear; transform-origin: center center; transform-box: fill-box;}
+@keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
 
 #video	{stroke:$svg; fill: none; stroke-width: 10px;}
-#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 5s infinite linear}
-#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 5s infinite linear}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
 @keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 
 #frame	{stroke:$svg; fill: none; stroke-width: 8px;}
 #tube	{stroke:$svg; fill: none; stroke-width: 10px;}
 #seat	{stroke:$svg; fill: none; stroke-width: 18px;}
-#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 5s infinite linear}
-#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 5s infinite linear}
-#peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 5s infinite linear}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
+#peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
 
 #sectionExpertise	{/*expertise*/
- 	background-color: $bg-color;
 	padding: 5%  10%  5% 10%;
-	text-align: center;
+	background:  $bg-color;
 }
-#tableExpertiseleft	{display: inline-block;}
-#tableExpertiseright	{display: inline-block;}
-.tableExpertise	{
-	position: relative;
-}
-.tableExpertisecolumn	{
-	width: 150px;
-	padding: 0px 0px 0px 0px;
-	text-align: left;
-}
-.underline	{
-	position: relative;
-	width: 100px;
-	height: 10px;
-	background: lightgray;
-	border-radius: 10px;
-	margin-left: 10px;
-}
-.line	{
-	position: relative;
-	height: 10px;
-	border-radius: 10px;
-	transition: all 1s ease-in;
-}
-.line1	{ background: #56c9fb; width: 100%;}
-.line2	{ background: #ff7100; width: 85%;}
-.line3	{ background: #ff008b; width: 85%;}
-.line4	{ background: #e55ffe; width: 85%;}
-.line5	{ background: #e55ffe; width: 85%;}
-.line6	{ background: blue; width: 85%;}
-.line7	{ background: blue; width: 85%;}
-.line8	{ background: blue; width: 85%;}
-.line9	{ background: blue; width: 85%;}
-.line10{ background: #00ff18;}
-
-
-
-
-
-
-
-
-
-#sectionSoftware	{/*circle*/
-	padding: 1%;
-	background: $bg-color;
-	text-align: center;
-}
-.software   {
-	display: inline-block;
-    width: 3%;
-    margin: 0px 1% 0px 1%;
-    transition: all 0.5s linear;
-}
-
-.adobe	{stroke:$svg; fill: none; stroke-width: 8px;}
-#psd	{stroke:$svg; fill: none; stroke-width: 5px;}
-// .software:hover  #psd	{stroke: #56c9fb; transition: 0.2s linear;}
-// .software:hover  .adobe	{stroke: #56c9fb; transition: 0.2s linear;}
-
-
-
-
-
-
-
-
-
-
-
-
 
 #sectionQualifications	{/*qualifications*/
 	padding: 5%  10%  5% 10%;
@@ -287,50 +224,13 @@ nav ul li a {
 }
 
 #sectionPortfolio	{/*portfolio*/
-	background: $bg-color1;
+	padding: 5%  10%  5% 10%;
+	background:  $bg-color;
 }
-#portfolio  {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-.port   {
-    display: inline-block;
-    position: relative;
-     width: 33.333333333%;
-    margin: -4px -4px -0px 0px;
-    font-size: 0px;
-}
-.portimg	{
-	width: 100%;
-	height: 100%;
-}
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 0s ease;
-	background-color: rgba(0,0,0, .5);
-}
-.port:hover .overlay {
-  opacity: 1;
-}
-.porttext {
- 	color: white;
- 	font-size: 20px;
- 	position: absolute;
- 	top: 50%;
- 	left: 50%;
- 	transform: translate(-50%, -50%);
-}
+
 #sectionCloud		{/*files*/
 	padding: 1%;
-	background: $bg-color1;
+	background: $bg-color;
 	text-align: center;
 }
 .clouds  {
@@ -358,9 +258,8 @@ nav ul li a {
 .clouds:hover #dribbble	{stroke: #b3335a;  transition: 0.2s linear;}
 
 #sectionExperience		{/*experience*/
-	background-color: $bg-color;
-	height: 500px;
 	padding: 5%  10%  5% 10%;
+	background:  $bg-color;
 }
 
 #sectionCv		{/*cv download*/
@@ -543,11 +442,11 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #header			{top: 60%;}
 .headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this
 	.quote		{font-size: 5vw;}
-	nav			{position: fixed; top:0;}
-	nav ul		{display: none; background: $bg-color1;}	
-	nav ul li 		{width: 90px;}
-	nav ul li 	a	{font-size: 16px;}	
-	.toggle		{display: block;}		
+// 	nav			{position: fixed; top:0;}
+// 	nav ul		{display: none; background: $bg-color1;}	
+// 	nav ul li 		{width: 90px;}
+// 	nav ul li 	a	{font-size: 16px;}	
+// 	.toggle		{display: block;}		
 #sectionAbout	{	padding: 1%  10%  1% 10%;}
 	.hobbie		{width: 8%;}
 	.circles   	{width: 8%;}

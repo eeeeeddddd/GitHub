@@ -64,6 +64,24 @@ a {
   }
 }
 
+#sectiontitle {
+  /*titles*/
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+}
+
+.title {
+  font-family: 'mywoff';
+  font-size: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  font-weight: 100;
+  z-index: 99;
+}
+
 #sectionHeader {
   /*header*/
   height: 100vh;
@@ -91,103 +109,15 @@ a {
 .quote {
   font-family: "Advent Pro";
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: white;
   margin: 0;
-}
-
-.navscroll {
-  height: 100px;
-  line-height: 100px;
-}
-
-.stickytop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #f5f5f5;
-}
-
-nav {
-  text-align: center;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  background-color: #f5f5f5;
-  z-index: 99;
-  transition: 0.3s ease;
-}
-
-nav ul {
-  margin-top: 0px;
-  list-style: none;
-  padding: 0px;
-  /*stops 40px */
-}
-
-nav ul li {
-  display: inline-block;
-  width: 120px;
-}
-
-nav ul li a {
-  position: relative;
-  display: block;
-  color: #707070;
-  font-size: 25px;
-  font-family: "mywoff";
-  text-transform: uppercase;
-  transition: 0.3s ease;
-}
-
-.toggle {
-  display: none;
-  font-size: 25px;
-  color: red;
-  text-decoration: none;
-  text-align: center;
-}
-
-.underlineNav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
-  content: '';
-  width: 0px;
-  height: 2px;
-  background: #F7484E;
-  position: absolute;
-  bottom: 0px;
-  transition: 0.5s ease;
-}
-
-.underlineNav:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
-  width: 100%;
-}
-
-.left::after {
-  right: 0px;
-}
-
-.center::after {
-  left: 50%;
-  right: 50%;
-}
-
-.center:hover::after {
-  left: 0px;
-}
-
-.right::after {
-  left: 0px;
-}
-
-.right:hover::after {
-  left: 0px;
 }
 
 #sectionAbout {
   /*about*/
   background-color: white;
-  padding: 5%  5%  1% 5%;
+  padding: 4%  2%  1% 2%;
   text-align: center;
 }
 
@@ -195,18 +125,13 @@ nav ul li a {
   /*hobbies*/
   background: white;
   text-align: center;
-  padding: 1%;
+  padding: 0% 1% 5% 1%;
 }
 
 .hobbie {
   display: inline-block;
-  width: 2%;
-  margin: 0% 1% 0% 1%;
-}
-
-.hobbieimg {
-  width: 100%;
-  height: 100%;
+  width: 3%;
+  margin: 1% 1% 0% 1%;
 }
 
 #coffeecup {
@@ -235,7 +160,7 @@ nav ul li a {
   stroke: #707070;
   fill: #707070;
   stroke-width: 12px;
-  animation: steam 5s infinite linear;
+  animation: steam 1s infinite linear;
 }
 
 @keyframes steam {
@@ -259,14 +184,14 @@ nav ul li a {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: bite 5s infinite linear;
+  animation: bite 3s infinite linear;
 }
 
 #nobite {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: nobite 5s infinite linear;
+  animation: nobite 3s infinite linear;
 }
 
 @keyframes bite {
@@ -309,7 +234,7 @@ nav ul li a {
   stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
-  animation: flash 5s infinite linear;
+  animation: flash 3s infinite linear;
 }
 
 @keyframes flash {
@@ -331,7 +256,7 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
-  animation: mac 5s infinite linear;
+  animation: mac 2s infinite linear;
 }
 
 @keyframes mac {
@@ -350,7 +275,7 @@ nav ul li a {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: headphones 5s infinite linear;
+  animation: headphones 2s infinite linear;
   transform-origin: center center;
   transform-box: fill-box;
 }
@@ -360,7 +285,7 @@ nav ul li a {
     transform: scale(1);
   }
   100% {
-    transform: scale(0.97);
+    transform: scale(0.9);
   }
 }
 
@@ -376,7 +301,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 5s infinite linear;
+  animation: reel 2s infinite linear;
 }
 
 #rightreel {
@@ -385,7 +310,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 5s infinite linear;
+  animation: reel 2s infinite linear;
 }
 
 @keyframes reel {
@@ -421,7 +346,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 5s infinite linear;
+  animation: wheel 1s infinite linear;
 }
 
 #rearwheel {
@@ -430,7 +355,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 5s infinite linear;
+  animation: wheel 1s infinite linear;
 }
 
 #peadle {
@@ -439,7 +364,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 5s infinite linear;
+  animation: wheel 1s infinite linear;
 }
 
 @keyframes wheel {
@@ -453,118 +378,8 @@ nav ul li a {
 
 #sectionExpertise {
   /*expertise*/
-  background-color: white;
   padding: 5%  10%  5% 10%;
-  text-align: center;
-}
-
-#tableExpertiseleft {
-  display: inline-block;
-}
-
-#tableExpertiseright {
-  display: inline-block;
-}
-
-.tableExpertise {
-  position: relative;
-}
-
-.tableExpertisecolumn {
-  width: 150px;
-  padding: 0px 0px 0px 0px;
-  text-align: left;
-}
-
-.underline {
-  position: relative;
-  width: 100px;
-  height: 10px;
-  background: lightgray;
-  border-radius: 10px;
-  margin-left: 10px;
-}
-
-.line {
-  position: relative;
-  height: 10px;
-  border-radius: 10px;
-  transition: all 1s ease-in;
-}
-
-.line1 {
-  background: #56c9fb;
-  width: 100%;
-}
-
-.line2 {
-  background: #ff7100;
-  width: 85%;
-}
-
-.line3 {
-  background: #ff008b;
-  width: 85%;
-}
-
-.line4 {
-  background: #e55ffe;
-  width: 85%;
-}
-
-.line5 {
-  background: #e55ffe;
-  width: 85%;
-}
-
-.line6 {
-  background: blue;
-  width: 85%;
-}
-
-.line7 {
-  background: blue;
-  width: 85%;
-}
-
-.line8 {
-  background: blue;
-  width: 85%;
-}
-
-.line9 {
-  background: blue;
-  width: 85%;
-}
-
-.line10 {
-  background: #00ff18;
-}
-
-#sectionSoftware {
-  /*circle*/
-  padding: 1%;
   background: white;
-  text-align: center;
-}
-
-.software {
-  display: inline-block;
-  width: 3%;
-  margin: 0px 1% 0px 1%;
-  transition: all 0.5s linear;
-}
-
-.adobe {
-  stroke: #707070;
-  fill: none;
-  stroke-width: 8px;
-}
-
-#psd {
-  stroke: #707070;
-  fill: none;
-  stroke-width: 5px;
 }
 
 #sectionQualifications {
@@ -575,58 +390,14 @@ nav ul li a {
 
 #sectionPortfolio {
   /*portfolio*/
-  background: #f5f5f5;
-}
-
-#portfolio {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-
-.port {
-  display: inline-block;
-  position: relative;
-  width: 33.333333333%;
-  margin: -4px -4px 0px 0px;
-  font-size: 0px;
-}
-
-.portimg {
-  width: 100%;
-  height: 100%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.port:hover .overlay {
-  opacity: 1;
-}
-
-.porttext {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 5%  10%  5% 10%;
+  background: white;
 }
 
 #sectionCloud {
   /*files*/
   padding: 1%;
-  background: #f5f5f5;
+  background: white;
   text-align: center;
 }
 
@@ -707,9 +478,8 @@ nav ul li a {
 
 #sectionExperience {
   /*experience*/
-  background-color: white;
-  height: 500px;
   padding: 5%  10%  5% 10%;
+  background: white;
 }
 
 #sectionCv {
@@ -992,23 +762,6 @@ hr {
   }
   .quote {
     font-size: 5vw;
-  }
-  nav {
-    position: fixed;
-    top: 0;
-  }
-  nav ul {
-    display: none;
-    background: #f5f5f5;
-  }
-  nav ul li {
-    width: 90px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-  .toggle {
-    display: block;
   }
   #sectionAbout {
     padding: 1%  10%  1% 10%;
