@@ -83,58 +83,37 @@ a {
   z-index: 99;
 }
 
-#sectionHeader {
-  /*header*/
-  height: 100vh;
-  background: #292929;
-  margin: 0;
-  padding: 0;
-}
-
-#header {
-  position: relative;
-  top: 50%;
-  transform: translate(0%, -50%);
-  text-align: center;
+.stickytitle {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
-.headername {
-  font-family: 'mywoff';
-  font-size: 7vw;
-  margin: 0;
-  color: white;
-  text-shadow: 0.1px 0.1px 1px white;
-}
-
-.quote {
-  font-family: "Advent Pro";
-  font-weight: 400;
-  font-size: 2.5vw;
-  color: white;
-  margin: 0;
-}
-
-.navscroll {
-  height: 100px;
-  line-height: 100px;
-}
-
-.stickytop {
+#sectionNav {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background-color: #f5f5f5;
+  z-index: 99999;
+  transition: transform 0.5s cubic-bezier(0.42, 1, 0.8, 1);
+  opacity: 0;
+}
+
+.sectionNavHide {
+  transform: translateY(-100%);
+}
+
+.headerScroll {
+  opacity: 1 !important;
 }
 
 nav {
   text-align: center;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
-  background-color: #f5f5f5;
-  z-index: 99;
+  height: 70px;
+  line-height: 70px;
   transition: 0.3s ease;
 }
 
@@ -147,7 +126,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 120px;
+  width: 150px;
 }
 
 nav ul li a {
@@ -203,6 +182,38 @@ nav ul li a {
   left: 0px;
 }
 
+#sectionHeader {
+  /*header*/
+  height: 100vh;
+  background: #292929;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.headername {
+  font-family: 'mywoff';
+  font-size: 7vw;
+  margin: 0;
+  color: white;
+  text-shadow: 0.1px 0.1px 1px white;
+}
+
+.quote {
+  font-family: "Advent Pro";
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: white;
+  margin: 0;
+}
+
 #sectionAbout {
   /*about*/
   background-color: white;
@@ -219,13 +230,14 @@ nav ul li a {
 
 .hobbie {
   display: inline-block;
-  width: 2%;
+  width: 3%;
   margin: 0% 1% 0% 1%;
 }
 
-.hobbieimg {
-  width: 100%;
-  height: 100%;
+.hobbie {
+  display: inline-block;
+  width: 3%;
+  margin: 0% 1% 0% 1%;
 }
 
 #coffeecup {
@@ -254,7 +266,7 @@ nav ul li a {
   stroke: #707070;
   fill: #707070;
   stroke-width: 12px;
-  animation: steam 5s infinite linear;
+  animation: steam 1s infinite linear;
 }
 
 @keyframes steam {
@@ -278,14 +290,14 @@ nav ul li a {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: bite 5s infinite linear;
+  animation: bite 3s infinite linear;
 }
 
 #nobite {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: nobite 5s infinite linear;
+  animation: nobite 3s infinite linear;
 }
 
 @keyframes bite {
@@ -328,7 +340,7 @@ nav ul li a {
   stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
-  animation: flash 5s infinite linear;
+  animation: flash 3s infinite linear;
 }
 
 @keyframes flash {
@@ -350,7 +362,7 @@ nav ul li a {
   stroke: #707070;
   stroke-width: 8px;
   fill: transparent;
-  animation: mac 5s infinite linear;
+  animation: mac 2s infinite linear;
 }
 
 @keyframes mac {
@@ -369,7 +381,7 @@ nav ul li a {
   stroke: #707070;
   fill: none;
   stroke-width: 10px;
-  animation: headphones 5s infinite linear;
+  animation: headphones 2s infinite linear;
   transform-origin: center center;
   transform-box: fill-box;
 }
@@ -379,7 +391,7 @@ nav ul li a {
     transform: scale(1);
   }
   100% {
-    transform: scale(0.97);
+    transform: scale(0.9);
   }
 }
 
@@ -395,7 +407,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 5s infinite linear;
+  animation: reel 2s infinite linear;
 }
 
 #rightreel {
@@ -404,7 +416,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 5s infinite linear;
+  animation: reel 2s infinite linear;
 }
 
 @keyframes reel {
@@ -440,7 +452,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 5s infinite linear;
+  animation: wheel 1s infinite linear;
 }
 
 #rearwheel {
@@ -449,7 +461,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 5s infinite linear;
+  animation: wheel 1s infinite linear;
 }
 
 #peadle {
@@ -458,7 +470,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 5s infinite linear;
+  animation: wheel 1s infinite linear;
 }
 
 @keyframes wheel {
@@ -468,6 +480,12 @@ nav ul li a {
   100% {
     transform: rotate(-360deg);
   }
+}
+
+#sectionDesign {
+  /*design*/
+  padding: 5%  10%  5% 10%;
+  background: white;
 }
 
 #sectionExpertise {
@@ -560,32 +578,6 @@ nav ul li a {
   background: #00ff18;
 }
 
-#sectionSoftware {
-  /*circle*/
-  padding: 1%;
-  background: white;
-  text-align: center;
-}
-
-.software {
-  display: inline-block;
-  width: 3%;
-  margin: 0px 1% 0px 1%;
-  transition: all 0.5s linear;
-}
-
-.adobe {
-  stroke: #707070;
-  fill: none;
-  stroke-width: 8px;
-}
-
-#psd {
-  stroke: #707070;
-  fill: none;
-  stroke-width: 5px;
-}
-
 #sectionQualifications {
   /*qualifications*/
   padding: 5%  10%  5% 10%;
@@ -594,58 +586,14 @@ nav ul li a {
 
 #sectionPortfolio {
   /*portfolio*/
-  background: #f5f5f5;
-}
-
-#portfolio {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-
-.port {
-  display: inline-block;
-  position: relative;
-  width: 33.333333333%;
-  margin: -4px -4px 0px 0px;
-  font-size: 0px;
-}
-
-.portimg {
-  width: 100%;
-  height: 100%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.port:hover .overlay {
-  opacity: 1;
-}
-
-.porttext {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 5%  10%  5% 10%;
+  background: white;
 }
 
 #sectionCloud {
   /*files*/
   padding: 1%;
-  background: #f5f5f5;
+  background: white;
   text-align: center;
 }
 
@@ -999,6 +947,9 @@ hr {
 }
 
 @media (max-width: 600px) {
+  #sectionNav {
+    display: none;
+  }
   #sectionHeader {
     height: 200px;
   }
@@ -1008,26 +959,6 @@ hr {
   .headername {
     font-size: 10vw;
     text-shadow: 0px 0px 0px;
-  }
-  .quote {
-    font-size: 5vw;
-  }
-  nav {
-    position: fixed;
-    top: 0;
-  }
-  nav ul {
-    display: none;
-    background: #f5f5f5;
-  }
-  nav ul li {
-    width: 90px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-  .toggle {
-    display: block;
   }
   #sectionAbout {
     padding: 1%  10%  1% 10%;
