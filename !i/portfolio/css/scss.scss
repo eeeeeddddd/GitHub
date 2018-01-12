@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
-@import url('https://fonts.googleapis.com/css?family=Antic'); /*'Antic'*/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'); /*'Roboto Condensed'*/
+// @import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'); /*'Roboto Condensed'*/
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500'); /*'Advent Pro'*/
 
 $fontTitle: 'mywoff';
 $fontNav:  'mywoff';
 $fontText: 'Advent Pro';
-$fontForm: 'Advent Pro'; /*needed*/
+$fontForm: 'Advent Pro';
 
 $bg-color: white; /*main*/
 $bg-color1: #f5f5f5;/*gray*/
@@ -51,7 +50,8 @@ html body	{
 	margin: 0px;
 	padding: 0px;
 }
-a	{text-decoration: none;}
+
+a	{text-decoration: none; color: $fontColor; font-size: 25px;}
 
 .dasharray:hover {animation: 1s draw linear forwards;}
 @keyframes draw 	{
@@ -59,7 +59,7 @@ a	{text-decoration: none;}
    100% {stroke-dasharray: 2000; stroke-dashoffset: 0;}
 }
 
-#sectiontitle	{/*titles*/
+#title	{/*titles*/
 	text-align: center;
 	width: 100%;
 	height: 40px;
@@ -75,12 +75,7 @@ a	{text-decoration: none;}
 	font-weight: 100;
 	z-index: 99;
 }
-.stickytitle	{
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-}
+.stickytitle	{position:fixed; top:0; left:0; width:100%;}
 
 #sectionNav		{
 	position: fixed; 
@@ -92,20 +87,16 @@ a	{text-decoration: none;}
 	transition: transform 0.5s cubic-bezier(.42,1,.8,1);
 	opacity: 0;
 }
-
 .sectionNavHide {transform: translateY(-100%);}
 .headerScroll	{opacity: 1!important;}//needs important
-
-
-// .stickytop {}//script
-// .stickytoptext {}//script
 
 nav {
 	text-align: center;
 	width: 100%;
-	height: 70px;
-	line-height: 70px;	
+	height: 100px;
+	line-height: 100px;	
 	transition: 0.3s ease;
+	overflow: hidden;
 }
 nav ul {
 	margin-top: 0px;
@@ -114,23 +105,17 @@ nav ul {
 }
 nav ul li {
 	display: inline-block;
- 	width: 150px;
+ 	width: 10%;
+ 	padding: 0% 1% 0% 1%;
 }
 nav ul li a {
 	position: relative;
 	display: block;
-	color: $fontColor;
-	font-size: 25px;
+	color: $color2;
+	font-size: 2vw;
 	font-family: $fontNav;
 	text-transform: uppercase;
 	transition: 0.3s ease;
-}
-.toggle	{
-	display: none;
-	font-size: 25px;
-	color: red;
-	text-decoration: none;
-	text-align: center;
 }
 .underlineNav::after {
     content: '';
@@ -138,7 +123,7 @@ nav ul li a {
     height: 2px;
     background: $color2;
     position: absolute;
-    bottom: 0px;
+    bottom:20px;
     transition: 0.5s ease;
 }
 .underlineNav:hover::after {width: 100%;}
@@ -162,7 +147,7 @@ nav ul li a {
 	text-align: center;
 	width: 100%;
 }
-.headername	{
+.name	{
 	font-family: 'mywoff';
 	font-size: 7vw;
 	margin: 0;
@@ -172,30 +157,28 @@ nav ul li a {
 .quote	{
 	font-family: $fontText;
 	font-weight: 400;		
-	font-size: 2.5vw;
+	font-size: 3.5vw;
 	color: white;
 	margin: 0;
 }
 
 #sectionAbout	{/*about*/
 	background-color: $bg-color;
-	padding: 5%  5%  1% 5%;
+	padding: 4%  5%  5% 5%;
 	text-align: center;
 }
-
-#sectionHobbies		{/*hobbies*/
+#hobbies		{/*hobbies*/
 	background: $bg-color;
 	text-align: center;
-	padding: 1%;
+	padding: 1% 1% 1% 1%;
 }
 .hobbie   {
     display: inline-block;
-    width: 3%;
     margin: 0% 1% 0% 1%;
 }
 .hobbie   {
     display: inline-block;
-    width: 3%;
+    width: 4%;
     margin: 0% 1% 0% 1%;
 }
 
@@ -203,7 +186,7 @@ nav ul li a {
 #coffee	{stroke:$svg; fill: none;stroke-width: 10px; animation: coffee 20s infinite linear;}
 @keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}
 }
-#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 1s infinite linear;}
+#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 2s infinite linear;}
 @keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
 
 #pie	{stroke:$svg; fill: none; stroke-width: 10px;}
@@ -213,7 +196,7 @@ nav ul li a {
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
 #camera	{stroke:$svg; fill: none; stroke-width: 10px;}
-#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 3s infinite linear;}
+#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
@@ -235,11 +218,6 @@ nav ul li a {
 #rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 #peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
-
-#sectionDesign	{/*design*/
-	padding: 5%  10%  5% 10%;
-	background:  $bg-color;
-}
 
 #sectionExpertise	{/*expertise*/
  	background-color: $bg-color;
@@ -270,36 +248,64 @@ nav ul li a {
 	border-radius: 10px;
 	transition: all 1s ease-in;
 }
-.line1	{ background: #56c9fb; width: 100%;}
-.line2	{ background: #ff7100; width: 85%;}
-.line3	{ background: #ff008b; width: 85%;}
-.line4	{ background: #e55ffe; width: 85%;}
-.line5	{ background: #e55ffe; width: 85%;}
-.line6	{ background: blue; width: 85%;}
-.line7	{ background: blue; width: 85%;}
-.line8	{ background: blue; width: 85%;}
-.line9	{ background: blue; width: 85%;}
-.line10{ background: #00ff18;}
+.line1	{ background: $color2; width: 85%;}
+.line2	{ background: $color2; width: 85%;}
+.line3	{ background: $color2; width: 85%;}
+.line4	{ background: $color2; width: 85%;}
+.line5	{ background: $color2; width: 85%;}
+.line6	{ background: $color2; width: 85%;}
+.line7	{ background: $color2; width: 85%;}
+.line8	{ background: $color2; width: 85%;}
+.line9	{ background: $color2; width: 85%;}
+.line10{ background: $color2;}
 
 #sectionQualifications	{/*qualifications*/
-	padding: 5%  10%  5% 10%;
+	padding: 5%  0%  5% 0%;
 	background:  $bg-color;
 }
+.qualificationtable {
+	width: 60%;
+	margin: 0 auto;
+}
+.qualificationcolumn	{
+	width: 30%;	
+	table-layout: auto;   
+}
+.qualificationcolumnsub	{
+	font-size: 16px;
+	margin-left: 10%;
+}
+#ciw510pdf {
+	display: none;
+	width: 70%;
+	margin: 0 auto;		
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #sectionPortfolio	{/*portfolio*/
 	padding: 5%  10%  5% 10%;
 	background:  $bg-color;
 }
-
-#sectionCloud		{/*files*/
+#cloud		{/*files*/
 	padding: 1%;
 	background: $bg-color;
 	text-align: center;
 }
 .clouds  {
 	display: inline-block;
-    width: 4%;
-    margin: 5px 1.5% 0px 1.5%;
+    width: 6%;
+    margin: 0px 1.5% 0px 1.5%;
      transition: all 0.5s linear;
 }
 #cc	{stroke:$svg;fill: none;stroke-width: 11px;}
@@ -327,7 +333,7 @@ nav ul li a {
 }
 
 #sectionCv		{/*cv download*/
-	padding: 5%;
+	padding: 2% 5% 5% 5%;
 	background: $bg-color1;
 	text-align: center;
 }
@@ -378,10 +384,10 @@ textarea {
 }
 .btn {
   width: 100px;
-  height: 40px;
+  height: 30px;
   border-radius: 10px;
   border: solid 2px lightgray;
-  font-size: 22px;
+  font-size: 20px;
   font-family: $fontForm; 
   line-height: 3px;
   margin-top: 50px;
@@ -500,19 +506,18 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 }
 @keyframes dash 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}
 
+	
 @media (max-width: 600px) {
+#sectionNav	{display: none;}
+}	
+	
+@media (max-width: 400px) {
 
-#sectionNav			{display: none;}	
-#sectionHeader		{height: 200px;}
-#header			{top: 60%;}
-.headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this
-// 	.quote		{font-size: 5vw;}
-// 	nav			{position: fixed; top:0;}
-// 	nav ul		{display: none; background: $bg-color1;}	
-// 	nav ul li 		{width: 90px;}
-// 	nav ul li 	a	{font-size: 16px;}	
-// 	.toggle		{display: block;}		
-#sectionAbout	{	padding: 1%  10%  1% 10%;}
+#sectionNav		{display: none;}	
+.name			{font-size: 10vw;}
+.quote			{font-size: 5vw;}
+.headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this	
+#sectionAbout	{padding: 1%  10%  1% 10%;}
 	.hobbie		{width: 8%;}
 	.circles   	{width: 8%;}
 	.clouds		{width: 8%;}

@@ -1,12 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poiret+One");
-/*'Poiret One'*/
-@import url("https://fonts.googleapis.com/css?family=Antic");
-/*'Antic'*/
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
-/*'Roboto Condensed'*/
 @import url("https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500");
 /*'Advent Pro'*/
-/*needed*/
 /*main*/
 /*gray*/
 /*header & footer*/
@@ -47,6 +40,8 @@ html body {
 
 a {
   text-decoration: none;
+  color: #707070;
+  font-size: 25px;
 }
 
 .dasharray:hover {
@@ -64,7 +59,7 @@ a {
   }
 }
 
-#sectiontitle {
+#title {
   /*titles*/
   text-align: center;
   width: 100%;
@@ -112,9 +107,10 @@ a {
 nav {
   text-align: center;
   width: 100%;
-  height: 70px;
-  line-height: 70px;
+  height: 100px;
+  line-height: 100px;
   transition: 0.3s ease;
+  overflow: hidden;
 }
 
 nav ul {
@@ -126,25 +122,18 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 150px;
+  width: 10%;
+  padding: 0% 1% 0% 1%;
 }
 
 nav ul li a {
   position: relative;
   display: block;
-  color: #707070;
-  font-size: 25px;
+  color: #F7484E;
+  font-size: 2vw;
   font-family: "mywoff";
   text-transform: uppercase;
   transition: 0.3s ease;
-}
-
-.toggle {
-  display: none;
-  font-size: 25px;
-  color: red;
-  text-decoration: none;
-  text-align: center;
 }
 
 .underlineNav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
@@ -153,7 +142,7 @@ nav ul li a {
   height: 2px;
   background: #F7484E;
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   transition: 0.5s ease;
 }
 
@@ -198,7 +187,7 @@ nav ul li a {
   width: 100%;
 }
 
-.headername {
+.name {
   font-family: 'mywoff';
   font-size: 7vw;
   margin: 0;
@@ -209,7 +198,7 @@ nav ul li a {
 .quote {
   font-family: "Advent Pro";
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   color: white;
   margin: 0;
 }
@@ -217,26 +206,25 @@ nav ul li a {
 #sectionAbout {
   /*about*/
   background-color: white;
-  padding: 5%  5%  1% 5%;
+  padding: 4%  5%  5% 5%;
   text-align: center;
 }
 
-#sectionHobbies {
+#hobbies {
   /*hobbies*/
   background: white;
   text-align: center;
-  padding: 1%;
+  padding: 1% 1% 1% 1%;
 }
 
 .hobbie {
   display: inline-block;
-  width: 3%;
   margin: 0% 1% 0% 1%;
 }
 
 .hobbie {
   display: inline-block;
-  width: 3%;
+  width: 4%;
   margin: 0% 1% 0% 1%;
 }
 
@@ -266,7 +254,7 @@ nav ul li a {
   stroke: #707070;
   fill: #707070;
   stroke-width: 12px;
-  animation: steam 1s infinite linear;
+  animation: steam 2s infinite linear;
 }
 
 @keyframes steam {
@@ -340,7 +328,7 @@ nav ul li a {
   stroke: #707070;
   fill: transparent;
   stroke-width: 10px;
-  animation: flash 3s infinite linear;
+  animation: flash 2s infinite linear;
 }
 
 @keyframes flash {
@@ -482,12 +470,6 @@ nav ul li a {
   }
 }
 
-#sectionDesign {
-  /*design*/
-  padding: 5%  10%  5% 10%;
-  background: white;
-}
-
 #sectionExpertise {
   /*expertise*/
   background-color: white;
@@ -530,58 +512,79 @@ nav ul li a {
 }
 
 .line1 {
-  background: #56c9fb;
-  width: 100%;
+  background: #F7484E;
+  width: 85%;
 }
 
 .line2 {
-  background: #ff7100;
+  background: #F7484E;
   width: 85%;
 }
 
 .line3 {
-  background: #ff008b;
+  background: #F7484E;
   width: 85%;
 }
 
 .line4 {
-  background: #e55ffe;
+  background: #F7484E;
   width: 85%;
 }
 
 .line5 {
-  background: #e55ffe;
+  background: #F7484E;
   width: 85%;
 }
 
 .line6 {
-  background: blue;
+  background: #F7484E;
   width: 85%;
 }
 
 .line7 {
-  background: blue;
+  background: #F7484E;
   width: 85%;
 }
 
 .line8 {
-  background: blue;
+  background: #F7484E;
   width: 85%;
 }
 
 .line9 {
-  background: blue;
+  background: #F7484E;
   width: 85%;
 }
 
 .line10 {
-  background: #00ff18;
+  background: #F7484E;
 }
 
 #sectionQualifications {
   /*qualifications*/
-  padding: 5%  10%  5% 10%;
+  padding: 5%  0%  5% 0%;
   background: white;
+}
+
+.qualificationtable {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.qualificationcolumn {
+  width: 30%;
+  table-layout: auto;
+}
+
+.qualificationcolumnsub {
+  font-size: 16px;
+  margin-left: 10%;
+}
+
+#ciw510pdf {
+  display: none;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #sectionPortfolio {
@@ -590,7 +593,7 @@ nav ul li a {
   background: white;
 }
 
-#sectionCloud {
+#cloud {
   /*files*/
   padding: 1%;
   background: white;
@@ -599,8 +602,8 @@ nav ul li a {
 
 .clouds {
   display: inline-block;
-  width: 4%;
-  margin: 5px 1.5% 0px 1.5%;
+  width: 6%;
+  margin: 0px 1.5% 0px 1.5%;
   transition: all 0.5s linear;
 }
 
@@ -681,7 +684,7 @@ nav ul li a {
 
 #sectionCv {
   /*cv download*/
-  padding: 5%;
+  padding: 2% 5% 5% 5%;
   background: #f5f5f5;
   text-align: center;
 }
@@ -740,10 +743,10 @@ textarea:hover {
 
 .btn {
   width: 100px;
-  height: 40px;
+  height: 30px;
   border-radius: 10px;
   border: solid 2px lightgray;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Advent Pro";
   line-height: 3px;
   margin-top: 50px;
@@ -950,11 +953,17 @@ hr {
   #sectionNav {
     display: none;
   }
-  #sectionHeader {
-    height: 200px;
+}
+
+@media (max-width: 400px) {
+  #sectionNav {
+    display: none;
   }
-  #header {
-    top: 60%;
+  .name {
+    font-size: 10vw;
+  }
+  .quote {
+    font-size: 5vw;
   }
   .headername {
     font-size: 10vw;
