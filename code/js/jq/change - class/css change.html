@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex,nofollow">
     <meta name="keywords" content=""/>
-	<meta name="description" content="">
-	<meta name="author" content="me"/>
+	  <meta name="description" content="">
+	  <meta name="author" content="me"/>
     <title>class change</title>
 <style>
 #wrapper {
@@ -27,27 +27,32 @@
 	padding: 20px;
 	margin-right: 10px;
 }
-</style>	
+.change  {
+  background-color: lime;
+  color: white;
+}
+</style>
 </head>
 <body>
     <div id="wrapper">
-	    
-	  <div class="click">click</div>
-        <div id="div">
-			<div class="one">edward </div>
-			<div class="two">edward </div>
-			<div class="three">edward</div>
-        </div>
-</div>
-	
+
+  	  <div class="click">click</div>
+          <div id="div">
+      			<div class="one">toggleClass</div>
+      			<div class="two">toggleClass</div>
+      			<div class="three">toggleClass</div>
+          </div>
+
+    </div>
+
 <script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
 <script>
-	
-	$(document).ready (function() {
-		
-		$(".click").click (function() {	
 
-			$(".one, .two, .three").toggleClass("click");	
+	$(document).ready (function() {
+
+		$(".click").click (function() {
+
+			$(".one, .two, .three").toggleClass("change");
     	});
 	});
 
@@ -55,15 +60,6 @@
 //$("#div1").addClass("important blue");
 //$("h1, h2, p").toggleClass("blue");
 
-
-
-
-</script>	
+</script>
 </body>
 </html>
-
-
-
-
-
-

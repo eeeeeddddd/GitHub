@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex,nofollow">
     <meta name="keywords" content=""/>
-	<meta name="description" content="">
-	<meta name="author" content="me"/>
+	  <meta name="description" content="">
+	  <meta name="author" content="me"/>
     <title>html change</title>
 <style>
 #wrapper {
@@ -23,38 +23,33 @@
 #one, #two, #three	{
 	float: left;
 	background: blue;
+  color: white;
 	width: 100px;
 	padding: 20px;
 	margin-right: 10px;
 }
-</style>	
+</style>
 </head>
 <body>
     <div id="wrapper">
 
 	    <div id="click">click</div>
         <div id="div">
-			<div id="one"><p>edward</p></div>
-			<div id="two"><p>edward</p></div>
-			<div id="three"><p>edward</p></div>
+			<div id="one"><p>add html</p></div>
+			<div id="two"><p>add html</p></div>
+			<div id="three"><p>add html</p></div>
         </div>
 </div>
-	
+
 <script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
 <script>
 
 	$(document).ready (function() {
-		$("#click").click (function() {	
-			$("#three").html ("<p>fellows</p>");
+		$("#click").click (function() {
+			$("#one , #two , #three").html ("<p>html change</p>");
     	});
 	});
-	
-</script>	
+
+</script>
 </body>
 </html>
-
-
-
-
-
-
