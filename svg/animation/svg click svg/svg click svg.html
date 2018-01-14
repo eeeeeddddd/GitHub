@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>svg svg</title>
+	<style>
+
+		.svg	{width: 200px; position: absolute;}
+		.svg1	{fill: none; stroke: red; stroke-width: 5px;}
+		.svg11	{animation: sheep 0.1s 0s ease 1 forwards;}
+ 		@keyframes sheep {0%{opacity: 1;} 100%{opacity: 0;}}
+
+		.svg2	{fill: none; stroke: blue; stroke-width: 5px; opacity: 0;}
+		.svg22	{animation: pig 0.1s 0s ease 1 forwards;}
+ 		@keyframes pig {0%{opacity: 0;} 100%{opacity: 1.0;}}
+
+	</style>
+</head>
+<body>
+
+<svg class="svg svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>coffee</title>
+  <g id="coffee">
+    <g>
+      <path d="M123.61,100.95H346.95a8.74,8.74,0,0,1,8.74,8.74V396a29.23,29.23,0,0,1-29.23,29.23H144.1A29.23,29.23,0,0,1,114.87,396V109.68A8.74,8.74,0,0,1,123.61,100.95Z"/>
+      <path d="M355.18,167.68s21.11-.35,33.57,0c22.5,0,45.26,32.81,48.11,47.76,0,6.78.08,53.77.08,61.17-1.08,14.79-23.27,46.12-47.84,46.12-7.61-.35-33.22-.35-33.22-.35"/>
+      <line x1="115.49" y1="143.19" x2="353.34" y2="143.19"/>
+    </g>
+    <g>
+      <line x1="171.25" y1="40.88" x2="171.25" y2="87.06" />
+      <line x1="228.72" y1="18.6" x2="228.72" y2="88.08" />
+      <line x1="282.77" y1="26.31" x2="282.77" y2="87.74"/>
+    </g>
+  </g>
+</svg>
+
+<svg class="svg svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>coffee</title>
+  <g id="coffee">
+    <g>
+      <path d="M123.61,100.95H346.95a8.74,8.74,0,0,1,8.74,8.74V396a29.23,29.23,0,0,1-29.23,29.23H144.1A29.23,29.23,0,0,1,114.87,396V109.68A8.74,8.74,0,0,1,123.61,100.95Z"/>
+      <path d="M355.18,167.68s21.11-.35,33.57,0c22.5,0,45.26,32.81,48.11,47.76,0,6.78.08,53.77.08,61.17-1.08,14.79-23.27,46.12-47.84,46.12-7.61-.35-33.22-.35-33.22-.35"/>
+      <line x1="115.49" y1="143.19" x2="353.34" y2="143.19"/>
+    </g>
+    <g>
+      <line x1="171.25" y1="40.88" x2="171.25" y2="87.06" />
+      <line x1="228.72" y1="18.6" x2="228.72" y2="88.08" />
+      <line x1="282.77" y1="26.31" x2="282.77" y2="87.74"/>
+    </g>
+  </g>
+</svg>
+
+		<script>
+
+			$(document).ready (function() {
+				$(".svg").click (function() {
+					$(".svg1").toggleClass("svg11");
+					$(".svg2").toggleClass("svg22");
+		    	});
+			});
+		</script>
+	</body>
+</html>
