@@ -1,6 +1,6 @@
-// @import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
-// @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'); /*'Roboto Condensed'*/
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500'); /*'Advent Pro'*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300'); /*'Roboto Condensed'*/
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,'); /*'Advent Pro'*/
 
 $fontTitle: 'mywoff';
 $fontNav:  'mywoff';
@@ -394,6 +394,7 @@ textarea {
   margin-bottom: 50px;
   transition: all 0.2s;
   box-shadow: 0px 5px 10px lightgray;
+  cursor:pointer;
 }
 .btn:hover {
   background-color: transparent;
@@ -513,22 +514,22 @@ hr { width: 52%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	
 @media (max-width: 400px) {
 
-#sectionNav		{display: none;}	
-.name			{font-size: 10vw;}
-.quote			{font-size: 5vw;}
-.headername	{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this	
-#sectionAbout	{padding: 1%  10%  1% 10%;}
-	.hobbie		{width: 8%;}
-	.circles   	{width: 8%;}
-	.clouds		{width: 8%;}
+#sectionNav				{visibility: hidden;}	
+.name				{font-size: 10vw;}
+.quote				{font-size: 5vw;}
+.headername		{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this	
+#sectionAbout			{padding: 1%  10%  1% 10%;}
+	.hobbie			{width: 8%;}
+	.circles  		 	{width: 8%;}
+	.clouds			{width: 8%;}
 #sectionExperience		{padding: 5%;} //check others	
-	#cv			{width: 10%;}	
-#sectionContact		{padding-top: 0px; padding-right: 0px; padding-bottom: 50px; padding-left: 0px;}
-	input			{width: 80%;}
-	textarea		{width: 80%;}
-	hr 				{width: 80%;}
-	.network		{width: 10%;}	
-	.socials   	{width: 8%;}	
+	#cv				{width: 10%;}	
+#sectionContact			{padding-top: 0px; padding-right: 0px; padding-bottom: 50px; padding-left: 0px;}
+	input				{width: 80%;}
+	textarea			{width: 80%;}
+	hr 					{width: 80%;}
+	.network			{width: 10%;}	
+	.socials   		{width: 8%;}	
 }
 
 
