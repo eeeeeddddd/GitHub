@@ -10,55 +10,47 @@
 	  <meta name="description" content="">
 	  <meta name="author" content="me"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>class change</title>
+    <title>css change</title>
 <style>
 #wrapper {
   text-align: center;
 }
-.click	{
+#click	{
 	background: red;
 	color: white;
 	padding: 20px;
 	width: 400px;
 }
-.one, .two, .three	{
+#one, #two, #three	{
 	float: left;
 	background: blue;
 	width: 100px;
 	padding: 20px;
 	margin-right: 10px;
 }
-.change  {
-  background-color: lime;
-  color: white;
-}
 </style>
 </head>
 <body>
     <div id="wrapper">
 
-  	  <div class="click">click</div>
-          <div id="div">
-      			<div class="one">toggleClass</div>
-      			<div class="two">toggleClass</div>
-      			<div class="three">toggleClass</div>
-          </div>
+	    <div id="click">click</div>
+        <div id="div">
+			<div id="one">add css</div>
+			<div id="two">add css</div>
+			<div id="three">add css</div>
+        </div>
+</div>
 
-    </div>
-
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
 <script>
 
 	$(document).ready (function() {
 
-		$(".click").click (function() {
-
-			$(".one, .two, .three").toggleClass("change");
+		$("#click").click (function() {
+			$("#one, #two").css ({color: "white" ,  background: "lime"});
+			$("#three").css ({color: "white" ,  background: "purple"});
     	});
 	});
-
-//$("h1, h2, p").removeClass("blue");
-//$("#div1").addClass("important blue");
-//$("h1, h2, p").toggleClass("blue");
 
 </script>
 </body>

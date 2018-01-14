@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
@@ -9,7 +9,7 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
-	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>scroll title change</title>
 <style>
 	* {  font-family: 'Monoton', cursive;}
@@ -112,32 +112,63 @@
 	  background: white;
 	  height: 10px;
 	}
-</style>		
+</style>
 </head>
 
 <body>
-	
+
 	<div id="wrapper">
-		
+
 		<header><div id="filter"><p class="edwardfellows">edward Fellows</p></div></header>
-		
+
 		<div id="sectionone"></div>
 
 		<div id="sectiontwo"><div id="filter1"></div></div>
-		
+
 		<div id="sectionthree"></div>
 
 		<div id="sectionfour"><div id="filter2"></div></div>
-		
+
 		<div id="sectionfive"></div>
 
 		<footer></footer>
 
 	</div><!--wrapper-->
-<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
-<script type="text/javascript" src="js/script.js"></script>	
+
+<script>
+
+//two changes two classes
+
+	$(window).scroll(function() {
+
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 600) {
+				$(".edwardfellows").addClass("change");}
+
+		else {
+
+				$(".edwardfellows").removeClass("change");}
+
+ });
+
+//second class change same scoll or diff
+
+	$(window).scroll(function() {
+
+		var scrolltext = $(window).scrollTop();
+
+		if (scrolltext >= 1600) {
+				$(".edwardfellows").addClass("change1");}
+
+		else {
+
+				$(".edwardfellows").removeClass("change1");}
+
+ });
+
+</script>
 
 </body>
 
 </html>
-

@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex,nofollow">
     <meta name="keywords" content=""/>
-	<meta name="description" content="">
-	<meta name="author" content="me"/>
+	  <meta name="description" content="">
+	  <meta name="author" content="me"/>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>click animation</title>
 <style>
 .click	{
@@ -23,23 +24,22 @@
 	width: 200px;
 	padding: 20px;
 	margin-right: 10px;
-}	
+}
 .change  {
-  animation: pig 2s linear 0s infinite; 
+  animation: pig 2s linear 0s infinite;
 }
 
 @keyframes pig {0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
-	
+
 </style>
 </head>
 <body>
-	
+
     <div id="wrapper">
 	  	  <div class="click">click</div>
 	      <div class="box">toggleClass</div>
     </div>
 
-<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
 <script>
 
 	$(document).ready (function() {

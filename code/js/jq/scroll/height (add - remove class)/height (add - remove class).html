@@ -9,6 +9,7 @@
     <meta name="keywords" content=""/>
 	  <meta name="description" content="">
 	  <meta name="author" content="me"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <title>height - class change</title>
 <style>
 body {
@@ -45,8 +46,39 @@ body {
 <div class="header"><p class="text">---header---</p></div>
 </div>
 
-<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script>
+
+//two changes two classes
+
+  $(window).scroll(function() {
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+        $(".header").addClass("change");}
+
+    else {
+
+        $(".header").removeClass("change");}
+
+ });
+
+//second class change same scoll or diff
+
+  $(window).scroll(function() {
+
+    var scrolltext = $(window).scrollTop();
+
+    if (scrolltext >= 50) {
+        $(".text").addClass("change-text");}
+
+    else {
+
+        $(".text").removeClass("change-text");}
+
+ });
+
+</script>
 
 </body>
 

@@ -9,6 +9,7 @@
     <meta name="keywords" content=""/>
 	  <meta name="description" content="">
 	  <meta name="author" content="me"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>smooth scroll</title>
 <style>
 #top	{
@@ -36,11 +37,25 @@ a	{
 	<div id="bottom"><a href="#top">TOP</a>
 </div>
 
-<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<!--or
-<script></script>
--->
+<script>
+
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+  });
+
+</script>
+
 </body>
 
 </html>
