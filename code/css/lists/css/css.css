@@ -1,0 +1,940 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+/*'Poiret One'*/
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro:300,");
+/*'Advent Pro'*/
+/*svg*/
+/*main*/
+/*gray*/
+/*header & footer*/
+/*red*/
+/*gray*/
+.lighten {
+  color: #f0f0f0;
+}
+
+.darken {
+  color: black;
+}
+
+@font-face {
+  font-family: 'mywoff';
+  src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff");
+}
+
+.dasharray:hover {
+  animation: 1s draw linear forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0 2000;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Advent Pro";
+  color: #707070;
+  font-size: 20px;
+  font-weight: 300;
+  background: #292929;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#title {
+  /*titles*/
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+}
+
+.title {
+  font-family: 'mywoff';
+  letter-spacing: 1px;
+  font-size: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  z-index: 99;
+}
+
+.stickytitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#sectionNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  z-index: 99999;
+  transition: transform 0.5s cubic-bezier(0.42, 1, 0.8, 1);
+  opacity: 0;
+}
+
+.sectionNavHide {
+  transform: translateY(-100%);
+}
+
+.headerScroll {
+  opacity: 1 !important;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+nav ul {
+  margin-top: 0px;
+  list-style: none;
+  padding: 0px;
+  /*stops 40px */
+}
+
+nav ul li {
+  display: inline-block;
+  width: 10%;
+  padding: 0% 1% 0% 1%;
+}
+
+nav ul li a {
+  position: relative;
+  display: block;
+  font-size: 2vw;
+  font-family: "mywoff";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.underlineNav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: #F7484E;
+  position: absolute;
+  bottom: 20px;
+  transition: 0.5s ease;
+}
+
+.underlineNav:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
+  width: 100%;
+}
+
+.left::after {
+  right: 0px;
+}
+
+.center::after {
+  left: 50%;
+  right: 50%;
+}
+
+.center:hover::after {
+  left: 0px;
+}
+
+.right::after {
+  left: 0px;
+}
+
+.right:hover::after {
+  left: 0px;
+}
+
+#sectionHeader {
+  /*header*/
+  height: 100vh;
+  background: #292929;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.name {
+  font-family: 'mywoff';
+  font-size: 7vw;
+  margin: 0;
+  color: white;
+  text-shadow: 0.1px 0.1px 1px white;
+}
+
+.quote {
+  font-family: "Advent Pro";
+  font-weight: 400;
+  font-size: 3.5vw;
+  color: white;
+  margin: 0;
+}
+
+#sectionAbout {
+  /*about*/
+  background-color: white;
+  padding: 4%  5%  5% 5%;
+  text-align: center;
+}
+
+#hobbies {
+  /*hobbies*/
+  background: white;
+  text-align: center;
+  padding: 1% 1% 1% 1%;
+}
+
+.hobbie {
+  display: inline-block;
+  margin: 0% 1% 0% 1%;
+}
+
+.hobbie {
+  display: inline-block;
+  width: 4%;
+  margin: 0% 1% 0% 1%;
+}
+
+#coffeecup {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#coffee {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: coffee 20s infinite linear;
+}
+
+@keyframes coffee {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(230px);
+  }
+}
+
+#steam {
+  stroke: #707070;
+  fill: #707070;
+  stroke-width: 12px;
+  animation: steam 2s infinite linear;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+#pie {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#bite {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: bite 3s infinite linear;
+}
+
+#nobite {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: nobite 3s infinite linear;
+}
+
+@keyframes bite {
+  0% {
+    opacity: 0;
+  }
+  1%, 49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nobite {
+  0% {
+    opacity: 1;
+  }
+  1%, 49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#camera {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#flash {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 10px;
+  animation: flash 2s infinite linear;
+}
+
+@keyframes flash {
+  0%, 90% {
+    fill: transparent;
+  }
+  100% {
+    fill: #707070;
+  }
+}
+
+#imac {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#screen {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: mac 2s infinite linear;
+}
+
+@keyframes mac {
+  0% {
+    stroke: #707070;
+  }
+  50% {
+    stroke: lightgray;
+  }
+  100% {
+    stroke: #707070;
+  }
+}
+
+#headphones {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: headphones 2s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes headphones {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+#video {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#leftreel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: reel 2s infinite linear;
+}
+
+#rightreel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: reel 2s infinite linear;
+}
+
+@keyframes reel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#frame {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#tube {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#seat {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 18px;
+}
+
+#frontwheel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: wheel 1s infinite linear;
+}
+
+#rearwheel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: wheel 1s infinite linear;
+}
+
+#peadle {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: wheel 1s infinite linear;
+}
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#sectionExpertise {
+  /*expertise*/
+  background-color: white;
+  padding: 5%  10%  5% 10%;
+  text-align: center;
+}
+
+#sectionQualifications {
+  /*qualifications*/
+  padding: 5%  0%  5% 0%;
+  background: white;
+}
+
+.qualificationtable {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qualificationcolumnleft {
+  width: 45%;
+  text-align: right;
+  padding-right: 3%;
+}
+
+.qualificationcolumnright {
+  width: 55%;
+}
+
+#ciw510pdf, #ciw520pdf {
+  padding-top: 2%;
+  display: none;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#sectionPortfolio {
+  /*portfolio*/
+  padding: 5%  10%  5% 10%;
+  background: white;
+}
+
+#cloud {
+  /*files*/
+  padding: 1%;
+  background: white;
+  text-align: center;
+}
+
+.clouds {
+  display: inline-block;
+  width: 6%;
+  margin: 0% 1.5% 0% 1.5%;
+  transition: all 0.5s linear;
+}
+
+#cc {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #cc {
+  stroke: red;
+  transition: 0.2s linear;
+}
+
+#codepen {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #codepen {
+  stroke: black;
+  transition: 0.2s linear;
+}
+
+#be {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover #be {
+  stroke: #1969fb;
+  fill: none;
+  transition: 0.1s linear;
+}
+
+#github {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover #github {
+  stroke: black;
+  transition: 0.2s linear;
+}
+
+#xd {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover #xd {
+  stroke: #e750b9;
+  fill: none;
+  transition: 0.1s linear;
+}
+
+#dribbble {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #dribbble {
+  stroke: #b3335a;
+  transition: 0.2s linear;
+}
+
+#sectionExperience {
+  /*experience*/
+  background-color: white;
+  padding: 5%  5%  2% 5%;
+}
+
+#reference {
+  /*references*/
+  text-align: center;
+}
+
+.references {
+  display: inline-block;
+  width: 10%;
+  margin: 0% 5% 0% 5%;
+}
+
+.referee {
+  font-size: 16px;
+  text-align: left;
+  padding: 0% 0% 0% 10%;
+  border-left: solid 2px #707070;
+}
+
+#sectionCv {
+  /*cv download*/
+  padding: 2% 5% 5% 5%;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#cv {
+  display: inline-block;
+  width: 10%;
+  margin: 5px 2% 0px 2%;
+  transition: all 0.5s linear;
+}
+
+#sectionContact {
+  /*contact*/
+  height: 400px;
+  text-align: center;
+  padding: 5% 5% 0% 5%;
+  background: white;
+}
+
+input {
+  width: 50%;
+  height: 10px;
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Advent Pro";
+  border-radius: 10px;
+  background: white;
+  transition: all 0.2s ease-in;
+  border: transparent;
+}
+
+input:hover {
+  background: #f5f5f5;
+}
+
+textarea {
+  width: 50%;
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Advent Pro";
+  border-radius: 10px;
+  border: transparent;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+
+textarea:hover {
+  background: #f5f5f5;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  font-size: 20px;
+  font-family: "Advent Pro";
+  line-height: 3px;
+  margin-top: 50px;
+  transition: all 0.2s;
+  box-shadow: 0px 5px 10px lightgray;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  box-shadow: 0px 5px 10px gray;
+}
+
+hr {
+  width: 54%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+#sectionSocial {
+  /*social*/
+  background: white;
+  padding: 2%;
+  margin-bottom: 400px;
+  text-align: center;
+}
+
+.socials, .socialsenvelop {
+  display: inline-block;
+  width: 3%;
+  margin: 5px 2% 0px 2%;
+  transition: all 0.3s linear;
+}
+
+#facebook {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.socials:hover #facebook, .socialsenvelop:hover #facebook {
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
+#envelop {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+#open {
+  opacity: 0;
+  stroke: #707070;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.3s linear;
+}
+
+#close {
+  opacity: 1;
+  stroke: #707070;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.3s linear;
+}
+
+.socialsenvelop:hover #open {
+  opacity: 1;
+  fill: #707070;
+}
+
+.socialsenvelop:hover #close {
+  fill: white;
+}
+
+.socialsenvelop:hover #envelop {
+  fill: #707070;
+}
+
+#twitter {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.socials:hover #twitter, .socialsenvelop:hover #twitter {
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
+#sectionFooter {
+  /*footer*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background: #292929;
+  z-index: -1;
+  text-align: center;
+}
+
+#mouse {
+  /*mouse*/
+  position: relative;
+  background: #292929;
+  height: 100px;
+}
+
+.mouse {
+  position: relative;
+  top: 25px;
+  left: 50%;
+  margin-left: -13px;
+  width: 22px;
+  height: 35px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.mouse:hover {
+  border: 2px solid #F7484E;
+  box-shadow: 0px 0px 5px gray;
+}
+
+#scroll {
+  width: 0px;
+  height: 0px;
+  margin-left: 7px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #F7484E;
+  animation: scroll 1.5s infinite both;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(6px);
+  }
+}
+
+.mousetext {
+  font-family: 'Poiret One';
+  font-size: 10px;
+  color: white;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: -1px;
+}
+
+#footer {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+}
+
+#ted {
+  font-family: "mywoff";
+  font-size: 40px;
+  margin: 0px;
+  color: white;
+}
+
+#designby {
+  position: relative;
+  color: white;
+  font-size: 10px;
+  font-family: 'Poiret One';
+}
+
+.pipe {
+  position: relative;
+  top: -8px;
+  margin-left: 5px;
+  display: inline;
+  width: 30px;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  animation: dash 4s linear infinite 0.5s;
+  /*forwards;*/
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #sectionNav {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  #sectionNav {
+    visibility: hidden;
+  }
+  .name {
+    font-size: 10vw;
+  }
+  .quote {
+    font-size: 5vw;
+  }
+  .headername {
+    font-size: 10vw;
+    text-shadow: 0px 0px 0px;
+  }
+  #sectionAbout {
+    padding: 1%  10%  1% 10%;
+  }
+  .hobbie {
+    width: 8%;
+  }
+  .circles {
+    width: 8%;
+  }
+  .clouds {
+    width: 8%;
+  }
+  #sectionExperience {
+    padding: 5%;
+  }
+  #sectionQualifications {
+    padding: 1%  0%  5% 1%;
+  }
+  #cv {
+    width: 10%;
+  }
+  #sectionContact {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+  input {
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+  }
+  hr {
+    width: 80%;
+  }
+  .network {
+    width: 10%;
+  }
+  .socials, .socialsenvelop {
+    width: 8%;
+  }
+}
+
+/*# sourceMappingURL=css.map */
