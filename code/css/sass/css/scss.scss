@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
+
+$font: 'Poiret One';
+$fontColor: gray; /*font color*/
+$backgroundColor: lightgray; /*background*/
+
+@mixin dog {
+	background-color: $backgroundColor;
+	width: 50px;
+	height: 50px;
+}
+
+.font 	{//color
+	color: $fontColor;
+	font-family: $font;
+}
+
+.fontlighten	{//extend
+	@extend .font;
+	color: lighten($fontColor, 20%);
+}
+
+.fontdarken	{
+	color: darken($fontColor, 20%);
+	font-family: $font;
+}
+
+.box	{//color
+	background-color: $backgroundColor;
+	width: 50px;
+	height: 50px;
+}
+
+.nesthover	{//&hover
+	background-color: $backgroundColor;
+	width: 50px;
+	height: 50px;
+	&:hover	{
+		background-color: red;
+	}
+}
+
+.mixin		{//mixin
+	@include dog;
+	background-color: red;
+}
+
+
+
+
+
+
+
+

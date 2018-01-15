@@ -125,13 +125,18 @@ $(window).scroll(function() {
   }
 });
 
-//pdf
+//pdf 510
 $(document).ready(function () {
     $("#ciw510").on('click', function () {
-        $("#ciw510pdf").slideToggle(500);
+        $("#ciw510pdf").slideToggle(1000);
     });
 });
-
+//pdf 520
+$(document).ready(function () {
+    $("#ciw520").on('click', function () {
+        $("#ciw520pdf").slideToggle(1000);
+    });
+});
 
 
 
