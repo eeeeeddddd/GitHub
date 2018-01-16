@@ -9,7 +9,7 @@ $window.on('scroll', function(){
   prev = scrollTop;
 });
 
-// no show header
+// no nav show header
 $(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 780) {
@@ -43,7 +43,6 @@ $(document).ready(function(){
 	    });
 	});
 });
-
 
 //sticky titles
 
@@ -127,13 +126,13 @@ $(window).scroll(function() {
 
 //pdf 510
 $(document).ready(function () {
-    $("#ciw510").on('click', function () {
+    $("#510details").on('click', function () {
         $("#ciw510pdf").slideToggle(1000);
     });
 });
 //pdf 520
 $(document).ready(function () {
-    $("#ciw520").on('click', function () {
+    $("#520details").on('click', function () {
         $("#ciw520pdf").slideToggle(1000);
     });
 });

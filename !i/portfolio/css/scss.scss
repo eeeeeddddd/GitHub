@@ -6,19 +6,18 @@ $fontNav:  'mywoff';
 $fontText: 'Advent Pro';
 $fontForm: 'Advent Pro';
 
-$svg: #707070; /*svg*/
+$svg: #727272; /*svg*/
 $bg-color: white; /*main*/
-$bg-color1: #f5f5f5;/*gray*/
-$bg-color2: #292929;/*header & footer*/
+$bg-color1: #f5f5f5; /*gray*/
+$bg-color2: #292929; /*header & footer*/
 
 $color:;
 $color1:;
 $color2: #F7484E; /*red*/
 
-$fontColor: #707070;/*gray*/
-
-.lighten	{color: lighten($fontColor, 50%);}
-.darken	{color: darken($fontColor, 50%);}
+$fontColor: #727272;/*gray*/
+.fontColorlighten	{color: lighten($fontColor, 50%);}
+.fontColordarken	{color: darken($fontColor, 50%);}
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
@@ -95,7 +94,7 @@ nav ul {
 nav ul li {
 	display: inline-block;
  	width: 10%;
- 	padding: 0% 1% 0% 1%;
+ 	padding: 0% 2% 0% 2%;
 }
 nav ul li a {
 	position: relative;
@@ -210,7 +209,7 @@ nav ul li a {
 
 #sectionExpertise	{/*expertise*/
  	background-color: $bg-color;
-	padding: 5%  10%  5% 10%;
+	padding: 5%  0%  5% 0%;;
 	text-align: center;
 }
 // #tableExpertiseleft	{display: inline-block;}
@@ -251,29 +250,34 @@ nav ul li a {
 #sectionQualifications	{/*qualifications*/
 	padding: 5%  0%  5% 0%;
 	background:  $bg-color;
-}
-.qualificationtable {
 	width: 100%;
-	margin: 0 auto;
+	text-align: center;
 }
-.qualificationcolumnleft	{
-	width: 45%; 
-	text-align: right;
-	padding-right: 3%;
-// 	background: yellow;	
+.qualificationColumnLeft  {
+	vertical-align: top; //aligns div at top of container
+	display: inline-block;
+	min-width: 320px; width: 40%;
+    text-align: right;
+    line-height: 30px;
+    color: darken($fontColor, 30%);	
+    margin: 0% 1% 1% 0%;
 }
-.qualificationcolumnright	{
-	width: 55%;	   
+.qualificationColumnRight  {
+	@extend .qualificationColumnLeft ;
+	width: 50%;	
+	text-align: left;
+	color: $fontColor;
+	margin: 0% 0% 1% 1%;
 }
-#ciw510pdf, #ciw520pdf	{
-	padding-top: 2%;
-	display: none;
-	width: 60%;
-	margin: 0 auto;		
-}
+// #ciw510pdf, #ciw520pdf	{
+// 	padding-top: 2%;
+// 	display: none;
+// 	width: 60%;
+// 	margin: 0 auto;		
+// }
 
 #sectionPortfolio	{/*portfolio*/
-	padding: 5%  10%  5% 10%;
+	padding: 5%  0%  5% 0%;
 	background:  $bg-color;
 }
 #cloud		{/*files*/
@@ -284,7 +288,7 @@ nav ul li a {
 .clouds  {
 	display: inline-block;
     width: 6%;
-    margin: 0% 1.5% 0% 1.5%;
+    margin: 0% 2% 0% 2%;
      transition: all 0.5s linear;
 }
 #cc	{stroke:$svg;fill: none;stroke-width: 11px;}
@@ -307,31 +311,39 @@ nav ul li a {
 
 #sectionExperience		{/*experience*/
 	background-color: $bg-color;
-	padding: 5%  5%  2% 5%;
+	padding: 5%  0%  5% 0%;
 }
-#reference		{/*references*/
+
+#sectionReference		{/*reference*/
+	background-color: $bg-color;
+	padding: 5%  0%  5% 0%;
 	text-align: center;
 }
 .references	{
 	display: inline-block;
-    width: 10%;
-    margin: 0% 5% 0% 5%;
+    min-width: 180px;
+    margin: 0% 2% 3% 2%;
+}
+.refereeTitle	{
+	font-size: 20px;
+    color: darken($fontColor, 30%); 
 }
 .referee	{
-    font-size: 16px;
-//     color: lighten($fontColor, 20%);
+	font-size: 16px;
     text-align: left;
-    padding: 0% 0% 0% 10%;
-    border-left: solid 2px #707070;  
+    padding: 0% 0% 0% 10%;//left line padding
+    margin: 0% 2% 0% 2%;
+    border-left: solid 2px darken($fontColor, 20%);  
 }
 
 #sectionCv		{/*cv download*/
-	padding: 2% 5% 5% 5%;
+	padding: 2%  0%  5% 0%;
 	background: $bg-color1;
 	text-align: center;
 }
 #cv   {
 	display: inline-block;
+    width: 10%;
     width: 10%;
     margin: 5px 2% 0px 2%;
     transition: all 0.5s linear;
@@ -340,7 +352,7 @@ nav ul li a {
 #sectionContact {/*contact*/
 	height: 400px;
 	text-align: center;
-	padding: 5% 5% 0% 5%;
+	padding: 5%  0%  5% 0%;
 	background: $bg-color;
 }
 
@@ -418,7 +430,7 @@ hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
 .socials:hover #twitter {fill: $svg; transition: 0.3s linear;}
 
-#sectionFooter		{/*footer*/
+footer		{/*footer*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -427,6 +439,7 @@ hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 	z-index: -1;
 	text-align: center;
 }
+
 #mouse		{/*mouse*/
 	position: relative;
 	background: $bg-color2;
@@ -495,25 +508,29 @@ hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 }
 @keyframes dash 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}
 
-	
-@media (max-width: 600px) {
+
+
+@media (max-width: 480px) {	
 #sectionNav	{display: none;}
+.stickytitle		{position: relative;}	//no sticky title mobile
+	.clouds			{width: 10%;}
+.qualificationColumnLeft  {text-align: center; font-size: 25px;}
+.qualificationColumnRight  {margin: 0% 0% 5% 0%; font-size: 20px;}
 }	
 	
-@media (max-width: 400px) {
-
+@media (max-width: 320px) {
+#wrapper {min-width: 320px;}	
 #sectionNav				{visibility: hidden;}	
-.name				{font-size: 10vw;}
-.quote				{font-size: 5vw;}
-.headername		{font-size: 10vw; text-shadow: 0px 0px 0px; }//check this	
-#sectionAbout			{padding: 1%  10%  1% 10%;}
-	.hobbie			{width: 8%;}
-	.circles  		 	{width: 8%;}
-	.clouds			{width: 8%;}
-#sectionExperience		{padding: 5%;} //check others	
-#sectionQualifications	{padding: 1%  0%  5% 1%;}//check others
+.name				{font-size: 12vw;}
+.quote				{font-size: 6.5vw;}
+#sectionAbout			{padding: 10%  1%  10% 1%;}
+	.hobbie			{width: 28%;}
+#sectionPortfolio			{padding: 10%  1%  10% 1%;}
+	.clouds			{width: 10%;}
+#sectionExperience		{padding: 10%  1%  10% 1%;}
+#sectionReference		{padding: 10%  1%  10% 1%;}
 	#cv				{width: 10%;}	
-#sectionContact			{padding-top: 0px; padding-right: 0px; padding-bottom: 50px; padding-left: 0px;}
+#sectionContact			{padding: 10%  1%  10% 1%;}
 	input				{width: 80%;}
 	textarea			{width: 80%;}
 	hr 					{width: 80%;}
