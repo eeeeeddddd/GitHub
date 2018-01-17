@@ -48,13 +48,13 @@ html body	{
 width: 100%;
 }
 
-#title	{/*titles*/
+.title	{/*titles*/
 	text-align: center;
 	width: 100%;
 	height: 40px;
 	z-index: 999;
 }
-.title	{
+.titletext	{
 	font-family: 'mywoff';
 	letter-spacing: 1px;
 	font-size: 25px;
@@ -256,18 +256,23 @@ nav ul li a {
 .qualificationColumnLeft  {
 	vertical-align: top; //aligns div at top of container
 	display: inline-block;
-	min-width: 320px; width: 40%;
+	min-width: 280px; width: 39%;	
     text-align: right;
     line-height: 30px;
     color: darken($fontColor, 30%);	
-    margin: 0% 1% 1% 0%;
+ 	padding: 0% 1% 0% 0%;    
 }
 .qualificationColumnRight  {
 	@extend .qualificationColumnLeft ;
-	width: 50%;	
+	width: 59%;	
 	text-align: left;
 	color: $fontColor;
-	margin: 0% 0% 1% 1%;
+ 	padding: 0% 0% 2% 1%;	
+}
+.pass	{
+	text-align: left;
+	font-size: calc(100% - 6px);
+	margin-left: 10%;
 }
 // #ciw510pdf, #ciw520pdf	{
 // 	padding-top: 2%;
@@ -319,21 +324,22 @@ nav ul li a {
 	padding: 5%  0%  5% 0%;
 	text-align: center;
 }
+
 .references	{
 	display: inline-block;
-    min-width: 180px;
-    margin: 0% 2% 3% 2%;
+    min-width: 200px; width: 15%;
+    margin: 2% 2% 2% 2%;
+    text-align: left;
+}
+.referee	{
+	font-size: calc(100% - 4px);
+    padding: 0% 0% 0% 5%;//left line padding
+	margin: 0px;
+    border-left: solid 1px darken($fontColor, 20%);  
 }
 .refereeTitle	{
 	font-size: 20px;
-    color: darken($fontColor, 30%); 
-}
-.referee	{
-	font-size: 16px;
-    text-align: left;
-    padding: 0% 0% 0% 10%;//left line padding
-    margin: 0% 2% 0% 2%;
-    border-left: solid 2px darken($fontColor, 20%);  
+    color: darken($fontColor, 40%); 
 }
 
 #sectionCv		{/*cv download*/
@@ -405,7 +411,7 @@ hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #sectionSocial		{/*social*/
 	background: $bg-color;
 	padding: 2%;
-	margin-bottom: 400px;
+	margin-bottom: 450px;
 	text-align: center;
 }
 .socials   {
@@ -434,7 +440,7 @@ footer		{/*footer*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 400px;
+	height: 450px;
 	background: $bg-color2;
 	z-index: -1;
 	text-align: center;
@@ -508,34 +514,37 @@ footer		{/*footer*/
 }
 @keyframes dash 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}
 
-
-
-@media (max-width: 480px) {	
-#sectionNav	{display: none;}
-.stickytitle		{position: relative;}	//no sticky title mobile
-	.clouds			{width: 10%;}
-.qualificationColumnLeft  {text-align: center; font-size: 25px;}
-.qualificationColumnRight  {margin: 0% 0% 5% 0%; font-size: 20px;}
+@media screen and (max-width: 768px) {	//tablet
+#sectionNav						{display: none;}
+.stickytitle						{position: relative;}	//no sticky title mobile
+.hobbie							{width: 20%;}
+.qualificationColumnLeft 	{text-align: center;}
+.qualificationColumnRight  {font-size: calc(100% - 4px);padding: 0% 0% 5% 1%;	}
+.pass								{text-align: center; margin-left: 0%;}//maybe display none?
+.clouds							{width: 20%;}
+#cv								{width: 20%;}
+.socials					   		{width: 10%;}
 }	
 	
-@media (max-width: 320px) {
-#wrapper {min-width: 320px;}	
-#sectionNav				{visibility: hidden;}	
-.name				{font-size: 12vw;}
-.quote				{font-size: 6.5vw;}
+@media screen and (max-width: 480px) {//mobile
+#wrapper {min-width: 320px;}		
+// html body	{font-size: 16px;}
 #sectionAbout			{padding: 10%  1%  10% 1%;}
-	.hobbie			{width: 28%;}
 #sectionPortfolio			{padding: 10%  1%  10% 1%;}
-	.clouds			{width: 10%;}
 #sectionExperience		{padding: 10%  1%  10% 1%;}
 #sectionReference		{padding: 10%  1%  10% 1%;}
-	#cv				{width: 10%;}	
+//maybe display none?
+.references			{text-align: center;}
+.referee				{border-left: 0px;}
+
 #sectionContact			{padding: 10%  1%  10% 1%;}
-	input				{width: 80%;}
-	textarea			{width: 80%;}
-	hr 					{width: 80%;}
-	.network			{width: 10%;}	
-	.socials   		{width: 8%;}	
+input					{width: 80%;}
+textarea				{width: 80%;}
+hr 						{width: 80%;}	
+}
+
+@media (max-width: 320px) {
+	
 }
 
 

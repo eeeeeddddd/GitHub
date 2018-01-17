@@ -55,7 +55,7 @@ html body {
   width: 100%;
 }
 
-#title {
+.title {
   /*titles*/
   text-align: center;
   width: 100%;
@@ -63,7 +63,7 @@ html body {
   z-index: 999;
 }
 
-.title {
+.titletext {
   font-family: 'mywoff';
   letter-spacing: 1px;
   font-size: 25px;
@@ -483,19 +483,25 @@ nav ul li a {
 .qualificationColumnLeft, .qualificationColumnRight {
   vertical-align: top;
   display: inline-block;
-  min-width: 320px;
-  width: 40%;
+  min-width: 280px;
+  width: 39%;
   text-align: right;
   line-height: 30px;
   color: #262626;
-  margin: 0% 1% 1% 0%;
+  padding: 0% 1% 0% 0%;
 }
 
 .qualificationColumnRight {
-  width: 50%;
+  width: 59%;
   text-align: left;
   color: #727272;
-  margin: 0% 0% 1% 1%;
+  padding: 0% 0% 2% 1%;
+}
+
+.pass {
+  text-align: left;
+  font-size: calc(100% - 6px);
+  margin-left: 10%;
 }
 
 #sectionPortfolio {
@@ -601,21 +607,22 @@ nav ul li a {
 
 .references {
   display: inline-block;
-  min-width: 180px;
-  margin: 0% 2% 3% 2%;
+  min-width: 200px;
+  width: 15%;
+  margin: 2% 2% 2% 2%;
+  text-align: left;
+}
+
+.referee {
+  font-size: calc(100% - 4px);
+  padding: 0% 0% 0% 5%;
+  margin: 0px;
+  border-left: solid 1px #3f3f3f;
 }
 
 .refereeTitle {
   font-size: 20px;
-  color: #262626;
-}
-
-.referee {
-  font-size: 16px;
-  text-align: left;
-  padding: 0% 0% 0% 10%;
-  margin: 0% 2% 0% 2%;
-  border-left: solid 2px #3f3f3f;
+  color: #0c0c0c;
 }
 
 #sectionCv {
@@ -704,7 +711,7 @@ hr {
   /*social*/
   background: white;
   padding: 2%;
-  margin-bottom: 400px;
+  margin-bottom: 450px;
   text-align: center;
 }
 
@@ -777,7 +784,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 400px;
+  height: 450px;
   background: #292929;
   z-index: -1;
   text-align: center;
@@ -880,50 +887,47 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   #sectionNav {
     display: none;
   }
   .stickytitle {
     position: relative;
   }
-  .clouds {
-    width: 10%;
+  .hobbie {
+    width: 20%;
   }
   .qualificationColumnLeft, .qualificationColumnRight {
     text-align: center;
-    font-size: 25px;
   }
   .qualificationColumnRight {
-    margin: 0% 0% 5% 0%;
-    font-size: 20px;
+    font-size: calc(100% - 4px);
+    padding: 0% 0% 5% 1%;
+  }
+  .pass {
+    text-align: center;
+    margin-left: 0%;
+  }
+  .clouds {
+    width: 20%;
+  }
+  #cv {
+    width: 20%;
+  }
+  .socials, .socialsenvelop {
+    width: 10%;
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 480px) {
   #wrapper {
     min-width: 320px;
-  }
-  #sectionNav {
-    visibility: hidden;
-  }
-  .name {
-    font-size: 12vw;
-  }
-  .quote {
-    font-size: 6.5vw;
   }
   #sectionAbout {
     padding: 10%  1%  10% 1%;
   }
-  .hobbie {
-    width: 28%;
-  }
   #sectionPortfolio {
     padding: 10%  1%  10% 1%;
-  }
-  .clouds {
-    width: 10%;
   }
   #sectionExperience {
     padding: 10%  1%  10% 1%;
@@ -931,8 +935,11 @@ footer {
   #sectionReference {
     padding: 10%  1%  10% 1%;
   }
-  #cv {
-    width: 10%;
+  .references {
+    text-align: center;
+  }
+  .referee {
+    border-left: 0px;
   }
   #sectionContact {
     padding: 10%  1%  10% 1%;
@@ -945,12 +952,6 @@ footer {
   }
   hr {
     width: 80%;
-  }
-  .network {
-    width: 10%;
-  }
-  .socials, .socialsenvelop {
-    width: 8%;
   }
 }
 
