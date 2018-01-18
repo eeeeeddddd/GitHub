@@ -10,7 +10,7 @@
 	  <meta name="description" content="">
 	  <meta name="author" content="me"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>events</title>
+    <title>methods</title>
 </head>
 <style>
 	#wrapper	{
@@ -19,39 +19,45 @@
 	#box1	{
 		float: left;
 		width: 200px;
-		background: red;
 		height: 50px;
+		background: red;
 		line-height: 50px;
 	}
 	#box2	{
 		float: left;
 		width: 200px;
-		background: lightgray;
 		height: 50px;
+		background: lightgray;
 		line-height: 50px;
-	}</style>
+	}
+</style>
 <body>
 
     <div id="wrapper">
 		<div id="box1">box1</div>
-		<div id="box2">event triggle</div>
+		<div id="box2">single effect</div>
 </div>
 
 <script>
 
 	$(document).ready (function() {
 		$("#box1").click (function() {
-        $("#box2") .slideToggle(500);
+      $("#box2").fadeOut(1000).fadeIn(1000);
     });
 });
 
-// .click
-// .hover
-// .dblclick
-// .mouseenter
-// .mouseleave
-// .mousedown
-// .mouseup
+//single click
+// .fadeOut(3000);
+// .fadeIn(3000);
+// .show(3000);
+// .hide(3000);
+// .slideUp();
+// .slideDown();
+//.animate({});
+
+//double click
+// .slideToggle(3000);
+// .fadeToggle(3000);
 
 </script>
 </body>

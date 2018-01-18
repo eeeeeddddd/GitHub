@@ -10,7 +10,7 @@
 	  <meta name="description" content="">
 	  <meta name="author" content="me"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>toggle</title>
+    <title>events</title>
 </head>
 <style>
 	#wrapper	{
@@ -34,21 +34,24 @@
 
     <div id="wrapper">
 		<div id="box1">box1</div>
-		<div id="box2">toggle effect</div>
-</div>
+		<div id="box2">event triggle</div>
+	</div>
 
 <script>
 
-//or hover
-
 	$(document).ready (function() {
 		$("#box1").click (function() {
-        $("#box2") .slideToggle(1000);
+      $("#box2") .slideToggle(500);
     });
 });
 
-// .slideToggle(3000);
-// .fadeToggle(3000);
+// .click
+// .hover
+// .dblclick
+// .mouseenter
+// .mouseleave
+// .mousedown
+// .mouseup
 
 </script>
 </body>

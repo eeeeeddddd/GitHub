@@ -13,11 +13,11 @@
 
 	body 	{padding: 100px;}
 
-	thead {color:lime;}
-	tbody {color:blue;}
-	tfoot {color:red;}
-	table, th, td {border: 1px dashed red; padding: 50px; width: 200px;}
-}
+	thead {color:lime;} 	/*table head*/
+	tbody {color:blue;} 	/*table body*/
+	tfoot {color:red;} 		/*table foot*/
+	table, th, td {border: 1px solid red;}
+	th, tr, td 		{padding: 10px; width: 200px;}
 </style>
 
 </head>
@@ -26,15 +26,21 @@
 
 	<table>
 	  <thead>
-	    <tr><th>1</th><th>2</th></tr>
+	    <tr><!--center text-->
+				<th>1</th><th>2</th>
+			</tr>
 	  </thead>
 
 	  <tbody>
-			<tr><th>3</th><th>4</th></tr>
+			<tr>
+				<td>3</td><td>4</td>
+			</tr>
 		</tbody>
 
 	  <tfoot>
-			<tr><th>5</th><th>6</th></tr>
+			<tr>
+				<td>5</td><td>6</td>
+			</tr>
 		</tfoot>
 
 	</table>
