@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	  <meta name="description" content="">
+	  <meta name="author" content="me"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>variable text</title>
+<style>
+#wrapper {
+  text-align: center;
+}
+#click	{
+	background: red;
+	color: white;
+	padding: 20px;
+	width: 400px;
+}
+#one, #two, #three	{
+	float: left;
+	background: blue;
+  color: white;
+	width: 100px;
+	padding: 20px;
+	margin-right: 10px;
+}
+</style>
+</head>
+<body>
+    <div id="wrapper">
+
+	    <div id="click">click</div>
+        <div id="div">
+			<div id="one"><p>variable text</p></div>
+			<div id="two"><p>variable text</p></div>
+			<div id="three"><p>variable text</p></div>
+        </div>
+</div>
+
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+
+//adds increment of 0 each time
+
+$(document).ready (function() {
+	  var number = 0;
+
+	  var text = "just some variable text";
+  $("#click").click (function() {
+     $("p").eq(number).text(text);
+     number++; //Increment
+    });
+});
+
+
+
+//select by number with maths
+
+//$(document).ready (function() {
+//	  var number = 0;
+//	  var maths	= 5;
+//	  number = maths -4;
+//
+//	  var text = "just some variable text";
+//
+//  $("#click").click (function() {
+//     $("p").eq(number).text(text);
+//    });
+//});
+
+//a variable created by two variables (shortcut from below)
+
+//$(document).ready (function() {
+//	var textboth = "just some variable text"; + $("#click").text();
+//  $("#click").click (function() {
+//     $("p").text(textboth);
+//    });
+//});
+
+//a variable created by two variables
+
+/*
+$(document).ready (function() {
+	var textread = $("#click").text();
+	var text = "just some variable text";
+	var textboth = textread + text
+  $("#click").click (function() {
+     $("p").text(textboth);
+    });
+});
+*/
+
+//reads text in #click div which creates a string for the variable
+
+//$(document).ready (function() {
+//	var textread = $("#click").text();
+// $("#click").click (function() {
+//     $("p").text(textread);
+//    });
+//});
+
+// text change with variable string
+
+// $(document).ready (function() {
+// 	var text = "just some variable text";
+//   $("#click").click (function() {
+//      $("p").text(text);
+//     });
+// });
+
+</script>
+</body>
+</html>

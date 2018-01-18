@@ -16,8 +16,8 @@ $color1:;
 $color2: #F7484E; /*red*/
 
 $fontColor: #727272;/*gray*/
-.fontColorlighten	{color: lighten($fontColor, 50%);}
-.fontColordarken	{color: darken($fontColor, 50%);}
+// .fontColorlighten	{color: lighten($fontColor, 50%);}
+// .fontColordarken	{color: darken($fontColor, 50%);}
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
@@ -137,7 +137,8 @@ nav ul li a {
 }
 .name	{
 	font-family: 'mywoff';
-	font-size: 7vw;
+// 	font-size: 7vw;
+	font-size: 100px;
 	margin: 0;
 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
@@ -145,7 +146,8 @@ nav ul li a {
 .quote	{
 	font-family: $fontText;
 	font-weight: 400;		
-	font-size: 3.5vw;
+// 	font-size: 3.5vw;
+	font-size: 50px;
 	color: white;
 	margin: 0;
 }
@@ -209,8 +211,7 @@ nav ul li a {
 
 #sectionExpertise	{/*expertise*/
  	background-color: $bg-color;
-	padding: 5%  0%  5% 0%;;
-	text-align: center;
+	padding: 5%  5%  5% 5%;;
 }
 // #tableExpertiseleft	{display: inline-block;}
 // #tableExpertiseright	{display: inline-block;}
@@ -320,7 +321,7 @@ nav ul li a {
 }
 
 #sectionReference		{/*reference*/
-	background-color: $bg-color;
+	background-color: yellow;
 	padding: 5%  0%  5% 0%;
 	text-align: center;
 }
@@ -517,26 +518,28 @@ footer		{/*footer*/
 @media screen and (max-width: 768px) {	//tablet
 #sectionNav						{display: none;}
 .stickytitle						{position: relative;}	//no sticky title mobile
-.hobbie							{width: 20%;}
+.name							{font-size: 75px;}
+.quote							{font-size: 37.5px;}
+.hobbie							{width: 10%;}
 .qualificationColumnLeft 	{text-align: center;}
 .qualificationColumnRight  {font-size: calc(100% - 4px);padding: 0% 0% 5% 1%;	}
 .pass								{text-align: center; margin-left: 0%;}//maybe display none?
-.clouds							{width: 20%;}
+.clouds							{width: 10%;}
 #cv								{width: 20%;}
 .socials					   		{width: 10%;}
 }	
 	
 @media screen and (max-width: 480px) {//mobile
 #wrapper {min-width: 320px;}		
-// html body	{font-size: 16px;}
+html body	{font-size: 16px;}
+.name				{font-size: 50px;}
+.quote				{font-size: 25px;}
 #sectionAbout			{padding: 10%  1%  10% 1%;}
 #sectionPortfolio			{padding: 10%  1%  10% 1%;}
 #sectionExperience		{padding: 10%  1%  10% 1%;}
 #sectionReference		{padding: 10%  1%  10% 1%;}
-//maybe display none?
 .references			{text-align: center;}
 .referee				{border-left: 0px;}
-
 #sectionContact			{padding: 10%  1%  10% 1%;}
 input					{width: 80%;}
 textarea				{width: 80%;}
@@ -544,7 +547,7 @@ hr 						{width: 80%;}
 }
 
 @media (max-width: 320px) {
-	
+#sectionReference		{display: none;}	//maybe!
 }
 
 

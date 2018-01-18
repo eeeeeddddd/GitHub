@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13887 2062 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_2);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #bbb;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #95989a;
+      }
+
+      .cls-6 {
+        font-size: 181px;
+        font-family: Lobster1.3, "Lobster 1.3";
+      }
+
+      .cls-7 {
+        font-size: 50px;
+        font-family: Antic-Regular, Antic;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_2">
+      <rect x="-13887" y="2062" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" class="cls-1">
+    <rect class="cls-10" x="-13887" y="2062" width="1920" height="1920"/>
+    <g id="Ellipse_11" data-name="Ellipse 11" class="cls-2" transform="translate(-13126 3184)">
+      <ellipse class="cls-8" cx="35.584" cy="35.584" rx="35.584" ry="35.584"/>
+      <ellipse class="cls-9" cx="35.584" cy="35.584" rx="33.084" ry="33.084"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" class="cls-2" transform="translate(-13020.057 3184)">
+      <ellipse class="cls-8" cx="35.584" cy="35.584" rx="35.584" ry="35.584"/>
+      <ellipse class="cls-9" cx="35.584" cy="35.584" rx="33.084" ry="33.084"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" class="cls-2" transform="translate(-12914.112 3184)">
+      <ellipse class="cls-8" cx="35.584" cy="35.584" rx="35.584" ry="35.584"/>
+      <ellipse class="cls-9" cx="35.584" cy="35.584" rx="33.084" ry="33.084"/>
+    </g>
+    <g id="Ellipse_14" data-name="Ellipse 14" class="cls-2" transform="translate(-12808.168 3184)">
+      <ellipse class="cls-8" cx="35.584" cy="35.584" rx="35.584" ry="35.584"/>
+      <ellipse class="cls-9" cx="35.584" cy="35.584" rx="33.084" ry="33.084"/>
+    </g>
+    <path id="Path_15" data-name="Path 15" class="cls-3" d="M2981.274,1153.808c-1.693.012-3.612-.564-5.667,1.636-1.559,1.772-.916,12.651-.916,17.032" transform="translate(-16065.332 2056.736)"/>
+    <path id="Path_16" data-name="Path 16" class="cls-3" d="M2968.321,1164.174h11.959" transform="translate(-16064.139 2054.742)"/>
+    <path id="Path_17" data-name="Path 17" class="cls-4" d="M3355.94,1155.562c-5.088,12.136,2.291,10.7,3.488,12.944-2.124,1.266-1.522.861-5.5,2.348,2.247,2.3,22.963,7.387,21.917-13.065-5.684-5.233-8.454.294-9.708,1.363C3363.406,1157.951,3365.369,1158.281,3355.94,1155.562Z" transform="translate(-16137.893 2056.389)"/>
+    <g id="Ellipse_15" data-name="Ellipse 15" class="cls-4" transform="translate(-12890.659 3208.262)">
+      <ellipse class="cls-8" cx="11.727" cy="11.727" rx="11.727" ry="11.727"/>
+      <ellipse class="cls-9" cx="11.727" cy="11.727" rx="10.727" ry="10.727"/>
+    </g>
+    <g id="Ellipse_16" data-name="Ellipse 16" class="cls-3" transform="translate(-12884.998 3213.923)">
+      <ellipse class="cls-8" cx="6.065" cy="6.065" rx="6.065" ry="6.065"/>
+      <ellipse class="cls-9" cx="6.065" cy="6.065" rx="4.565" ry="4.565"/>
+    </g>
+    <g id="Rectangle_14" data-name="Rectangle 14" class="cls-4" transform="translate(-13003.072 3211.497)">
+      <rect class="cls-8" width="35.584" height="20.218"/>
+      <rect class="cls-9" x="1" y="1" width="33.584" height="18.218"/>
+    </g>
+    <path id="Path_18" data-name="Path 18" class="cls-5" d="M3084.338,1156.511l17.041,7.464,16.273-7.464" transform="translate(-16086.328 2056.208)"/>
+    <text id="COMING_SOON" data-name="COMING SOON" class="cls-6" transform="translate(-13508 2925)"><tspan x="0" y="0">COMING SOON</tspan></text>
+    <text id="Working_on_a_full_redesign" data-name="Working on a full redesign" class="cls-7" transform="translate(-13195 3044)"><tspan x="0" y="0">Working on a full redesign</tspan></text>
+    <text id="In_the_mean_time_you_can_stalk_me_here." data-name="In the mean time… you can stalk me here." class="cls-7" transform="translate(-13354 3131)"><tspan x="0" y="0">In the mean time… you can stalk me here.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13887 4474 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_19);
+      }
+
+      .cls-2, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+        font-size: 341px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: AndaleMono, Andale Mono;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #95989a;
+      }
+
+      .cls-3 {
+        font-size: 43px;
+      }
+
+      .cls-4 {
+        font-size: 50px;
+      }
+
+      .cls-5 {
+        stroke-width: 4px;
+      }
+
+      .cls-6 {
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_19">
+      <rect x="-13887" y="4474" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_19" data-name="Artboard – 19" class="cls-1">
+    <rect class="cls-7" x="-13887" y="4474" width="1920" height="1920"/>
+    <text id="_72" data-name="72" class="cls-2" transform="translate(-13333.5 5524.5)"><tspan x="0" y="0">72</tspan></text>
+    <text id="_18h_45m_58s" data-name="18h 45m 58s" class="cls-3" transform="translate(-13270 5589)"><tspan x="0" y="0">18h 45m 58s</tspan></text>
+    <text id="d" class="cls-3" transform="translate(-12950 5521)"><tspan x="0" y="0">d</tspan></text>
+    <text id="COMING_SOON" data-name="COMING SOON" class="cls-4" transform="translate(-12556 5471)"><tspan x="0" y="0">COMING SOON</tspan></text>
+    <line id="Line_4" data-name="Line 4" class="cls-5" y1="436" transform="translate(-12701.5 5231.5)"/>
+    <path id="Path_25" data-name="Path 25" class="cls-6" d="M-13648,5418h-58.963v251.421h238.456" transform="translate(170 -90)"/>
+    <path id="Path_26" data-name="Path 26" class="cls-6" d="M-13432.768,5669.421h229.629l1.645-250.777h-51.269" transform="translate(471 -90)"/>
+  </g>
+</svg>

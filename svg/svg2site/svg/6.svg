@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9051 -370 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_8);
+      }
+
+      .cls-2, .cls-3, .cls-6 {
+        fill: #95989a;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-2 {
+        font-size: 30px;
+      }
+
+      .cls-3 {
+        font-size: 88px;
+      }
+
+      .cls-4, .cls-8 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #95989a;
+      }
+
+      .cls-5, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: #f598a3;
+      }
+
+      .cls-6 {
+        font-size: 14px;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Artboard_8">
+      <rect x="-9051" y="-370" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_8" data-name="Artboard – 8" class="cls-1">
+    <rect class="cls-9" x="-9051" y="-370" width="1920" height="1920"/>
+    <text id="WANT_TO_BE_TH_FIRST_TO_KNOW_WHEN_WE_RE_READY_" data-name="WANT TO BE TH FIRST TO KNOW WHEN WE’RE READY !" class="cls-2" transform="translate(-8830 663)"><tspan x="0" y="0">WANT TO BE TH FIRST TO KNOW WHEN WE’RE READY !</tspan></text>
+    <text id="COMING_TO_A_BROWSER_NEAR_YOU" data-name="COMING TO A BROWSER NEAR YOU" class="cls-3" transform="translate(-8830 580)"><tspan x="0" y="0">COMING TO A BROWSER NEAR YOU</tspan></text>
+    <line id="Line_1" data-name="Line 1" class="cls-4" y2="168" transform="translate(-8871.5 515.5)"/>
+    <g id="Rectangle_17" data-name="Rectangle 17" class="cls-5" transform="translate(-8002 639)">
+      <rect class="cls-7" width="215" height="26" rx="13"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="214" height="25" rx="12.5"/>
+    </g>
+    <text id="email" class="cls-6" transform="translate(-7990 656)"><tspan x="0" y="0">email</tspan></text>
+  </g>
+</svg>

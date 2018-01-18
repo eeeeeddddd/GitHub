@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	  <meta name="description" content="">
+	  <meta name="author" content="me"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>animate</title>
+</head>
+<style>
+	#wrapper	{
+		text-align: center;
+	}
+	#box1	{
+		position: relative;/*need this for animation (top bottom right left)*/
+		float: left;
+		width: 200px;
+		background: red;
+		height: 50px;
+		line-height: 50px;
+	}
+	#box2	{
+		position: relative;/*need this for animation (top bottom right left)*/
+		float: left;
+		width: 200px;
+		height: 50px;
+		background: lightgray;
+		line-height: 50px;
+	}
+
+</style>
+<body>
+
+  <div id="wrapper">
+		<div id="box1">click</div>
+		<div id="box2">toggle</div>
+  </div>
+
+<script>
+
+	$(document).ready (function() {
+		$("#box1").click (function() {
+        $("#box2").animate({
+            opacity: '0.5',
+            height: '300px',
+            width: '300px',
+            left: '100px'
+        },500,);
+    });
+});
+
+//try steps
+
+//steps
+// 	$(document).ready (function() {
+// 		$("#box1").click(function() {
+//
+// 		$("#box2").animate({
+//             height: '300px',},1000, );
+//         $("#box2").animate({
+//             width: '300px',
+//             opacity: '0.1',},1000,);
+//         $("#box2").animate({
+//             height: '50px',},1000,);
+//         $("#box2").animate({
+//             width: '200px',
+//             opacity: '1.0',},1000,);
+//     });
+// });
+
+//toggle
+// 	$(document).ready (function() {
+// 		$("#box1").click (function() {
+//         $("#box2").animate({
+//             width: 'toggle'
+//         },3000,);
+//     });
+// });
+
+</script>
+</body>
+</html>

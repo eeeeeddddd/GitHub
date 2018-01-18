@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13887 6906 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-sit_tight);
+      }
+
+      .cls-2, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 102px;
+        font-family: Cheque-Regular, Cheque;
+      }
+
+      .cls-10, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        fill: #f5f4f4;
+      }
+
+      .cls-5 {
+        stroke: #95989a;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #0f131d;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-7 {
+        font-size: 20px;
+      }
+
+      .cls-8 {
+        font-size: 16px;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+
+      .cls-11 {
+        fill: #c4c6c9;
+      }
+    </style>
+    <clipPath id="clip-sit_tight">
+      <rect x="-13887" y="6906" width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="sit_tight" data-name="sit tight" class="cls-1">
+    <rect class="cls-11" x="-13887" y="6906" width="1920" height="1920"/>
+    <text id="sit_tight_new_website_comING_soon_" data-name="sit tight
+new website comING soon!" class="cls-2" transform="translate(-12927 7769)"><tspan x="-247.146" y="0">sit tight</tspan><tspan x="-755.871" y="122">new website comING soon!</tspan></text>
+    <path id="Path_1" data-name="Path 1" class="cls-3" d="M955.517,269.747c72.74,0,93.985,359.658,0,359.658S882.776,269.747,955.517,269.747Z" transform="translate(-13887 6906)"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-3" transform="translate(-12914 7415)">
+      <ellipse class="cls-9" cx="39.5" cy="74" rx="39.5" ry="74"/>
+      <ellipse class="cls-10" cx="39.5" cy="74" rx="37" ry="71.5"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-3" transform="translate(-13036 7415)">
+      <ellipse class="cls-9" cx="39.5" cy="74" rx="39.5" ry="74"/>
+      <ellipse class="cls-10" cx="39.5" cy="74" rx="37" ry="71.5"/>
+    </g>
+    <path id="Path_2" data-name="Path 2" class="cls-3" d="M934.838,644.882H975.3L957.43,734.843Z" transform="translate(-13887 6906)"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-4" width="1920" height="847" transform="translate(-13887 7983)"/>
+    <g id="Rectangle_7" data-name="Rectangle 7" class="cls-5" transform="translate(-13293 8184)">
+      <rect class="cls-9" width="733" height="63" rx="18"/>
+      <rect class="cls-10" x="0.5" y="0.5" width="732" height="62" rx="17.5"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" class="cls-5" transform="translate(-13293 8264)">
+      <rect class="cls-9" width="733" height="63" rx="20"/>
+      <rect class="cls-10" x="0.5" y="0.5" width="732" height="62" rx="19.5"/>
+    </g>
+    <g id="Rectangle_9" data-name="Rectangle 9" class="cls-5" transform="translate(-13293 8344)">
+      <rect class="cls-9" width="733" height="252"/>
+      <rect class="cls-10" x="0.5" y="0.5" width="732" height="251"/>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-6" width="120" height="26" rx="13" transform="translate(-12974 8613)"/>
+    <text id="NAME:" class="cls-7" transform="translate(-13263 8222)"><tspan x="0" y="0">NAME:</tspan></text>
+    <text id="EMAIL:" class="cls-7" transform="translate(-13263 8303)"><tspan x="0" y="0">EMAIL:</tspan></text>
+    <text id="MASSAGE:" class="cls-7" transform="translate(-13263 8380)"><tspan x="0" y="0">MASSAGE:</tspan></text>
+    <text id="SEND" class="cls-8" transform="translate(-12940 8631)"><tspan x="0" y="0">SEND</tspan></text>
+  </g>
+</svg>
