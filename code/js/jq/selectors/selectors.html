@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	  <meta name="description" content="">
+	  <meta name="author" content="me"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>selectors</title>
+<style>
+#wrapper {
+  text-align: center;
+}
+#click	{
+	background: red;
+	color: white;
+	padding: 20px;
+	width: 400px;
+}
+#one, #two, #three	{
+	float: left;
+	background: blue;
+	color: white;
+	width: 100px;
+	padding: 20px;
+	margin-right: 10px;
+}
+.class	{}
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+
+	    <div id="click">click</div>
+        <div id="div">
+			<div id="one"><p>selector</p><p class="class" >selector</p><p>selector</p></div>
+			<div id="two"><p>selector</p><p class="class">selector</p><p>selector</p></div>
+			<div id="three"><p>selector</p><p class="class">selector</p><p><span>selector</span></p></div>
+        </div>
+</div>
+
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+
+//class filters
+	$(document).ready (function() {
+		$("#click").click (function() {
+			$('#two p[class="class"]').html ('<p>html change</p>');
+    	});
+	});
+
+//relationship filters
+// 	$(document).ready (function() {
+// 		$("#click").click (function() {
+// 	 		$('p:has(span)').html ('<p>html change</p>'); //has a span
+//    	});
+// });
+
+
+//index filters
+//	$(document).ready (function() {
+//		$("#click").click (function() {
+//	 		$('#two p:first').html ('<p>html change</p>'); //equal to
+// 			$('#two p:gt(1)').html ('<p>html change</p>'); //greater
+// 			$('#two p:lt(1)').html ('<p>html change</p>'); //less
+// 			$('#two p:eq(1)').html ('<p>html change</p>'); //equal to
+//    	});
+//	});
+	
+</script>
+</body>
+</html>
