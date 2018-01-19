@@ -176,7 +176,7 @@ nav ul li a {
 
 .name {
   font-family: 'mywoff';
-  font-size: 100px;
+  font-size: 7vw;
   margin: 0;
   color: white;
   text-shadow: 0.1px 0.1px 1px white;
@@ -185,6 +185,7 @@ nav ul li a {
 .quote {
   font-family: "Advent Pro";
   font-weight: 400;
+  font-size: 3.5vw;
   font-size: 50px;
   color: white;
   margin: 0;
@@ -882,14 +883,14 @@ footer {
   #sectionNav {
     display: none;
   }
-  .stickytitle {
-    position: relative;
-  }
   .name {
-    font-size: 75px;
+    font-size: 10vw;
   }
   .quote {
-    font-size: 37.5px;
+    font-size: 5vw;
+  }
+  .stickytitle {
+    position: relative;
   }
   .hobbie {
     width: 10%;
@@ -919,15 +920,6 @@ footer {
 @media screen and (max-width: 480px) {
   #wrapper {
     min-width: 320px;
-  }
-  html body {
-    font-size: 16px;
-  }
-  .name {
-    font-size: 50px;
-  }
-  .quote {
-    font-size: 25px;
   }
   #sectionAbout {
     padding: 10%  1%  10% 1%;

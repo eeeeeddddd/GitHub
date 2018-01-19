@@ -137,8 +137,7 @@ nav ul li a {
 }
 .name	{
 	font-family: 'mywoff';
-// 	font-size: 7vw;
-	font-size: 100px;
+	font-size: 7vw;
 	margin: 0;
 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
@@ -146,7 +145,7 @@ nav ul li a {
 .quote	{
 	font-family: $fontText;
 	font-weight: 400;		
-// 	font-size: 3.5vw;
+	font-size: 3.5vw;
 	font-size: 50px;
 	color: white;
 	margin: 0;
@@ -517,9 +516,9 @@ footer		{/*footer*/
 
 @media screen and (max-width: 768px) {	//tablet
 #sectionNav						{display: none;}
+.name				{font-size: 10vw;}//check
+.quote				{font-size: 5vw;}//check
 .stickytitle						{position: relative;}	//no sticky title mobile
-.name							{font-size: 75px;}
-.quote							{font-size: 37.5px;}
 .hobbie							{width: 10%;}
 .qualificationColumnLeft 	{text-align: center;}
 .qualificationColumnRight  {font-size: calc(100% - 4px);padding: 0% 0% 5% 1%;	}
@@ -531,9 +530,8 @@ footer		{/*footer*/
 	
 @media screen and (max-width: 480px) {//mobile
 #wrapper {min-width: 320px;}		
-html body	{font-size: 16px;}
-.name				{font-size: 50px;}
-.quote				{font-size: 25px;}
+// html body	{font-size: 16px;}
+
 #sectionAbout			{padding: 10%  1%  10% 1%;}
 #sectionPortfolio			{padding: 10%  1%  10% 1%;}
 #sectionExperience		{padding: 10%  1%  10% 1%;}
