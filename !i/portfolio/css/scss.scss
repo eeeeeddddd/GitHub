@@ -1,57 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,'); /*'Advent Pro'*/
+@font-face { font-family: 'mywoff';
+    src: url('../font/bootcamp-regular-webfont.woff2') format('woff2'),
+          url('../font/bootcamp-regular-webfont.woff') format('woff');
+}
 
 $fontTitle: 'mywoff';
 $fontNav:  'mywoff';
 $fontText: 'Advent Pro';
 $fontForm: 'Advent Pro';
 
-$svg: #727272; /*svg*/
 $bg-color: white; /*main*/
-$bg-color1: #f5f5f5; /*gray*/
+$bg-color1: #f5f5f5; /*White Smoke*/
 $bg-color2: #292929; /*header & footer*/
-
-$color:;
-$color1:;
-$color2: #F7484E; /*red*/
-
 $fontColor: #727272;/*gray*/
-// .fontColorlighten	{color: lighten($fontColor, 50%);}
-// .fontColordarken	{color: darken($fontColor, 50%);}
+$svg: #727272; /*svg*/
+$color: #F7484E; /*red*/
+
+.color	{color: $color;}//html red
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
 
-@font-face { font-family: 'mywoff';
-    src: url('../font/bootcamp-regular-webfont.woff2') format('woff2'),
-          url('../font/bootcamp-regular-webfont.woff') format('woff');
-}
-
-.dasharray:hover {animation: 1s draw linear forwards;}
-@keyframes draw 	{
-  0% {stroke-dasharray: 0 2000; stroke-dashoffset: 0;}
-   100% {stroke-dasharray: 2000; stroke-dashoffset: 0;}
-}
-
-a	{text-decoration: none; color: $fontColor;}
+.draw:hover {animation: 1s draw linear forwards;}//temp
+@keyframes draw 	{0% {stroke-dasharray: 0 2000; stroke-dashoffset: 0;}100% {stroke-dasharray: 2000; stroke-dashoffset: 0;}}
 
 html body	{
 	margin: 0px;
 	padding: 0px;
+	border: 0px;
 	font-family: $fontText;
-	color: $fontColor;
 	font-size: 20px;
 	font-weight: 300;
-	background: $bg-color2;
+	color: $fontColor;
+	background-color: $bg-color2;
 }
-#wrapper	{
-width: 100%;
-}
+a	{text-decoration: none; color: $fontColor;}
 
 .title	{/*titles*/
 	text-align: center;
 	width: 100%;
 	height: 40px;
+	background-color: $bg-color1;
 	z-index: 999;
 }
 .titletext	{
@@ -60,10 +50,9 @@ width: 100%;
 	font-size: 25px;
 	line-height: 40px;
 	text-transform: uppercase;
-	background-color: $bg-color1;
 	z-index: 99;
 }
-.stickytitle	{position:fixed; top:0; left:0; width:100%;}
+.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $bg-color1;}
 
 #sectionNav	{
 	position: fixed; 
@@ -105,22 +94,21 @@ nav ul li a {
 	text-transform: uppercase;
 	transition: 0.3s ease;
 }
-.underlineNav::after {
+.underlinenav::after {
     content: '';
     width: 0px;
     height: 2px;
-    background: $color2;
+    background: $color;
     position: absolute;
     bottom:20px;
     transition: 0.5s ease;
 }
-.underlineNav:hover::after {width: 100%;}
-
-.left::after  {@extend .underlineNav; right: 0px;}
-.center::after  {@extend .underlineNav; left: 50%; right: 50%;}
-.center:hover::after  {@extend .underlineNav; left: 0px;}
-.right::after  {@extend .underlineNav; left: 0px;}
-.right:hover::after  {@extend .underlineNav; left: 0px;}
+.underlinenav:hover::after {width: 100%;}
+.left::after  {@extend .underlinenav; right: 0px;}
+.center::after  {@extend .underlinenav; left: 50%; right: 50%;}
+.center:hover::after  {@extend .underlinenav; left: 0px;}
+.right::after  {@extend .underlinenav; left: 0px;}
+.right:hover::after  {@extend .underlinenav; left: 0px;}
 
 #sectionHeader	{/*header*/
 	height: 100vh;
@@ -128,6 +116,7 @@ nav ul li a {
 	margin: 0;
 	padding: 0;
 }
+
 #header		{
 	position: relative;
 	top: 50%;
@@ -143,7 +132,7 @@ nav ul li a {
 	text-shadow: 0.1px 0.1px 1px white;
 }
 .quote	{
-	font-family: $fontText;
+	font-family: 'Advent Pro';
 	font-weight: 400;		
 	font-size: 3.5vw;
 	font-size: 50px;
@@ -212,6 +201,10 @@ nav ul li a {
  	background-color: $bg-color;
 	padding: 5%  5%  5% 5%;;
 }
+
+//check camel
+
+
 // #tableExpertiseleft	{display: inline-block;}
 // #tableExpertiseright	{display: inline-block;}
 // .tableExpertise	{
@@ -236,16 +229,16 @@ nav ul li a {
 // 	border-radius: 10px;
 // 	transition: all 1s ease-in;
 // }
-// .line1	{ background: $color2; width: 85%;}
-// .line2	{ background: $color2; width: 85%;}
-// .line3	{ background: $color2; width: 85%;}
-// .line4	{ background: $color2; width: 85%;}
-// .line5	{ background: $color2; width: 85%;}
-// .line6	{ background: $color2; width: 85%;}
-// .line7	{ background: $color2; width: 85%;}
-// .line8	{ background: $color2; width: 85%;}
-// .line9	{ background: $color2; width: 85%;}
-// .line10{ background: $color2;}
+// .line1	{ background: $color; width: 85%;}
+// .line2	{ background: $color; width: 85%;}
+// .line3	{ background: $color; width: 85%;}
+// .line4	{ background: $color; width: 85%;}
+// .line5		{ background: $color; width: 85%;}
+// .line6	{ background: $color; width: 85%;}
+// .line7	{ background: $color; width: 85%;}
+// .line8	{ background: $color; width: 85%;}
+// .line9	{ background: $color; width: 85%;}
+// .line10{ background: $color;}
 
 #sectionQualifications	{/*qualifications*/
 	padding: 5%  0%  5% 0%;
@@ -253,7 +246,7 @@ nav ul li a {
 	width: 100%;
 	text-align: center;
 }
-.qualificationColumnLeft  {
+.qualificationcolumnleft  {
 	vertical-align: top; //aligns div at top of container
 	display: inline-block;
 	min-width: 280px; width: 39%;	
@@ -262,8 +255,8 @@ nav ul li a {
     color: darken($fontColor, 30%);	
  	padding: 0% 1% 0% 0%;    
 }
-.qualificationColumnRight  {
-	@extend .qualificationColumnLeft ;
+.qualificationcolumnright  {
+	@extend .qualificationcolumnleft ;
 	width: 59%;	
 	text-align: left;
 	color: $fontColor;
@@ -274,6 +267,7 @@ nav ul li a {
 	font-size: calc(100% - 6px);
 	margin-left: 10%;
 }
+//maybe
 // #ciw510pdf, #ciw520pdf	{
 // 	padding-top: 2%;
 // 	display: none;
@@ -296,6 +290,7 @@ nav ul li a {
     margin: 0% 2% 0% 2%;
      transition: all 0.5s linear;
 }
+
 #cc	{stroke:$svg;fill: none;stroke-width: 11px;}
 .clouds:hover  #cc	{stroke: red; transition: 0.2s linear;}
 
@@ -320,26 +315,25 @@ nav ul li a {
 }
 
 #sectionReference		{/*reference*/
-	background-color: yellow;
-	padding: 5%  0%  5% 0%;
+	background-color: $bg-color;
+	padding: 1%  0%  1% 0%;
 	text-align: center;
 }
-
 .references	{
 	display: inline-block;
     min-width: 200px; width: 15%;
-    margin: 2% 2% 2% 2%;
+    margin: 1% 2% 2% 2%;
     text-align: left;
 }
 .referee	{
 	font-size: calc(100% - 4px);
     padding: 0% 0% 0% 5%;//left line padding
 	margin: 0px;
-    border-left: solid 1px darken($fontColor, 20%);  
+    border-left: solid 2px darken($fontColor, 30%);  
 }
-.refereeTitle	{
+.refereetitle	{
 	font-size: 20px;
-    color: darken($fontColor, 40%); 
+    color: darken($fontColor, 30%); 
 }
 
 #sectionCv		{/*cv download*/
@@ -349,7 +343,6 @@ nav ul li a {
 }
 #cv   {
 	display: inline-block;
-    width: 10%;
     width: 10%;
     margin: 5px 2% 0px 2%;
     transition: all 0.5s linear;
@@ -361,7 +354,6 @@ nav ul li a {
 	padding: 5%  0%  5% 0%;
 	background: $bg-color;
 }
-
 input	{
 	width: 50%;
 	height: 10px;
@@ -445,7 +437,6 @@ footer		{/*footer*/
 	z-index: -1;
 	text-align: center;
 }
-
 #mouse		{/*mouse*/
 	position: relative;
 	background: $bg-color2;
@@ -463,7 +454,7 @@ footer		{/*footer*/
   	text-align: center;
 //   	box-shadow: 0px 0px 5px lightgray;
   	transition: all 0.3s;
-  	&:hover	{border: 2px solid $color2; box-shadow: 0px 0px 5px gray;}
+  	&:hover	{border: 2px solid $color; box-shadow: 0px 0px 5px gray;}
 }
 #scroll{
 	width: 0px;
@@ -471,7 +462,7 @@ footer		{/*footer*/
 	margin-left: 7px;
     border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
-	border-bottom: 4px solid $color2;
+	border-bottom: 4px solid $color;
 	animation: scroll 1.5s infinite both;
 }
 @keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
@@ -484,7 +475,7 @@ footer		{/*footer*/
 	font-weight: bold;
 	margin-left: -1px;
 }
-#footer		{
+#me		{
 	position: relative;
 	top:40%;
 	text-align: center;
@@ -510,17 +501,20 @@ footer		{/*footer*/
 	width: 30px;
  	stroke-dasharray: 2000;
  	stroke-dashoffset: 0;
- 	animation: dash 4s linear infinite 0.5s; /*forwards;*/
+ 	animation: pipe 4s linear infinite 0.5s; /*forwards;*/
 }
-@keyframes dash 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}
+@keyframes pipe 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}//pipe
 
+// @media screen and (max-width: 900px) {	//desktop
+// }
+	
 @media screen and (max-width: 768px) {	//tablet
 #sectionNav						{display: none;}
 .name				{font-size: 10vw;}//check
 .quote				{font-size: 5vw;}//check
 .stickytitle						{position: relative;}	//no sticky title mobile
 .hobbie							{width: 10%;}
-.qualificationColumnLeft 	{text-align: center;}
+.qualificationcolumnleft 	{text-align: center;}
 .qualificationColumnRight  {font-size: calc(100% - 4px);padding: 0% 0% 5% 1%;	}
 .pass								{text-align: center; margin-left: 0%;}//maybe display none?
 .clouds							{width: 10%;}
@@ -530,8 +524,6 @@ footer		{/*footer*/
 	
 @media screen and (max-width: 480px) {//mobile
 #wrapper {min-width: 320px;}		
-// html body	{font-size: 16px;}
-
 #sectionAbout			{padding: 10%  1%  10% 1%;}
 #sectionPortfolio			{padding: 10%  1%  10% 1%;}
 #sectionExperience		{padding: 10%  1%  10% 1%;}
@@ -544,8 +536,8 @@ textarea				{width: 80%;}
 hr 						{width: 80%;}	
 }
 
-@media (max-width: 320px) {
-#sectionReference		{display: none;}	//maybe!
+@media (max-width: 320px) {//mobile small
+#sectionReference		{display: none;}
 }
 
 

@@ -125,17 +125,17 @@ $(window).scroll(function() {
 });
 
 //pdf 510
-$(document).ready(function () {
-    $("#510details").on('click', function () {
-        $("#ciw510pdf").slideToggle(1000);
-    });
-});
+// $(document).ready(function () {
+//     $("#510details").on('click', function () {
+//         $("#ciw510pdf").slideToggle(1000);
+//     });
+// });
 //pdf 520
-$(document).ready(function () {
-    $("#520details").on('click', function () {
-        $("#ciw520pdf").slideToggle(1000);
-    });
-});
+// $(document).ready(function () {
+//     $("#520details").on('click', function () {
+//         $("#ciw520pdf").slideToggle(1000);
+//     });
+// });
 
 
 
