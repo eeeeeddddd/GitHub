@@ -31,7 +31,6 @@ html body	{
 	border: 0px;
 	font-family: $fontText;
 	font-size: 20px;
-	font-weight: 300;
 	color: $fontColor;
 	background-color: $bg-color2;
 }
@@ -50,7 +49,6 @@ a	{text-decoration: none; color: $fontColor;}
 	font-size: 25px;
 	line-height: 40px;
 	text-transform: uppercase;
-	z-index: 99;
 }
 .stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $bg-color1;}
 
@@ -110,7 +108,7 @@ nav ul li a {
 .right::after  {@extend .underlinenav; left: 0px;}
 .right:hover::after  {@extend .underlinenav; left: 0px;}
 
-#sectionHeader	{/*header*/
+#sectionHeader	{
 	height: 100vh;
 	background: $bg-color2;
 	margin: 0;
@@ -134,17 +132,17 @@ nav ul li a {
 .quote	{
 	font-family: 'Advent Pro';
 	font-weight: 400;		
-	font-size: 4vw;
+	font-size: 5vw;
 	color: white;
 	margin: 0;
 }
 
-#sectionAbout	{/*about*/
+#sectionAbout	{
 	background-color: $bg-color;
 	padding: 4%  5%  5% 5%;
 	text-align: center;
 }
-#hobbies		{/*hobbies*/
+#hobbies		{
 	background: $bg-color;
 	text-align: center;
 	padding: 1% 1% 1% 1%;
@@ -196,14 +194,12 @@ nav ul li a {
 #peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
 
-#sectionExpertise	{/*expertise*/
+#sectionExpertise	{
  	background-color: $bg-color;
 	padding: 5%  5%  5% 5%;;
 }
 
 //check camel
-
-
 // #tableExpertiseleft	{display: inline-block;}
 // #tableExpertiseright	{display: inline-block;}
 // .tableExpertise	{
@@ -239,7 +235,7 @@ nav ul li a {
 // .line9	{ background: $color; width: 85%;}
 // .line10{ background: $color;}
 
-#sectionQualifications	{/*qualifications*/
+#sectionQualifications	{
 	padding: 5%  0%  5% 0%;
 	background:  $bg-color;
 	width: 100%;
@@ -269,11 +265,11 @@ nav ul li a {
 // 	margin: 0 auto;		
 // }
 
-#sectionPortfolio	{/*portfolio*/
+#sectionPortfolio	{
 	padding: 5%  0%  5% 0%;
 	background:  $bg-color;
 }
-#cloud		{/*files*/
+#cloud		{
 	padding: 1%;
 	background: $bg-color;
 	text-align: center;
@@ -303,12 +299,12 @@ nav ul li a {
 #dribbble	{stroke: $svg;fill: none;stroke-width: 11px;}
 .clouds:hover #dribbble	{stroke: #b3335a;  transition: 0.2s linear;}
 
-#sectionExperience		{/*experience*/
+#sectionExperience		{
 	background-color: $bg-color;
 	padding: 5%  0%  5% 0%;
 }
 
-#sectionReference		{/*reference*/
+#sectionReference		{
 	background-color: $bg-color;
 	padding: 1%  0%  1% 0%;
 	text-align: center;
@@ -330,7 +326,7 @@ nav ul li a {
     color: darken($fontColor, 30%); 
 }
 
-#sectionCv		{/*cv download*/
+#sectionCv		{
 	padding: 2%  0%  5% 0%;
 	background: $bg-color1;
 	text-align: center;
@@ -342,7 +338,7 @@ nav ul li a {
     transition: all 0.5s linear;
 }
 
-#sectionContact {/*contact*/
+#sectionContact {
 	height: 400px;
 	text-align: center;
 	padding: 5%  0%  5% 0%;
@@ -394,7 +390,7 @@ textarea {
 }
 hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 
-#sectionSocial		{/*social*/
+#sectionSocial		{
 	background: $bg-color;
 	padding: 2%;
 	margin-bottom: 450px;
@@ -422,7 +418,7 @@ hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
 .socials:hover #twitter {fill: $svg; transition: 0.3s linear;}
 
-footer		{/*footer*/
+footer		{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -446,7 +442,6 @@ footer		{/*footer*/
 	border:2px solid lightgray;
 	border-radius: 20px;
   	text-align: center;
-//   	box-shadow: 0px 0px 5px lightgray;
   	transition: all 0.3s;
   	&:hover	{border: 2px solid $color; box-shadow: 0px 0px 5px gray;}
 }
@@ -523,7 +518,7 @@ footer		{/*footer*/
 .cv	{width: 20%;}
 
 #sectionContact	{padding: 10%  1%  10% 1%;}
-input		{width: 80%;}
+input	{width: 80%;}
 textarea	{width: 80%;}
 hr 	{width: 80%;}	
 .socials	{width: 10%;}

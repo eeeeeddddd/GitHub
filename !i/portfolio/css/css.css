@@ -38,7 +38,6 @@ html body {
   border: 0px;
   font-family: "Advent Pro";
   font-size: 20px;
-  font-weight: 300;
   color: #727272;
   background-color: #292929;
 }
@@ -63,7 +62,6 @@ a {
   font-size: 25px;
   line-height: 40px;
   text-transform: uppercase;
-  z-index: 99;
 }
 
 .stickytitle {
@@ -161,7 +159,6 @@ nav ul li a {
 }
 
 #sectionHeader {
-  /*header*/
   height: 100vh;
   background: #292929;
   margin: 0;
@@ -187,20 +184,18 @@ nav ul li a {
 .quote {
   font-family: 'Advent Pro';
   font-weight: 400;
-  font-size: 4vw;
+  font-size: 5vw;
   color: white;
   margin: 0;
 }
 
 #sectionAbout {
-  /*about*/
   background-color: white;
   padding: 4%  5%  5% 5%;
   text-align: center;
 }
 
 #hobbies {
-  /*hobbies*/
   background: white;
   text-align: center;
   padding: 1% 1% 1% 1%;
@@ -460,13 +455,11 @@ nav ul li a {
 }
 
 #sectionExpertise {
-  /*expertise*/
   background-color: white;
   padding: 5%  5%  5% 5%;
 }
 
 #sectionQualifications {
-  /*qualifications*/
   padding: 5%  0%  5% 0%;
   background: white;
   width: 100%;
@@ -492,13 +485,11 @@ nav ul li a {
 }
 
 #sectionPortfolio {
-  /*portfolio*/
   padding: 5%  0%  5% 0%;
   background: white;
 }
 
 #cloud {
-  /*files*/
   padding: 1%;
   background: white;
   text-align: center;
@@ -580,13 +571,11 @@ nav ul li a {
 }
 
 #sectionExperience {
-  /*experience*/
   background-color: white;
   padding: 5%  0%  5% 0%;
 }
 
 #sectionReference {
-  /*reference*/
   background-color: white;
   padding: 1%  0%  1% 0%;
   text-align: center;
@@ -613,7 +602,6 @@ nav ul li a {
 }
 
 #sectionCv {
-  /*cv download*/
   padding: 2%  0%  5% 0%;
   background: #f5f5f5;
   text-align: center;
@@ -627,7 +615,6 @@ nav ul li a {
 }
 
 #sectionContact {
-  /*contact*/
   height: 400px;
   text-align: center;
   padding: 5%  0%  5% 0%;
@@ -694,7 +681,6 @@ hr {
 }
 
 #sectionSocial {
-  /*social*/
   background: white;
   padding: 2%;
   margin-bottom: 450px;
@@ -766,7 +752,6 @@ hr {
 }
 
 footer {
-  /*footer*/
   position: fixed;
   bottom: 0;
   width: 100%;
