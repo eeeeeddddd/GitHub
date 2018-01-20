@@ -335,7 +335,7 @@ nav ul li a {
 	background: $bg-color1;
 	text-align: center;
 }
-#cv   {
+.cv   {
 	display: inline-block;
     width: 10%;
     margin: 5px 2% 0px 2%;
@@ -504,7 +504,7 @@ footer		{/*footer*/
 	
 @media screen and (max-width: 768px) {	//tablet
 #sectionNav	{display: none;}
-.stickytitle	{position: relative;}	//no sticky title mobile
+.stickytitle	{position: relative;}//no sticky title mobile
 
 #sectionAbout	{padding: 10%  1%  10% 1%;}
 .hobbie	{width: 10%;}
@@ -520,7 +520,7 @@ footer		{/*footer*/
 .referee	{border-left: 0px;}
 .clouds	{width: 10%;}
 
-#cv	{width: 20%;}
+.cv	{width: 20%;}
 
 #sectionContact	{padding: 10%  1%  10% 1%;}
 input		{width: 80%;}
@@ -538,7 +538,6 @@ hr 	{width: 80%;}
 
 @media (max-width: 320px) {//mobile small
 #wrapper {min-width: 320px;}		
-
 }
 
 
