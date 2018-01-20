@@ -178,7 +178,7 @@ nav ul li a {
 
 .name {
   font-family: 'mywoff';
-  font-size: 7vw;
+  font-size: 10vw;
   margin: 0;
   color: white;
   text-shadow: 0.1px 0.1px 1px white;
@@ -187,8 +187,7 @@ nav ul li a {
 .quote {
   font-family: 'Advent Pro';
   font-weight: 400;
-  font-size: 3.5vw;
-  font-size: 50px;
+  font-size: 4vw;
   color: white;
   margin: 0;
 }
@@ -490,12 +489,6 @@ nav ul li a {
   text-align: left;
   color: #727272;
   padding: 0% 0% 2% 1%;
-}
-
-.pass {
-  text-align: left;
-  font-size: calc(100% - 6px);
-  margin-left: 10%;
 }
 
 #sectionPortfolio {
@@ -884,14 +877,11 @@ footer {
   #sectionNav {
     display: none;
   }
-  .name {
-    font-size: 10vw;
-  }
-  .quote {
-    font-size: 5vw;
-  }
   .stickytitle {
     position: relative;
+  }
+  #sectionAbout {
+    padding: 10%  1%  10% 1%;
   }
   .hobbie {
     width: 10%;
@@ -899,31 +889,9 @@ footer {
   .qualificationcolumnleft, .qualificationcolumnright {
     text-align: center;
   }
-  .qualificationColumnRight {
+  .qualificationcolumnright {
+    padding: 0% 0% 4% 0%;
     font-size: calc(100% - 4px);
-    padding: 0% 0% 5% 1%;
-  }
-  .pass {
-    text-align: center;
-    margin-left: 0%;
-  }
-  .clouds {
-    width: 10%;
-  }
-  #cv {
-    width: 20%;
-  }
-  .socials, .socialsenvelop {
-    width: 10%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #wrapper {
-    min-width: 320px;
-  }
-  #sectionAbout {
-    padding: 10%  1%  10% 1%;
   }
   #sectionPortfolio {
     padding: 10%  1%  10% 1%;
@@ -940,6 +908,12 @@ footer {
   .referee {
     border-left: 0px;
   }
+  .clouds {
+    width: 10%;
+  }
+  #cv {
+    width: 20%;
+  }
   #sectionContact {
     padding: 10%  1%  10% 1%;
   }
@@ -952,11 +926,29 @@ footer {
   hr {
     width: 80%;
   }
+  .socials, .socialsenvelop {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #sectionCv {
+    display: none;
+  }
+  #titlehide {
+    display: none;
+  }
+  #sectionReference {
+    display: none;
+  }
+  #sectionContact {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
-  #sectionReference {
-    display: none;
+  #wrapper {
+    min-width: 320px;
   }
 }
 

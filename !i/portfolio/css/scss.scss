@@ -126,7 +126,7 @@ nav ul li a {
 }
 .name	{
 	font-family: 'mywoff';
-	font-size: 7vw;
+	font-size: 10vw;
 	margin: 0;
 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
@@ -134,8 +134,7 @@ nav ul li a {
 .quote	{
 	font-family: 'Advent Pro';
 	font-weight: 400;		
-	font-size: 3.5vw;
-	font-size: 50px;
+	font-size: 4vw;
 	color: white;
 	margin: 0;
 }
@@ -261,11 +260,6 @@ nav ul li a {
 	text-align: left;
 	color: $fontColor;
  	padding: 0% 0% 2% 1%;	
-}
-.pass	{
-	text-align: left;
-	font-size: calc(100% - 6px);
-	margin-left: 10%;
 }
 //maybe
 // #ciw510pdf, #ciw520pdf	{
@@ -509,35 +503,42 @@ footer		{/*footer*/
 // }
 	
 @media screen and (max-width: 768px) {	//tablet
-#sectionNav						{display: none;}
-.name				{font-size: 10vw;}//check
-.quote				{font-size: 5vw;}//check
-.stickytitle						{position: relative;}	//no sticky title mobile
-.hobbie							{width: 10%;}
-.qualificationcolumnleft 	{text-align: center;}
-.qualificationColumnRight  {font-size: calc(100% - 4px);padding: 0% 0% 5% 1%;	}
-.pass								{text-align: center; margin-left: 0%;}//maybe display none?
-.clouds							{width: 10%;}
-#cv								{width: 20%;}
-.socials					   		{width: 10%;}
+#sectionNav	{display: none;}
+.stickytitle	{position: relative;}	//no sticky title mobile
+
+#sectionAbout	{padding: 10%  1%  10% 1%;}
+.hobbie	{width: 10%;}
+.qualificationcolumnleft		{text-align: center;}
+.qualificationcolumnright 	{padding: 0% 0% 4% 0%; font-size: calc(100% - 4px);}
+
+#sectionPortfolio		{padding: 10%  1%  10% 1%;}
+
+#sectionExperience	{padding: 10%  1%  10% 1%;}
+
+#sectionReference	{padding: 10%  1%  10% 1%;}
+.references	{text-align: center;}
+.referee	{border-left: 0px;}
+.clouds	{width: 10%;}
+
+#cv	{width: 20%;}
+
+#sectionContact	{padding: 10%  1%  10% 1%;}
+input		{width: 80%;}
+textarea	{width: 80%;}
+hr 	{width: 80%;}	
+.socials	{width: 10%;}
 }	
 	
-@media screen and (max-width: 480px) {//mobile
-#wrapper {min-width: 320px;}		
-#sectionAbout			{padding: 10%  1%  10% 1%;}
-#sectionPortfolio			{padding: 10%  1%  10% 1%;}
-#sectionExperience		{padding: 10%  1%  10% 1%;}
-#sectionReference		{padding: 10%  1%  10% 1%;}
-.references			{text-align: center;}
-.referee				{border-left: 0px;}
-#sectionContact			{padding: 10%  1%  10% 1%;}
-input					{width: 80%;}
-textarea				{width: 80%;}
-hr 						{width: 80%;}	
+@media screen and (max-width: 480px) {//mobile	
+#sectionCv	{display: none;}
+#titlehide	{display: none;}
+#sectionReference	{display: none;}
+#sectionContact	{display: none;}
 }
 
 @media (max-width: 320px) {//mobile small
-#sectionReference		{display: none;}
+#wrapper {min-width: 320px;}		
+
 }
 
 
