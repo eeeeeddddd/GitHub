@@ -10,14 +10,15 @@ $fontNav:  'mywoff';
 $fontText: 'Advent Pro';
 $fontForm: 'Advent Pro';
 
-$bg-color: white; /*main*/
-$bg-color1: #f5f5f5; /*White Smoke*/
-$bg-color2: #292929; /*header & footer*/
+$bg-color: #292929; /*header & footer*/
+$bg-color1: white; /*White*/
+$bg-color2: #fcfcfc; /*White Smoke*/
+
 $fontColor: #727272;/*gray*/
+$navColor: #fcfcfc;/*gray*/
+
 $svg: #727272; /*svg*/
 $color: #F7484E; /*red*/
-
-.color	{color: $color;}//html red
 
 // @mixin dog {}
 // .doggy1 { @include dog;}
@@ -32,15 +33,20 @@ html body	{
 	font-family: $fontText;
 	font-size: 20px;
 	color: $fontColor;
-	background-color: $bg-color2;
+	background-color: $bg-color;
 }
-a	{text-decoration: none; color: $fontColor;}
+
+a	{text-decoration: none; color: $fontColor; display: block;}
+.quote	{font-size: 30px;}
+.font	{font-family: 'Poiret+One';}
+.color	{color: $color;}//html red
+.darken	{color: darken($fontColor, 30%);}
 
 .title	{/*titles*/
 	text-align: center;
 	width: 100%;
 	height: 40px;
-	background-color: $bg-color1;
+	background-color: $navColor;
 	z-index: 999;
 }
 .titletext	{
@@ -50,14 +56,14 @@ a	{text-decoration: none; color: $fontColor;}
 	line-height: 40px;
 	text-transform: uppercase;
 }
-.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $bg-color1;}
+.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $navColor;}
 
 #sectionNav	{
 	position: fixed; 
 	top:0; 
 	right: 0; 
 	left: 0; 
-	background-color: $bg-color1;
+	background-color: $navColor;
 	z-index: 99999;
 	transition: transform 0.5s cubic-bezier(.42,1,.8,1);
 	opacity: 0;
@@ -110,7 +116,7 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
-	background: $bg-color2;
+	background: $bg-color;
 	margin: 0;
 	padding: 0;
 }
@@ -129,7 +135,7 @@ nav ul li a {
 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
 }
-.quote	{
+.quoterr	{
 	font-family: 'Advent Pro';
 	font-weight: 400;		
 	font-size: 5vw;
@@ -138,12 +144,12 @@ nav ul li a {
 }
 
 #sectionAbout	{
-	background-color: $bg-color;
+	background-color: $bg-color1;
 	padding: 4%  5%  5% 5%;
 	text-align: center;
 }
 #hobbies		{
-	background: $bg-color;
+	background: $bg-color1;
 	text-align: center;
 	padding: 1% 1% 1% 1%;
 }
@@ -194,91 +200,61 @@ nav ul li a {
 #peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
 
-#sectionExpertise	{
- 	background-color: $bg-color;
-	padding: 5%  5%  5% 5%;;
-}
-
-//check camel
-// #tableExpertiseleft	{display: inline-block;}
-// #tableExpertiseright	{display: inline-block;}
-// .tableExpertise	{
-// 	position: relative;
-// }
-// .tableExpertisecolumn	{
-// 	width: 150px;
-// 	padding: 0px 0px 0px 0px;
-// 	text-align: left;
-// }
-// .underline	{
-// 	position: relative;
-// 	width: 100px;
-// 	height: 10px;
-// 	background: lightgray;
-// 	border-radius: 10px;
-// 	margin-left: 10px;
-// }
-// .line	{
-// 	position: relative;
-// 	height: 10px;
-// 	border-radius: 10px;
-// 	transition: all 1s ease-in;
-// }
-// .line1	{ background: $color; width: 85%;}
-// .line2	{ background: $color; width: 85%;}
-// .line3	{ background: $color; width: 85%;}
-// .line4	{ background: $color; width: 85%;}
-// .line5		{ background: $color; width: 85%;}
-// .line6	{ background: $color; width: 85%;}
-// .line7	{ background: $color; width: 85%;}
-// .line8	{ background: $color; width: 85%;}
-// .line9	{ background: $color; width: 85%;}
-// .line10{ background: $color;}
-
-#sectionQualifications	{
-	padding: 5%  0%  5% 0%;
-	background:  $bg-color;
-	width: 100%;
-	text-align: center;
-}
-.qualificationcolumnleft  {
+.columnleft  {
 	vertical-align: top; //aligns div at top of container
 	display: inline-block;
-	min-width: 280px; width: 39%;	
+	min-width: 230px; width: 30%;	
     text-align: right;
-    line-height: 30px;
-    color: darken($fontColor, 30%);	
- 	padding: 0% 1% 0% 0%;    
+ 	padding: 0% 1% 0% 0%;  
 }
-.qualificationcolumnright  {
-	@extend .qualificationcolumnleft ;
+.columnlefttitle  {//maybe
+	@extend columnleft;
+    color: darken($fontColor, 30%);
+    font-size: calc(100% + 2px);
+}
+.columnright  {
+	@extend .columnleft ;
 	width: 59%;	
 	text-align: left;
 	color: $fontColor;
  	padding: 0% 0% 2% 1%;	
 }
-//maybe
-// #ciw510pdf, #ciw520pdf	{
-// 	padding-top: 2%;
-// 	display: none;
-// 	width: 60%;
-// 	margin: 0 auto;		
-// }
+
+#sectionExpertise	{
+	padding: 5%  10%  5% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+// 	line-height: 30px;
+	a 	{
+		display: inline-block;
+	}
+}
+
+#sectionQualifications	{
+	padding: 5%  10%  5% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
 
 #sectionPortfolio	{
 	padding: 5%  0%  5% 0%;
-	background:  $bg-color;
+	background:  $bg-color1;
 }
 #cloud		{
 	padding: 1%;
-	background: $bg-color;
+	background: $bg-color1;
 	text-align: center;
 }
 .clouds  {
 	display: inline-block;
     width: 6%;
     margin: 0% 2% 0% 2%;
-     transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 #cc	{stroke:$svg;fill: none;stroke-width: 11px;}
@@ -300,30 +276,12 @@ nav ul li a {
 .clouds:hover #dribbble	{stroke: #b3335a;  transition: 0.2s linear;}
 
 #sectionExperience		{
-	background-color: $bg-color;
-	padding: 5%  0%  5% 0%;
-}
-
-#sectionReference		{
-	background-color: $bg-color;
-	padding: 1%  0%  1% 0%;
+	padding: 5%  10%  5% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
 	text-align: center;
-}
-.references	{
-	display: inline-block;
-    min-width: 200px; width: 15%;
-    margin: 1% 2% 2% 2%;
-    text-align: left;
-}
-.referee	{
-	font-size: calc(100% - 4px);
-    padding: 0% 0% 0% 5%;//left line padding
-	margin: 0px;
-    border-left: solid 2px darken($fontColor, 30%);  
-}
-.refereetitle	{
-	font-size: 20px;
-    color: darken($fontColor, 30%); 
+	line-height: 30px;
 }
 
 #sectionCv		{
@@ -342,7 +300,7 @@ nav ul li a {
 	height: 400px;
 	text-align: center;
 	padding: 5%  0%  5% 0%;
-	background: $bg-color;
+	background: $bg-color2;
 }
 input	{
 	width: 50%;
@@ -351,7 +309,7 @@ input	{
 	font-size: 22px;
 	font-family: $fontForm;
 	border-radius: 10px;
-	background: $bg-color;
+	background: $bg-color2;
 	transition: all 0.2s ease-in;
 	border: transparent;
 	&:hover	{
@@ -365,7 +323,7 @@ textarea {
 	font-family: $fontForm;
   	border-radius: 10px;
 	border: transparent;
-	background:$bg-color;
+	background:$bg-color2;
 	transition: all 0.2s ease-in;
 	&:hover	{
 		background: $bg-color1;
@@ -391,7 +349,7 @@ textarea {
 hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 
 #sectionSocial		{
-	background: $bg-color;
+	background: $bg-color2;
 	padding: 2%;
 	margin-bottom: 450px;
 	text-align: center;
@@ -412,7 +370,7 @@ hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webk
 #open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s linear;}
 #close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.3s linear;}
 .socialsenvelop:hover  #open {opacity: 1; fill: $svg;}
-.socialsenvelop:hover  #close	{fill: $bg-color;}
+.socialsenvelop:hover  #close	{fill: $bg-color1;}
 .socialsenvelop:hover #envelop {fill: $svg;}
 
 #twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
@@ -423,13 +381,14 @@ footer		{
 	bottom: 0;
 	width: 100%;
 	height: 450px;
-	background: $bg-color2;
+	background: $bg-color;
 	z-index: -1;
 	text-align: center;
+	color: white;
 }
 #mouse		{/*mouse*/
 	position: relative;
-	background: $bg-color2;
+	background: $bg-color;
 	height: 100px;
 }
 .mouse{
@@ -459,7 +418,6 @@ footer		{
 .mousetext	{
 	font-family: 'Poiret One';
 	font-size: 10px;
-	color: white;
 	margin-top: 40px;
 	font-weight: bold;
 	margin-left: -1px;
@@ -474,11 +432,9 @@ footer		{
 	font-family: $fontTitle;
 	font-size: 40px;
 	margin: 0px;
-	color: white;
 }
 #designby	{
 	position: relative;
-	color: white;
 	font-size: 10px;
 	font-family: 'Poiret One';
 }
@@ -490,7 +446,8 @@ footer		{
 	width: 30px;
  	stroke-dasharray: 2000;
  	stroke-dashoffset: 0;
- 	animation: pipe 4s linear infinite 0.5s; /*forwards;*/
+ 	animation: pipe 4s linear infinite 0.5s;
+ 	&:hover	{animation-play-state: paused;} 	
 }
 @keyframes pipe 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}//pipe
 
@@ -501,21 +458,15 @@ footer		{
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
 
-#sectionAbout	{padding: 10%  1%  10% 1%;}
+#sectionAbout	{padding: 10%  3%  10% 3%;}
 .hobbie	{width: 10%;}
-.qualificationcolumnleft		{text-align: center;}
-.qualificationcolumnright 	{padding: 0% 0% 4% 0%; font-size: calc(100% - 4px);}
+.columnleft		{text-align: center;}
 
-#sectionPortfolio		{padding: 10%  1%  10% 1%;}
+// #sectionPortfolio		{padding: 10%  1%  10% 1%;}
 
-#sectionExperience	{padding: 10%  1%  10% 1%;}
-
-#sectionReference	{padding: 10%  1%  10% 1%;}
-.references	{text-align: center;}
-.referee	{border-left: 0px;}
 .clouds	{width: 10%;}
 
-.cv	{width: 20%;}
+.cv	{width: 10%;}
 
 #sectionContact	{padding: 10%  1%  10% 1%;}
 input	{width: 80%;}
@@ -527,7 +478,6 @@ hr 	{width: 80%;}
 @media screen and (max-width: 480px) {//mobile	
 #sectionCv	{display: none;}
 #titlehide	{display: none;}
-#sectionReference	{display: none;}
 #sectionContact	{display: none;}
 }
 

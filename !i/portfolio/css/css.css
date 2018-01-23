@@ -7,16 +7,13 @@
   src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff");
 }
 
-/*main*/
-/*White Smoke*/
 /*header & footer*/
+/*White*/
+/*White Smoke*/
+/*gray*/
 /*gray*/
 /*svg*/
 /*red*/
-.color {
-  color: #F7484E;
-}
-
 .draw:hover {
   animation: 1s draw linear forwards;
 }
@@ -45,6 +42,23 @@ html body {
 a {
   text-decoration: none;
   color: #727272;
+  display: block;
+}
+
+.quote {
+  font-size: 30px;
+}
+
+.font {
+  font-family: 'Poiret+One';
+}
+
+.color {
+  color: #F7484E;
+}
+
+.darken {
+  color: #262626;
 }
 
 .title {
@@ -52,7 +66,7 @@ a {
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: #f5f5f5;
+  background-color: #fcfcfc;
   z-index: 999;
 }
 
@@ -69,7 +83,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #fcfcfc;
 }
 
 #sectionNav {
@@ -77,7 +91,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  background-color: #f5f5f5;
+  background-color: #fcfcfc;
   z-index: 99999;
   transition: transform 0.5s cubic-bezier(0.42, 1, 0.8, 1);
   opacity: 0;
@@ -181,7 +195,7 @@ nav ul li a {
   text-shadow: 0.1px 0.1px 1px white;
 }
 
-.quote {
+.quoterr {
   font-family: 'Advent Pro';
   font-weight: 400;
   font-size: 5vw;
@@ -454,34 +468,46 @@ nav ul li a {
   }
 }
 
-#sectionExpertise {
-  background-color: white;
-  padding: 5%  5%  5% 5%;
+.columnleft, .columnright {
+  vertical-align: top;
+  display: inline-block;
+  min-width: 230px;
+  width: 30%;
+  text-align: right;
+  padding: 0% 1% 0% 0%;
 }
 
-#sectionQualifications {
-  padding: 5%  0%  5% 0%;
+.columnlefttitle {
+  color: #262626;
+  font-size: calc(100% + 2px);
+}
+
+.columnright {
+  width: 59%;
+  text-align: left;
+  color: #727272;
+  padding: 0% 0% 2% 1%;
+}
+
+#sectionExpertise {
+  padding: 5%  10%  5% 10%;
+  box-sizing: border-box;
   background: white;
   width: 100%;
   text-align: center;
 }
 
-.qualificationcolumnleft, .qualificationcolumnright {
-  vertical-align: top;
+#sectionExpertise a {
   display: inline-block;
-  min-width: 280px;
-  width: 39%;
-  text-align: right;
-  line-height: 30px;
-  color: #262626;
-  padding: 0% 1% 0% 0%;
 }
 
-.qualificationcolumnright {
-  width: 59%;
-  text-align: left;
-  color: #727272;
-  padding: 0% 0% 2% 1%;
+#sectionQualifications {
+  padding: 5%  10%  5% 10%;
+  box-sizing: border-box;
+  background: white;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
 }
 
 #sectionPortfolio {
@@ -571,39 +597,17 @@ nav ul li a {
 }
 
 #sectionExperience {
-  background-color: white;
-  padding: 5%  0%  5% 0%;
-}
-
-#sectionReference {
-  background-color: white;
-  padding: 1%  0%  1% 0%;
+  padding: 5%  10%  5% 10%;
+  box-sizing: border-box;
+  background: white;
+  width: 100%;
   text-align: center;
-}
-
-.references {
-  display: inline-block;
-  min-width: 200px;
-  width: 15%;
-  margin: 1% 2% 2% 2%;
-  text-align: left;
-}
-
-.referee {
-  font-size: calc(100% - 4px);
-  padding: 0% 0% 0% 5%;
-  margin: 0px;
-  border-left: solid 2px #262626;
-}
-
-.refereetitle {
-  font-size: 20px;
-  color: #262626;
+  line-height: 30px;
 }
 
 #sectionCv {
   padding: 2%  0%  5% 0%;
-  background: #f5f5f5;
+  background: white;
   text-align: center;
 }
 
@@ -618,7 +622,7 @@ nav ul li a {
   height: 400px;
   text-align: center;
   padding: 5%  0%  5% 0%;
-  background: white;
+  background: #fcfcfc;
 }
 
 input {
@@ -628,13 +632,13 @@ input {
   font-size: 22px;
   font-family: "Advent Pro";
   border-radius: 10px;
-  background: white;
+  background: #fcfcfc;
   transition: all 0.2s ease-in;
   border: transparent;
 }
 
 input:hover {
-  background: #f5f5f5;
+  background: white;
 }
 
 textarea {
@@ -644,12 +648,12 @@ textarea {
   font-family: "Advent Pro";
   border-radius: 10px;
   border: transparent;
-  background: white;
+  background: #fcfcfc;
   transition: all 0.2s ease-in;
 }
 
 textarea:hover {
-  background: #f5f5f5;
+  background: white;
 }
 
 .btn {
@@ -681,7 +685,7 @@ hr {
 }
 
 #sectionSocial {
-  background: white;
+  background: #fcfcfc;
   padding: 2%;
   margin-bottom: 450px;
   text-align: center;
@@ -759,6 +763,7 @@ footer {
   background: #292929;
   z-index: -1;
   text-align: center;
+  color: white;
 }
 
 #mouse {
@@ -810,7 +815,6 @@ footer {
 .mousetext {
   font-family: 'Poiret One';
   font-size: 10px;
-  color: white;
   margin-top: 40px;
   font-weight: bold;
   margin-left: -1px;
@@ -827,12 +831,10 @@ footer {
   font-family: "mywoff";
   font-size: 40px;
   margin: 0px;
-  color: white;
 }
 
 #designby {
   position: relative;
-  color: white;
   font-size: 10px;
   font-family: 'Poiret One';
 }
@@ -846,7 +848,10 @@ footer {
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
   animation: pipe 4s linear infinite 0.5s;
-  /*forwards;*/
+}
+
+.pipe:hover {
+  animation-play-state: paused;
 }
 
 @keyframes pipe {
@@ -866,38 +871,19 @@ footer {
     position: relative;
   }
   #sectionAbout {
-    padding: 10%  1%  10% 1%;
+    padding: 10%  3%  10% 3%;
   }
   .hobbie {
     width: 10%;
   }
-  .qualificationcolumnleft, .qualificationcolumnright {
+  .columnleft, .columnright {
     text-align: center;
-  }
-  .qualificationcolumnright {
-    padding: 0% 0% 4% 0%;
-    font-size: calc(100% - 4px);
-  }
-  #sectionPortfolio {
-    padding: 10%  1%  10% 1%;
-  }
-  #sectionExperience {
-    padding: 10%  1%  10% 1%;
-  }
-  #sectionReference {
-    padding: 10%  1%  10% 1%;
-  }
-  .references {
-    text-align: center;
-  }
-  .referee {
-    border-left: 0px;
   }
   .clouds {
     width: 10%;
   }
   .cv {
-    width: 20%;
+    width: 10%;
   }
   #sectionContact {
     padding: 10%  1%  10% 1%;
@@ -921,9 +907,6 @@ footer {
     display: none;
   }
   #titlehide {
-    display: none;
-  }
-  #sectionReference {
     display: none;
   }
   #sectionContact {
