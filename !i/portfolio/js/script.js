@@ -72,16 +72,17 @@ $(window).scroll(function() {
   }
 });
 
-//qualifications
-var qualificationsOffset = $(".qualifications").offset().top;
+
+//qualification
+var qualificationOffset = $(".qualification").offset().top;
 
 $(window).scroll(function() {
-  var qualificationsScrolled = $(window).scrollTop();
+  var qualificationScrolled = $(window).scrollTop();
 
-  if (qualificationsScrolled >= qualificationsOffset) {
-    $(".qualifications").addClass("stickytitle");
+  if (qualificationScrolled >= qualificationOffset) {
+    $(".qualification").addClass("stickytitle");
   }else{
-    $(".qualifications").removeClass("stickytitle");
+    $(".qualification").removeClass("stickytitle");
   }
 });
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>box shadow - bottom corners (left)</title>
+	<style>
+		
+.box {
+	width:70%;
+	height: 200px;
+	background: white;
+	margin:40px auto;
+}
+
+.effect{position: relative;}
+
+.effect:before{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+
+</style>
+
+</head>
+
+	<body>
+		    
+		<div class="box effect"></div><br>
+	        
+	</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

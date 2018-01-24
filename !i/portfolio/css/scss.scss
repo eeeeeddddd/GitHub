@@ -11,8 +11,8 @@ $fontText: 'Advent Pro';
 $fontForm: 'Advent Pro';
 
 $bg-color: #292929; /*header & footer*/
-$bg-color1: white; /*White*/
-$bg-color2: #fcfcfc; /*White Smoke*/
+$bg-color1: #fcfcfc; /*White*/
+$bg-color2: #f5f5f5; /*White Smoke*/
 
 $fontColor: #727272;/*gray*/
 $navColor: #fcfcfc;/*gray*/
@@ -31,33 +31,58 @@ html body	{
 	padding: 0px;
 	border: 0px;
 	font-family: $fontText;
-	font-size: 20px;
+	font-size: 24px;
 	color: $fontColor;
 	background-color: $bg-color;
 }
 
 a	{text-decoration: none; color: $fontColor; display: block;}
-.quote	{font-size: 30px;}
+.quotemarks	{font-size: 40px;}
 .font	{font-family: 'Poiret+One';}
 .color	{color: $color;}//html red
 .darken	{color: darken($fontColor, 30%);}
 
 .title	{/*titles*/
 	text-align: center;
-	width: 100%;
-	height: 40px;
+	height: 50px;
 	background-color: $navColor;
 	z-index: 999;
+	padding: 0%  30%  0% 30%;
 }
-.titletext	{
+.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $navColor;padding: 0%  30%  0% 30%; box-sizing: border-box;}
+
+.hrtitle {
+	position: relative;
+	outline: 0;
+	border: 0;
 	font-family: 'mywoff';
 	letter-spacing: 1px;
-	font-size: 25px;
-	line-height: 40px;
-	text-transform: uppercase;
+	font-size: 30px;	
+	text-align: center;
+	color: darken($fontColor, 40%);
+	line-height: 10px; 
+ 	height: 50px;
+ 	margin: 0;
 }
-.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $navColor;}
-
+.hrtitle:before {
+	content: '';
+	background: -webkit-linear-gradient(left, transparent, #f5f5f5, transparent);
+	background: linear-gradient(to right, transparent, #f5f5f5, transparent);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 2px;
+}
+.hrtitle:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	background-color: $navColor;
+// 	border-left: solid 1px grey; 
+// 	border-right: solid 1px grey; 
+}
 #sectionNav	{
 	position: fixed; 
 	top:0; 
@@ -116,7 +141,8 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
-	background: $bg-color;
+	background: $bg-color1;
+// 	background-image: linear-gradient(to top, $navColor 0%, $bg-color 90%);
 	margin: 0;
 	padding: 0;
 }
@@ -132,14 +158,14 @@ nav ul li a {
 	font-family: 'mywoff';
 	font-size: 10vw;
 	margin: 0;
-	color: white;
+// 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
 }
-.quoterr	{
+.quote	{
 	font-family: 'Advent Pro';
 	font-weight: 400;		
 	font-size: 5vw;
-	color: white;
+// 	color: white;
 	margin: 0;
 }
 
@@ -199,11 +225,10 @@ nav ul li a {
 #rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 #peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
-
 .columnleft  {
 	vertical-align: top; //aligns div at top of container
 	display: inline-block;
-	min-width: 230px; width: 30%;	
+/* 	min-width: 230px;  */width: 30%;	
     text-align: right;
  	padding: 0% 1% 0% 0%;  
 }
@@ -232,7 +257,7 @@ nav ul li a {
 	}
 }
 
-#sectionQualifications	{
+#sectionQualification	{
 	padding: 5%  10%  5% 10%;
 	box-sizing: border-box;
 	background:  $bg-color1;
@@ -300,7 +325,7 @@ nav ul li a {
 	height: 400px;
 	text-align: center;
 	padding: 5%  0%  5% 0%;
-	background: $bg-color2;
+	background: $bg-color1;
 }
 input	{
 	width: 50%;
@@ -309,11 +334,11 @@ input	{
 	font-size: 22px;
 	font-family: $fontForm;
 	border-radius: 10px;
-	background: $bg-color2;
+	background: white;
 	transition: all 0.2s ease-in;
 	border: transparent;
 	&:hover	{
-		background: $bg-color1;
+		background: white;
 	}
 }
 textarea {
@@ -323,10 +348,10 @@ textarea {
 	font-family: $fontForm;
   	border-radius: 10px;
 	border: transparent;
-	background:$bg-color2;
+	background: white;
 	transition: all 0.2s ease-in;
 	&:hover	{
-		background: $bg-color1;
+		background: white;
 	}
 }
 .btn {
@@ -346,10 +371,10 @@ textarea {
   background-color: transparent;
   box-shadow: 0px 5px 10px gray;
 }
-hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+.hrform { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 
 #sectionSocial		{
-	background: $bg-color2;
+	background: $bg-color1;
 	padding: 2%;
 	margin-bottom: 450px;
 	text-align: center;
@@ -421,6 +446,7 @@ footer		{
 	margin-top: 40px;
 	font-weight: bold;
 	margin-left: -1px;
+	color: white;
 }
 #me		{
 	position: relative;
@@ -455,20 +481,17 @@ footer		{
 // }
 	
 @media screen and (max-width: 768px) {	//tablet
+// #section		{padding: 10%  1%  10% 1%;}	
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
 
 #sectionAbout	{padding: 10%  3%  10% 3%;}
 .hobbie	{width: 10%;}
-.columnleft		{text-align: center;}
-
-// #sectionPortfolio		{padding: 10%  1%  10% 1%;}
 
 .clouds	{width: 10%;}
 
 .cv	{width: 10%;}
 
-#sectionContact	{padding: 10%  1%  10% 1%;}
 input	{width: 80%;}
 textarea	{width: 80%;}
 hr 	{width: 80%;}	
@@ -478,6 +501,7 @@ hr 	{width: 80%;}
 @media screen and (max-width: 480px) {//mobile	
 #sectionCv	{display: none;}
 #titlehide	{display: none;}
+.columnleft		{text-align: center; min-width: 200px;}//temp??
 #sectionContact	{display: none;}
 }
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+    <title>hr</title>
+    <style>
+
+body	{
+	background-color: white;
+}
+
+#wrapper	{
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+
+#div	{
+	position: relative;
+	top: 100px;
+	background: blue;
+	}
+
+/* hr { width: 50%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); } */
+
+/* hr {width: 50%; border: 0; height: 1px; background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+/* hr {width: 50%; border: 0; border-bottom: 1px dashed #ccc; background: grey;} */
+/* hr {width: 50%; height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);} */
+
+/*
+hr {width: 50%; overflow: visible;height: 30px; border-style: solid; border-color: black; border-width: 1px 0 0 0; border-radius: 20px;}
+hr.:before {display: block; content: ""; height: 30px; margin-top: -31px; border-style: solid; border-color: black; border-width: 0 0 1px 0; border-radius: 20px;}
+*/
+
+/*
+hr { width: 50%; overflow: visible; padding: 0; border: none; border-top: solid 1px grey; color: grey; text-align: center;}
+hr:after {content: "menu"; display: inline-block; position: relative; top: -22px; font-size: 30px; padding-left: 15px; padding-right: 15px; background: white;}
+*/
+
+
+
+
+.hr {
+	position: relative;
+	outline: 0;
+	border: 0;
+	text-align: center;
+	color: lime;
+	line-height: 0px; 
+ 	height: 40px;
+}
+.hr:before {
+	content: '';
+	background: -webkit-linear-gradient(left, transparent, red, transparent);
+	background: linear-gradient(to right, transparent, red, transparent);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 2px;
+}
+.hr:after {
+	content: "MENU";
+	position: relative;
+	display: inline-block;
+	color: lime;
+	padding: 20px;
+	line-height: 0px;
+	background-color: white;
+}
+</style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+	    <div id="div">
+	    
+	    	<hr class="hr">
+	    	
+	    </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+

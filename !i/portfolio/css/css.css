@@ -34,7 +34,7 @@ html body {
   padding: 0px;
   border: 0px;
   font-family: "Advent Pro";
-  font-size: 20px;
+  font-size: 24px;
   color: #727272;
   background-color: #292929;
 }
@@ -45,8 +45,8 @@ a {
   display: block;
 }
 
-.quote {
-  font-size: 30px;
+.quotemarks {
+  font-size: 40px;
 }
 
 .font {
@@ -64,18 +64,10 @@ a {
 .title {
   /*titles*/
   text-align: center;
-  width: 100%;
-  height: 40px;
+  height: 50px;
   background-color: #fcfcfc;
   z-index: 999;
-}
-
-.titletext {
-  font-family: 'mywoff';
-  letter-spacing: 1px;
-  font-size: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
+  padding: 0%  30%  0% 30%;
 }
 
 .stickytitle {
@@ -83,6 +75,41 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #fcfcfc;
+  padding: 0%  30%  0% 30%;
+  box-sizing: border-box;
+}
+
+.hrtitle {
+  position: relative;
+  outline: 0;
+  border: 0;
+  font-family: 'mywoff';
+  letter-spacing: 1px;
+  font-size: 30px;
+  text-align: center;
+  color: #0c0c0c;
+  line-height: 10px;
+  height: 50px;
+  margin: 0;
+}
+
+.hrtitle:before {
+  content: '';
+  background: -webkit-linear-gradient(left, transparent, #f5f5f5, transparent);
+  background: linear-gradient(to right, transparent, #f5f5f5, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+}
+
+.hrtitle:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 20px;
   background-color: #fcfcfc;
 }
 
@@ -174,7 +201,7 @@ nav ul li a {
 
 #sectionHeader {
   height: 100vh;
-  background: #292929;
+  background: #fcfcfc;
   margin: 0;
   padding: 0;
 }
@@ -191,26 +218,24 @@ nav ul li a {
   font-family: 'mywoff';
   font-size: 10vw;
   margin: 0;
-  color: white;
   text-shadow: 0.1px 0.1px 1px white;
 }
 
-.quoterr {
+.quote {
   font-family: 'Advent Pro';
   font-weight: 400;
   font-size: 5vw;
-  color: white;
   margin: 0;
 }
 
 #sectionAbout {
-  background-color: white;
+  background-color: #fcfcfc;
   padding: 4%  5%  5% 5%;
   text-align: center;
 }
 
 #hobbies {
-  background: white;
+  background: #fcfcfc;
   text-align: center;
   padding: 1% 1% 1% 1%;
 }
@@ -471,7 +496,7 @@ nav ul li a {
 .columnleft, .columnright {
   vertical-align: top;
   display: inline-block;
-  min-width: 230px;
+  /* 	min-width: 230px;  */
   width: 30%;
   text-align: right;
   padding: 0% 1% 0% 0%;
@@ -492,7 +517,7 @@ nav ul li a {
 #sectionExpertise {
   padding: 5%  10%  5% 10%;
   box-sizing: border-box;
-  background: white;
+  background: #fcfcfc;
   width: 100%;
   text-align: center;
 }
@@ -501,10 +526,10 @@ nav ul li a {
   display: inline-block;
 }
 
-#sectionQualifications {
+#sectionQualification {
   padding: 5%  10%  5% 10%;
   box-sizing: border-box;
-  background: white;
+  background: #fcfcfc;
   width: 100%;
   text-align: center;
   line-height: 30px;
@@ -512,12 +537,12 @@ nav ul li a {
 
 #sectionPortfolio {
   padding: 5%  0%  5% 0%;
-  background: white;
+  background: #fcfcfc;
 }
 
 #cloud {
   padding: 1%;
-  background: white;
+  background: #fcfcfc;
   text-align: center;
 }
 
@@ -599,7 +624,7 @@ nav ul li a {
 #sectionExperience {
   padding: 5%  10%  5% 10%;
   box-sizing: border-box;
-  background: white;
+  background: #fcfcfc;
   width: 100%;
   text-align: center;
   line-height: 30px;
@@ -607,7 +632,7 @@ nav ul li a {
 
 #sectionCv {
   padding: 2%  0%  5% 0%;
-  background: white;
+  background: #fcfcfc;
   text-align: center;
 }
 
@@ -632,7 +657,7 @@ input {
   font-size: 22px;
   font-family: "Advent Pro";
   border-radius: 10px;
-  background: #fcfcfc;
+  background: white;
   transition: all 0.2s ease-in;
   border: transparent;
 }
@@ -648,7 +673,7 @@ textarea {
   font-family: "Advent Pro";
   border-radius: 10px;
   border: transparent;
-  background: #fcfcfc;
+  background: white;
   transition: all 0.2s ease-in;
 }
 
@@ -675,7 +700,7 @@ textarea:hover {
   box-shadow: 0px 5px 10px gray;
 }
 
-hr {
+.hrform {
   width: 54%;
   margin: 0 auto;
   border: 0;
@@ -737,7 +762,7 @@ hr {
 }
 
 .socialsenvelop:hover #close {
-  fill: white;
+  fill: #fcfcfc;
 }
 
 .socialsenvelop:hover #envelop {
@@ -818,6 +843,7 @@ footer {
   margin-top: 40px;
   font-weight: bold;
   margin-left: -1px;
+  color: white;
 }
 
 #me {
@@ -876,17 +902,11 @@ footer {
   .hobbie {
     width: 10%;
   }
-  .columnleft, .columnright {
-    text-align: center;
-  }
   .clouds {
     width: 10%;
   }
   .cv {
     width: 10%;
-  }
-  #sectionContact {
-    padding: 10%  1%  10% 1%;
   }
   input {
     width: 80%;
@@ -908,6 +928,10 @@ footer {
   }
   #titlehide {
     display: none;
+  }
+  .columnleft, .columnright {
+    text-align: center;
+    min-width: 200px;
   }
   #sectionContact {
     display: none;
