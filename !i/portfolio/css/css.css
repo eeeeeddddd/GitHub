@@ -42,7 +42,6 @@ html body {
 a {
   text-decoration: none;
   color: #727272;
-  display: block;
 }
 
 .quotemarks {
@@ -66,8 +65,6 @@ a {
   text-align: center;
   height: 50px;
   background-color: #fcfcfc;
-  z-index: 999;
-  padding: 0%  30%  0% 30%;
 }
 
 .stickytitle {
@@ -76,13 +73,13 @@ a {
   left: 0;
   width: 100%;
   background-color: #fcfcfc;
-  padding: 0%  30%  0% 30%;
-  box-sizing: border-box;
 }
 
 .hrtitle {
+  display: inline-block;
   position: relative;
-  outline: 0;
+  height: 50px;
+  width: 40%;
   border: 0;
   font-family: 'mywoff';
   letter-spacing: 1px;
@@ -90,14 +87,12 @@ a {
   text-align: center;
   color: #0c0c0c;
   line-height: 10px;
-  height: 50px;
-  margin: 0;
 }
 
 .hrtitle:before {
   content: '';
-  background: -webkit-linear-gradient(left, transparent, #f5f5f5, transparent);
-  background: linear-gradient(to right, transparent, #f5f5f5, transparent);
+  background: -webkit-linear-gradient(left, transparent, black, transparent);
+  background: linear-gradient(to right, transparent, black transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -201,9 +196,17 @@ nav ul li a {
 
 #sectionHeader {
   height: 100vh;
-  background: #fcfcfc;
-  margin: 0;
-  padding: 0;
+  background-image: linear-gradient(180deg, #ff9b99, #ff999b);
+  animation: hue 30s infinite;
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 #header {
@@ -218,6 +221,7 @@ nav ul li a {
   font-family: 'mywoff';
   font-size: 10vw;
   margin: 0;
+  color: white;
   text-shadow: 0.1px 0.1px 1px white;
 }
 
@@ -225,6 +229,7 @@ nav ul li a {
   font-family: 'Advent Pro';
   font-weight: 400;
   font-size: 5vw;
+  color: white;
   margin: 0;
 }
 
@@ -553,71 +558,111 @@ nav ul li a {
   transition: all 0.5s linear;
 }
 
-#cc {
-  stroke: #727272;
+#cloudcc {
+  stroke: red;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #cc {
+.clouds:hover #cloudcc {
   stroke: red;
+  fill: red;
   transition: 0.2s linear;
 }
 
-#codepen {
-  stroke: #727272;
+#cloudlines {
+  stroke: red;
+  fill: none;
+  stroke-width: 14px;
+}
+
+.clouds:hover #cloudlines {
+  stroke: #fcfcfc;
+  fill: none;
+  stroke-width: 16px;
+  transition: 0.2s linear;
+}
+
+#codepenbox {
+  stroke: black;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #codepen {
+.clouds:hover #codepenbox {
   stroke: black;
+  fill: black;
+  transition: 0.2s linear;
+}
+
+#codepenlines {
+  stroke: black;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #codepenlines {
+  stroke: #fcfcfc;
+  fill: none;
   transition: 0.2s linear;
 }
 
 #be {
-  stroke: #727272;
+  stroke: #1969fb;
   fill: none;
   stroke-width: 10px;
 }
 
 .clouds:hover #be {
   stroke: #1969fb;
-  fill: none;
+  fill: #1969fb;
   transition: 0.1s linear;
 }
 
 #github {
-  stroke: #727272;
+  stroke: black;
   fill: none;
   stroke-width: 10px;
 }
 
 .clouds:hover #github {
   stroke: black;
+  fill: black;
   transition: 0.2s linear;
 }
 
 #xd {
-  stroke: #727272;
+  stroke: #e750b9;
   fill: none;
   stroke-width: 10px;
 }
 
 .clouds:hover #xd {
   stroke: #e750b9;
-  fill: none;
+  fill: #e750b9;
   transition: 0.1s linear;
 }
 
-#dribbble {
-  stroke: #727272;
+#dribbblecircle {
+  stroke: #b3335a;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #dribbble {
+.clouds:hover #dribbblecircle {
   stroke: #b3335a;
+  fill: #b3335a;
+  transition: 0.2s linear;
+}
+
+#dribbblelines {
+  stroke: #b3335a;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #dribbblelines {
+  stroke: #fcfcfc;
   transition: 0.2s linear;
 }
 
@@ -848,15 +893,8 @@ footer {
 
 #me {
   position: relative;
-  top: 40%;
+  top: 55%;
   text-align: center;
-  width: 100%;
-}
-
-#ted {
-  font-family: "mywoff";
-  font-size: 40px;
-  margin: 0px;
 }
 
 #designby {
@@ -890,6 +928,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .hrtitle {
+    width: 60%;
+  }
   #sectionNav {
     display: none;
   }
@@ -923,6 +964,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .hrtitle {
+    width: 80%;
+  }
   #sectionCv {
     display: none;
   }
@@ -932,6 +976,9 @@ footer {
   .columnleft, .columnright {
     text-align: center;
     min-width: 200px;
+  }
+  #hide {
+    display: none;
   }
   #sectionContact {
     display: none;
