@@ -126,7 +126,7 @@ nav ul li a {
     content: '';
     width: 0px;
     height: 2px;
-    background: $color;
+    background: $fontColor;
     position: absolute;
     bottom:20px;
     transition: 0.5s ease;
@@ -490,9 +490,17 @@ footer		{
 #sectionAbout	{padding: 10%  3%  10% 3%;}
 .hobbie	{width: 10%;}
 
+#sectionExpertise	{padding: 10%  1%  10% 1%;}
+
+#sectionQualification	{padding: 10%  1%  10% 1%;}
 .clouds	{width: 10%;}
 
-.cv	{width: 10%;}
+#sectionPortfolio	{padding: 10%  1%  10% 1%;}
+
+#sectionExperience	{padding: 10%  1%  10% 1%;}
+
+#sectionCv	{padding: 10%  1%  10% 1%;}
+.cv	{width: 20%;}
 
 input	{width: 80%;}
 textarea	{width: 80%;}
@@ -503,9 +511,13 @@ hr 	{width: 80%;}
 @media screen and (max-width: 480px) {//mobile
 .hrtitle {width: 80%;	}	
 #sectionCv	{display: none;}
+
 #titlehide	{display: none;}
+
 .columnleft		{text-align: center; min-width: 200px;}//temp??
-#hide 	{display: none;}//try
+
+#hide 	{display: none;}//last menu
+
 #sectionContact	{display: none;}
 }
 

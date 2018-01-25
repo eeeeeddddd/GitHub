@@ -163,7 +163,7 @@ nav ul li a {
   content: '';
   width: 0px;
   height: 2px;
-  background: #F7484E;
+  background: #727272;
   position: absolute;
   bottom: 20px;
   transition: 0.5s ease;
@@ -943,11 +943,26 @@ footer {
   .hobbie {
     width: 10%;
   }
+  #sectionExpertise {
+    padding: 10%  1%  10% 1%;
+  }
+  #sectionQualification {
+    padding: 10%  1%  10% 1%;
+  }
   .clouds {
     width: 10%;
   }
+  #sectionPortfolio {
+    padding: 10%  1%  10% 1%;
+  }
+  #sectionExperience {
+    padding: 10%  1%  10% 1%;
+  }
+  #sectionCv {
+    padding: 10%  1%  10% 1%;
+  }
   .cv {
-    width: 10%;
+    width: 20%;
   }
   input {
     width: 80%;
