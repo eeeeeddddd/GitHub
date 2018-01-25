@@ -45,7 +45,7 @@ a {
 }
 
 .quotemarks {
-  font-size: 40px;
+  font-size: calc(100% + 10px);
 }
 
 .font {
@@ -928,6 +928,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  html body {
+    font-size: 18px;
+  }
   .hrtitle {
     width: 60%;
   }
@@ -944,10 +947,10 @@ footer {
     width: 10%;
   }
   #sectionExpertise {
-    padding: 10%  1%  10% 1%;
+    padding: 10%  0%  10% 0%;
   }
   #sectionQualification {
-    padding: 10%  1%  10% 1%;
+    padding: 10%  0%  10% 0%;
   }
   .clouds {
     width: 10%;
@@ -956,7 +959,7 @@ footer {
     padding: 10%  1%  10% 1%;
   }
   #sectionExperience {
-    padding: 10%  1%  10% 1%;
+    padding: 10%  0%  10% 0%;
   }
   #sectionCv {
     padding: 10%  1%  10% 1%;
@@ -974,11 +977,14 @@ footer {
     width: 80%;
   }
   .socials, .socialsenvelop {
-    width: 10%;
+    width: 5%;
   }
 }
 
 @media screen and (max-width: 480px) {
+  html body {
+    font-size: 16px;
+  }
   .hrtitle {
     width: 80%;
   }
@@ -988,21 +994,15 @@ footer {
   #titlehide {
     display: none;
   }
-  .columnleft, .columnright {
-    text-align: center;
-    min-width: 200px;
-  }
+  /* .columnleft		{text-align: center; min-width: 200px;} */
   #hide {
     display: none;
   }
   #sectionContact {
     display: none;
   }
-}
-
-@media (max-width: 320px) {
-  #wrapper {
-    min-width: 320px;
+  .socials, .socialsenvelop {
+    width: 10%;
   }
 }
 

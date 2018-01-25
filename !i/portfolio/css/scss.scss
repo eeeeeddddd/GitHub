@@ -37,7 +37,7 @@ html body	{
 }
 
 a	{text-decoration: none; color: $fontColor;}
-.quotemarks	{font-size: 40px;}
+.quotemarks	{font-size: calc(100% + 10px);}
 .font	{font-family: 'Poiret+One';}
 .color	{color: $color;}//html red
 .darken	{color: darken($fontColor, 30%);}
@@ -140,7 +140,7 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
-// 	background: $bg-color1;
+// 	background: lime;
 // 	background-image: linear-gradient(to top, $navColor 0%, $bg-color 90%);
  	background-image: linear-gradient(180deg, hsla(1, 100%, 80%, 1), hsla(359, 100%, 80%, 1));
 	animation: hue 30s infinite;
@@ -483,6 +483,7 @@ footer		{
 // }
 	
 @media screen and (max-width: 768px) {	//tablet
+html body	{font-size: 18px;}
 .hrtitle {width: 60%;	}
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
@@ -490,14 +491,14 @@ footer		{
 #sectionAbout	{padding: 10%  3%  10% 3%;}
 .hobbie	{width: 10%;}
 
-#sectionExpertise	{padding: 10%  1%  10% 1%;}
+#sectionExpertise	{padding: 10%  0%  10% 0%;}
 
-#sectionQualification	{padding: 10%  1%  10% 1%;}
+#sectionQualification	{padding: 10%  0%  10% 0%;}
 .clouds	{width: 10%;}
 
 #sectionPortfolio	{padding: 10%  1%  10% 1%;}
 
-#sectionExperience	{padding: 10%  1%  10% 1%;}
+#sectionExperience	{padding: 10%  0%  10% 0%;}
 
 #sectionCv	{padding: 10%  1%  10% 1%;}
 .cv	{width: 20%;}
@@ -505,24 +506,27 @@ footer		{
 input	{width: 80%;}
 textarea	{width: 80%;}
 hr 	{width: 80%;}	
-.socials	{width: 10%;}
+.socials	{width: 5%;}
 }	
 	
 @media screen and (max-width: 480px) {//mobile
+html body	{font-size: 16px;}
 .hrtitle {width: 80%;	}	
 #sectionCv	{display: none;}
 
 #titlehide	{display: none;}
 
-.columnleft		{text-align: center; min-width: 200px;}//temp??
+/* .columnleft		{text-align: center; min-width: 200px;} *///temp??
 
 #hide 	{display: none;}//last menu
 
 #sectionContact	{display: none;}
+
+.socials	{width: 10%;}
 }
 
 @media (max-width: 320px) {//mobile small
-#wrapper {min-width: 320px;}		
+// #wrapper {min-width: 320px;}		
 }
 
 
