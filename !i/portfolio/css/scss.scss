@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,'); /*'Advent Pro'*/
 @font-face { font-family: 'mywoff';
     src: url('../font/bootcamp-regular-webfont.woff2') format('woff2'),
           url('../font/bootcamp-regular-webfont.woff') format('woff');
@@ -23,8 +21,13 @@ $color: #F7484E; /*red*/
 // @mixin dog {}
 // .doggy1 { @include dog;}
 
-.draw:hover {animation: 1s draw linear forwards;}//temp
-@keyframes draw 	{0% {stroke-dasharray: 0 2000; stroke-dashoffset: 0;}100% {stroke-dasharray: 2000; stroke-dashoffset: 0;}}
+// .draw {animation: 2s draw linear infinite alternate;}//temp
+// @keyframes draw 	{0% {stroke-dasharray: 0 500; stroke-dashoffset: 0;}100% {stroke-dasharray: 500; stroke-dashoffset: 0;}}
+
+//html
+.quotemarks	{font-size: calc(100% + 10px);}//quotes
+.color	{color: $color;}//html red
+.darken	{color: darken($fontColor, 30%);} //html titles
 
 html body	{
 	margin: 0px;
@@ -34,13 +37,8 @@ html body	{
 	font-size: 24px;
 	color: $fontColor;
 	background-color: $bg-color;
+	a	{text-decoration: none; color: $fontColor;}
 }
-
-a	{text-decoration: none; color: $fontColor;}
-.quotemarks	{font-size: calc(100% + 10px);}
-.font	{font-family: 'Poiret+One';}
-.color	{color: $color;}//html red
-.darken	{color: darken($fontColor, 30%);}
 
 .title	{/*titles*/
 	text-align: center;
@@ -61,6 +59,7 @@ a	{text-decoration: none; color: $fontColor;}
 	text-align: center;
 	color: darken($fontColor, 40%);
 	line-height: 10px; 
+	margin: 0;
 }
 .hrtitle:before {
 	content: '';
@@ -140,9 +139,8 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
-// 	background: lime;
-// 	background-image: linear-gradient(to top, $navColor 0%, $bg-color 90%);
- 	background-image: linear-gradient(180deg, hsla(1, 100%, 80%, 1), hsla(359, 100%, 80%, 1));
+	background: lime;
+//  	background-image: linear-gradient(180deg, hsla(1, 100%, 80%, 1), hsla(359, 100%, 80%, 1));
 	animation: hue 30s infinite;
 }
 
@@ -208,23 +206,39 @@ nav ul li a {
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
+.paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.4;}
 #screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear;}
 @keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
+.draw {animation: 4s draw linear infinite alternate;}
+@keyframes draw 	{0% {stroke-dasharray: 0 500; stroke-dashoffset: 0; stroke: red;}100% {stroke-dasharray: 500; stroke-dashoffset: 0; stroke: lime;}}
 
 #headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 2s infinite linear; transform-origin: center center; transform-box: fill-box;}
 @keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
 
+#lines	{stroke:$svg; fill: none; stroke-width: 10px;}
+#three	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: three 0.5s forwards 5s linear;}
+@keyframes three {0%{opacity:0;}100% {opacity:1;}}
+#five	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: five 0.5s forwards 1s linear;}
+@keyframes five {0%{opacity:0;}100% {opacity:1;}}
+#severn	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: severn 0.5s forwards 9s linear;}
+@keyframes severn {0%{opacity:0;}100% {opacity:1;}}
+#eight	{ opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: eight 0.5s forwards 7s linear;}
+@keyframes eight {0%{opacity:0;}100% {opacity:1;}}
+#nine		{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: nine 0.5s forwards 3s linear;}
+@keyframes nine {0%{opacity:0;}100% {opacity:1;}}
+#win	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: win 1 forwards linear; animation-delay:11s;}
+@keyframes win {0%{opacity:0;}100% {opacity:1;}}
+
 #video	{stroke:$svg; fill: none; stroke-width: 10px;}
-#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
-#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 3s infinite linear}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 3s infinite linear}
 @keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 
 #frame	{stroke:$svg; fill: none; stroke-width: 8px;}
-#tube	{stroke:$svg; fill: none; stroke-width: 10px;}
-#seat	{stroke:$svg; fill: none; stroke-width: 18px;}
-#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
-#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
-#peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
+#parts	{stroke:$svg; fill: none; stroke-width: 8px;}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
+#peddles {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
 
 .columnleft  {
@@ -336,6 +350,7 @@ nav ul li a {
 	background: $bg-color1;
 }
 input	{
+	margin-bottom: 20px;
 	width: 50%;
 	height: 10px;
 	padding: 10px;
@@ -346,7 +361,7 @@ input	{
 	transition: all 0.2s ease-in;
 	border: transparent;
 	&:hover	{
-		background: white;
+		background: $bg-color2;
 	}
 }
 textarea {
@@ -359,7 +374,7 @@ textarea {
 	background: white;
 	transition: all 0.2s ease-in;
 	&:hover	{
-		background: white;
+		background: $bg-color2;
 	}
 }
 .btn {
@@ -511,7 +526,8 @@ hr 	{width: 80%;}
 	
 @media screen and (max-width: 480px) {//mobile
 html body	{font-size: 16px;}
-.hrtitle {width: 80%;	}	
+.hrtitle {width: 80%;	}
+#sectionAbout	{padding: 10%  4%  10% 4%;} //test	
 #sectionCv	{display: none;}
 
 #titlehide	{display: none;}
@@ -526,7 +542,7 @@ html body	{font-size: 16px;}
 }
 
 @media (max-width: 320px) {//mobile small
-// #wrapper {min-width: 320px;}		
+		
 }
 
 
