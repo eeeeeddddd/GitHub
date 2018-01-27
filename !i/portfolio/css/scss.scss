@@ -139,8 +139,8 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
-	background: lime;
-//  	background-image: linear-gradient(180deg, hsla(1, 100%, 80%, 1), hsla(359, 100%, 80%, 1));
+// 	background: lime;
+ 	background-image: linear-gradient(180deg, hsla(1, 100%, 80%, 1), hsla(359, 100%, 80%, 1));
 	animation: hue 30s infinite;
 }
 
@@ -207,8 +207,8 @@ nav ul li a {
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
 .paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.4;}
-#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear;}
-@keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
+#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: macscreen 2s infinite linear;}
+// @keyframes macscreen {0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
 .draw {animation: 4s draw linear infinite alternate;}
 @keyframes draw 	{0% {stroke-dasharray: 0 500; stroke-dashoffset: 0; stroke: red;}100% {stroke-dasharray: 500; stroke-dashoffset: 0; stroke: lime;}}
 
