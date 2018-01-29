@@ -58,7 +58,7 @@ html body a {
   height: 50px;
   width: 40%;
   border: 0;
-  font-family: 'mywoff';
+  font-family: "Reenie Beanie";
   letter-spacing: 1px;
   font-size: 30px;
   text-align: center;
@@ -131,7 +131,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 2vw;
-  font-family: "mywoff";
+  font-family: "Reenie Beanie";
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s ease;
@@ -874,7 +874,7 @@ nav ul li a {
 }
 
 .tickdraw {
-  animation: tickdraw 1s 0s linear;
+  animation: tickdraw 2s 0s linear;
 }
 
 @keyframes tickdraw {
