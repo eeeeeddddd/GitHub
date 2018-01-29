@@ -112,7 +112,20 @@ $(window).scroll(function() {
   }
 });
 
-//menu
+//cv
+var cvOffset = $(".cv").offset().top;
+
+$(window).scroll(function() {
+  var cvScrolled = $(window).scrollTop();
+
+  if (cvScrolled >= cvOffset) {
+    $(".cv").addClass("stickytitle");
+  }else{
+    $(".cv").removeClass("stickytitle");
+  }
+});
+
+//say hello
 var menuOffset = $(".menu").offset().top;
 
 $(window).scroll(function() {
@@ -125,6 +138,40 @@ $(window).scroll(function() {
   }
 });
 
+//cv download icon
+$(document).ready (function() {
+	$("#cv").hover (function() {
+	$("#list").toggleClass("list");
+	$("#download").toggleClass("download");
+	$("#smile").toggleClass("smile");
+				
+		$("#cv").click (function() {
+		$("#list").toggleClass("hide");
+		$("#download").toggleClass("download");
+		$("#template").toggleClass("hide");
+		$("#smile").toggleClass("smile");				
+		$("#tick").toggleClass("tick");
+		$("#tickround").toggleClass("tickdraw");						
+								
+			$("#cv").hover(function() {
+			$("#list").toggleClass("list");
+			$("#download").toggleClass("download");
+			$("#smile").toggleClass("smile");				
+				
+			});	
+		});
+	});
+});	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //pdf 510
 // $(document).ready(function () {
 //     $("#510details").on('click', function () {
