@@ -9,19 +9,13 @@
 /*gray*/
 /*gray*/
 /*svg*/
+/* $color: #F7484E;  */
 /*red*/
 .quotemarks {
   font-size: calc(100% + 10px);
 }
 
-.color {
-  color: #F7484E;
-}
-
-.darken {
-  color: #262626;
-}
-
+/* .darken	{color: darken($fontColor, 30%);} */
 html body {
   margin: 0px;
   padding: 0px;
@@ -37,18 +31,18 @@ html body a {
   color: #727272;
 }
 
-.title {
-  /*titles*/
-  text-align: center;
-  height: 50px;
-  background-color: #fcfcfc;
-}
-
 .stickytitle {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #fcfcfc;
+}
+
+.title {
+  /*titles*/
+  text-align: center;
+  height: 50px;
   background-color: #fcfcfc;
 }
 
@@ -60,9 +54,18 @@ html body a {
   border: 0;
   font-family: "Reenie Beanie";
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: calc(100% + 30px);
   text-align: center;
-  color: #0c0c0c;
+  line-height: 10px;
+  margin: 0;
+}
+
+.hrtitlenotext {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 40%;
+  border: 0;
   line-height: 10px;
   margin: 0;
 }
@@ -123,7 +126,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 10%;
+  width: 12%;
   padding: 0% 2% 0% 2%;
 }
 
@@ -132,7 +135,6 @@ nav ul li a {
   display: block;
   font-size: 2vw;
   font-family: "Reenie Beanie";
-  letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s ease;
 }
@@ -174,7 +176,7 @@ nav ul li a {
 
 #sectionHeader {
   height: 100vh;
-  background-image: linear-gradient(180deg, #ff9b99, #ff999b);
+  background-image: linear-gradient(180deg, #f5403d, #f53d40);
   animation: hue 30s infinite;
 }
 
@@ -401,115 +403,6 @@ nav ul li a {
   }
 }
 
-#lines {
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-}
-
-#three {
-  opacity: 0;
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-  animation: three 0.5s forwards 5s linear;
-}
-
-@keyframes three {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#five {
-  opacity: 0;
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-  animation: five 0.5s forwards 1s linear;
-}
-
-@keyframes five {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#severn {
-  opacity: 0;
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-  animation: severn 0.5s forwards 9s linear;
-}
-
-@keyframes severn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#eight {
-  opacity: 0;
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-  animation: eight 0.5s forwards 7s linear;
-}
-
-@keyframes eight {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#nine {
-  opacity: 0;
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-  animation: nine 0.5s forwards 3s linear;
-}
-
-@keyframes nine {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#win {
-  opacity: 0;
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-  animation: win 1 forwards linear;
-  animation-delay: 11s;
-}
-
-@keyframes win {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #video {
   stroke: #727272;
   fill: none;
@@ -600,15 +493,9 @@ nav ul li a {
   padding: 0% 1% 0% 0%;
 }
 
-.columnlefttitle {
-  color: #262626;
-  font-size: calc(100% + 2px);
-}
-
 .columnright {
   width: 59%;
   text-align: left;
-  color: #727272;
   padding: 0% 0% 2% 1%;
 }
 
@@ -760,7 +647,7 @@ nav ul li a {
 }
 
 #sectionExperience {
-  padding: 5%  10%  5% 10%;
+  padding: 5%  20%  5% 20%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -768,8 +655,28 @@ nav ul li a {
   line-height: 30px;
 }
 
+.experiencetitle {
+  color: #595959;
+  font-size: calc(100% + 10px);
+  margin-bottom: 0px;
+}
+
+.experienceposition {
+  color: #727272;
+  font-size: calc(100% - 10px);
+}
+
+#test {
+  display: none;
+}
+
+#test1 {
+  position: relative;
+  text-align: center;
+}
+
 #sectionCv {
-  padding: 5%  0%  5% 0%;
+  padding: 2%  0%  2% 0%;
   background: #f5f5f5;
   text-align: center;
 }
@@ -780,29 +687,18 @@ nav ul li a {
   transition: all 0.5s linear;
 }
 
+#downloadtitle {
+  font-family: "Reenie Beanie";
+  letter-spacing: 1px;
+  font-size: calc(100% + 30px);
+  color: #595959;
+  padding-bottom: 2%;
+}
+
 #template {
   fill: none;
   stroke: #727272;
   stroke-width: 10px;
-}
-
-#smile {
-  fill: none;
-  stroke: #727272;
-  stroke-width: 5px;
-  opacity: 0;
-}
-
-.smile {
-  animation: smile 1ms ease 1 forwards;
-}
-
-@keyframes smile {
-  0% {
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 #list {
@@ -856,7 +752,7 @@ nav ul li a {
 }
 
 .tick {
-  animation: tick 1s 0s ease 1 forwards;
+  animation: tick 1ms 0s ease 1 forwards;
 }
 
 @keyframes tick {
@@ -874,7 +770,7 @@ nav ul li a {
 }
 
 .tickdraw {
-  animation: tickdraw 2s 0s linear;
+  animation: tickdraw 1.5s 0s linear;
 }
 
 @keyframes tickdraw {
@@ -1030,7 +926,6 @@ footer {
 #mouse {
   /*mouse*/
   position: relative;
-  background: #292929;
   height: 100px;
 }
 
@@ -1048,7 +943,7 @@ footer {
 }
 
 .mouse:hover {
-  border: 2px solid #F7484E;
+  border: 2px solid black;
   box-shadow: 0px 0px 5px gray;
 }
 
@@ -1058,7 +953,7 @@ footer {
   margin-left: 7px;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-bottom: 4px solid #F7484E;
+  border-bottom: 4px solid red;
   animation: scroll 1.5s infinite both;
 }
 
@@ -1140,6 +1035,9 @@ footer {
   #sectionExpertise {
     padding: 10%  0%  10% 0%;
   }
+  #test {
+    display: none;
+  }
   #sectionQualification {
     padding: 10%  0%  10% 0%;
   }
@@ -1150,7 +1048,7 @@ footer {
     padding: 10%  1%  10% 1%;
   }
   #sectionExperience {
-    padding: 10%  0%  10% 0%;
+    padding: 10%  5%  10% 5%;
   }
   #sectionCv {
     padding: 10%  1%  10% 1%;

@@ -112,19 +112,6 @@ $(window).scroll(function() {
   }
 });
 
-//cv
-var cvOffset = $(".cv").offset().top;
-
-$(window).scroll(function() {
-  var cvScrolled = $(window).scrollTop();
-
-  if (cvScrolled >= cvOffset) {
-    $(".cv").addClass("stickytitle");
-  }else{
-    $(".cv").removeClass("stickytitle");
-  }
-});
-
 //say hello
 var menuOffset = $(".menu").offset().top;
 
@@ -143,13 +130,13 @@ $(document).ready (function() {
 	$("#cv").hover (function() {
 	$("#list").toggleClass("list");
 	$("#download").toggleClass("download");
-	$("#smile").toggleClass("smile");
+// 	$("#smile").toggleClass("smile");
 				
 		$("#cv").click (function() {
 		$("#list").toggleClass("hide");
 		$("#download").toggleClass("download");
 		$("#template").toggleClass("hide");
-		$("#smile").toggleClass("smile");				
+// 		$("#smile").toggleClass("smile");				
 		$("#tick").toggleClass("tick");
 		$("#tickround").toggleClass("tickdraw");						
 								
@@ -164,7 +151,7 @@ $(document).ready (function() {
 });	
 	
 //delay cv download link
-$('.delay').click(function (e) {
+$('#delay').click(function (e) {
     e.preventDefault();
     var goTo = this.getAttribute("href");
     setTimeout(function(){
@@ -172,23 +159,23 @@ $('.delay').click(function (e) {
     },2500);       
 });
 	
-	
-	
-	
-	
-//pdf 510
-// $(document).ready(function () {
-//     $("#510details").on('click', function () {
-//         $("#ciw510pdf").slideToggle(1000);
-//     });
-// });
-//pdf 520
-// $(document).ready(function () {
-//     $("#520details").on('click', function () {
-//         $("#ciw520pdf").slideToggle(1000);
-//     });
-// });
+//test
+$(document).ready(function () {
+    $("#test1").click (function () {
+        $("#test").slideToggle(1000);
+    });
+});
 
+
+
+
+
+
+
+
+	
+	
+	
 
 
 
