@@ -4,24 +4,47 @@
 }
 
 /*header & footer*/
-/*White*/
+/*main*/
 /*White Smoke*/
 /*gray*/
 /*gray*/
 /*svg*/
-/* $color: #F7484E;  */
 /*red*/
 .quotemarks {
   font-size: calc(100% + 10px);
 }
 
 /* .darken	{color: darken($fontColor, 30%);} */
+.arrow {
+  vertical-align: top;
+  stroke-width: 2px;
+  stroke: #727272;
+  fill: none;
+  transition: all 0.2s ease-in;
+  opacity: 0.3;
+}
+
+.columnleft, .columnright {
+  vertical-align: top;
+  display: inline-block;
+  /* 	min-width: 230px;  */
+  width: 30%;
+  text-align: right;
+  padding: 0% 1% 0% 0%;
+}
+
+.columnright {
+  width: 59%;
+  text-align: left;
+  padding: 0% 0% 2% 1%;
+}
+
 html body {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  font-family: "Advent Pro";
   font-size: 24px;
+  font-family: "Advent Pro";
   color: #727272;
   background-color: #292929;
 }
@@ -36,6 +59,7 @@ html body a {
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px;
   background-color: #fcfcfc;
 }
 
@@ -49,25 +73,24 @@ html body a {
 .hrtitle {
   display: inline-block;
   position: relative;
-  height: 50px;
   width: 40%;
   border: 0;
   font-family: "Reenie Beanie";
   letter-spacing: 1px;
   font-size: calc(100% + 30px);
   text-align: center;
-  line-height: 10px;
+  line-height: 30px;
   margin: 0;
 }
 
 .hrtitlenotext {
   display: inline-block;
   position: relative;
-  height: 50px;
   width: 40%;
   border: 0;
-  line-height: 10px;
   margin: 0;
+  line-height: 30px;
+  background: red;
 }
 
 .hrtitle:before {
@@ -135,6 +158,7 @@ nav ul li a {
   display: block;
   font-size: 2vw;
   font-family: "Reenie Beanie";
+  letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s ease;
 }
@@ -358,7 +382,7 @@ nav ul li a {
   stroke: lightgrey;
   fill: none;
   stroke-width: 10px;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 #screen {
@@ -368,8 +392,20 @@ nav ul li a {
   animation: macscreen 2s infinite linear;
 }
 
+@keyframes macscreen {
+  0% {
+    stroke: #727272;
+  }
+  50% {
+    stroke: lightgray;
+  }
+  100% {
+    stroke: #727272;
+  }
+}
+
 .draw {
-  animation: 4s draw linear infinite alternate;
+  animation: 3s draw linear infinite alternate;
 }
 
 @keyframes draw {
@@ -415,7 +451,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 3s infinite linear;
+  animation: reel 2s infinite linear;
 }
 
 #rightreel {
@@ -424,7 +460,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: reel 3s infinite linear;
+  animation: reel 2s infinite linear;
 }
 
 @keyframes reel {
@@ -454,7 +490,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 2s infinite linear;
+  animation: wheel 1.5s infinite linear;
 }
 
 #rearwheel {
@@ -463,7 +499,7 @@ nav ul li a {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
-  animation: wheel 2s infinite linear;
+  animation: wheel 1.5s infinite linear;
 }
 
 #peddles {
@@ -482,21 +518,6 @@ nav ul li a {
   100% {
     transform: rotate(-360deg);
   }
-}
-
-.columnleft, .columnright {
-  vertical-align: top;
-  display: inline-block;
-  /* 	min-width: 230px;  */
-  width: 30%;
-  text-align: right;
-  padding: 0% 1% 0% 0%;
-}
-
-.columnright {
-  width: 59%;
-  text-align: left;
-  padding: 0% 0% 2% 1%;
 }
 
 #sectionExpertise {
@@ -671,7 +692,6 @@ nav ul li a {
 }
 
 #test1 {
-  position: relative;
   text-align: center;
 }
 
@@ -697,14 +717,14 @@ nav ul li a {
 
 #template {
   fill: none;
-  stroke: #727272;
+  stroke: #595959;
   stroke-width: 10px;
 }
 
 #list {
   fill: none;
-  stroke: #727272;
-  stroke-width: 8px;
+  stroke: #595959;
+  stroke-width: 10px;
 }
 
 .list {
@@ -726,8 +746,8 @@ nav ul li a {
 
 #download {
   fill: none;
-  stroke: #727272;
-  stroke-width: 8px;
+  stroke: #595959;
+  stroke-width: 10px;
   opacity: 0;
 }
 
@@ -746,7 +766,6 @@ nav ul li a {
 
 #tick {
   fill: none;
-  stroke: red;
   stroke-width: 30px;
   opacity: 0;
 }
@@ -943,7 +962,7 @@ footer {
 }
 
 .mouse:hover {
-  border: 2px solid black;
+  border: 2px solid #F7484E;
   box-shadow: 0px 0px 5px gray;
 }
 
@@ -1015,10 +1034,11 @@ footer {
 
 @media screen and (max-width: 768px) {
   html body {
-    font-size: 18px;
+    font-size: 20px;
   }
   .hrtitle {
     width: 60%;
+    font-size: calc(100% + 20px);
   }
   #sectionNav {
     display: none;
@@ -1053,6 +1073,9 @@ footer {
   #sectionCv {
     padding: 10%  1%  10% 1%;
   }
+  #downloadtitle {
+    font-size: calc(100% + 20px);
+  }
   .cv {
     width: 20%;
   }
@@ -1062,11 +1085,8 @@ footer {
   textarea {
     width: 80%;
   }
-  hr {
-    width: 80%;
-  }
   .socials, .socialsenvelop {
-    width: 5%;
+    width: 8%;
   }
 }
 
@@ -1076,14 +1096,12 @@ footer {
   }
   .hrtitle {
     width: 80%;
+    font-size: calc(100% + 10px);
   }
   #sectionAbout {
     padding: 10%  4%  10% 4%;
   }
   #sectionCv {
-    display: none;
-  }
-  #titlehide {
     display: none;
   }
   /* .columnleft		{text-align: center; min-width: 200px;} */

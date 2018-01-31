@@ -9,43 +9,80 @@ $fontText: 'Advent Pro';
 $fontForm: 'Advent Pro';
 
 $bg-color: #292929; /*header & footer*/
-$bg-color1: #fcfcfc; /*White*/
+$bg-color1: #fcfcfc; /*main*/
 $bg-color2: #f5f5f5; /*White Smoke*/
 
 $fontColor: #727272;/*gray*/
 $navColor: #fcfcfc;/*gray*/
 
 $svg: #727272; /*svg*/
-/* $color: #F7484E;  *//*red*/
-$color: black; 
+$color: #F7484E; /*red*/
 
 //html
 .quotemarks	{font-size: calc(100% + 10px);}//quotes
-// .color	{color: $color;}//html red
-/* .darken	{color: darken($fontColor, 30%);} */ //html titles
+/* .darken	{color: darken($fontColor, 30%);} */ //temp
+
+
+
+.arrow	{
+	vertical-align: top;
+	stroke-width: 2px;
+	stroke: $svg;
+	fill: none;
+	transition: all 0.2s ease-in;
+	opacity: 0.3;	
+}
+
+.columnleft  {
+	vertical-align: top; //aligns div at top of container
+	display: inline-block;
+/* 	min-width: 230px;  */
+	width: 30%;	
+    text-align: right;
+ 	padding: 0% 1% 0% 0%;  
+}
+.columnright  {
+	@extend .columnleft ;
+	width: 59%;	
+	text-align: left;
+ 	padding: 0% 0% 2% 1%;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 html body	{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
-	font-family: $fontText;
 	font-size: 24px;
+	font-family: $fontText;
 	color: $fontColor;
 	background-color: $bg-color;
 	a	{text-decoration: none; color: $fontColor;}
 }
 
-.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $navColor;}
-
+.stickytitle	{position:fixed; top:0; left:0; width:100%; height: 70px; background-color: $navColor;}
 .title	{/*titles*/
 	text-align: center;
-	height: 50px;
+	height: 50px;//needed for script
 	background-color: $navColor;
 }
 .hrtitle {
 	display: inline-block;
 	position: relative;
- 	height: 50px;
 	width: 40%;
 	border: 0;
 	font-family: $fontTitle;
@@ -54,17 +91,17 @@ html body	{
 	text-align: center;
 // 	color: darken($fontColor, 10%);
 // 	text-transform: uppercase;
-	line-height: 10px; 
+	line-height: 30px; 
 	margin: 0;
 }
 .hrtitlenotext	{
 	display: inline-block;
 	position: relative;
- 	height: 50px;
 	width: 40%;
-	border: 0;
-	line-height: 10px; 
+	border: 0; 
 	margin: 0;
+	line-height: 30px; 
+	background: red;
 }
 .hrtitle:before {
 	content: '';
@@ -82,8 +119,7 @@ html body	{
 	display: inline-block;
 	padding: 20px;
 	background-color: $navColor;
-// 	border-left: solid 1px grey; 
-// 	border-right: solid 1px grey; 
+// 	border-left: solid 1px grey; border-right: solid 1px grey;
 }
 
 #sectionNav	{
@@ -96,9 +132,9 @@ html body	{
 	transition: transform 0.5s cubic-bezier(.42,1,.8,1);
 	opacity: 0;
 }
+//nav hide before 780px
 .sectionNavHide {transform: translateY(-100%);}
 .headerScroll	{opacity: 1!important;}//needs important
-
 nav {
 	text-align: center;
 	width: 100%;
@@ -122,7 +158,7 @@ nav ul li a {
 	display: block;
 	font-size: 2vw;
 	font-family: $fontNav;
-// 	letter-spacing: 1px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: 0.3s ease;
 }
@@ -144,11 +180,9 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
-// 	background: lime;
  	background-image: linear-gradient(180deg, hsla(1, 90%, 60%, 1), hsla(359, 90%, 60%, 1));
 	animation: hue 30s infinite;
 }
-
 @keyframes hue {0% { filter: hue-rotate(0);}100% { filter: hue-rotate(360deg); }}
 
 #header		{
@@ -195,8 +229,7 @@ nav ul li a {
 
 #coffeecup	{stroke:$svg; fill: none;stroke-width: 10px;}
 #coffee	{stroke:$svg; fill: none;stroke-width: 10px; animation: coffee 20s infinite linear;}
-@keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}
-}
+@keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}}
 #steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 2s infinite linear;}
 @keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
 
@@ -211,55 +244,26 @@ nav ul li a {
 @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
-.paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.4;}
+.paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.7;}
 #screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: macscreen 2s infinite linear;}
-// @keyframes macscreen {0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
-.draw {animation: 4s draw linear infinite alternate;}
+@keyframes macscreen {0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
+.draw {animation: 3s draw linear infinite alternate;}
 @keyframes draw 	{0% {stroke-dasharray: 0 500; stroke-dashoffset: 0; stroke: red;}100% {stroke-dasharray: 500; stroke-dashoffset: 0; stroke: lime;}}
 
 #headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 2s infinite linear; transform-origin: center center; transform-box: fill-box;}
 @keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
 
-// #lines	{stroke:$svg; fill: none; stroke-width: 10px;}
-// #three	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: three 0.5s forwards 5s linear;}
-// @keyframes three {0%{opacity:0;}100% {opacity:1;}}
-// #five	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: five 0.5s forwards 1s linear;}
-// @keyframes five {0%{opacity:0;}100% {opacity:1;}}
-// #severn	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: severn 0.5s forwards 9s linear;}
-// @keyframes severn {0%{opacity:0;}100% {opacity:1;}}
-// #eight	{ opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: eight 0.5s forwards 7s linear;}
-// @keyframes eight {0%{opacity:0;}100% {opacity:1;}}
-// #nine		{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: nine 0.5s forwards 3s linear;}
-// @keyframes nine {0%{opacity:0;}100% {opacity:1;}}
-// #win	{opacity:0; stroke:$svg; fill: none; stroke-width: 10px; animation: win 1 forwards linear; animation-delay:11s;}
-// @keyframes win {0%{opacity:0;}100% {opacity:1;}}
-
 #video	{stroke:$svg; fill: none; stroke-width: 10px;}
-#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 3s infinite linear}
-#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 3s infinite linear}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
 @keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 
 #frame	{stroke:$svg; fill: none; stroke-width: 8px;}
 #parts	{stroke:$svg; fill: none; stroke-width: 8px;}
-#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
-#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear}
 #peddles {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
-
-.columnleft  {
-	vertical-align: top; //aligns div at top of container
-	display: inline-block;
-/* 	min-width: 230px;  */
-	width: 30%;	
-    text-align: right;
- 	padding: 0% 1% 0% 0%;  
-}
-.columnright  {
-	@extend .columnleft ;
-	width: 59%;	
-	text-align: left;
- 	padding: 0% 0% 2% 1%;	
-}
 
 #sectionExpertise	{
 	padding: 5%  10%  5% 10%;
@@ -330,15 +334,6 @@ nav ul li a {
 	text-align: center;
 	line-height: 30px;
 }
-
-
-
-
-
-
-
-
-
 .experiencetitle	{
 	color: darken($fontColor, 10%);
     font-size: calc(100% + 10px);
@@ -348,12 +343,10 @@ nav ul li a {
 	color: $fontColor;
     font-size: calc(100% - 10px);
 }
-
 #test	{
 display: none;
 }
 #test1	{
-	position: relative;
 	text-align: center;
 }
 
@@ -383,21 +376,17 @@ display: none;
 	padding-bottom: 2%;
 }
 
-#template	{fill: none; stroke: $svg; stroke-width: 10px;}
-// #smile	{fill: none; stroke: $svg; stroke-width: 5px; opacity: 0;}
-// .smile	{animation: smile 1ms ease 1 forwards;}
-// @keyframes smile {0%{} 100%{opacity: 1;}}
-
-#list	{fill: none; stroke: $svg; stroke-width: 8px;}
+#template	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px;}
+#list	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px;}
 .list	{animation: list 1ms 0s ease 1 forwards;}
 .hide	{opacity: 0;}
 @keyframes list {0%{opacity: 1;} 100%{opacity: 0;}}
 
-#download	{fill: none; stroke: $svg; stroke-width: 8px; opacity: 0;}
+#download	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px; opacity: 0;}
 .download	{animation: download 1s 0s ease 1 forwards;}
 @keyframes download {0%{opacity: 0;} 100%{opacity: 1.0;}}
 		
-#tick	{fill: none; stroke: red; stroke-width: 30px; opacity: 0;}
+#tick	{fill: none; stroke-width: 30px; opacity: 0;}
 .tick	{animation: tick 1ms 0s ease 1 forwards;}
 @keyframes tick {0%{opacity: 0;} 100%{opacity: 1.0;}}
 
@@ -423,7 +412,7 @@ input	{
 	background: white;
 	transition: all 0.2s ease-in;
 	border: transparent;
-	&:hover	{
+	&:hover {
 		background: $bg-color2;
 	}
 }
@@ -452,10 +441,9 @@ textarea {
   transition: all 0.2s;
   box-shadow: 0px 5px 10px lightgray;
   cursor:pointer;
-}
-.btn:hover {
+  &:hover {
   background-color: transparent;
-  box-shadow: 0px 5px 10px gray;
+  box-shadow: 0px 5px 10px gray;}
 }
 
 #sectionSocial		{
@@ -470,9 +458,8 @@ textarea {
     margin: 0px 2% 0px 2%;
     transition: all 0.3s linear;
 }
-.socialsenvelop   {
-	 @extend .socials;
-}
+.socialsenvelop   {@extend .socials;}
+
 #facebook {stroke: $svg; fill: transparent; stroke-width: 12px;}
 .socials:hover #facebook {fill: $svg; transition: 0.3s linear;}
 
@@ -498,7 +485,6 @@ footer		{
 }
 #mouse		{/*mouse*/
 	position: relative;
-// 	background: $bg-color;
 	height: 100px;
 }
 .mouse{
@@ -524,66 +510,6 @@ footer		{
 	animation: scroll 1.5s infinite both;
 }
 @keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
-// #mouse{
-// 	position: relative;
-// 	top: 25px;
-// 	left: 50%;
-// 	margin-left: -13px;
-// 	width: 22px;
-// 	height: 35px;
-// 	border:2px solid lightgray;
-// 	border-radius: 20px;
-//   	text-align: center;
-//   	transition: all 0.3s;
-// }
-// .scroll1{
-//   margin-top: 18px;
-//   opacity:1;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width:0px;
-//   height:0px;
-//   border-left: 4px solid transparent;
-//   border-right: 4px solid transparent;
-//   border-bottom: 4px solid white;
-//   animation: down3 1.5s infinite;
-// }
-// .scroll2{
-//   opacity:0;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width:0px;
-//   height:0px;
-//   border-left: 4px solid transparent;
-//   border-right: 4px solid transparent;
-//   border-bottom: 4px solid white;
-//    animation: down2 1.5s infinite;
-// }
-// .scroll3{
-//    opacity:0;
-//    margin-left:auto;
-//    margin-right:auto;
-//    width:0px;
-//    height:0px;
-//    border-left: 4px solid transparent;
-//    border-right: 4px solid transparent;
-//    border-bottom: 4px solid white;
-//    animation: down 1.5s infinite;
-// }
-// @keyframes down{
-//   0%{opacity:0;}
-//   100%{opacity:1; transform: translateY(-14px);}
-// }
-// @keyframes down2{
-// 	40%{opacity:0;}
-// 	100%{opacity:0.5; transform: translateY(-14px);}
-// }
-// @keyframes down3{
-//   60%{opacity:0;}
-//   100%{opacity:0.2; transform: translateY(-14px);
-//   }
-// }
-
 .mousetext	{
 	font-family: 'Poiret One';
 	font-size: 10px;
@@ -592,7 +518,6 @@ footer		{
 	margin-left: -1px;
 	color: white;
 }
-
 #me		{
 	position: relative;
 	top: 55%;
@@ -616,12 +541,13 @@ footer		{
 }
 @keyframes pipe 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}//pipe
 
-// @media screen and (max-width: 900px) {	//desktop
-// }
+@media screen and (max-width: 900px) {	//desktop
+}
 	
 @media screen and (max-width: 768px) {	//tablet
-html body	{font-size: 18px;}
-.hrtitle {width: 60%;	}
+html body	{font-size: 20px;}
+.hrtitle {width: 60%;	font-size: calc(100% + 20px);}
+
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
 
@@ -629,7 +555,7 @@ html body	{font-size: 18px;}
 .hobbie	{width: 10%;}
 
 #sectionExpertise	{padding: 10%  0%  10% 0%;}
-#test	{display: none;}
+#test	{display: none;}//temp
 
 #sectionQualification	{padding: 10%  0%  10% 0%;}
 .clouds	{width: 10%;}
@@ -639,21 +565,19 @@ html body	{font-size: 18px;}
 #sectionExperience	{padding: 10%  5%  10% 5%;}
 
 #sectionCv	{padding: 10%  1%  10% 1%;}
+#downloadtitle	{font-size: calc(100% + 20px);}
 .cv	{width: 20%;}
 
 input	{width: 80%;}
-textarea	{width: 80%;}
-hr 	{width: 80%;}	
-.socials	{width: 5%;}
+textarea	{width: 80%;}	
+.socials	{width: 8%;}
 }	
 	
 @media screen and (max-width: 480px) {//mobile
 html body	{font-size: 16px;}
-.hrtitle {width: 80%;	}
+.hrtitle {width: 80%;	font-size: calc(100% + 10px);}
 #sectionAbout	{padding: 10%  4%  10% 4%;} //test	
 #sectionCv	{display: none;}
-
-#titlehide	{display: none;}
 
 /* .columnleft		{text-align: center; min-width: 200px;} *///temp??
 
@@ -665,7 +589,6 @@ html body	{font-size: 16px;}
 }
 
 @media (max-width: 320px) {//mobile small
-		
 }
 
 

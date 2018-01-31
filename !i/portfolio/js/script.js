@@ -1,11 +1,11 @@
-//sectionNavHide
+//Nav scroll Hide direction
 var prev = 0;
 var $window = $(window);
-var nav = $('#sectionNav');
+var nav = $("#sectionNav");
 
-$window.on('scroll', function(){
+$window.on("scroll", function(){
   var scrollTop = $window.scrollTop();
-  nav.toggleClass('sectionNavHide', scrollTop > prev);
+  nav.toggleClass("sectionNavHide", scrollTop > prev);
   prev = scrollTop;
 });
 
@@ -13,22 +13,22 @@ $window.on('scroll', function(){
 $(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 780) {
-            $('#sectionNav').addClass('headerScroll');
+            $("#sectionNav").addClass("headerScroll");
         }
         else {
-            $('#sectionNav').removeClass('headerScroll');
+            $("#sectionNav").removeClass("headerScroll");
         }
     });
 });
 
 //form active
 $(document).ready (function() {
-	$("textarea, input").click (function() {	
-		$("textarea, input").css ({background: "#f5f5f5"});
-	})
-;});
+	$("textarea,input").click (function() {
+$("textarea,input").css ({background: "#f5f5f5"});
+	});
+});
 
-// //smooth scroll
+//smooth scroll
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
@@ -112,7 +112,7 @@ $(window).scroll(function() {
   }
 });
 
-//say hello
+// say hello
 var menuOffset = $(".menu").offset().top;
 
 $(window).scroll(function() {
@@ -129,14 +129,11 @@ $(window).scroll(function() {
 $(document).ready (function() {
 	$("#cv").hover (function() {
 	$("#list").toggleClass("list");
-	$("#download").toggleClass("download");
-// 	$("#smile").toggleClass("smile");
-				
+	$("#download").toggleClass("download");				
 		$("#cv").click (function() {
 		$("#list").toggleClass("hide");
 		$("#download").toggleClass("download");
-		$("#template").toggleClass("hide");
-// 		$("#smile").toggleClass("smile");				
+		$("#template").toggleClass("hide");				
 		$("#tick").toggleClass("tick");
 		$("#tickround").toggleClass("tickdraw");						
 								
@@ -151,7 +148,7 @@ $(document).ready (function() {
 });	
 	
 //delay cv download link
-$('#delay').click(function (e) {
+$("#delay").click(function (e) {
     e.preventDefault();
     var goTo = this.getAttribute("href");
     setTimeout(function(){
