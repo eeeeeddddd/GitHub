@@ -24,14 +24,52 @@ $color: #F7484E; /*red*/
 
 
 
-.arrow	{
-	vertical-align: top;
-	stroke-width: 2px;
-	stroke: $svg;
-	fill: none;
-	transition: all 0.2s ease-in;
-	opacity: 0.3;	
+
+
+
+
+
+
+
+
+
+
+
+#test	{
+display: none;
 }
+#test1	{
+	text-align: center;
+}
+.experiencetitle	{
+	color: darken($fontColor, 10%);
+    font-size: calc(100% + 4px);
+    margin-bottom: 0px;
+}
+.experienceposition	{
+	color: $fontColor;
+	margin: 1% 0% 2% 0%;
+    font-size: calc(100% - 4px);
+}
+#click	{font-size: calc(100% - 7px); cursor: pointer; }
+.test	{margin: 0;}
+#ant	{
+	margin-left:auto;
+	margin-right:auto;
+	width:0px;
+	height:0px;
+	transform: translateY(-2px);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid red;
+	opacity: 0;	
+}
+@keyframes down1 {0%{opacity:0;} 100%{opacity:1; transform: translateY(2px);}}
+.antt		{visibility: hidden;}
+.dog {animation: down1 1s infinite;}
+.dogg {color: red;}
+
+.fieldset	{border-radius: 10px;}
 
 .columnleft  {
 	vertical-align: top; //aligns div at top of container
@@ -47,6 +85,7 @@ $color: #F7484E; /*red*/
 	text-align: left;
  	padding: 0% 0% 2% 1%;	
 }
+
 
 
 
@@ -89,8 +128,6 @@ html body	{
 	letter-spacing: 1px;
     font-size: calc(100% + 30px);	
 	text-align: center;
-// 	color: darken($fontColor, 10%);
-// 	text-transform: uppercase;
 	line-height: 30px; 
 	margin: 0;
 }
@@ -271,7 +308,6 @@ nav ul li a {
 	background:  $bg-color1;
 	width: 100%;
 	text-align: center;
-// 	line-height: 30px;
 	a 	{
 		display: inline-block;
 	}
@@ -334,32 +370,9 @@ nav ul li a {
 	text-align: center;
 	line-height: 30px;
 }
-.experiencetitle	{
-	color: darken($fontColor, 10%);
-    font-size: calc(100% + 10px);
-    margin-bottom: 0px;
-}
-.experienceposition	{
-	color: $fontColor;
-    font-size: calc(100% - 10px);
-}
-#test	{
-display: none;
-}
-#test1	{
-	text-align: center;
-}
-
-
-
-
-
-
-
-
 
 #sectionCv		{
-	padding: 2%  0%  2% 0%;
+	padding: 4%  0%  4% 0%;
 	background: $bg-color2;
 	text-align: center;
 }
@@ -579,9 +592,9 @@ html body	{font-size: 16px;}
 #sectionAbout	{padding: 10%  4%  10% 4%;} //test	
 #sectionCv	{display: none;}
 
-/* .columnleft		{text-align: center; min-width: 200px;} *///temp??
+#hidetitle2 #hidetitle1 	{display: none;}//last menu
 
-#hide 	{display: none;}//last menu
+#click{display: none;}//temp
 
 #sectionContact	{display: none;}
 

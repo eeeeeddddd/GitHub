@@ -155,15 +155,41 @@ $("#delay").click(function (e) {
          window.location = goTo;
     },2500);       
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
-//test
-$(document).ready(function () {
-    $("#test1").click (function () {
-        $("#test").slideToggle(1000);
-    });
+//click show experience div
+$(document).ready(function () {	
+	    $("#click").click (function () {
+	    $("#test").slideToggle(1000);	
+	});
 });
 
-
+$(document).ready(function () {	
+	    $("#click").click (function () {
+	    $("#ant").addClass("antt");	
+	});
+});
+//hover hide arrow
+$(document).ready(function () {
+	$("#test1").hover (function() {
+	$("#ant").toggleClass("dog");
+	$("#click").toggleClass("dogg");
+	});
+});
 
 
 
