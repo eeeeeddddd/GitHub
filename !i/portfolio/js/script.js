@@ -27,6 +27,27 @@ $(document).ready (function() {
 $("textarea,input").css ({background: "#f5f5f5"});
 	});
 });
+//form hover svg
+$(document).ready (function() {
+	$("textarea,input").hover (function() {
+$(".pointer").toggleClass("test");
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //smooth scroll
 $(document).ready(function(){
@@ -112,6 +133,19 @@ $(window).scroll(function() {
   }
 });
 
+// // download
+// var downloadOffset = $(".download").offset().top;
+// 
+// $(window).scroll(function() {
+//   var downloadScrolled = $(window).scrollTop();
+// 
+//   if (downloadScrolled >= downloadOffset) {
+//     $(".download").addClass("stickytitle");
+//   }else{
+//     $(".download").removeClass("stickytitle");
+//   }
+// });
+
 // say hello
 var menuOffset = $(".menu").offset().top;
 
@@ -156,38 +190,86 @@ $("#delay").click(function (e) {
     },2500);       
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-//click show experience div
+//experience more detail
+//wildfire
 $(document).ready(function () {	
-	    $("#click").click (function () {
-	    $("#test").slideToggle(1000);	
+	    $("#wildclick").click (function () {
+	    $("#wildetails").slideToggle(1000);	
+	});
+});
+//maxwells
+$(document).ready(function () {	
+	    $("#maxclick").click (function () {
+	    $("#maxdetails").slideToggle(1000);	
+	});
+});
+//roadhouse
+$(document).ready(function () {	
+	    $("#roadclick").click (function () {
+	    $("#roadetails").slideToggle(1000);	
+	});
+});
+//fridays
+$(document).ready(function () {	
+	    $("#tgiclick").click (function () {
+	    $("#tgidetails").slideToggle(1000);	
 	});
 });
 
-$(document).ready(function () {	
-	    $("#click").click (function () {
-	    $("#ant").addClass("antt");	
-	});
-});
 //hover hide arrow
+//wildfire
 $(document).ready(function () {
-	$("#test1").hover (function() {
-	$("#ant").toggleClass("dog");
-	$("#click").toggleClass("dogg");
+	$("#wild").hover (function() {
+	$(".wild, .click").toggleClass("experienceanimation");
+	$("#wildclick").toggleClass("experiencehovercolour");
+	});
+});
+//once click hidden
+$(document).ready(function () {	
+	    $("#wildclick").click (function () {
+	    $(".wild").addClass("experienceclickhidden");	
+	});
+});
+
+//maxwells
+$(document).ready(function () {
+	$("#max").hover (function() {
+	$(".max, .click").toggleClass("experienceanimation");
+	$("#maxclick").toggleClass("experiencehovercolour");
+	});
+});
+//once click hidden
+$(document).ready(function () {	
+	    $("#maxclick").click (function () {
+	    $(".max").addClass("experienceclickhidden");	
+	});
+});
+
+//roadhouse
+$(document).ready(function () {
+	$("#road").hover (function() {
+	$(".road, .click").toggleClass("experienceanimation");
+	$("#roadclick").toggleClass("experiencehovercolour");
+	});
+});
+//once click hidden
+$(document).ready(function () {	
+	    $("#roadclick").click (function () {
+	    $(".road").addClass("experienceclickhidden");	
+	});
+});
+
+//tgi
+$(document).ready(function () {
+	$("#tgi").hover (function() {
+	$(".tgi, .click").toggleClass("experienceanimation");
+	$("#tgiclick").toggleClass("experiencehovercolour");
+	});
+});
+//once click hidden
+$(document).ready(function () {	
+	    $("#tgiclick").click (function () {
+	    $(".tgi").addClass("experienceclickhidden");	
 	});
 });
 
