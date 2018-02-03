@@ -34,21 +34,6 @@ $(".pointer").toggleClass("test");
 	});
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //smooth scroll
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
@@ -65,117 +50,119 @@ $(document).ready(function(){
 	});
 });
 
-//sticky titles
-
-//about
-var aboutOffset = $(".about").offset().top;
-
-$(window).scroll(function() {
-  var aboutScrolled = $(window).scrollTop();
-
-  if (aboutScrolled >= aboutOffset) {
-    $(".about").addClass("stickytitle");
-  }else{
-    $(".about").removeClass("stickytitle");
-  }
-});
-
-//expertise
-var expertiseOffset = $(".expertise").offset().top;
-
-$(window).scroll(function() {
-  var expertiseScrolled = $(window).scrollTop();
-
-  if (expertiseScrolled >= expertiseOffset) {
-    $(".expertise").addClass("stickytitle");
-  }else{
-    $(".expertise").removeClass("stickytitle");
-  }
-});
-
-
-//qualification
-var qualificationOffset = $(".qualification").offset().top;
-
-$(window).scroll(function() {
-  var qualificationScrolled = $(window).scrollTop();
-
-  if (qualificationScrolled >= qualificationOffset) {
-    $(".qualification").addClass("stickytitle");
-  }else{
-    $(".qualification").removeClass("stickytitle");
-  }
-});
-
-//portfolio
-var portfolioOffset = $(".portfolio").offset().top;
-
-$(window).scroll(function() {
-  var portfolioScrolled = $(window).scrollTop();
-
-  if (portfolioScrolled >= portfolioOffset) {
-    $(".portfolio").addClass("stickytitle");
-  }else{
-    $(".portfolio").removeClass("stickytitle");
-  }
-});
-
-//experience
-var experienceOffset = $(".experience").offset().top;
-
-$(window).scroll(function() {
-  var experienceScrolled = $(window).scrollTop();
-
-  if (experienceScrolled >= experienceOffset) {
-    $(".experience").addClass("stickytitle");
-  }else{
-    $(".experience").removeClass("stickytitle");
-  }
-});
-
-// // download
-// var downloadOffset = $(".download").offset().top;
+// //sticky titles
+// 
+// //about
+// var aboutOffset = $(".about").offset().top;
 // 
 // $(window).scroll(function() {
-//   var downloadScrolled = $(window).scrollTop();
+//   var aboutScrolled = $(window).scrollTop();
 // 
-//   if (downloadScrolled >= downloadOffset) {
-//     $(".download").addClass("stickytitle");
+//   if (aboutScrolled >= aboutOffset) {
+//     $(".about").addClass("stickytitle");
 //   }else{
-//     $(".download").removeClass("stickytitle");
+//     $(".about").removeClass("stickytitle");
 //   }
 // });
-
-// say hello
-var menuOffset = $(".menu").offset().top;
-
-$(window).scroll(function() {
-  var menuScrolled = $(window).scrollTop();
-
-  if (menuScrolled >= menuOffset) {
-    $(".menu").addClass("stickytitle");
-  }else{
-    $(".menu").removeClass("stickytitle");
-  }
-});
+// 
+// //expertise
+// var expertiseOffset = $(".expertise").offset().top;
+// 
+// $(window).scroll(function() {
+//   var expertiseScrolled = $(window).scrollTop();
+// 
+//   if (expertiseScrolled >= expertiseOffset) {
+//     $(".expertise").addClass("stickytitle");
+//   }else{
+//     $(".expertise").removeClass("stickytitle");
+//   }
+// });
+// 
+// 
+// //qualification
+// var qualificationOffset = $(".qualification").offset().top;
+// 
+// $(window).scroll(function() {
+//   var qualificationScrolled = $(window).scrollTop();
+// 
+//   if (qualificationScrolled >= qualificationOffset) {
+//     $(".qualification").addClass("stickytitle");
+//   }else{
+//     $(".qualification").removeClass("stickytitle");
+//   }
+// });
+// 
+// //portfolio
+// var portfolioOffset = $(".portfolio").offset().top;
+// 
+// $(window).scroll(function() {
+//   var portfolioScrolled = $(window).scrollTop();
+// 
+//   if (portfolioScrolled >= portfolioOffset) {
+//     $(".portfolio").addClass("stickytitle");
+//   }else{
+//     $(".portfolio").removeClass("stickytitle");
+//   }
+// });
+// 
+// //experience
+// var experienceOffset = $(".experience").offset().top;
+// 
+// $(window).scroll(function() {
+//   var experienceScrolled = $(window).scrollTop();
+// 
+//   if (experienceScrolled >= experienceOffset) {
+//     $(".experience").addClass("stickytitle");
+//   }else{
+//     $(".experience").removeClass("stickytitle");
+//   }
+// });
+// 
+// // // download
+// // var downloadOffset = $(".download").offset().top;
+// // 
+// // $(window).scroll(function() {
+// //   var downloadScrolled = $(window).scrollTop();
+// // 
+// //   if (downloadScrolled >= downloadOffset) {
+// //     $(".download").addClass("stickytitle");
+// //   }else{
+// //     $(".download").removeClass("stickytitle");
+// //   }
+// // });
+// 
+// // say hello
+// var menuOffset = $(".menu").offset().top;
+// 
+// $(window).scroll(function() {
+//   var menuScrolled = $(window).scrollTop();
+// 
+//   if (menuScrolled >= menuOffset) {
+//     $(".menu").addClass("stickytitle");
+//   }else{
+//     $(".menu").removeClass("stickytitle");
+//   }
+// });
 
 //cv download icon
 $(document).ready (function() {
 	$("#cv").hover (function() {
-	$("#list").toggleClass("list");
-	$("#download").toggleClass("download");				
+	$("#list").toggleClass("hide");
+	$("#downloadtray").toggleClass("downloadtray");	
+	$("#downloadarrow").toggleClass("downloadarrow");			
 		$("#cv").click (function() {
-		$("#list").toggleClass("hide");
-		$("#download").toggleClass("download");
+		$("#list").toggleClass("list");
+		$("#downloadtray").toggleClass("downloadtray");
+		$("#downloadarrow").toggleClass("downloadarrow");
 		$("#template").toggleClass("hide");				
 		$("#tick").toggleClass("tick");
-		$("#tickround").toggleClass("tickdraw");						
-								
+		$("#tickround").toggleClass("tickdraw");
+		$(".cvDownload").css({color: "lime"});
+		$(".cvDownload").text ("Downloaded");
 			$("#cv").hover(function() {
-			$("#list").toggleClass("list");
-			$("#download").toggleClass("download");
-			$("#smile").toggleClass("smile");				
-				
+			$("#list").toggleClass("hide");
+			$("#downloadtray").toggleClass("downloadtray");
+			$("#downloadarrow").toggleClass("downloadarrow");				
 			});	
 		});
 	});
@@ -220,7 +207,7 @@ $(document).ready(function () {
 //wildfire
 $(document).ready(function () {
 	$("#wild").hover (function() {
-	$(".wild, .click").toggleClass("experienceanimation");
+	$(".wild").toggleClass("experienceanimation");
 	$("#wildclick").toggleClass("experiencehovercolour");
 	});
 });
@@ -234,7 +221,7 @@ $(document).ready(function () {
 //maxwells
 $(document).ready(function () {
 	$("#max").hover (function() {
-	$(".max, .click").toggleClass("experienceanimation");
+	$(".max").toggleClass("experienceanimation");
 	$("#maxclick").toggleClass("experiencehovercolour");
 	});
 });
@@ -248,7 +235,7 @@ $(document).ready(function () {
 //roadhouse
 $(document).ready(function () {
 	$("#road").hover (function() {
-	$(".road, .click").toggleClass("experienceanimation");
+	$(".road").toggleClass("experienceanimation");
 	$("#roadclick").toggleClass("experiencehovercolour");
 	});
 });
@@ -262,7 +249,7 @@ $(document).ready(function () {
 //tgi
 $(document).ready(function () {
 	$("#tgi").hover (function() {
-	$(".tgi, .click").toggleClass("experienceanimation");
+	$(".tgi").toggleClass("experienceanimation");
 	$("#tgiclick").toggleClass("experiencehovercolour");
 	});
 });

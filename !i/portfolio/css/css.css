@@ -11,7 +11,7 @@
 /*svg*/
 /*red*/
 .quotemarks {
-  font-size: calc(100% + 8px);
+  font-size: calc(100% + 7px);
 }
 
 html body {
@@ -54,7 +54,7 @@ html body a {
   letter-spacing: 1px;
   font-size: calc(100% + 30px);
   text-align: center;
-  line-height: 30px;
+  line-height: 10px;
   margin: 0;
 }
 
@@ -85,6 +85,14 @@ html body a {
   display: inline-block;
   padding: 20px;
   background-color: #fcfcfc;
+}
+
+.subtitle {
+  font-family: "Reenie Beanie";
+  letter-spacing: 1px;
+  font-size: calc(100% + 30px);
+  color: #595959;
+  padding-bottom: 2%;
 }
 
 #sectionNav {
@@ -205,7 +213,7 @@ nav ul li a {
 }
 
 .quote {
-  font-family: 'Advent Pro';
+  font-family: 'Reenie Beanie';
   font-weight: 400;
   font-size: 5vw;
   color: white;
@@ -214,7 +222,7 @@ nav ul li a {
 
 #sectionAbout {
   background-color: #fcfcfc;
-  padding: 4%  5%  5% 5%;
+  padding: 2%  5%  2% 5%;
   text-align: center;
 }
 
@@ -496,7 +504,7 @@ nav ul li a {
 }
 
 #sectionExpertise {
-  padding: 4%  10%  2% 10%;
+  padding: 5%  10%  5% 10%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -523,7 +531,7 @@ nav ul li a {
 }
 
 #sectionQualification {
-  padding: 4%  10%  2% 10%;
+  padding: 5%  10%  5% 10%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -532,7 +540,7 @@ nav ul li a {
 }
 
 #sectionPortfolio {
-  padding: 1%  0%  1% 0%;
+  padding: 5%  0%  5% 0%;
   background: #fcfcfc;
   text-align: center;
 }
@@ -659,7 +667,7 @@ nav ul li a {
 }
 
 #sectionExperience {
-  padding: 2%  20%  2% 20%;
+  padding: 5%  20%  5% 20%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -668,7 +676,7 @@ nav ul li a {
 }
 
 .experienceposition {
-  color: #595959;
+  color: #6d6d6d;
   font-size: calc(100% + 4px);
   margin-bottom: 0px;
 }
@@ -676,7 +684,7 @@ nav ul li a {
 .experiencecompany {
   color: #727272;
   margin: 1% 0% 1% 0%;
-  font-size: calc(100% - 3px);
+  font-size: calc(100% + 2px);
 }
 
 .experiencedetail {
@@ -702,14 +710,14 @@ nav ul li a {
 
 .experienceanimation {
   opacity: 1;
-  animation: experienceshow 1s infinite;
+  animation: clickeyframe 1s infinite;
 }
 
 .experiencehovercolour {
   color: #F7484E;
 }
 
-.experienceclick {
+.clickanimation {
   margin-left: auto;
   margin-right: auto;
   width: 10px;
@@ -719,7 +727,7 @@ nav ul li a {
   opacity: 0;
 }
 
-.experienceclick:hover {
+.clickanimation:hover {
   border: 1px solid red;
 }
 
@@ -735,7 +743,7 @@ nav ul li a {
   opacity: 0;
 }
 
-@keyframes experienceshow {
+@keyframes clickeyframe {
   0% {
     transform: scale(0);
     opacity: 1;
@@ -762,12 +770,8 @@ nav ul li a {
   transition: all 0.5s linear;
 }
 
-#downloadtitle {
-  font-family: "Reenie Beanie";
-  letter-spacing: 1px;
-  font-size: calc(100% + 30px);
-  color: #595959;
-  padding-bottom: 2%;
+.hide {
+  opacity: 0;
 }
 
 #template {
@@ -786,10 +790,6 @@ nav ul li a {
   animation: list 1ms 0s ease 1 forwards;
 }
 
-.hide {
-  opacity: 0;
-}
-
 @keyframes list {
   0% {
     opacity: 1;
@@ -799,18 +799,40 @@ nav ul li a {
   }
 }
 
-#download {
+#downloadarrow {
   fill: none;
   stroke: #595959;
   stroke-width: 10px;
   opacity: 0;
 }
 
-.download {
-  animation: download 1s 0s ease 1 forwards;
+.downloadarrow {
+  animation: downloadarrow 1s 0s infinite linear;
 }
 
-@keyframes download {
+@keyframes downloadarrow {
+  0% {
+    opacity: 1;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(-20px);
+  }
+}
+
+#downloadtray {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+  opacity: 0;
+}
+
+.downloadtray {
+  animation: downloadtray 0.5s 0s ease 1 forwards;
+}
+
+@keyframes downloadtray {
   0% {
     opacity: 0;
   }
@@ -856,46 +878,33 @@ nav ul li a {
   }
 }
 
-#fix {
-  width: 100%;
-  height: 70px;
-  background-color: #fcfcfc;
-}
-
 #sectionContact {
   height: 400px;
   text-align: center;
-  padding: 5%  0%  0% 0%;
+  padding: 5%  0%  15% 0%;
   background: #fcfcfc;
   margin: 0;
 }
 
-input {
-  margin-bottom: 20px;
-  width: 40%;
+input, textarea {
+  width: 50%;
   height: 10px;
-  padding: 10px;
-  font-size: 22px;
-  font-family: "Advent Pro";
+  padding: 20px;
+  font-size: 30px;
+  font-family: "Reenie Beanie";
   border-radius: 10px;
   background: white;
   transition: all 0.2s ease-in;
   border: transparent;
+  margin-bottom: 20px;
 }
 
-input:hover {
+input:hover, textarea:hover {
   background: #f5f5f5;
 }
 
 textarea {
-  width: 40%;
-  padding: 10px;
-  font-size: 22px;
-  font-family: "Advent Pro";
-  border-radius: 10px;
-  border: transparent;
-  background: white;
-  transition: all 0.2s ease-in;
+  height: 100px;
 }
 
 textarea:hover {
@@ -907,8 +916,9 @@ textarea:hover {
   height: 30px;
   border-radius: 10px;
   border: solid 2px lightgray;
-  font-size: 20px;
-  font-family: "Advent Pro";
+  font-size: 30px;
+  font-family: "Reenie Beanie";
+  color: #a5a5a5;
   line-height: 3px;
   margin-top: 50px;
   transition: all 0.2s;
@@ -1003,16 +1013,51 @@ footer {
   color: white;
 }
 
+#landscapemode {
+  padding: 5% 5% 1% 5%;
+  visibility: hidden;
+}
+
+#landscape {
+  width: 20px;
+  stroke-wodth: 10px;
+  stroke: white;
+  fill: none;
+  animation: landscape 1.5s linear infinite;
+}
+
+@keyframes landscape {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.landscapetext {
+  font-size: 14px;
+  color: white;
+}
+
 #mouse {
   /*mouse*/
   position: relative;
+  top: 25px;
+  left: 50%;
   height: 100px;
 }
 
 .mouse {
-  position: relative;
-  top: 25px;
-  left: 50%;
   margin-left: -13px;
   width: 22px;
   height: 35px;
@@ -1059,7 +1104,7 @@ footer {
 
 #me {
   position: relative;
-  top: 55%;
+  top: 130px;
   text-align: center;
 }
 
@@ -1131,13 +1176,10 @@ footer {
   #sectionCv {
     padding: 10%  1%  10% 1%;
   }
-  #downloadtitle {
-    font-size: calc(100% + 20px);
-  }
   .cv {
     width: 20%;
   }
-  input {
+  input, textarea {
     width: 80%;
   }
   textarea {
@@ -1152,27 +1194,51 @@ footer {
   html body {
     font-size: 16px;
   }
+  .name {
+    font-size: 12vw;
+  }
+  .quote {
+    font-size: 8vw;
+  }
+  .title {
+    border: solid 2px #f5f5f5;
+  }
   .hrtitle {
     width: 80%;
     font-size: calc(100% + 10px);
   }
   #sectionAbout {
-    padding: 10%  4%  10% 4%;
+    padding: 2%  10%  5% 10%;
+  }
+  #sectionExpertise {
+    padding: 2%  1%  5% 1%;
+  }
+  #sectionQualification {
+    padding: 2%  1%  5% 1%;
+  }
+  #sectionPortfolio {
+    padding: 2%  1%  5% 1%;
+  }
+  #sectionExperience {
+    padding: 2%  1%  5% 1%;
   }
   #wildclick, #maxclick, #roadclick, #tgiclick {
     display: none;
   }
-  #sectionCv {
+  .experiencedetail {
     display: none;
   }
-  #hidetitle2 #hidetitle1 {
+  #sectionCv {
     display: none;
   }
   #sectionContact {
     display: none;
   }
   .socials, .socialsenvelop {
-    width: 10%;
+    width: 5%;
+  }
+  #landscapemode {
+    visibility: visible;
   }
 }
 
