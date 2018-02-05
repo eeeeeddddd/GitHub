@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--google-->
+  <title>download</title>
+<style>
+	#sectionCv {
+  padding: 4%  0%  4% 0%;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#cv {
+  display: inline-block;
+  width: 14%;
+  transition: all 0.5s linear;
+}
+
+.hide {
+  opacity: 0;
+}
+
+#template {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+}
+
+#list {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+}
+
+.list {
+  animation: list 1ms 0s ease 1 forwards;
+}
+
+@keyframes list {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#downloadarrow {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+  opacity: 0;
+}
+.downloadarrow {
+  animation: downloadarrow 1s 0s infinite linear;
+}
+
+@keyframes downloadarrow {
+  0% {
+    opacity: 1;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(-20px);
+  }
+}
+
+#downloadtray {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+  opacity: 0;
+}
+
+.downloadtray {
+  animation: downloadtray 0.5s 0s ease 1 forwards;
+}
+
+@keyframes downloadtray {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+#tick {
+  fill: none;
+  stroke-width: 30px;
+  opacity: 0;
+}
+
+.tick {
+  animation: tick 1ms 0s ease 1 forwards;
+}
+
+@keyframes tick {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+#tickround {
+  stroke: lime;
+  stroke-dasharray: 4000;
+}
+
+.tickdraw {
+  animation: tickdraw 1.5s 0s linear;
+}
+
+@keyframes tickdraw {
+  0% {
+    stroke-dashoffset: 4000;
+  }
+  100% {
+    stroke-dashoffset: 8000;
+  }
+}
+
+.cvDownloadColor {
+  color: lime;
+  transition: 1s all 2s linear;
+}
+	
+</style>	
+
+</head>
+
+  <body>
+
+				<div class="subtitle cvDownload">Cv Download</div>
+					<div id="cv">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><title>cv download</title>
+							<g id="template">
+						    	<circle cx="500" cy="202.87" r="43.6" />
+								<path d="M429.56,342.75v-31.7a43.18,43.18,0,0,1,43.18-43.18h54.52a43.18,43.18,0,0,1,43.18,43.18v31.78"/>
+								<circle cx="500" cy="252.98" r="114.13" />
+								<path d="M675.18,899.16h-425a50,50,0,0,1-50-50v-700a50,50,0,0,1,50-50H750a50,50,0,0,1,50,50V773.89"/>
+							</g>	
+						    <g id="list">
+						    	<line x1="350.6" y1="602.55" x2="685.24" y2="602.55"/>
+						    	<circle cx="326.17" cy="503.09" r="10.29" />
+						    	<line x1="350.6" y1="502.55" x2="685.24" y2="502.55"/>
+						    	<circle cx="326.17" cy="703.09" r="10.29"/>
+						    	<line x1="350.6" y1="702.55" x2="685.24" y2="702.55"/>
+						    	<circle cx="326.17" cy="603.09" r="10.29"/>
+						    	<path d="M800,773.89v75.28a50,50,0,0,1-50,50h-74.8"/>
+						    </g>	
+						    <g id="downloadarrow">
+						    	<line x1="500" y1="498.07" x2="500" y2="704.33"/>
+								<polyline points="424.52 623.87 500 705.31 574.45 623.8"/>
+						    </g>					    
+						    <g id="downloadtray">
+								<polyline points="623.98 703.82 623.98 738.61 623.96 738.75 376.51 738.75 376.33 738.64 376.33 703.83"/>
+        						<path d="M675.12,899.15l125-125Z"/>
+        						<path d="M800,774.13l-74.87,0a50,50,0,0,0-50,50l0,74.93"/>
+							
+							</g>	
+						    <g id="tick">
+<!--old						<path id="tickround" d="M799.95,233.6a401.66,401.66,0,0,1,99.54,265.48c0,220.79-178.22,399.77-398.06,399.77s-398.06-179-398.06-399.77S281.59,99.31,501.43,99.31c118.84,0,225.52,52.31,298.46,135.24L500,705,354.71,549.2"/> -->
+    							<path id="tickround" d="M860.41,327.75a394.09,394.09,0,0,1,38.35,170.85c0,220.23-178.53,398.75-398.75,398.75S101.25,718.82,101.25,498.59,279.77,99.84,500,99.84c158.83,0,296,92.86,360.09,227.25L500,721.55l-.15,0L286.06,495.26"/>
+							</g>
+						</svg>
+					</div><!-- </a> -->	
+				</section>
+				
+
+  	<script>
+		$(document).ready (function() {
+			$("#cv").hover (function() {
+			$("#list").toggleClass("hide");
+			$("#downloadtray").toggleClass("downloadtray");	
+			$("#downloadarrow").toggleClass("downloadarrow");			
+				$("#cv").click (function() {
+				$("#list").toggleClass("list");
+				$("#downloadtray").toggleClass("downloadtray");
+				$("#downloadarrow").toggleClass("downloadarrow");
+				$("#template").toggleClass("hide");				
+				$("#tick").toggleClass("tick");
+				$("#tickround").toggleClass("tickdraw");
+				$(".cvDownload").toggleClass("cvDownloadColor");
+				$(".cvDownload").text ("Downloaded");
+					$("#cv").hover(function() {
+					$("#list").toggleClass("hide");
+					$("#downloadtray").toggleClass("downloadtray");
+					$("#downloadarrow").toggleClass("downloadarrow");				
+					});	
+				});
+			});
+		});	
+	</script>
+  </body>
+
+</html>

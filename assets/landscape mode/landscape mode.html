@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<link rel="stylesheet" href="css/css.css"/>
+	<title>landscape mode</title>
+
+<style>
+body	{text-align: center;}
+#landscapemode {
+  position: relative;
+  top: 40px;
+  visibility: visible;
+ /*hidden for @media*/
+}
+
+#landscape {
+  width: 20px;
+  animation: landscape 1.5s linear infinite;
+}
+
+@keyframes landscape {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.landscapetext {
+  font-size: 14px;
+  color: grey;
+}
+
+</style>
+
+</head>
+
+	<body>
+		
+		<div id="landscapemode">
+			<svg id="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>landscape</title>
+				<rect id="phone" x="3.64" y="5.56" width="12.73" height="8.89" rx="3.4" ry="3.4" transform="translate(10 -4.14) rotate(45)" style="stroke: grey; fill: none;"/>
+				<path id="left" d="M10,18.5A8.5,8.5,0,0,1,1.5,10v0" style="stroke: grey; fill: none;"/>
+				<path id="right" d="M10,1.5A8.5,8.5,0,0,1,18.5,10" style="stroke: grey; fill: none;"/>
+			</svg>
+		<p class="landscapetext">rotate your device to landscape mode<br>if you would like more detail</p>	
+		</div>
+
+
+	</body>
+
+</html>

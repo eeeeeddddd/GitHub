@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>Title sticky</title>
+<style>
+.stickytitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: yellow;
+}
+
+.title {
+  /*titles*/
+  text-align: center;
+  height: 50px;
+  background-color: blue;
+}
+
+.hrtitle {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  border: 0;
+  letter-spacing: 1px;
+  font-size: calc(100% + 30px);
+  text-align: center;
+  line-height: 10px;
+  margin: 0;
+}
+
+.hrtitlenotext {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  border: 0;
+  margin: 0;
+  line-height: 30px;
+  background: red;
+}
+
+.hrtitle:before {
+  content: '';
+  background: -webkit-linear-gradient(left, transparent, black, transparent);
+  background: linear-gradient(to right, transparent, black transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+}
+
+.hrtitle:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  background-color: red;
+}
+</style>	
+	
+</head>
+	<body>
+		
+		<div id="wrapper">
+			
+			<div class="title"><div class="about"><a href="#sectionAbout"><hr class="hrtitle" data-content="me"></a></div></div>
+								
+		</div><!--wrapper-->
+
+		<script src="js/script.js"></script>
+
+<script>
+	
+//sticky titles
+var aboutOffset = $(".about").offset().top;
+
+$(window).scroll(function() {
+  var aboutScrolled = $(window).scrollTop();
+
+  if (aboutScrolled >= aboutOffset) {
+    $(".about").addClass("stickytitle");
+  }else{
+    $(".about").removeClass("stickytitle");
+  }
+});
+</script>
+	</body>
+
+</html>
