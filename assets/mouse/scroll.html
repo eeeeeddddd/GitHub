@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<link rel="stylesheet" href="css/css.css"/>
+	<title>scroll icon</title>
+<style>
+
+.mouse{
+  margin:50px auto;
+  width: 40px;
+  height: 65px;
+  border:3px solid black;
+  border-radius: 20px;
+}
+
+.mouse:hover	{
+	border: 3px solid gray;
+}
+
+#scroll{
+  width: 6px;
+  height: 6px;
+  margin: 5px auto;
+  background-color: gray;
+  border:1px solid transparent;
+  border-radius: 5px;
+  animation: scroll 2.5s infinite both;
+}
+
+@keyframes scroll{
+  0%{
+    opacity:1;
+    transform:translateY(0px);
+  }
+  100%{
+    opacity:0;
+    transform:translateY(45px);
+  }
+}
+	
+</style>
+
+</head>
+
+<body>
+		<div class="mouse">
+		  <div id="scroll"></div>
+		</div>    
+</body>
+    
+</html>

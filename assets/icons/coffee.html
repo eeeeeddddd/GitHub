@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>coffee</title>
+<style>
+#coffeecup	{
+	position: relative;
+	top: 100px;
+	left: 50%;
+	margin-left: -30px;
+}
+#cup	{
+	width: 60px;
+	height: 80px;
+	border-radius: 3px 3px 10px 10px;
+	border: 6px solid black;
+	z-index: 99;
+}
+#handle	{
+	position: relative;
+	top: 2px;
+	left: -24px;
+	width: 36px;
+	height: 36px;
+	border-radius: 40%;
+	border: 6px solid black;
+	z-index: -99;
+}
+#handle-container	{
+	position: absolute;
+	top: 16px;
+	left: 70px;
+	width: 26px;
+	height: 52px;
+	overflow: hidden;
+}
+#steam	{
+	position: absolute;
+	top: -36px;
+	left: 1px;
+	width:70px;
+	height: 30px;
+	transform: rotate(180deg)
+}
+ #steamr	{
+	 position: absolute;
+	 top: 0px;
+	 left: 19px;
+	 width: 4px;
+	 height: 6px;
+	 background: gray;
+	 animation: steam 2s infinite 0.5s;
+ }
+ #steamm	{
+	 position: absolute;
+	 top: 0px;
+	 left: 35px;	 
+	 width: 4px;
+	 height: 10px;
+	 background: gray;
+	 animation: steam 2s infinite;
+ }
+  #steaml	{
+	 position: absolute;
+	 top: 0px;
+	 left: 52px;	  
+	 width: 4px;
+	 height: 6px;
+	 background: gray;
+     animation: steam 2s infinite linear 0.5s;
+ }
+
+@keyframes steam{
+  0%{
+    opacity:1;
+    height: 2px;
+  }
+  100%{
+    opacity:0;
+    height: 30px;
+  }
+}
+#coffee	{
+	position: absolute;
+	top: 26px;
+	left: 2px;
+	width: 66px;
+	height: 60px;
+	background: gray;
+	z-index: -99;
+	opacity: 0.5;
+}
+</style>
+
+</head>
+
+<body>
+		<div id="coffeecup">
+		  <div id="cup"></div>
+		  <div id="handle-container">
+		  	<div id="handle"></div>
+		  </div>
+		  <div id="coffee"></div>
+		  <div id="steam">
+			  <div id="steaml"></div>
+			  <div id="steamm"></div>
+			  <div id="steamr"></div>
+		  </div>
+		</div>    
+</body>
+    
+</html>

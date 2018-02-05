@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>card flip</title>
+	<style>
+	
+.flip	{
+	position: relative;
+	top: 50px;
+	left: 50%;
+	right: 50%;
+	margin-left: -100px;
+	width:200px;
+	height:200px;
+}
+
+.flip > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: black;
+	width:200px;
+	height:200px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+
+.flip > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: gray; 
+	width:200px; 
+	height:200px; 
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}	
+
+</style>
+
+</head>
+	<body>
+		<div class="flip">
+				<div class="front"></div>
+			  <div class="back"></div>
+		</div>
+<!--
+		<div class="flip">
+				<div class="front">front</div>
+			  <div class="back">back</div>
+		</div>
+-->
+	</body>
+	
+</html>
+

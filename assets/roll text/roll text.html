@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>scroll text</title>
+	<style>		
+#wrapper	{
+	position: relative;
+	top: 50px;
+	left: 50%;
+	right: 50%;
+	margin-left: -100px;
+	border: solid 2px black;
+	width: 200px;
+	overflow: hidden;
+	padding: 15px;
+	border-radius: 10px;
+}
+#text	{
+	font-size: 20px;
+	color: gray;
+	width: 200px;
+	transform: translate(-450px, 0px);
+	animation: move 10s linear infinite 0s;
+}
+@keyframes	move		{
+	0%: {transform: translateX(0px);}
+	100% {transform: translateX(250px);}
+}			
+</style>
+
+</head>
+
+	<body>
+		<div id="wrapper"><div id="text">GOODBYE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO</div></div>     
+	</body>
+    
+</html>

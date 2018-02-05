@@ -157,7 +157,7 @@ $(document).ready (function() {
 		$("#template").toggleClass("hide");				
 		$("#tick").toggleClass("tick");
 		$("#tickround").toggleClass("tickdraw");
-		$(".cvDownload").css({color: "lime"});
+		$(".cvDownload").toggleClass("cvDownloadColor");
 		$(".cvDownload").text ("Downloaded");
 			$("#cv").hover(function() {
 			$("#list").toggleClass("hide");
@@ -208,6 +208,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#wild").hover (function() {
 	$(".wild").toggleClass("experienceanimation");
+// 	$(".click").toggleClass("experienceanimation");
 	$("#wildclick").toggleClass("experiencehovercolour");
 	});
 });
@@ -222,6 +223,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#max").hover (function() {
 	$(".max").toggleClass("experienceanimation");
+// 	$(".click").toggleClass("experienceanimation");
 	$("#maxclick").toggleClass("experiencehovercolour");
 	});
 });
@@ -236,6 +238,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#road").hover (function() {
 	$(".road").toggleClass("experienceanimation");
+// 	$(".click").toggleClass("experienceanimation");
 	$("#roadclick").toggleClass("experiencehovercolour");
 	});
 });
@@ -250,6 +253,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#tgi").hover (function() {
 	$(".tgi").toggleClass("experienceanimation");
+// 	$(".click").toggleClass("experienceanimation");
 	$("#tgiclick").toggleClass("experiencehovercolour");
 	});
 });

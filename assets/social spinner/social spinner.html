@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>social spinner</title>	
+<style>
+.wrapper	{
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -25px;
+	width: 50px;
+	height: 50px;
+	transition: 1s ease-in-out;
+}	
+.menu	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: black;
+}
+.box1	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: blue;
+	transition: 0.5s ease-in-out;	
+	z-index: -99;
+} 
+.box2	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: yellow;
+	transition: 0.5s ease-in-out;	
+	z-index: -99;
+} 
+.box3	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: pink;
+	transition: 0.5s ease-in-out;	
+	z-index: -99;
+} 
+.box4	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: lime;
+	transition: 0.5s ease-in-out;	
+	z-index: -99;
+} 
+.box5	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: green;
+	transition: 0.5s ease-in-out;	
+	z-index: -99;
+} 
+.box6	{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;	
+	background: red;
+	transition: 0.5s ease-in-out;	
+	z-index: -99;
+} 
+.click  {
+	transform: rotate(1080deg);
+}
+.clickone {
+	transform: translateX(80px) translateY(40px);/*blue*/
+}
+.clicktwo {
+	transform: translateX(-80px) translateY(40px);/*yellow*/
+}
+.clickthree {
+	transform: translateX(80px) translateY(-40px);/*pink*/
+}
+.clickfour {
+	transform: translateX(0px) translateY(80px);/*lime*/
+}
+.clickfive {
+	transform: translateX(-80px) translateY(-40px);/*green*/
+}
+.clicksix {
+	transform: translateX(0px) translateY(-80px);/*red*/
+}
+.click-text	{
+	opacity: 0.0;
+	transition: 0.5s ease-in-out;	
+}
+</style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu">
+		<div class="box1"><a href="#"</a></div>
+		<div class="box2"><a href="#"</a></div>
+		<div class="box3"><a href="#"</a></div>
+		<div class="box4"><a href="#"</a></div>
+		<div class="box5"><a href="#"</a></div>
+		<div class="box6"><a href="#"</a></div>
+
+		</div>
+	</div>
+    
+<script type="text/javascript" src="jq/jquery-1.11.2.js"></script>
+<script>
+	
+	$(document).ready (function() {
+		$(".menu").click (function() {
+			$(".wrapper").toggleClass("click");	
+			$(".box1").toggleClass("clickone");
+			$(".box2").toggleClass("clicktwo");
+			$(".box3").toggleClass("clickthree");
+			$(".box4").toggleClass("clickfour");
+			$(".box5").toggleClass("clickfive");	
+			$(".box6").toggleClass("clicksix");
+    	});
+	});
+
+</script>        
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
