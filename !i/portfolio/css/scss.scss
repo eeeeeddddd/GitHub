@@ -5,13 +5,13 @@
           font-style: normal;
 }
 
-$fontTitle: 'Reenie Beanie';
-$fontNav:  'Reenie Beanie';
-$fontText: 'Advent Pro';
-$fontForm: 'Reenie Beanie';
+$fontTitle:  'mywoff';
+$fontNav:   'mywoff';
+$fontText:	'Poiret One';//  'Advent Pro';
+$fontForm: 'Poiret One';
 
 $bg-color: #292929; /*header & footer*/
-$bg-color1: #fcfcfc; /*main*/
+$bg-color1: #fcfcfc; /* #FDEFE3; */ /*main*/
 $bg-color2: #f5f5f5; /*White Smoke*/
 
 $fontColor: #727272;/*gray*/
@@ -21,7 +21,6 @@ $svg: #727272; /*svg*/
 $color: #F7484E; /*red*/
 
 //html
-
 html body	{
 	margin: 0px;
 	padding: 0px;
@@ -32,37 +31,31 @@ html body	{
 	background-color: $bg-color;
 	a	{text-decoration: none; color: $fontColor;}
 }
-
-.stickytitle	{position:fixed; top:0; left:0; width:100%; height: 70px; background-color: $navColor;}
 .title	{/*titles*/
 	text-align: center;
-	height: 50px;//needed for script
-	background-color: $navColor;}
+	height: 60px;//needed for script
+	background-color: $bg-color1;
+}
+.stickytitle	{position:fixed; top:0; left:0; width:100%; height: 60px; background-color: $navColor;}
+
 .hrtitle {
 	display: inline-block;
 	position: relative;
 	width: 40%;
+	height: 60px;
 	border: 0;
 	font-family: $fontTitle;
 	letter-spacing: 1px;
     font-size: calc(100% + 30px);	
+    font-weight: 600;
 	text-align: center;
 	line-height: 10px; 
 	margin: 0;
 }
-.hrtitlenotext	{
-	display: inline-block;
-	position: relative;
-	width: 40%;
-	border: 0; 
-	margin: 0;
-	line-height: 30px; 
-	background: red;
-}
 .hrtitle:before {
 	content: '';
-	background: -webkit-linear-gradient(left, transparent, black, transparent);
-	background: linear-gradient(to right, transparent, black transparent);
+	background: -webkit-linear-gradient(left, transparent, transparent, transparent);
+	background: linear-gradient(to right, transparent, transparent transparent);
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -73,16 +66,8 @@ html body	{
 	content: attr(data-content);
 	position: relative;
 	display: inline-block;
-	padding: 20px;
-	background-color: $navColor;
+	padding: 25px;
 // 	border-left: solid 1px grey; border-right: solid 1px grey;
-}
-.subtitle	{
-	font-family: $fontTitle;
-	letter-spacing: 1px;
-    font-size: calc(100% + 30px);	
-	color: darken($fontColor, 10%);
-	padding-bottom: 2%;
 }
 
 #sectionNav	{
@@ -95,8 +80,7 @@ html body	{
 	transition: transform 0.5s cubic-bezier(.42,1,.8,1);
 	opacity: 0;
 }
-//nav hide before 780px
-.sectionNavHide {transform: translateY(-100%);}
+.sectionNavHide {transform: translateY(-100%);} //nav hide before 780px
 .headerScroll	{opacity: 1!important;}//needs important
 nav {
 	text-align: center;
@@ -157,7 +141,7 @@ nav ul li a {
 }
 .headertitle	{
 	font-family: 'mywoff';
-	font-size: 10vw;
+	font-size: 7vw;
 	margin: 0;
 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
@@ -170,25 +154,17 @@ nav ul li a {
 	margin: 0;
 }
 .quotes	{
-	font-family: $fontText;
-    font-size: calc(100% - 4px);
+	font-family:  'Reenie Beanie';
+	font-size: calc(100% + 5px);
 }
 .quotemarks	{font-size: calc(100% + 7px);}//quotes
 
 #sectionAbout	{
 	background-color: $bg-color1;
-	padding: 2%  5%  2% 5%;
+	padding: 2%  10%  5% 10%;
 	text-align: center;
 }
-#hobbies		{
-	background: $bg-color1;
-	text-align: center;
-	padding: 1% 1% 1% 1%;
-}
-.hobbie   {
-    display: inline-block;
-    margin: 0% 1% 0% 1%;
-}
+#hobbies		{}
 .hobbie   {
     display: inline-block;
     width: 4%;
@@ -309,7 +285,7 @@ nav ul li a {
 .clouds:hover #dribbblelines	{stroke: $bg-color1;  transition: 0.2s linear;}
 
 #sectionExperience		{
-	padding: 2%  20%  5% 20%;
+	padding: 2%  10%  5% 10%;
 	box-sizing: border-box;
 	background:  $bg-color1;
 	width: 100%;
@@ -318,22 +294,18 @@ nav ul li a {
 }
 .experienceposition	{
 	color: darken($fontColor, 2%);
-    font-size: calc(100% + 4px);
-    margin-bottom: 0px;
+	margin: 2% 0% 0% 0%;
 }
 .experiencecompany	{
 	color: darken($fontColor, 0%);
-	margin: 1% 0% 1% 0%;
-    font-size: calc(100% + 2px);
+	margin: 0% 0% 1% 0%;
 }
-.experiencedetail 	{
-	margin: 0;
-	font-size: calc(100% - 2px);
-}
+.experiencedetail	{margin: 2% 0% 0% 0%;}
 #wildclick, #maxclick, #roadclick, #tgiclick 	{
-	font-size: calc(100% - 10px);
+// 	font-size: calc(100% - 10px);
 	cursor: pointer;
 	width: 100%;
+	display: block;
 }
 .fieldset	{
 	border-radius: 10px;
@@ -354,17 +326,6 @@ nav ul li a {
 	&:hover	{
 	border: 1px solid red;}
 }
-// .click {
-// 	position: relative;
-// 	top:1px;
-// 	left: 1px;
-//     width: 6px;
-//     height: 6px;
-//     background-color: $color;
-//     border:1px solid transparent;
-//     border-radius: 5px;
-//     opacity: 0;	
-// }
 @keyframes clickeyframe {0% {transform: scale(0);opacity: 1;} 100% {transform: scale(1); opacity: 0.6;}}
 
 #wildetails, #maxdetails, #roadetails, #tgidetails		{
@@ -401,7 +362,8 @@ display: none;
 #tickround	{stroke: lime; stroke-dasharray: 4000;}
 .tickdraw {animation: tickdraw 1.5s 0s linear;}		
 @keyframes tickdraw {0%{stroke-dashoffset: 4000;} 100%{stroke-dashoffset: 8000; }}
-.cvDownloadColor	{color: lime; transition: 1s all 2s linear;}
+.cvDownload	{font-size: calc(100% + 20px);}
+.cvDownloadColor	{color: lime; transition: 500ms all 1s linear;}
 
 #sectionContact {
 	height: 400px;
@@ -410,12 +372,16 @@ display: none;
 	background: $bg-color1;
 	margin: 0;
 }
+.forget	{
+	font-size: calc(100% + 15px);
+}
 input	{
 	width: 50%;
 	height: 10px;
 	padding: 20px;
 	font-size: 30px;
 	font-family: $fontForm;
+	font-size: calc(100% + 0px);
 	border-radius: 10px;
 	background: white;
 	transition: all 0.2s ease-in;
@@ -427,6 +393,7 @@ input	{
 }
 textarea {
 	@extend input;
+// 	font-family: 'Reenie Beanie';
 	height: 100px;
 	&:hover	{
 		background: $bg-color2;
@@ -563,7 +530,7 @@ footer		{
 	
 @media screen and (max-width: 768px) {	//tablet
 html body	{font-size: 20px;}
-.hrtitle {width: 60%;	font-size: calc(100% + 20px);}
+// .hrtitle {width: 60%;	font-size: calc(100% + 20px);}
 
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
@@ -586,15 +553,14 @@ html body	{font-size: 20px;}
 input	{width: 80%;}
 textarea	{width: 80%;}	
 .socials	{width: 8%;}
-
 }	
 	
 @media screen and (max-width: 480px) {//mobile
 html body	{font-size: 16px;}
 // .name	{font-size: 12vw;}
 // .quote	{font-size: 10vw;}
-.title	{border: solid 2px #f5f5f5;}
-.hrtitle {width: 80%;	font-size: calc(100% + 10px);}
+.title	{border: solid 1px lightgrey;}
+// .hrtitle {width: 80%;	font-size: calc(100% + 10px);}
 
 #sectionAbout	{padding: 2%  10%  5% 10%;}
 .quotes	{display: none;}

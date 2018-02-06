@@ -6,6 +6,7 @@
 }
 
 /*header & footer*/
+/* #FDEFE3; */
 /*main*/
 /*White Smoke*/
 /*gray*/
@@ -17,7 +18,7 @@ html body {
   padding: 0px;
   border: 0px;
   font-size: 24px;
-  font-family: "Advent Pro";
+  font-family: "Poiret One";
   color: #727272;
   background-color: #292929;
 }
@@ -27,19 +28,19 @@ html body a {
   color: #727272;
 }
 
+.title {
+  /*titles*/
+  text-align: center;
+  height: 60px;
+  background-color: #fcfcfc;
+}
+
 .stickytitle {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  background-color: #fcfcfc;
-}
-
-.title {
-  /*titles*/
-  text-align: center;
-  height: 50px;
+  height: 60px;
   background-color: #fcfcfc;
 }
 
@@ -47,29 +48,21 @@ html body a {
   display: inline-block;
   position: relative;
   width: 40%;
+  height: 60px;
   border: 0;
-  font-family: "Reenie Beanie";
+  font-family: "mywoff";
   letter-spacing: 1px;
   font-size: calc(100% + 30px);
+  font-weight: 600;
   text-align: center;
   line-height: 10px;
   margin: 0;
 }
 
-.hrtitlenotext {
-  display: inline-block;
-  position: relative;
-  width: 40%;
-  border: 0;
-  margin: 0;
-  line-height: 30px;
-  background: red;
-}
-
 .hrtitle:before {
   content: '';
-  background: -webkit-linear-gradient(left, transparent, black, transparent);
-  background: linear-gradient(to right, transparent, black transparent);
+  background: -webkit-linear-gradient(left, transparent, transparent, transparent);
+  background: linear-gradient(to right, transparent, transparent transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -81,16 +74,7 @@ html body a {
   content: attr(data-content);
   position: relative;
   display: inline-block;
-  padding: 20px;
-  background-color: #fcfcfc;
-}
-
-.subtitle {
-  font-family: "Reenie Beanie";
-  letter-spacing: 1px;
-  font-size: calc(100% + 30px);
-  color: #595959;
-  padding-bottom: 2%;
+  padding: 25px;
 }
 
 #sectionNav {
@@ -138,7 +122,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 2vw;
-  font-family: "Reenie Beanie";
+  font-family: "mywoff";
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s ease;
@@ -204,7 +188,7 @@ nav ul li a {
 
 .headertitle {
   font-family: 'mywoff';
-  font-size: 10vw;
+  font-size: 7vw;
   margin: 0;
   color: white;
   text-shadow: 0.1px 0.1px 1px white;
@@ -219,8 +203,8 @@ nav ul li a {
 }
 
 .quotes {
-  font-family: "Advent Pro";
-  font-size: calc(100% - 4px);
+  font-family: 'Reenie Beanie';
+  font-size: calc(100% + 5px);
 }
 
 .quotemarks {
@@ -229,19 +213,8 @@ nav ul li a {
 
 #sectionAbout {
   background-color: #fcfcfc;
-  padding: 2%  5%  2% 5%;
+  padding: 2%  10%  5% 10%;
   text-align: center;
-}
-
-#hobbies {
-  background: #fcfcfc;
-  text-align: center;
-  padding: 1% 1% 1% 1%;
-}
-
-.hobbie {
-  display: inline-block;
-  margin: 0% 1% 0% 1%;
 }
 
 .hobbie {
@@ -674,7 +647,7 @@ nav ul li a {
 }
 
 #sectionExperience {
-  padding: 2%  20%  5% 20%;
+  padding: 2%  10%  5% 10%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -684,25 +657,22 @@ nav ul li a {
 
 .experienceposition {
   color: #6d6d6d;
-  font-size: calc(100% + 4px);
-  margin-bottom: 0px;
+  margin: 2% 0% 0% 0%;
 }
 
 .experiencecompany {
   color: #727272;
-  margin: 1% 0% 1% 0%;
-  font-size: calc(100% + 2px);
+  margin: 0% 0% 1% 0%;
 }
 
 .experiencedetail {
-  margin: 0;
-  font-size: calc(100% - 2px);
+  margin: 2% 0% 0% 0%;
 }
 
 #wildclick, #maxclick, #roadclick, #tgiclick {
-  font-size: calc(100% - 10px);
   cursor: pointer;
   width: 100%;
+  display: block;
 }
 
 .fieldset {
@@ -873,9 +843,13 @@ nav ul li a {
   }
 }
 
+.cvDownload {
+  font-size: calc(100% + 20px);
+}
+
 .cvDownloadColor {
   color: lime;
-  transition: 1s all 2s linear;
+  transition: 500ms all 1s linear;
 }
 
 #sectionContact {
@@ -886,12 +860,17 @@ nav ul li a {
   margin: 0;
 }
 
+.forget {
+  font-size: calc(100% + 15px);
+}
+
 input, textarea {
   width: 50%;
   height: 10px;
   padding: 20px;
   font-size: 30px;
-  font-family: "Reenie Beanie";
+  font-family: "Poiret One";
+  font-size: calc(100% + 0px);
   border-radius: 10px;
   background: white;
   transition: all 0.2s ease-in;
@@ -1144,10 +1123,6 @@ footer {
   html body {
     font-size: 20px;
   }
-  .hrtitle {
-    width: 60%;
-    font-size: calc(100% + 20px);
-  }
   #sectionNav {
     display: none;
   }
@@ -1197,11 +1172,7 @@ footer {
     font-size: 16px;
   }
   .title {
-    border: solid 2px #f5f5f5;
-  }
-  .hrtitle {
-    width: 80%;
-    font-size: calc(100% + 10px);
+    border: solid 1px lightgrey;
   }
   #sectionAbout {
     padding: 2%  10%  5% 10%;

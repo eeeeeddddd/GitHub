@@ -158,7 +158,7 @@ $(document).ready (function() {
 		$("#tick").toggleClass("tick");
 		$("#tickround").toggleClass("tickdraw");
 		$(".cvDownload").toggleClass("cvDownloadColor");
-		$(".cvDownload").text ("Downloaded");
+		$(".cvDownload").text ("downloaded");
 			$("#cv").hover(function() {
 			$("#list").toggleClass("hide");
 			$("#downloadtray").toggleClass("downloadtray");
