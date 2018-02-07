@@ -11,26 +11,30 @@ $fontText:	'Poiret One';//  'Advent Pro';
 $fontForm: 'Poiret One';
 
 $bg-color: #292929; /*header & footer*/
-$bg-color1: #fcfcfc; /* #FDEFE3; */ /*main*/
+$bg-color1: #fcfcfc; /*main*/
 $bg-color2: #f5f5f5; /*White Smoke*/
 
 $fontColor: #727272;/*gray*/
-$navColor: #fcfcfc;/*gray*/
+$navColor: #f5f5f5;/*White Smoke*/
 
 $svg: #727272; /*svg*/
-$color: #F7484E; /*red*/
+$color: blue; 
 
 //html
 html body	{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
-	font-size: 24px;
+	font-size: 22px;
 	font-family: $fontText;
 	color: $fontColor;
 	background-color: $bg-color;
-	a	{text-decoration: none; color: $fontColor;}
-}
+	a	{text-decoration: none; color: $fontColor;
+}}
+a:hover	{color: $color;}
+// a:visited{color: $color;}
+// a:active {color: yellow;}
+
 .title	{/*titles*/
 	text-align: center;
 	height: 60px;//needed for script
@@ -41,7 +45,7 @@ html body	{
 .hrtitle {
 	display: inline-block;
 	position: relative;
-	width: 40%;
+	width: 30%;
 	height: 60px;
 	border: 0;
 	font-family: $fontTitle;
@@ -51,6 +55,8 @@ html body	{
 	text-align: center;
 	line-height: 10px; 
 	margin: 0;
+	transition: 0.5s ease;
+		&:hover	{color: $fontColor;}
 }
 .hrtitle:before {
 	content: '';
@@ -108,12 +114,13 @@ nav ul li a {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: 0.3s ease;
+ 	&:hover {color: $fontColor;}
 }
 .underlinenav::after {
     content: '';
     width: 0px;
     height: 2px;
-    background: $fontColor;
+    background: $color;
     position: absolute;
     bottom:20px;
     transition: 0.5s ease;
@@ -141,7 +148,7 @@ nav ul li a {
 }
 .headertitle	{
 	font-family: 'mywoff';
-	font-size: 7vw;
+	font-size: calc(100% + 60px);
 	margin: 0;
 	color: white;
 	text-shadow: 0.1px 0.1px 1px white;
@@ -149,13 +156,14 @@ nav ul li a {
 .headersubtitle	{
 	font-family: 'Reenie Beanie';
 	font-weight: 400;		
-	font-size: 5vw;
+	font-size: calc(100% + 30px);
 	color: white;
 	margin: 0;
 }
 .quotes	{
 	font-family:  'Reenie Beanie';
 	font-size: calc(100% + 5px);
+	color: lighten($fontColor, 10%); 
 }
 .quotemarks	{font-size: calc(100% + 7px);}//quotes
 
@@ -258,30 +266,31 @@ nav ul li a {
     width: 6%;
     margin: 0% 2% 0% 2%;
     transition: all 0.5s linear;
+    &:hover	{transform: translateY(-5px);}
 }
 
-#cloudcc	{stroke:red; fill: none;stroke-width: 11px;}
+#cloudcc	{stroke:$svg; fill: none;stroke-width: 11px;}
 .clouds:hover  #cloudcc	{stroke: red; fill: red; transition: 0.2s linear;}
-#cloudlines	{stroke:red; fill: none; stroke-width: 14px;}
+#cloudlines	{stroke:$svg; fill: none; stroke-width: 14px;}
 .clouds:hover  #cloudlines	{stroke: $bg-color1; fill: none; stroke-width: 16px; transition: 0.2s linear;}
 
-#codepenbox	{stroke: black; fill: none;stroke-width: 11px;}
+#codepenbox	{stroke: $svg; fill: none; stroke-width: 11px;}
 .clouds:hover #codepenbox	{stroke: black; fill: black; transition: 0.2s linear;}
-#codepenlines		{stroke: black; fill: none; stroke-width: 11px;}
+#codepenlines		{stroke: $svg; fill: none; stroke-width: 11px;}
 .clouds:hover #codepenlines	{stroke: $bg-color1; fill: none; transition: 0.2s linear;}
 
-#be	{stroke: #1969fb; fill: none;stroke-width: 10px;}
+#be	{stroke: $svg; fill: none; stroke-width: 10px;}
 .clouds:hover #be	{stroke: #1969fb; fill: #1969fb; transition: 0.1s linear;}
 
-#github	{stroke: black; fill: none;stroke-width: 10px;}
+#github	{stroke: $svg; fill: none; stroke-width: 10px;}
 .clouds:hover #github	{stroke: black; fill: black;  transition: 0.2s linear;}
 
-#xd	 {stroke:#e750b9; fill: none;stroke-width: 10px;}
+#xd	 {stroke:$svg; fill: none;stroke-width: 10px;}
 .clouds:hover #xd	{stroke: #e750b9; fill: #e750b9;  transition: 0.1s linear;}
 
-#dribbblecircle		{stroke: #b3335a; fill: none;stroke-width: 11px;}
+#dribbblecircle		{stroke: $svg; fill: none; stroke-width: 11px;}
 .clouds:hover #dribbblecircle	{stroke: #b3335a; fill: #b3335a;  transition: 0.2s linear;}
-#dribbblelines	{stroke: #b3335a; fill: none;stroke-width: 11px;}
+#dribbblelines	{stroke: $svg; fill: none;stroke-width: 11px;}
 .clouds:hover #dribbblelines	{stroke: $bg-color1;  transition: 0.2s linear;}
 
 #sectionExperience		{
@@ -302,7 +311,6 @@ nav ul li a {
 }
 .experiencedetail	{margin: 2% 0% 0% 0%;}
 #wildclick, #maxclick, #roadclick, #tgiclick 	{
-// 	font-size: calc(100% - 10px);
 	cursor: pointer;
 	width: 100%;
 	display: block;
@@ -341,6 +349,7 @@ display: none;
 	display: inline-block;
     width: 14%;
     transition: all 0.5s linear;
+    cursor:pointer;
 }
 .hide	{opacity: 0;}
 #template	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px;}
@@ -363,7 +372,7 @@ display: none;
 .tickdraw {animation: tickdraw 1.5s 0s linear;}		
 @keyframes tickdraw {0%{stroke-dashoffset: 4000;} 100%{stroke-dashoffset: 8000; }}
 .cvDownload	{font-size: calc(100% + 20px);}
-.cvDownloadColor	{color: lime; transition: 500ms all 1s linear;}
+.cvDownloadColor	{color: lime; transition: 1000ms all 1.6s linear;}
 
 #sectionContact {
 	height: 400px;
@@ -372,12 +381,10 @@ display: none;
 	background: $bg-color1;
 	margin: 0;
 }
-.forget	{
-	font-size: calc(100% + 15px);
-}
+.forget	{font-size: calc(100% + 15px);}
 input	{
 	width: 50%;
-	height: 10px;
+	height: 1%;
 	padding: 20px;
 	font-size: 30px;
 	font-family: $fontForm;
@@ -385,30 +392,29 @@ input	{
 	border-radius: 10px;
 	background: white;
 	transition: all 0.2s ease-in;
-	border: transparent;
+	border: solid 1px transparent;
 	margin-bottom: 20px;
 	&:hover {
-		background: $bg-color2;
+	border: solid 1px $color;
 	}
 }
 textarea {
 	@extend input;
 // 	font-family: 'Reenie Beanie';
-	height: 100px;
+	height: 3%;
 	&:hover	{
-		background: $bg-color2;
+		border: solid 1px $color;
 	}
 }
 .btn {
   width: 100px;
-  height: 30px;
   border-radius: 10px;
   border: solid 2px lightgray;
   font-size: 30px;
   font-family: 'Poiret One';
   color: lighten($fontColor, 20%); 
   line-height: 0px;
-  margin-top: 50px;
+  margin-top: 10px;
   transition: all 0.2s;
   box-shadow: 0px 5px 10px lightgray;
   cursor:pointer;
@@ -490,7 +496,7 @@ footer		{
 	margin-left: 7px;
     border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
-	border-bottom: 4px solid red;
+	border-bottom: 4px solid $color;
 	animation: scroll 1.5s infinite both;
 }
 @keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
@@ -530,7 +536,7 @@ footer		{
 	
 @media screen and (max-width: 768px) {	//tablet
 html body	{font-size: 20px;}
-// .hrtitle {width: 60%;	font-size: calc(100% + 20px);}
+.hrtitle {width: 100%; font-size: calc(100% + 20px);}
 
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
@@ -557,12 +563,12 @@ textarea	{width: 80%;}
 	
 @media screen and (max-width: 480px) {//mobile
 html body	{font-size: 16px;}
-// .name	{font-size: 12vw;}
-// .quote	{font-size: 10vw;}
+.headertitle	{font-size: calc(100% + 20px);}
+.headersubtitle	{font-size: calc(100% + 10px);}
 .title	{border: solid 1px lightgrey;}
-// .hrtitle {width: 80%;	font-size: calc(100% + 10px);}
+.hrtitle {font-size: calc(100% + 10px);}
 
-#sectionAbout	{padding: 2%  10%  5% 10%;}
+#sectionAbout	{padding: 2%  1%  5% 1%;}
 .quotes	{display: none;}
 
 #sectionExpertise	{padding: 2%  1%  5% 1%;}
