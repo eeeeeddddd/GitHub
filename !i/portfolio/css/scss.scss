@@ -18,7 +18,13 @@ $fontColor: #727272;/*gray*/
 $navColor: #f5f5f5;/*White Smoke*/
 
 $svg: #727272; /*svg*/
-$color: blue; 
+$color: blue;
+
+@mixin dog {animation:color 60s infinite alternate}
+// @include dog;
+ @keyframes color {
+  0% {color: #727272;}10% {color: lime;}20% {color: green;}30% {color: red;}40% {color: purple;}50% {color: brown;}60% {color: blue;}70% {color: pink;}80% {color: tomato;}90% {color: lime;}100% {color: #727272;}}
+
 
 //html
 html body	{
@@ -32,14 +38,12 @@ html body	{
 	a	{text-decoration: none; color: $fontColor;
 }}
 a:hover	{color: $color;}
-// a:visited{color: $color;}
-// a:active {color: yellow;}
 
 .title	{/*titles*/
 	text-align: center;
 	height: 60px;//needed for script
 	background-color: $bg-color1;
-}
+}  
 .stickytitle	{position:fixed; top:0; left:0; width:100%; height: 60px; background-color: $navColor;}
 
 .hrtitle {
@@ -53,15 +57,18 @@ a:hover	{color: $color;}
     font-size: calc(100% + 30px);	
     font-weight: 600;
 	text-align: center;
-	line-height: 10px; 
+	line-height: 10px;
 	margin: 0;
 	transition: 0.5s ease;
+	@include dog;
 		&:hover	{color: $fontColor;}
 }
 .hrtitle:before {
 	content: '';
 	background: -webkit-linear-gradient(left, transparent, transparent, transparent);
 	background: linear-gradient(to right, transparent, transparent transparent);
+// 	background: -webkit-linear-gradient(left, transparent, grey, transparent);
+// 	background: linear-gradient(to right, transparent, grey transparent);
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -73,8 +80,10 @@ a:hover	{color: $color;}
 	position: relative;
 	display: inline-block;
 	padding: 25px;
+// 	background: $bg-color1; //for lines
 // 	border-left: solid 1px grey; border-right: solid 1px grey;
 }
+.hr {width: 40%; margin: 0 auto ; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)); }
 
 #sectionNav	{
 	position: fixed; 
@@ -135,7 +144,7 @@ nav ul li a {
 #sectionHeader	{
 	height: 100vh;
  	background-image: linear-gradient(180deg, hsla(1, 90%, 60%, 1), hsla(359, 90%, 60%, 1));
-	animation: hue 30s infinite;
+	animation: hue 40s infinite;
 }
 @keyframes hue {0% { filter: hue-rotate(0);}100% { filter: hue-rotate(360deg); }}
 
@@ -160,16 +169,17 @@ nav ul li a {
 	color: white;
 	margin: 0;
 }
-.quotes	{
+.note	{
 	font-family:  'Reenie Beanie';
 	font-size: calc(100% + 5px);
 	color: lighten($fontColor, 10%); 
 }
+.noteshow	{@extend .note;}
 .quotemarks	{font-size: calc(100% + 7px);}//quotes
 
 #sectionAbout	{
 	background-color: $bg-color1;
-	padding: 2%  10%  5% 10%;
+	padding: 2%  10%  3% 10%;
 	text-align: center;
 }
 #hobbies		{}
@@ -218,7 +228,7 @@ nav ul li a {
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
 
 #sectionExpertise	{
-	padding: 2%  10%  5% 10%;
+	padding: 2%  10%  3% 10%;
 	box-sizing: border-box;
 	background:  $bg-color1;
 	width: 100%;
@@ -241,9 +251,11 @@ nav ul li a {
 	text-align: left;
  	padding: 0% 0% 2% 1%;	
 }
-
+.columnright::before {
+    content:"\00b7";
+    }
 #sectionQualification	{
-	padding: 2%  10%  5% 10%;
+	padding: 2%  10%  3% 10%;
 	box-sizing: border-box;
 	background:  $bg-color1;
 	width: 100%;
@@ -252,7 +264,7 @@ nav ul li a {
 }
 
 #sectionPortfolio	{
-	padding: 2%  0%  5% 0%;
+	padding: 2%  10%  3% 10%;
 	background:  $bg-color1;
 	text-align: center;
 }
@@ -375,9 +387,9 @@ display: none;
 .cvDownloadColor	{color: lime; transition: 1000ms all 1.6s linear;}
 
 #sectionContact {
-	height: 400px;
+// 	height: auto;
 	text-align: center;
-	padding: 5%  0%  15% 0%;
+	padding: 5%  0%  5% 0%;
 	background: $bg-color1;
 	margin: 0;
 }
@@ -432,7 +444,7 @@ textarea {
 .socials   {
 	display: inline-block;
     width: 3%;
-    margin: 0px 2% 0px 2%;
+    padding: 0px 2% 0px 2%;
     transition: all 0.3s linear;
 }
 .socialsenvelop   {@extend .socials;}
@@ -459,7 +471,7 @@ footer		{
 	z-index: -1;
 	text-align: center;
 	color: white;
-	padding: 1% 0% 2% 0%;
+	padding: 2% 0% 2% 0%;
 }
 #landscapemode	{position: relative; top: 40px; visibility: hidden;}
 #landscape	{
@@ -476,7 +488,7 @@ footer		{
 }
 #mouse		{/*mouse*/
 	position: relative;
-	top: 50px;
+	top: 60px;
 	left: 50%;
 	height: 100px;
 }
@@ -535,7 +547,7 @@ footer		{
 }
 	
 @media screen and (max-width: 768px) {	//tablet
-html body	{font-size: 20px;}
+html body	{font-size: 18px;}
 .hrtitle {width: 100%; font-size: calc(100% + 20px);}
 
 #sectionNav	{display: none;}
@@ -565,11 +577,12 @@ textarea	{width: 80%;}
 html body	{font-size: 16px;}
 .headertitle	{font-size: calc(100% + 20px);}
 .headersubtitle	{font-size: calc(100% + 10px);}
-.title	{border: solid 1px lightgrey;}
+// .title	{border: solid 1px lightgrey;}temp
 .hrtitle {font-size: calc(100% + 10px);}
 
 #sectionAbout	{padding: 2%  1%  5% 1%;}
-.quotes	{display: none;}
+.note	{display: none;}
+.noteshow	{display: inline-block;}
 
 #sectionExpertise	{padding: 2%  1%  5% 1%;}
 

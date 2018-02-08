@@ -11,6 +11,42 @@
 /*gray*/
 /*White Smoke*/
 /*svg*/
+@keyframes color {
+  0% {
+    color: #727272;
+  }
+  10% {
+    color: lime;
+  }
+  20% {
+    color: green;
+  }
+  30% {
+    color: red;
+  }
+  40% {
+    color: purple;
+  }
+  50% {
+    color: brown;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: pink;
+  }
+  80% {
+    color: tomato;
+  }
+  90% {
+    color: lime;
+  }
+  100% {
+    color: #727272;
+  }
+}
+
 html body {
   margin: 0px;
   padding: 0px;
@@ -60,6 +96,7 @@ a:hover {
   line-height: 10px;
   margin: 0;
   transition: 0.5s ease;
+  animation: color 60s infinite alternate;
 }
 
 .hrtitle:hover {
@@ -82,6 +119,15 @@ a:hover {
   position: relative;
   display: inline-block;
   padding: 25px;
+}
+
+.hr {
+  width: 40%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.55), transparent);
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.55), transparent);
 }
 
 #sectionNav {
@@ -177,7 +223,7 @@ nav ul li a:hover {
 #sectionHeader {
   height: 100vh;
   background-image: linear-gradient(180deg, #f5403d, #f53d40);
-  animation: hue 30s infinite;
+  animation: hue 40s infinite;
 }
 
 @keyframes hue {
@@ -213,7 +259,7 @@ nav ul li a:hover {
   margin: 0;
 }
 
-.quotes {
+.note, .noteshow {
   font-family: 'Reenie Beanie';
   font-size: calc(100% + 5px);
   color: #8c8c8c;
@@ -225,7 +271,7 @@ nav ul li a:hover {
 
 #sectionAbout {
   background-color: #fcfcfc;
-  padding: 2%  10%  5% 10%;
+  padding: 2%  10%  3% 10%;
   text-align: center;
 }
 
@@ -496,7 +542,7 @@ nav ul li a:hover {
 }
 
 #sectionExpertise {
-  padding: 2%  10%  5% 10%;
+  padding: 2%  10%  3% 10%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -522,8 +568,12 @@ nav ul li a:hover {
   padding: 0% 0% 2% 1%;
 }
 
+.columnright::before {
+  content: "\00b7";
+}
+
 #sectionQualification {
-  padding: 2%  10%  5% 10%;
+  padding: 2%  10%  3% 10%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -532,7 +582,7 @@ nav ul li a:hover {
 }
 
 #sectionPortfolio {
-  padding: 2%  0%  5% 0%;
+  padding: 2%  10%  3% 10%;
   background: #fcfcfc;
   text-align: center;
 }
@@ -870,9 +920,8 @@ nav ul li a:hover {
 }
 
 #sectionContact {
-  height: 400px;
   text-align: center;
-  padding: 5%  0%  15% 0%;
+  padding: 5%  0%  5% 0%;
   background: #fcfcfc;
   margin: 0;
 }
@@ -936,7 +985,7 @@ textarea:hover {
 .socials, .socialsenvelop {
   display: inline-block;
   width: 3%;
-  margin: 0px 2% 0px 2%;
+  padding: 0px 2% 0px 2%;
   transition: all 0.3s linear;
 }
 
@@ -1006,7 +1055,7 @@ footer {
   z-index: -1;
   text-align: center;
   color: white;
-  padding: 1% 0% 2% 0%;
+  padding: 2% 0% 2% 0%;
 }
 
 #landscapemode {
@@ -1049,7 +1098,7 @@ footer {
 #mouse {
   /*mouse*/
   position: relative;
-  top: 50px;
+  top: 60px;
   left: 50%;
   height: 100px;
 }
@@ -1137,7 +1186,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   html body {
-    font-size: 20px;
+    font-size: 18px;
   }
   .hrtitle {
     width: 100%;
@@ -1197,17 +1246,17 @@ footer {
   .headersubtitle {
     font-size: calc(100% + 10px);
   }
-  .title {
-    border: solid 1px lightgrey;
-  }
   .hrtitle {
     font-size: calc(100% + 10px);
   }
   #sectionAbout {
     padding: 2%  1%  5% 1%;
   }
-  .quotes {
+  .note, .noteshow {
     display: none;
+  }
+  .noteshow {
+    display: inline-block;
   }
   #sectionExpertise {
     padding: 2%  1%  5% 1%;
