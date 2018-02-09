@@ -20,12 +20,6 @@ $navColor: #f5f5f5;/*White Smoke*/
 $svg: #727272; /*svg*/
 $color: blue;
 
-@mixin dog {animation:color 60s infinite alternate}
-// @include dog;
- @keyframes color {
-  0% {color: #727272;}10% {color: lime;}20% {color: green;}30% {color: red;}40% {color: purple;}50% {color: brown;}60% {color: blue;}70% {color: pink;}80% {color: tomato;}90% {color: lime;}100% {color: #727272;}}
-
-
 //html
 html body	{
 	margin: 0px;
@@ -34,7 +28,7 @@ html body	{
 	font-size: 22px;
 	font-family: $fontText;
 	color: $fontColor;
-	background-color: $bg-color;
+// 	background-color: $bg-color;
 	a	{text-decoration: none; color: $fontColor;
 }}
 a:hover	{color: $color;}
@@ -60,7 +54,6 @@ a:hover	{color: $color;}
 	line-height: 10px;
 	margin: 0;
 	transition: 0.5s ease;
-	@include dog;
 		&:hover	{color: $fontColor;}
 }
 .hrtitle:before {
@@ -80,6 +73,7 @@ a:hover	{color: $color;}
 	position: relative;
 	display: inline-block;
 	padding: 25px;
+	letter-spacing: 2px;
 // 	background: $bg-color1; //for lines
 // 	border-left: solid 1px grey; border-right: solid 1px grey;
 }
@@ -157,6 +151,7 @@ nav ul li a {
 }
 .headertitle	{
 	font-family: 'mywoff';
+	letter-spacing: 2px;
 	font-size: calc(100% + 60px);
 	margin: 0;
 	color: white;
@@ -216,19 +211,19 @@ nav ul li a {
 @keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
 
 #video	{stroke:$svg; fill: none; stroke-width: 10px;}
-#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
-#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
 @keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 
 #frame	{stroke:$svg; fill: none; stroke-width: 8px;}
 #parts	{stroke:$svg; fill: none; stroke-width: 8px;}
-#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear}
-#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear}
-#peddles {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear;}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear;}
+#peddles {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear;}
 @keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
 
 #sectionExpertise	{
-	padding: 2%  10%  3% 10%;
+	padding: 2%  10%  2% 10%;
 	box-sizing: border-box;
 	background:  $bg-color1;
 	width: 100%;
@@ -240,7 +235,6 @@ nav ul li a {
 .columnleft  {
 	vertical-align: top;
 	display: inline-block;
-/* 	min-width: 230px;  */
 	width: 30%;	
     text-align: right;
  	padding: 0% 1% 0% 0%;  
@@ -253,7 +247,36 @@ nav ul li a {
 }
 .columnright::before {
     content:"\00b7";
-    }
+}
+    
+#pig	{//temp
+	position: relative;
+	margin: 0 auto;
+	width: 60%;
+	height: 4rem;
+	display: block;
+	background-image: url("../svg/g.svg");
+	background-position: 0px;
+	background-repeat: no-repeat;
+    background-size: 800px 100px;
+	animation: move 5000s linear infinite alternate;
+	&:hover {animation: move 3s linear infinite alternate}
+}
+@keyframes	move {
+	from {background-position: 0px;}
+	to {background-position: -300px;}
+}
+
+
+
+
+
+
+
+
+
+
+
 #sectionQualification	{
 	padding: 2%  10%  3% 10%;
 	box-sizing: border-box;
@@ -281,32 +304,32 @@ nav ul li a {
     &:hover	{transform: translateY(-5px);}
 }
 
-#cloudcc	{stroke:$svg; fill: none;stroke-width: 11px;}
-.clouds:hover  #cloudcc	{stroke: red; fill: red; transition: 0.2s linear;}
-#cloudlines	{stroke:$svg; fill: none; stroke-width: 14px;}
-.clouds:hover  #cloudlines	{stroke: $bg-color1; fill: none; stroke-width: 16px; transition: 0.2s linear;}
+.cloudcc	{stroke:$svg; fill: none;stroke-width: 11px;}
+.clouds:hover  .cloudcc	{stroke: red; fill: red; transition: 0.2s linear;}
+.cloudlines	{stroke:$svg; fill: none; stroke-width: 14px;}
+.clouds:hover  .cloudlines	{stroke: $bg-color1; fill: none; stroke-width: 16px; transition: 0.2s linear;}
 
-#codepenbox	{stroke: $svg; fill: none; stroke-width: 11px;}
-.clouds:hover #codepenbox	{stroke: black; fill: black; transition: 0.2s linear;}
-#codepenlines		{stroke: $svg; fill: none; stroke-width: 11px;}
-.clouds:hover #codepenlines	{stroke: $bg-color1; fill: none; transition: 0.2s linear;}
+.codepenbox	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .codepenbox	{stroke: black; fill: black; transition: 0.2s linear;}
+.codepenlines		{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .codepenlines	{stroke: $bg-color1; fill: none; transition: 0.2s linear;}
 
-#be	{stroke: $svg; fill: none; stroke-width: 10px;}
-.clouds:hover #be	{stroke: #1969fb; fill: #1969fb; transition: 0.1s linear;}
+.be	{stroke: $svg; fill: none; stroke-width: 10px;}
+.clouds:hover .be	{stroke: #1969fb; fill: #1969fb; transition: 0.1s linear;}
 
-#github	{stroke: $svg; fill: none; stroke-width: 10px;}
-.clouds:hover #github	{stroke: black; fill: black;  transition: 0.2s linear;}
+.github	{stroke: $svg; fill: none; stroke-width: 10px;}
+.clouds:hover .github	{stroke: black; fill: black;  transition: 0.2s linear;}
 
-#xd	 {stroke:$svg; fill: none;stroke-width: 10px;}
-.clouds:hover #xd	{stroke: #e750b9; fill: #e750b9;  transition: 0.1s linear;}
+.xd	 {stroke:$svg; fill: none;stroke-width: 10px;}
+.clouds:hover .xd	{stroke: #e750b9; fill: #e750b9;  transition: 0.1s linear;}
 
-#dribbblecircle		{stroke: $svg; fill: none; stroke-width: 11px;}
-.clouds:hover #dribbblecircle	{stroke: #b3335a; fill: #b3335a;  transition: 0.2s linear;}
-#dribbblelines	{stroke: $svg; fill: none;stroke-width: 11px;}
-.clouds:hover #dribbblelines	{stroke: $bg-color1;  transition: 0.2s linear;}
+.dribbblecircle		{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .dribbblecircle	{stroke: #b3335a; fill: #b3335a;  transition: 0.2s linear;}
+.dribbblelines	{stroke: $svg; fill: none;stroke-width: 11px;}
+.clouds:hover .dribbblelines	{stroke: $bg-color1;  transition: 0.2s linear;}
 
 #sectionExperience		{
-	padding: 2%  10%  5% 10%;
+	padding: 2%  15%  5% 15%;
 	box-sizing: border-box;
 	background:  $bg-color1;
 	width: 100%;
@@ -348,9 +371,7 @@ nav ul li a {
 }
 @keyframes clickeyframe {0% {transform: scale(0);opacity: 1;} 100% {transform: scale(1); opacity: 0.6;}}
 
-#wildetails, #maxdetails, #roadetails, #tgidetails		{
-display: none;
-}
+#wildetails, #maxdetails, #roadetails, #tgidetails {display: none;}
 
 #sectionCv		{
 	padding: 4%  0%  4% 0%;
@@ -387,7 +408,6 @@ display: none;
 .cvDownloadColor	{color: lime; transition: 1000ms all 1.6s linear;}
 
 #sectionContact {
-// 	height: auto;
 	text-align: center;
 	padding: 5%  0%  5% 0%;
 	background: $bg-color1;
@@ -432,7 +452,8 @@ textarea {
   cursor:pointer;
   &:hover {
   	background-color: transparent;
-  	box-shadow: 0px 5px 10px gray;}
+  	box-shadow: 0px 5px 10px gray;
+  	border: solid 2px lightgray;}
 }
 
 #sectionSocial		{
@@ -446,21 +467,30 @@ textarea {
     width: 3%;
     padding: 0px 2% 0px 2%;
     transition: all 0.3s linear;
+    &:hover	{transform: translateY(-5px);}
 }
 .socialsenvelop   {@extend .socials;}
 
-#facebook {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.socials:hover #facebook {fill: $svg; transition: 0.3s linear;}
+.bee {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.socials:hover .bee	{fill: transparent; transition: 0.3s linear;}
 
-#envelop {stroke: $svg; fill: transparent; stroke-width: 12px;}
-#open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s linear;}
-#close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.3s linear;}
-.socialsenvelop:hover  #open {opacity: 1; fill: $svg;}
-.socialsenvelop:hover  #close	{fill: $bg-color1;}
-.socialsenvelop:hover #envelop {fill: $svg;}
+.facebook {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.socials:hover .facebook {fill: transparent; transition: 0.3s linear;}
 
-#twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
-.socials:hover #twitter {fill: $svg; transition: 0.3s linear;}
+.envelop {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.open {opacity: 0; stroke: $svg; fill: none; stroke-width: 12px; transition: all 0.3s linear;}
+.close {opacity: 1; stroke: $bg-color1; fill:none; stroke-width: 12px; transition: all 0.3s linear;}
+.socialsenvelop:hover  .open {opacity: 1; fill: $svg;}
+.socialsenvelop:hover  .close	{fill: $bg-color1;}
+.socialsenvelop:hover .envelop {fill: $svg;}
+
+.instagram {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.instagramlines {stroke: $bg-color1; fill: none; stroke-width: 12px;}
+.socials:hover .instagram {fill: transparent; transition: 0.3s linear;}
+.socials:hover .instagramlines {stroke: $svg; transition: 0.3s linear;}
+
+.twitter {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.socials:hover .twitter {fill: transparent; transition: 0.3s linear;}
 
 footer		{
 	position: fixed;
@@ -577,7 +607,6 @@ textarea	{width: 80%;}
 html body	{font-size: 16px;}
 .headertitle	{font-size: calc(100% + 20px);}
 .headersubtitle	{font-size: calc(100% + 10px);}
-// .title	{border: solid 1px lightgrey;}temp
 .hrtitle {font-size: calc(100% + 10px);}
 
 #sectionAbout	{padding: 2%  1%  5% 1%;}

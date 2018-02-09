@@ -11,42 +11,6 @@
 /*gray*/
 /*White Smoke*/
 /*svg*/
-@keyframes color {
-  0% {
-    color: #727272;
-  }
-  10% {
-    color: lime;
-  }
-  20% {
-    color: green;
-  }
-  30% {
-    color: red;
-  }
-  40% {
-    color: purple;
-  }
-  50% {
-    color: brown;
-  }
-  60% {
-    color: blue;
-  }
-  70% {
-    color: pink;
-  }
-  80% {
-    color: tomato;
-  }
-  90% {
-    color: lime;
-  }
-  100% {
-    color: #727272;
-  }
-}
-
 html body {
   margin: 0px;
   padding: 0px;
@@ -54,7 +18,6 @@ html body {
   font-size: 22px;
   font-family: "Poiret One";
   color: #727272;
-  background-color: #292929;
 }
 
 html body a {
@@ -96,7 +59,6 @@ a:hover {
   line-height: 10px;
   margin: 0;
   transition: 0.5s ease;
-  animation: color 60s infinite alternate;
 }
 
 .hrtitle:hover {
@@ -119,6 +81,7 @@ a:hover {
   position: relative;
   display: inline-block;
   padding: 25px;
+  letter-spacing: 2px;
 }
 
 .hr {
@@ -245,6 +208,7 @@ nav ul li a:hover {
 
 .headertitle {
   font-family: 'mywoff';
+  letter-spacing: 2px;
   font-size: calc(100% + 60px);
   margin: 0;
   color: white;
@@ -542,7 +506,7 @@ nav ul li a:hover {
 }
 
 #sectionExpertise {
-  padding: 2%  10%  3% 10%;
+  padding: 2%  10%  2% 10%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -556,7 +520,6 @@ nav ul li a:hover {
 .columnleft, .columnright {
   vertical-align: top;
   display: inline-block;
-  /* 	min-width: 230px;  */
   width: 30%;
   text-align: right;
   padding: 0% 1% 0% 0%;
@@ -570,6 +533,32 @@ nav ul li a:hover {
 
 .columnright::before {
   content: "\00b7";
+}
+
+#pig {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  height: 4rem;
+  display: block;
+  background-image: url("../svg/g.svg");
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: 800px 100px;
+  animation: move 5000s linear infinite alternate;
+}
+
+#pig:hover {
+  animation: move 3s linear infinite alternate;
+}
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -300px;
+  }
 }
 
 #sectionQualification {
@@ -604,116 +593,116 @@ nav ul li a:hover {
   transform: translateY(-5px);
 }
 
-#cloudcc {
+.cloudcc {
   stroke: #727272;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #cloudcc {
+.clouds:hover .cloudcc {
   stroke: red;
   fill: red;
   transition: 0.2s linear;
 }
 
-#cloudlines {
+.cloudlines {
   stroke: #727272;
   fill: none;
   stroke-width: 14px;
 }
 
-.clouds:hover #cloudlines {
+.clouds:hover .cloudlines {
   stroke: #fcfcfc;
   fill: none;
   stroke-width: 16px;
   transition: 0.2s linear;
 }
 
-#codepenbox {
+.codepenbox {
   stroke: #727272;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #codepenbox {
+.clouds:hover .codepenbox {
   stroke: black;
   fill: black;
   transition: 0.2s linear;
 }
 
-#codepenlines {
+.codepenlines {
   stroke: #727272;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #codepenlines {
+.clouds:hover .codepenlines {
   stroke: #fcfcfc;
   fill: none;
   transition: 0.2s linear;
 }
 
-#be {
+.be {
   stroke: #727272;
   fill: none;
   stroke-width: 10px;
 }
 
-.clouds:hover #be {
+.clouds:hover .be {
   stroke: #1969fb;
   fill: #1969fb;
   transition: 0.1s linear;
 }
 
-#github {
+.github {
   stroke: #727272;
   fill: none;
   stroke-width: 10px;
 }
 
-.clouds:hover #github {
+.clouds:hover .github {
   stroke: black;
   fill: black;
   transition: 0.2s linear;
 }
 
-#xd {
+.xd {
   stroke: #727272;
   fill: none;
   stroke-width: 10px;
 }
 
-.clouds:hover #xd {
+.clouds:hover .xd {
   stroke: #e750b9;
   fill: #e750b9;
   transition: 0.1s linear;
 }
 
-#dribbblecircle {
+.dribbblecircle {
   stroke: #727272;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #dribbblecircle {
+.clouds:hover .dribbblecircle {
   stroke: #b3335a;
   fill: #b3335a;
   transition: 0.2s linear;
 }
 
-#dribbblelines {
+.dribbblelines {
   stroke: #727272;
   fill: none;
   stroke-width: 11px;
 }
 
-.clouds:hover #dribbblelines {
+.clouds:hover .dribbblelines {
   stroke: #fcfcfc;
   transition: 0.2s linear;
 }
 
 #sectionExperience {
-  padding: 2%  10%  5% 10%;
+  padding: 2%  15%  5% 15%;
   box-sizing: border-box;
   background: #fcfcfc;
   width: 100%;
@@ -973,6 +962,7 @@ textarea:hover {
 .btn:hover {
   background-color: transparent;
   box-shadow: 0px 5px 10px gray;
+  border: solid 2px lightgray;
 }
 
 #sectionSocial {
@@ -989,24 +979,39 @@ textarea:hover {
   transition: all 0.3s linear;
 }
 
-#facebook {
+.socials:hover, .socialsenvelop:hover {
+  transform: translateY(-5px);
+}
+
+.bee {
   stroke: #727272;
-  fill: transparent;
+  fill: #727272;
   stroke-width: 12px;
 }
 
-.socials:hover #facebook, .socialsenvelop:hover #facebook {
-  fill: #727272;
+.socials:hover .bee, .socialsenvelop:hover .bee {
+  fill: transparent;
   transition: 0.3s linear;
 }
 
-#envelop {
+.facebook {
   stroke: #727272;
-  fill: transparent;
+  fill: #727272;
   stroke-width: 12px;
 }
 
-#open {
+.socials:hover .facebook, .socialsenvelop:hover .facebook {
+  fill: transparent;
+  transition: 0.3s linear;
+}
+
+.envelop {
+  stroke: #727272;
+  fill: #727272;
+  stroke-width: 12px;
+}
+
+.open {
   opacity: 0;
   stroke: #727272;
   fill: none;
@@ -1014,35 +1019,57 @@ textarea:hover {
   transition: all 0.3s linear;
 }
 
-#close {
+.close {
   opacity: 1;
-  stroke: #727272;
+  stroke: #fcfcfc;
   fill: none;
   stroke-width: 12px;
   transition: all 0.3s linear;
 }
 
-.socialsenvelop:hover #open {
+.socialsenvelop:hover .open {
   opacity: 1;
   fill: #727272;
 }
 
-.socialsenvelop:hover #close {
+.socialsenvelop:hover .close {
   fill: #fcfcfc;
 }
 
-.socialsenvelop:hover #envelop {
+.socialsenvelop:hover .envelop {
   fill: #727272;
 }
 
-#twitter {
+.instagram {
   stroke: #727272;
-  fill: transparent;
+  fill: #727272;
   stroke-width: 12px;
 }
 
-.socials:hover #twitter, .socialsenvelop:hover #twitter {
+.instagramlines {
+  stroke: #fcfcfc;
+  fill: none;
+  stroke-width: 12px;
+}
+
+.socials:hover .instagram, .socialsenvelop:hover .instagram {
+  fill: transparent;
+  transition: 0.3s linear;
+}
+
+.socials:hover .instagramlines, .socialsenvelop:hover .instagramlines {
+  stroke: #727272;
+  transition: 0.3s linear;
+}
+
+.twitter {
+  stroke: #727272;
   fill: #727272;
+  stroke-width: 12px;
+}
+
+.socials:hover .twitter, .socialsenvelop:hover .twitter {
+  fill: transparent;
   transition: 0.3s linear;
 }
 
