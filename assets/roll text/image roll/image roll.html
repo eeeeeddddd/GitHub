@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>image roll</title>
+	<style>	
+			
+/*
+#wrapper	{
+	border: solid 2px black;
+	width: 300px;
+	height: 100px;
+	overflow: hidden;
+	padding: 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+#container	{width: 3900px;}
+.img	{
+	float: left;
+	width: 100px;
+    height: 100px;
+    margin-left: 5px;
+	transform: translate(-350px, 0px);
+	animation: move 5s linear infinite 0s;
+}
+
+@keyframes	move		{
+	0%: {transform: translateX(0px);}
+	100% {transform: translateX(250px);}
+}
+*/	
+
+#backgroundscroll	{
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	height: 50px;
+	display: block;
+	background-image: url("background.svg");
+	background-position: 0px;
+	background-repeat: no-repeat;
+    background-size: 800px 100px;
+	animation: move 50s linear infinite alternate;
+/* 	&:hover	 {animation: move 5s linear infinite alternate;} */
+}
+@keyframes	move {
+	from {background-position: 0px;}
+	to {background-position: -1000px;}
+}
+		
+</style>
+
+</head>
+
+	<body>
+<!--
+		<div id="wrapper">
+			<div id="container">
+				<div class="img"><img style="width: 100px; height: 100px;" src="a.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="b.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="a.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="b.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="a.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="b.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="a.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="b.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="a.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="b.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="a.png"/></div>
+				<div class="img"><img style="width: 100px; height: 100px;" src="b.png"/></div>
+			</div>								 
+		</div>
+-->
+		
+		<div id="backgroundscroll"></div>
+	</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
