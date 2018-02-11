@@ -572,7 +572,7 @@ nav ul li a:hover {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-17%);
+    transform: translateX(-20%);
   }
 }
 
