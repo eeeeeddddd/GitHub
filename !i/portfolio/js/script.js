@@ -20,7 +20,7 @@ $(function(){
         }
     });
 });
-
+	
 //form active
 $(document).ready (function() {
 	$("textarea,input").click (function() {
@@ -108,8 +108,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#wild").hover (function() {
 	$(".wild").toggleClass("experienceanimation");
-// 	$(".click").toggleClass("experienceanimation");
-	$("#wildclick").toggleClass("experiencehovercolour");
+	$(".click").toggleClass("experienceanimation");
 	});
 });
 //once click hidden
@@ -124,7 +123,6 @@ $(document).ready(function () {
 	$("#max").hover (function() {
 	$(".max").toggleClass("experienceanimation");
 // 	$(".click").toggleClass("experienceanimation");
-	$("#maxclick").toggleClass("experiencehovercolour");
 	});
 });
 //once click hidden
@@ -139,7 +137,6 @@ $(document).ready(function () {
 	$("#road").hover (function() {
 	$(".road").toggleClass("experienceanimation");
 // 	$(".click").toggleClass("experienceanimation");
-	$("#roadclick").toggleClass("experiencehovercolour");
 	});
 });
 //once click hidden
@@ -154,7 +151,6 @@ $(document).ready(function () {
 	$("#tgi").hover (function() {
 	$(".tgi").toggleClass("experienceanimation");
 // 	$(".click").toggleClass("experienceanimation");
-	$("#tgiclick").toggleClass("experiencehovercolour");
 	});
 });
 //once click hidden

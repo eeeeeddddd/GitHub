@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>coda</title>
+  <g id="coda">
+    <rect x="75" y="73.42" width="350.01" height="350.01" rx="59.16" ry="59.16" transform="translate(498.42 -1.58) rotate(90)" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="leaf" d="M153.21,370a1.16,1.16,0,0,0,1.89-.08c8.46-13.43,17.48-33.17,43.64-36.11C393.15,312,353.68,194.28,347.32,183.65c2-11.47,21.75-29,26.68-38.6a3.21,3.21,0,0,0-.27-3.38c-4.86-6.5-6.59-11.34-9.87-9.78-2,.93-4.27,8.79-8.42,16.87-5.35,10.42-13.51,24.47-20,21.73C180.82,105.35,89.77,286.68,153.21,370Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+  </g>
+</svg>

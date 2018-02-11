@@ -18,15 +18,12 @@ html body {
   font-size: 22px;
   font-family: "Poiret One";
   color: #727272;
+  background-color: #292929;
 }
 
 html body a {
   text-decoration: none;
   color: #727272;
-}
-
-a:hover {
-  color: blue;
 }
 
 .title {
@@ -152,7 +149,7 @@ nav ul li a:hover {
   content: '';
   width: 0px;
   height: 2px;
-  background: blue;
+  background: red;
   position: absolute;
   bottom: 20px;
   transition: 0.5s ease;
@@ -255,7 +252,7 @@ nav ul li a:hover {
   stroke: #727272;
   fill: none;
   stroke-width: 10px;
-  animation: coffee 20s infinite linear;
+  animation: coffee 10s infinite linear;
 }
 
 @keyframes coffee {
@@ -517,7 +514,7 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-.columnleft, .columnright {
+.columnleft {
   vertical-align: top;
   display: inline-block;
   width: 30%;
@@ -526,39 +523,16 @@ nav ul li a:hover {
 }
 
 .columnright {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
   width: 59%;
   text-align: left;
-  padding: 0% 0% 2% 1%;
+  padding: 0% 0% 2% 0%;
 }
 
-.columnright::before {
-  content: "\00b7";
-}
-
-#pig {
-  position: relative;
-  margin: 0 auto;
-  width: 60%;
-  height: 4rem;
-  display: block;
-  background-image: url("../svg/g.svg");
-  background-position: 0px;
-  background-repeat: no-repeat;
-  background-size: 800px 100px;
-  animation: move 5000s linear infinite alternate;
-}
-
-#pig:hover {
-  animation: move 3s linear infinite alternate;
-}
-
-@keyframes move {
-  from {
-    background-position: 0px;
-  }
-  to {
-    background-position: -300px;
-  }
+.columnleft::after {
+  content: ": \00b7";
 }
 
 #sectionQualification {
@@ -570,14 +544,40 @@ nav ul li a:hover {
   line-height: 30px;
 }
 
-#sectionPortfolio {
-  padding: 2%  10%  3% 10%;
-  background: #fcfcfc;
-  text-align: center;
+#softwarescroll {
+  width: 40%;
+  overflow: hidden;
+  padding: 1%;
+  border-radius: 10px;
+  display: inline-block;
 }
 
-#cloud {
-  padding: 1%;
+#softwarescroll:hover > #softwarecontainer {
+  animation: software 7s linear infinite alternate;
+}
+
+#softwarecontainer {
+  width: 5000px;
+}
+
+.softwaresvg {
+  float: left;
+  width: 1%;
+  margin-left: 5px;
+  transform: translate(0px, 0px);
+}
+
+@keyframes software {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-17%);
+  }
+}
+
+#sectionPortfolio {
+  padding: 2%  10%  3% 10%;
   background: #fcfcfc;
   text-align: center;
 }
@@ -745,16 +745,12 @@ nav ul li a:hover {
   animation: clickeyframe 1s infinite;
 }
 
-.experiencehovercolour {
-  color: blue;
-}
-
 .clickanimation {
   margin-left: auto;
   margin-right: auto;
   width: 10px;
   height: 10px;
-  border: 1px solid blue;
+  border: 1px solid red;
   border-radius: 20px;
   opacity: 0;
 }
@@ -934,7 +930,7 @@ input, textarea {
 }
 
 input:hover, textarea:hover {
-  border: solid 1px blue;
+  border: solid 1px red;
 }
 
 textarea {
@@ -942,7 +938,7 @@ textarea {
 }
 
 textarea:hover {
-  border: solid 1px blue;
+  border: solid 1px red;
 }
 
 .btn {
@@ -1141,17 +1137,17 @@ footer {
 }
 
 .mouse:hover {
-  border: 2px solid blue;
+  border: 2px solid red;
   box-shadow: 0px 0px 5px gray;
 }
 
-#scroll {
+#mousescroll {
   width: 0px;
   height: 0px;
   margin-left: 7px;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-bottom: 4px solid blue;
+  border-bottom: 4px solid red;
   animation: scroll 1.5s infinite both;
 }
 
@@ -1237,11 +1233,11 @@ footer {
   #sectionQualification {
     padding: 10%  0%  10% 0%;
   }
-  .clouds {
-    width: 10%;
-  }
   #sectionPortfolio {
     padding: 10%  1%  10% 1%;
+  }
+  .clouds {
+    width: 10%;
   }
   #sectionExperience {
     padding: 10%  5%  10% 5%;
@@ -1290,6 +1286,9 @@ footer {
   }
   #sectionQualification {
     padding: 2%  1%  5% 1%;
+  }
+  #softwarescroll {
+    width: 80%;
   }
   #sectionPortfolio {
     padding: 2%  1%  5% 1%;
