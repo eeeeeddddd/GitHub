@@ -7,7 +7,7 @@
 
 $fontTitle:  'mywoff';
 $fontNav:   'mywoff';
-$fontText:	'Poiret One';//  'Advent Pro';
+$fontText:	'Poiret One';
 $fontForm: 'Poiret One';
 
 $bg-color: #292929; /*header & footer*/
@@ -266,7 +266,7 @@ nav ul li a {
 	border-radius: 10px;
 	display: inline-block;
 	&:hover	 > #softwarecontainer {
-		animation: software 7s linear infinite alternate;
+		animation: software 10s linear infinite alternate;
 	}	
 }
 #softwarecontainer	{

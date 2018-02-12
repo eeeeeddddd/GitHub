@@ -553,7 +553,7 @@ nav ul li a:hover {
 }
 
 #softwarescroll:hover > #softwarecontainer {
-  animation: software 7s linear infinite alternate;
+  animation: software 10s linear infinite alternate;
 }
 
 #softwarecontainer {
