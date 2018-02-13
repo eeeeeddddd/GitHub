@@ -4,9 +4,9 @@ body {
 }
 
 .nav {
-  background: #f5f5f5;
+  background: red;
   text-align: center;
-  color: gray;
+  color: black;
   padding-top: 20px;
   padding-bottom: 20px;
   position: fixed;

@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
-		<meta name="robots" content="noindex,nofollow">
-		<meta name="keywords" content="edward fellows"/>
-		<meta name="description" content="">
-		<meta name="author" content=""/>
-		<link rel="stylesheet" href="css.css"/>
-		<title>Dropdown --- top</title>
-	</head>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>Dropdown --- top</title>
+<style>
+	* {padding 0px; margin: 0px;}
+
+#nav {
+	position: fixed;
+	top:0px;
+	right: 0;
+	left: 0;
+    background-color: grey;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0px;/*stops 40px */
+    line-height: 10px;
+}
+
+#nav ul li ul {
+    display: none;
+}
+
+#nav ul li:hover ul	{
+	display: block;
+}
+
+/*background color*/
+
+#nav ul li {
+    color: blue;
+    background-color: grey;
+    width: 150px;/*same as nav width*/
+    /*border*/
+}
+
+/*text color*/
+
+#nav ul li a {
+    display: block;
+    padding:30px;
+    text-decoration: none;
+    color: black;
+}
+
+/*keeps rolled over effect*/
+#nav ul li:hover > a {
+    background-color: lightgray;
+    color: white;
+}
+
+
+</style>		
+</head>
 
 <body>
 	

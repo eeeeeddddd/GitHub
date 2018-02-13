@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--mobile-->
-		<meta name="robots" content="noindex,nofollow">
-		<meta name="keywords" content="edward fellows"/>
-		<meta name="description" content="">
-		<meta name="author" content=""/>
-		<link rel="stylesheet" href="css.css"/>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
 		<title>Dropdown menu - left</title>
-	</head>
+<style>
+	* {padding 0px; margin: 0px;}
+
+#nav {
+	position: relative;
+	left:0px;
+	right: 0;
+	top: 250px;
+	float: left;												
+    background-color: red;
+    text-align: center;
+    width: 1%;
+    margin: 0 auto;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0px;/*stops 40px */
+    line-height: 10px;
+}
+
+/*background color*/
+
+#nav ul li {
+    display: block;
+    color: blue;
+    background-color: red;
+    width: 100px;
+    height: auto;
+    /*border*/
+}
+
+/*text color*/
+
+#nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/*keeps rolled over effect*/
+#nav ul li:hover > a {
+    background-color: gray;
+    color: white;
+}
+
+/*dropdown*/
+
+#nav ul li ul {
+	position: absolute;
+	left: 100px;
+	margin-top: -40px;
+    visibility: hidden;/*or display:none;*/
+}
+
+#nav ul li:hover ul {
+    display: block;
+    visibility: visible;/*not needed display:none;*/
+
+}
+
+/*dropdown background color*/
+
+#nav ul li ul li {
+    display: block;
+    width: 100px;
+	background-color: lime;
+}
+
+/*dropdown text color*/
+
+#nav ul li ul li a {
+	display: block;
+	color: black;
+}
+
+/*hover dropdown background color & text color*/
+
+#nav ul li ul li:hover > a{
+    background-color: gray;
+    color: white;
+}
+
+</style>		
+</head>
 
 <body>
 	

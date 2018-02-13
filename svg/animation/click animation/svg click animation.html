@@ -13,13 +13,13 @@
     <title>svg click animation</title>
 	<style>
 		.svg	{width: 200px;}	
-		.coffeecup	{stroke:lightgray; fill: none;stroke-width: 10px;}
+		.coffeecup	{stroke:black; fill: none;stroke-width: 5px;}
 		
-		.coffee	{stroke:lightgray; fill: none;stroke-width: 10px; animation: coffee 5s infinite linear; animation-play-state: paused;}
+		.coffee	{stroke:black; fill: none;stroke-width: 5px; animation: coffee 5s infinite linear; animation-play-state: paused;}
 		.coffeeanimation	{animation-play-state: running;}/*running state (doesn't reset)*/
 		@keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}
 		}
-		.steam	{stroke:lightgray; stroke-width: 12px;}
+		.steam	{stroke:black; stroke-width: 12px;}
 		.steamanimation	{animation: steam 2s 2s infinite linear;}/*delayed*/
 		@keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
 	</style>
