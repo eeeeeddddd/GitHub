@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'mywoff';
+  src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  font-family: 'Poiret One';
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  background: #fcfcfc;
+}
+
+.edwardfellows {
+  font-size: 50px;
+  font-family: 'mywoff';
+  letter-spacing: 2px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+#contact {
+  line-height: 5px;
+  padding-bottom: 10px;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+
+section {
+  display: inline-block;
+  height: auto;
+  width: 900px;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  /*nice fix*/
+}
+
+.career {
+  margin: 5px 20px 15px 20px;
+}
+
+legend {
+  font-size: 18px;
+  padding: 5px;
+}
+
+fieldset {
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px;
+  line-height: 25px;
+}
+
+table {
+  margin-left: 30px;
+}
+
+.tablecol1 {
+  width: 260px;
+}
+
+.sub {
+  margin-left: 30px;
+  font-size: calc(100% - 1px);
+}
+
+.interests {
+  margin: 3px 20px 3px 20px;
+}
+
+#design {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+/*# sourceMappingURL=sass.map */
