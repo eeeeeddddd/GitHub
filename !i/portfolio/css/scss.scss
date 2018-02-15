@@ -196,9 +196,24 @@ nav ul li a {
 @keyframes bite{0%{opacity:0}1%, 49%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
-#camera	{stroke:$svg; fill: none; stroke-width: 10px;}
-#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
-@keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
+#lines	{stroke: $svg; fill: none; stroke-width: 10px;}
+#three	{opacity:0; stroke: $svg; fill: none; stroke-width: 10px; animation: three 0.5s forwards 3s linear;}
+@keyframes three {0%{opacity:0;}100% {opacity:1;}}
+#five	{opacity:0; stroke: $svg; fill: none; stroke-width: 10px; animation: five 0.5s forwards 1s linear;}
+@keyframes five {0%{opacity:0;}100% {opacity:1;}}
+#severn	{opacity:0; stroke: $svg; fill: none; stroke-width: 10px; animation: severn 0.5s forwards 5s linear;}
+@keyframes severn {0%{opacity:0;}100% {opacity:1;}}
+#eight	{ opacity:0; stroke: $svg; fill: none; stroke-width: 10px; animation: eight 0.5s forwards 4s linear;}
+@keyframes eight {0%{opacity:0;}100% {opacity:1;}}
+#nine		{opacity:0; stroke: $svg; fill: none; stroke-width: 10px; animation: nine 0.5s forwards 2s linear;}
+@keyframes nine {0%{opacity:0;}100% {opacity:1;}}
+#win	{opacity:0; stroke: $svg; fill: none; stroke-width: 10px; animation: win 1 forwards linear; animation-delay:6s;}
+@keyframes win {0%{opacity:0;}100% {opacity:1;}}
+
+#video	{stroke:$svg; fill: none; stroke-width: 10px;}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
+@keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
 .paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.7;}
@@ -210,10 +225,9 @@ nav ul li a {
 #headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 2s infinite linear; transform-origin: center center; transform-box: fill-box;}
 @keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
 
-#video	{stroke:$svg; fill: none; stroke-width: 10px;}
-#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
-#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
-@keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
+#camera	{stroke:$svg; fill: none; stroke-width: 10px;}
+#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
+@keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
 #frame	{stroke:$svg; fill: none; stroke-width: 8px;}
 #parts	{stroke:$svg; fill: none; stroke-width: 8px;}
@@ -281,42 +295,92 @@ nav ul li a {
 @keyframes	software	{0% {transform: translateX(0%);}	100% {transform: translateX(-24%);}}
 
 #sectionPortfolio	{
-	padding: 2%  10%  3% 10%;
+	padding: 2%  10%  5% 10%;
 	background:  $bg-color1;
 	text-align: center;
 }
 #cloud		{}//temp
 .clouds  {
+	position: relative;//temp
 	display: inline-block;
     width: 6%;
     margin: 0% 2% 0% 2%;
     transition: all 0.5s linear;
-    &:hover	{transform: translateY(-5px);}
+//     &:hover	{transform: translateY(-5px);}
 }
+
+.be	{stroke: $svg; fill: none; stroke-width: 10px;}
+.clouds:hover .be	{stroke: #1969fb; fill: #1969fb; transition: 0.1s linear;}
 
 .cloudcc	{stroke:$svg; fill: none;stroke-width: 11px;}
 .clouds:hover  .cloudcc	{stroke: red; fill: red; transition: 0.2s linear;}
 .cloudlines	{stroke:$svg; fill: none; stroke-width: 14px;}
 .clouds:hover  .cloudlines	{stroke: $bg-color1; fill: none; stroke-width: 16px; transition: 0.2s linear;}
 
+.github	{stroke: $svg; fill: none; stroke-width: 10px;}
+.clouds:hover .github	{stroke: black; fill: black;  transition: 0.2s linear;}
+
+.www	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .www	{stroke: blue; fill: blue;  transition: 0.2s linear;}
+.wwwlines	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .wwwlines	{stroke: $bg-color1;  transition: 0.2s linear;}
+
+.dribbble		{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .dribbble	{stroke: #b3335a; fill: #b3335a;  transition: 0.2s linear;}
+.dribbblelines	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .dribbblelines	{stroke: $bg-color1;  transition: 0.2s linear;}
+
 .codepenbox	{stroke: $svg; fill: none; stroke-width: 11px;}
 .clouds:hover .codepenbox	{stroke: black; fill: black; transition: 0.2s linear;}
 .codepenlines		{stroke: $svg; fill: none; stroke-width: 11px;}
 .clouds:hover .codepenlines	{stroke: $bg-color1; fill: none; transition: 0.2s linear;}
 
-.be	{stroke: $svg; fill: none; stroke-width: 10px;}
-.clouds:hover .be	{stroke: #1969fb; fill: #1969fb; transition: 0.1s linear;}
-
-.github	{stroke: $svg; fill: none; stroke-width: 10px;}
-.clouds:hover .github	{stroke: black; fill: black;  transition: 0.2s linear;}
-
-.xd	 {stroke:$svg; fill: none;stroke-width: 10px;}
+.xd	 {stroke:$svg; fill: none; stroke-width: 10px;}
 .clouds:hover .xd	{stroke: #e750b9; fill: #e750b9;  transition: 0.1s linear;}
 
-.dribbblecircle		{stroke: $svg; fill: none; stroke-width: 11px;}
-.clouds:hover .dribbblecircle	{stroke: #b3335a; fill: #b3335a;  transition: 0.2s linear;}
-.dribbblelines	{stroke: $svg; fill: none;stroke-width: 11px;}
-.clouds:hover .dribbblelines	{stroke: $bg-color1;  transition: 0.2s linear;}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    border: solid 1px $svg;
+    color: $svg;
+    font-size: calc(100% - 0px);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+.tooltip:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+//     margin-left: -5px;//temp
+//     border-width: 5px;
+//     border-style: solid;
+//     border-color: transparent transparent red transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
 
 #sectionExperience		{
 	padding: 2%  15%  5% 15%;
@@ -580,7 +644,7 @@ html body	{font-size: 18px;}
 #sectionQualification	{padding: 10%  0%  10% 0%;}
 	
 #sectionPortfolio	{padding: 10%  1%  10% 1%;}
-.clouds	{width: 10%;}
+.clouds	{width: 8%;}
 
 #sectionExperience	{padding: 10%  5%  10% 5%;}
 

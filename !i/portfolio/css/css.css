@@ -332,25 +332,145 @@ nav ul li a:hover {
   }
 }
 
-#camera {
+#lines {
   stroke: #727272;
   fill: none;
   stroke-width: 10px;
 }
 
-#flash {
+#three {
+  opacity: 0;
   stroke: #727272;
-  fill: transparent;
+  fill: none;
   stroke-width: 10px;
-  animation: flash 2s infinite linear;
+  animation: three 0.5s forwards 3s linear;
 }
 
-@keyframes flash {
-  0%, 90% {
-    fill: transparent;
+@keyframes three {
+  0% {
+    opacity: 0;
   }
   100% {
-    fill: #727272;
+    opacity: 1;
+  }
+}
+
+#five {
+  opacity: 0;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: five 0.5s forwards 1s linear;
+}
+
+@keyframes five {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#severn {
+  opacity: 0;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: severn 0.5s forwards 5s linear;
+}
+
+@keyframes severn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#eight {
+  opacity: 0;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: eight 0.5s forwards 4s linear;
+}
+
+@keyframes eight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#nine {
+  opacity: 0;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: nine 0.5s forwards 2s linear;
+}
+
+@keyframes nine {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#win {
+  opacity: 0;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: win 1 forwards linear;
+  animation-delay: 6s;
+}
+
+@keyframes win {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#video {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#leftreel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: reel 2s infinite linear;
+}
+
+#rightreel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: reel 2s infinite linear;
+}
+
+@keyframes reel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -421,36 +541,25 @@ nav ul li a:hover {
   }
 }
 
-#video {
+#camera {
   stroke: #727272;
   fill: none;
   stroke-width: 10px;
 }
 
-#leftreel {
+#flash {
   stroke: #727272;
-  stroke-width: 8px;
   fill: transparent;
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: reel 2s infinite linear;
+  stroke-width: 10px;
+  animation: flash 2s infinite linear;
 }
 
-#rightreel {
-  stroke: #727272;
-  stroke-width: 8px;
-  fill: transparent;
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: reel 2s infinite linear;
-}
-
-@keyframes reel {
-  0% {
-    transform: rotate(0deg);
+@keyframes flash {
+  0%, 90% {
+    fill: transparent;
   }
   100% {
-    transform: rotate(360deg);
+    fill: #727272;
   }
 }
 
@@ -577,20 +686,29 @@ nav ul li a:hover {
 }
 
 #sectionPortfolio {
-  padding: 2%  10%  3% 10%;
+  padding: 2%  10%  5% 10%;
   background: #fcfcfc;
   text-align: center;
 }
 
 .clouds {
+  position: relative;
   display: inline-block;
   width: 6%;
   margin: 0% 2% 0% 2%;
   transition: all 0.5s linear;
 }
 
-.clouds:hover {
-  transform: translateY(-5px);
+.be {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover .be {
+  stroke: #1969fb;
+  fill: #1969fb;
+  transition: 0.1s linear;
 }
 
 .cloudcc {
@@ -618,6 +736,64 @@ nav ul li a:hover {
   transition: 0.2s linear;
 }
 
+.github {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover .github {
+  stroke: black;
+  fill: black;
+  transition: 0.2s linear;
+}
+
+.www {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover .www {
+  stroke: blue;
+  fill: blue;
+  transition: 0.2s linear;
+}
+
+.wwwlines {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover .wwwlines {
+  stroke: #fcfcfc;
+  transition: 0.2s linear;
+}
+
+.dribbble {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover .dribbble {
+  stroke: #b3335a;
+  fill: #b3335a;
+  transition: 0.2s linear;
+}
+
+.dribbblelines {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover .dribbblelines {
+  stroke: #fcfcfc;
+  transition: 0.2s linear;
+}
+
 .codepenbox {
   stroke: #727272;
   fill: none;
@@ -642,30 +818,6 @@ nav ul li a:hover {
   transition: 0.2s linear;
 }
 
-.be {
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-}
-
-.clouds:hover .be {
-  stroke: #1969fb;
-  fill: #1969fb;
-  transition: 0.1s linear;
-}
-
-.github {
-  stroke: #727272;
-  fill: none;
-  stroke-width: 10px;
-}
-
-.clouds:hover .github {
-  stroke: black;
-  fill: black;
-  transition: 0.2s linear;
-}
-
 .xd {
   stroke: #727272;
   fill: none;
@@ -678,27 +830,36 @@ nav ul li a:hover {
   transition: 0.1s linear;
 }
 
-.dribbblecircle {
-  stroke: #727272;
-  fill: none;
-  stroke-width: 11px;
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.clouds:hover .dribbblecircle {
-  stroke: #b3335a;
-  fill: #b3335a;
-  transition: 0.2s linear;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  border: solid 1px #727272;
+  color: #727272;
+  font-size: calc(100% - 0px);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
 }
 
-.dribbblelines {
-  stroke: #727272;
-  fill: none;
-  stroke-width: 11px;
+.tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
 }
 
-.clouds:hover .dribbblelines {
-  stroke: #fcfcfc;
-  transition: 0.2s linear;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 #sectionExperience {
@@ -1237,7 +1398,7 @@ footer {
     padding: 10%  1%  10% 1%;
   }
   .clouds {
-    width: 10%;
+    width: 8%;
   }
   #sectionExperience {
     padding: 10%  5%  10% 5%;

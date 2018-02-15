@@ -9,6 +9,7 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content="">
 	<meta name="author" content="me"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>expertise</title>
 <style>
 body	{height: 3000px;}
@@ -17,7 +18,6 @@ body	{height: 3000px;}
 	position: relative;
 	top: 1000px;
 	width: 300px;
-	background-color: yellow;
 	font-size: 16px;
 }
 .tablecol	{
@@ -68,6 +68,7 @@ body	{height: 3000px;}
 </head>
 
 <body>
+<h3 style="text-align: center">SCROLL DOWN 1000px</h3>
 <table class="table">
 	<tr>
 		<td class="tablecol">Adobe Photoshop:</td>
@@ -118,8 +119,38 @@ body	{height: 3000px;}
 
 </table>
 
-		<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script>
+			//fixtop
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 800) {
+            $('.line1').addClass('percent85');
+            $('.line2').addClass('percent90');
+            $('.line3').addClass('percent85');
+            $('.line4').addClass('percent75');
+            $('.line5').addClass('percent70');
+            $('.line6').addClass('percent85');
+            $('.line7').addClass('percent85');
+            $('.line8').addClass('percent70');
+            $('.line9').addClass('percent70');
+            $('.line10').addClass('percent70');            
+        }
+        else {
+            $('.line1').removeClass('percent85');
+            $('.line2').removeClass('percent90');
+            $('.line3').removeClass('percent85');
+            $('.line4').removeClass('percent75');
+            $('.line5').removeClass('percent70');
+            $('.line6').removeClass('percent85');
+            $('.line7').removeClass('percent85');
+            $('.line8').removeClass('percent70');
+            $('.line9').removeClass('percent70');
+            $('.line10').removeClass('percent70');            
+        }
+    });
+});
+
+		</script>
 			
 	</body> 
 
