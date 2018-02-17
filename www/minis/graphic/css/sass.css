@@ -16,25 +16,12 @@
   background: #fcfcfc;
 }
 
-.edwardfellows {
-  font-size: 50px;
-  font-family: 'mywoff';
-  letter-spacing: 2px;
-  padding-top: 5px;
-  padding-bottom: 30px;
-}
-
-#contact {
-  line-height: 5px;
-  padding-bottom: 10px;
-}
-
 body {
   text-align: center;
   margin: 0 auto;
 }
 
-section {
+#wrapper {
   display: inline-block;
   height: auto;
   width: 900px;
@@ -46,34 +33,34 @@ section {
   /*nice fix*/
 }
 
+#contact {
+  line-height: 5px;
+  padding-bottom: 10px;
+}
+
+.edwardfellows {
+  font-size: 50px;
+  font-family: 'mywoff';
+  letter-spacing: 2px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
 .career {
   margin: 5px 20px 15px 20px;
 }
 
 legend {
-  font-size: 18px;
+  font-size: calc(100% + 3px);
   padding: 5px;
 }
 
-fieldset {
+.fieldset {
   text-align: left;
   border: 1px solid black;
   border-radius: 6px;
   padding: 10px;
   line-height: 25px;
-}
-
-table {
-  margin-left: 30px;
-}
-
-.column {
-  width: 260px;
-}
-
-.sub {
-  margin-left: 30px;
-  font-size: calc(100% - 1px);
 }
 
 #hobbies {
@@ -253,6 +240,19 @@ table {
   fill: transparent;
   transform-origin: center center;
   transform-box: fill-box;
+}
+
+table {
+  margin-left: 30px;
+}
+
+.column {
+  width: 260px;
+}
+
+.sub {
+  margin-left: 30px;
+  font-size: calc(100% - 1px);
 }
 
 .margin {

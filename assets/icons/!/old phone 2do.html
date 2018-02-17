@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>phone</title>
+<style>			
+#wrapper	{
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -100px;
+	top: 50px;
+}
+#handle	{
+	position: absolute;
+	top: 55px;
+	left: -54px;
+	width: 260px;
+	height: 90px;
+	border-radius: 50px 50px 10px 10px;
+	border: solid 2px black;
+	background: white;
+/* 	transition: 1s, background ease-in-out; */
+}
+#wire	{
+	position: relative;
+	top: 90px;
+	left:230px;
+	width: 2px;
+	height: 60px;
+	border: solid 2px black;
+}
+#phone	{
+	position: relative;
+	top: 100px;
+	width: 150px;
+	height: 130px;
+	border-radius: 30px 30px 10px 10px;
+	border: solid 2px black;
+	background: white;
+/* 	transition: 1s, background ease-in-out; */
+}	
+#dial	{
+	position: relative;
+	top: 22px;
+	left: 32px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: solid 2px black;
+}
+
+.finger	{
+	position: relative;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: solid 1px black;
+}
+.one		{top: 6px; left: 38px;}
+.two		{top: 0px; left: 60px;}
+.three		{top: 4px; left: 68px;}
+.four		{top: 9px; left: 60px;}
+.five		{top: 6px; left: 38px;}
+.six		{top: -24px; left: 14px;}
+.seven	{top: -61px; left: 4px;}
+.eight		{top: -96px; left: 14px;}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="handle"><div id="wire"></div></div>
+	<div id="phone"><div id="dial">
+		<div class="finger one"></div>
+		<div class="finger two"></div>
+		<div class="finger three"></div>
+		<div class="finger four"></div>
+		<div class="finger five"></div>
+		<div class="finger six"></div>
+		<div class="finger seven"></div>
+		<div class="finger eight"></div>
+
+	</div></div>
+
+</div>
+	
+<script>
+	
+	$(document).ready (function() {
+	$("#camera").hover (function() {
+	$("#button").toggleClass("button");
+	$("#lensinner").toggleClass("lensinner");
+	$("#flash").toggleClass("flash");
+	});
+});	
+</script>
+     
+</body>
+    
+</html>
