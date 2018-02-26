@@ -182,7 +182,7 @@ nav ul li a:hover {
 
 #sectionHeader {
   height: 100vh;
-  background-image: linear-gradient(180deg, #f5403d, #f53d40);
+  background: blue;
   animation: hue 40s infinite;
 }
 
@@ -801,6 +801,7 @@ nav ul li a:hover {
   fill: none;
   stroke: #595959;
   stroke-width: 10px;
+  stroke-linecap: round;
 }
 
 .list {
@@ -821,6 +822,7 @@ nav ul li a:hover {
   stroke: #595959;
   stroke-width: 10px;
   opacity: 0;
+  stroke-linecap: round;
 }
 
 .downloadarrow {
@@ -862,6 +864,7 @@ nav ul li a:hover {
   fill: none;
   stroke-width: 30px;
   opacity: 0;
+  stroke-linecap: round;
 }
 
 .tick {
