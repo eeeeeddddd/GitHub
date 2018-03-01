@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>link</title>
+<style>
+#wrapper {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  right: 50%;
+  margin-left: -112px;
+  transform: rotate(-15deg);
+}
+#clipleft  {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border-top: solid 4px #727272;
+  border-left: solid 4px #727272;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px #727272;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+#clipmiddle {
+  position: relative;
+  left: 58px;
+  top: 26px;
+  height: 4px;
+  width: 100px;
+  background: #727272;
+  border-radius: 20px;
+}
+#clipright  {
+  position: relative;
+  top: -3px;
+  left: 110px;
+  width: 100px;
+  height: 50px;
+  border-top: solid 4px #727272;
+  border-right: solid 4px #727272;
+  border-left: solid 4px transparent;
+  border-bottom: solid 4px #727272;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+#wrapper:hover > #clipright  {
+  transform: translateX(-12px);
+  border-left: solid 4px red;
+}
+#wrapper:hover > #clipleft  {
+  transform: translateX(12px);
+  border-right: solid 4px red;
+}
+#wrapper:hover > #clipmiddle  {
+  visibility: hidden;
+}			
+</style>
+
+</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="clipleft"></div>
+		    <div id="clipmiddle"></div>
+		    <div id="clipright"></div>
+		</div> 
+   
+	</body>
+    
+</html>

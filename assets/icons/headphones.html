@@ -20,74 +20,55 @@
 }
 #head	{
 	position: relative;
-	width: 190px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
-	border-bottom: solid 14px transparent;
-	border-top: solid 18px red;
-	border-right: solid 18px red;
-	border-left: solid 18px red
-	
-}
-#sponge	{
-	position: relative;
-	top:-216px;
-	left: 14px;
-	width: 173px;
-	height: 200px;
-	border-radius: 50%;
-	border-bottom: solid 12px transparent;
-	border-top: solid 12px black;
-	border-right: solid 12px transparent;
-	border-left: solid 12px transparent
+	border-bottom: double 18px transparent;
+	border-top: solid 18px #727272;
+	border-right: double 18px #727272;
+	border-left: double 18px #727272;
 }
 #left	{
 	position: absolute;
-	top: 120px;
+	top: 100px;
 	left: -20px;
-	height: 100px;
-    width: 55px;
-    border-radius: 100px 30px 30px 100px;
-    border-right:20px solid black;
-    background: red;
-    animation: beat 800ms  linear  infinite;
+	height: 80px;
+  width: 40px;
+  border-radius: 100px 30px 30px 100px;
+  border-right: 20px solid #727272;
+  background: lightgray;
+  animation: beat 800ms  linear  infinite;
 /*     transform: rotate(-10deg); */
 }
 #right	{
 	position: absolute;
-	top: 120px;
-	left: 166px;
-	height: 100px;
-    width: 55px;
-    border-radius: 30px 100px 100px 30px;
-    border-left: 20px solid black;
-    background: red;
-    animation: beat 800ms linear  infinite;
+	top: 100px;
+	left: 145px;
+	height: 80px;
+  width: 40px;
+  border-radius: 30px 100px 100px 30px;
+  border-left: 20px solid #727272;
+  background: lightgray;
+  animation: beat 800ms linear  infinite;
 /*     transform: rotate(10deg); */
 }
+
 @keyframes beat	 {
-	
 	0%		{transform:scale(1);}			
 	100%		{transform:scale(1.02);}
 }
-
 </style>
 
 </head>
 
 <body>
+	
 	<div id="wrapper">
 		<div id="head"></div>
-		<div id="sponge"></div>
-		<div id="left">
-			<div></div>
-		</div>
-		<div id="right">
-			<div></div>
-		</div>
-		
-		
-	</div>	     
+		<div id="left"></div>
+	  <div id="right"></div>
+	</div>
+	     
 </body>
     
 </html>

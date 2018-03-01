@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>	
+	<title>wifi</title>
+<style>
+#wrapper  {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  margin-left: -75px;
+  text-align: center;
+  border: solid 1px blue;
+}
+
+#top  {
+  position: absolute;
+  top: 0px;
+  height: 150px;
+  width: 150px;
+  border-top: solid 2px #727272;
+  border-right: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+  border-left: solid 2px transparent;
+  border-radius: 50%;
+  animation: down3 2s infinite;
+}
+#middle  {
+  position: absolute;
+  top: 20px;
+  left: 14px;  
+  height: 120px;
+  width: 120px;
+  border-top: solid 2px #727272;
+  border-right: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+  border-left: solid 2px transparent;
+  border-radius: 50%; 
+  animation: down2 2s infinite;
+}
+#bottom {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  height: 90px;
+  width: 90px;
+  border-top: solid 2px #727272;
+  border-right: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+  border-left: solid 2px transparent;
+  border-radius: 50%; 
+  animation: down1 2s infinite;
+}
+#dot  {
+  position: absolute;
+  top: 80px;
+  left: 43px;
+  transform: translate(50%, -50%);
+  height: 30px;
+  width: 30px;
+  border: solid 2px tomato;
+  border-radius: 50%;
+}
+
+@keyframes down1 {0%{opacity:0;} 100%{opacity:1;}}
+@keyframes down2 { 40% {opacity:0;} 100%{opacity:1;}}
+@keyframes down3{ 70%{opacity:0;} 100%{ opacity:1;}}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+			<div id="top"></div>
+			<div id="middle"></div>
+	    <div id="bottom"></div>
+			<div id="dot"></div>
+	</div>
+	     
+</body>
+    
+</html>

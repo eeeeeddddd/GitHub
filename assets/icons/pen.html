@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>pen tool</title>
+<style>
+#wrapper	{
+	position: relative;
+	top: 75px;
+	left: 50%;
+	right: 50%;
+	margin-left: -75px;
+}
+#line	{
+	position: absolute;
+	height: 5px;
+	width: 150px;
+	background: black;
+}
+.linerotate	{
+	animation: rotate	2s infinite linear;
+}
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(10deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: black;
+}
+.topleft	{
+	position: relative;
+ 	top: 9px;
+	left: -15px;
+}
+.topleftmove	{
+	animation: topleftmove 2s infinite linear;
+}
+@keyframes topleftmove {	
+	0% {top: 9px;}
+	25% {top: -6px;}
+	50% {top: 9px;}
+	75% {top: 24px;}
+	100% {top: 9px;}	
+}
+.topright	{
+	position: relative;
+	top: -5px;
+	left: 152px;
+}
+.toprightmove	{
+	animation: toprightmove 2s infinite linear;
+}
+@keyframes toprightmove {
+	0% {top: -5px; }
+	25% {top: 10px;}
+	50% {top: -5px;}
+	75% {top: -19px;}
+	100% {top: -5px;}
+}
+.square	{
+	width: 15px;
+	height: 15px;
+	background: black;
+	z-index: 99;
+	border-radius: 2px;
+}
+.center	{
+	position: relative;
+	top: -4px;
+	left: 68px;
+}
+.bottomleft	{
+	position: relative;
+	top: -12px;
+	left: -9px;
+	background: black;	
+}
+.bottomright	{
+	position: relative;
+	top: -26px;
+	left: 145px;
+	background: red.
+}
+#bendcontainer	{
+	position: relative;
+	top: -14px;
+	left:-5px;
+	width: 180px;
+	height: 70px;
+	overflow: hidden;
+}
+#bendleft	{
+	position: absolute;
+	top: 2px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border-top: solid 5px black;
+	border-right: solid 5px transparent;
+	border-bottom: solid 5px transparent;
+	border-left: solid 5px black;
+	transform: rotate(-40deg);
+	z-index: -99;
+}
+.bendleftmove	{
+	animation: bendleftmove 2s infinite linear;
+}
+@keyframes bendleftmove {
+	0% {height: 150px; width: 150px; top: 2px; left: 0px;}
+	25% {height: 150px; width: 130px; top: -2px; left: 5px;}
+	50% {height: 150px; width: 150px; top: 2px; left: 0px;}
+	75% {height: 120px; width: 150px; top: 10px; left: -8px;}
+	100% {height: 150px; width: 150px; top: 2px; left: 0px;}
+}
+#bendright	{
+	position: absolute;
+	top: 2px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border-top: solid 5px black;
+	border-right: solid 5px black;
+	border-bottom: solid 5px transparent;
+	border-left: solid 5px transparent;
+	transform: rotate(40deg);
+	z-index: -99;
+}
+.bendrightmove	{
+	animation: bendrightmove 2s infinite linear;
+}
+@keyframes bendrightmove {
+	0% {height: 150px; width: 150px; top: 2px; left: 0px;}
+	25% {height: 120px; width: 150px; top: 10px; left: 8px;}
+	50% {height: 150px; width: 150px; top: 2px; left: 0px;}
+	75% {height: 150px; width: 130px; top: -3px; left: 15px;}
+	100% {height: 150px; width: 150px; top: 2px; left: 0px;}
+}
+</style>
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+	  <div class="dot topleft"></div>
+		  <div id="line"><div class="square center"></div></div>
+	  <div class="dot topright"></div>
+	  <div id="bendcontainer">
+		  <div id="bendleft"></div><div id="bendright"></div>
+	  </div>
+	  <div class="square bottomleft"></div><div class="square bottomright"></div>
+	</div>
+
+  	<script>
+		$(document).ready (function() {
+			$("#wrapper").hover (function() {
+			$("#bendleft").toggleClass("bendleftmove");
+			$("#bendright").toggleClass("bendrightmove");
+			$("#line").toggleClass("linerotate");
+			$(".topleft").toggleClass("topleftmove");
+			$(".topright").toggleClass("toprightmove");
+			});
+		});	
+	</script>	
+			
+</body>
+    
+</html>
