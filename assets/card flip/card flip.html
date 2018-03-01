@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,8 +11,7 @@
 	<meta name="author" content="me"/>
 	<title>card flip</title>
 	<style>
-	
-.flip	{
+	.flip	{
 	position: relative;
 	top: 50px;
 	left: 50%;
@@ -39,9 +38,9 @@
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg );
-	background: gray; 
-	width:200px; 
-	height:200px; 
+	background: gray;
+	width:200px;
+	height:200px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
@@ -54,7 +53,7 @@
 .flip:hover > .back{
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
-}	
+}
 
 </style>
 
@@ -71,6 +70,5 @@
 		</div>
 -->
 	</body>
-	
-</html>
 
+</html>
