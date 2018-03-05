@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>message bubbles</title>
+<style>
+#wrapper	{
+	position: relative;
+	left: 50%;
+	top: 75px;
+	margin-left: -75px;
+}	
+#bubbleone	{
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	border-radius: 40px;
+	background: #727272;	
+}
+#bubble1	{
+	position: absolute;
+	top: 56px;
+	left: 4px;
+	width: 20px;
+	height: 30px;
+	border-radius: 50%;
+	background: white;
+	z-index: 99;	
+}
+#bubble2	{
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 26px;
+	height: 50px;
+	border-radius: 50%;
+	background: #727272;	
+}
+.texthide1	{
+	visibility: hidden;
+	position: relative;
+	top: 22px;
+	left: 20px;
+	z-index: 99;
+	color: white;
+}
+.texthideone	{
+	visibility: visible;
+}
+
+#bubbletwo	{
+	position: absolute;
+	top: 18px;
+	left: 58px;
+	width: 100px;
+	height: 60px;
+	border: solid 3px white;
+	border-radius: 40px;
+	background: #727272;
+}
+#bubble3	{
+	position: absolute;
+	top: 56px;
+	left: 76px;
+	width: 20px;
+	height: 30px;
+	border-radius: 50%;
+	background: white;
+	z-index: 99;	
+}
+#bubble4	{
+	position: absolute;
+	top: 28px;
+	left: 59px;
+	width: 26px;
+	height: 50px;
+	border-radius: 50%;
+	background: #727272;	
+}
+.texthide2	{
+	visibility: hidden;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	z-index: 999;
+	color: white;
+}
+.texthidetwo	{
+	visibility: visible;
+}
+</style>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div id="bubbleone"><span class="texthide1">hello</span><div id="bubble1"></div><div id="bubble2"></div></div>
+		<div id="bubbletwo"><span class="texthide2">hello</span><div id="bubble3"></div><div id="bubble4"></div></div>
+	</div>
+
+	<script>
+		
+			$(document).ready (function() {
+				$("#bubbleone").hover (function() {
+				$(".texthide1").toggleClass("texthideone");
+			});	
+		});	
+				$(document).ready (function() {
+				$("#bubbletwo").hover (function() {
+				$(".texthide2").toggleClass("texthidetwo");	
+			});	
+		});	
+	
+	</script>
+	        
+</body>
+    
+</html>

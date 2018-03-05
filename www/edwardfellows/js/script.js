@@ -46,11 +46,11 @@ $(document).ready(function(){
 
 //cv download icon
 $(document).ready (function() {
-	$("#cv").hover (function() {
+	$("#gadownload").hover (function() {
 	$("#list").toggleClass("hide");
 	$("#downloadtray").toggleClass("downloadtray");	
 	$("#downloadarrow").toggleClass("downloadarrow");			
-		$("#cv").click (function() {
+		$("#gadownload").click (function() {
 		$("#list").toggleClass("list");
 		$("#downloadtray").toggleClass("downloadtray");
 		$("#downloadarrow").toggleClass("downloadarrow");
@@ -59,7 +59,7 @@ $(document).ready (function() {
 		$("#tickround").toggleClass("tickdraw");
 		$(".cvDownload").toggleClass("cvDownloadColor");
 		$(".cvDownload").text ("downloaded");
-			$("#cv").hover(function() {
+			$("#gadownload").hover(function() {
 			$("#list").toggleClass("hide");
 			$("#downloadtray").toggleClass("downloadtray");
 			$("#downloadarrow").toggleClass("downloadarrow");				
@@ -122,7 +122,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#max").hover (function() {
 	$(".max").toggleClass("experienceanimation");
-// 	$(".click").toggleClass("experienceanimation");
 	});
 });
 //once click hidden
@@ -136,7 +135,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#road").hover (function() {
 	$(".road").toggleClass("experienceanimation");
-// 	$(".click").toggleClass("experienceanimation");
 	});
 });
 //once click hidden
@@ -150,7 +148,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#tgi").hover (function() {
 	$(".tgi").toggleClass("experienceanimation");
-// 	$(".click").toggleClass("experienceanimation");
 	});
 });
 //once click hidden
