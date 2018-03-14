@@ -182,17 +182,8 @@ nav ul li a:hover {
 
 #sectionHeader {
   height: 100vh;
-  background: blue;
+  background: linear-gradient(#00E5FF, #CCFF90);
   animation: hue 40s infinite;
-}
-
-@keyframes hue {
-  0% {
-    filter: hue-rotate(0);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
 }
 
 #header {
