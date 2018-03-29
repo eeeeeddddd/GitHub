@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>aftereffects</title>
+  <g id="ae">
+    <path id="a" d="M179.77,159.31V164L136.35,318.37l0,6.23,25.16,0,12-45.71h47.28l11.92,45.75h30.07L213.49,159.33Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <polygon id="aa" points="196.24 185.12 214.57 254.24 179.9 254.24 196.24 185.12" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="e" d="M294,268.94c-.43,16.21,15.09,49.64,57.86,28.41v23.51c-2.74,2.74-24.93,6.89-29,6.89s-57,2.23-57-65.26c0-14.39,7.7-61.21,50.67-61.21,14,0,53.78,9.09,41.39,67.65Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="ee" d="M294.74,248.63H336c0-21.09-12.88-26.39-19.6-26.39S294.74,226.65,294.74,248.63Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+  </g>
+</svg>

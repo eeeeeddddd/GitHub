@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>lightroom</title>
+  <g id="lr">
+    <path id="r" d="M337.74,203v24.6c-5.45-1.23-25.92.07-29.08,2.56,0,3.61,0,96,0,96H281.5s0-107.24,0-112.61C287.57,207.49,316.28,200.22,337.74,203Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <polygon points="166.4 160.61 166.49 325.99 253.69 325.99 258.85 301.19 194.49 301.19 194.5 160.59 166.4 160.61" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+  </g>
+</svg>

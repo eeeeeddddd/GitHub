@@ -715,7 +715,7 @@ nav ul li a:hover {
   margin: 2% 0% 0% 0%;
 }
 
-#wildclick, #maxclick, #roadclick, #tgiclick {
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick {
   cursor: pointer;
   width: 100%;
   display: block;
@@ -761,7 +761,7 @@ nav ul li a:hover {
   }
 }
 
-#wildetails, #maxdetails, #roadetails, #tgidetails {
+#wildetails, #maxdetails, #roadetails, #tgidetails, #vervedetails {
   display: none;
 }
 

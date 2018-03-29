@@ -338,7 +338,7 @@ nav ul li a {
 	margin: 0% 0% 1% 0%;
 }
 .experiencedetail	{margin: 2% 0% 0% 0%;}
-#wildclick, #maxclick, #roadclick, #tgiclick 	{
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick 	{
 	cursor: pointer;
 	width: 100%;
 	display: block;
@@ -363,7 +363,7 @@ nav ul li a {
 }
 @keyframes clickeyframe {0% {transform: scale(0);opacity: 1;} 100% {transform: scale(1); opacity: 0.6;}}
 
-#wildetails, #maxdetails, #roadetails, #tgidetails {display: none;}
+#wildetails, #maxdetails, #roadetails, #tgidetails, #vervedetails {display: none;}
 
 #sectionCv		{
 	padding: 4%  0%  4% 0%;
