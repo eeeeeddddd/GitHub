@@ -137,11 +137,11 @@ nav ul li a {
 
 #sectionHeader	{
 	height: 100vh;
+	background-color: $bg-color1;	
 //  	background-image: linear-gradient(180deg, hsla(1, 90%, 60%, 1), hsla(359, 90%, 60%, 1));
-// 	background: blue;
 // 	background: linear-gradient(#00E5FF, #CCFF90);
-	background: linear-gradient(to bottom, #00e5ff 0%,#ccff90 52%,#fcfcfc 95%);
-	animation: hue 40s infinite;
+// 	background: linear-gradient(to bottom, #00e5ff 0%,#ccff90 52%,#fcfcfc 95%);
+// 	animation: hue 40s infinite;
 }
 // @keyframes hue {0% { filter: hue-rotate(0);}100% { filter: hue-rotate(360deg); }}
 
@@ -157,16 +157,22 @@ nav ul li a {
 	letter-spacing: 2px;
 	font-size: calc(100% + 60px);
 	margin: 0;
-	color: white;
+	color: $fontColor;
 	text-shadow: 0.1px 0.1px 1px white;
 }
 .headersubtitle	{
 	font-family: 'Reenie Beanie';
 	font-weight: 400;		
 	font-size: calc(100% + 30px);
-	color: white;
+	color: $fontColor;
 	margin: 0;
 }
+#pen   {
+    display: inline-block;
+    width: 6%;
+}
+#pentool	{stroke:$svg; fill: none; stroke-width: 8px;}
+
 .note	{
 	font-family:  'Reenie Beanie';
 	font-size: calc(100% + 5px);
@@ -200,9 +206,11 @@ nav ul li a {
 @keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
 
 #camera	{stroke:$svg; fill: none; stroke-width: 10px;}
-#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
-@keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 
+#lens {stroke: $svg; stroke-width: 10px; animation: 2s lens linear infinite;}
+@keyframes lens{0%, 90%{fill: transparent;}100%{fill: $svg;}}
+ #flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
+// @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
 #imac	{stroke:$svg; fill: none; stroke-width: 10px;}
 .paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.7;}
 #screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: macscreen 2s infinite linear;}
@@ -338,7 +346,7 @@ nav ul li a {
 	margin: 0% 0% 1% 0%;
 }
 .experiencedetail	{margin: 2% 0% 0% 0%;}
-#wildclick, #maxclick, #roadclick, #tgiclick 	{
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick 	{
 	cursor: pointer;
 	width: 100%;
 	display: block;
@@ -363,7 +371,7 @@ nav ul li a {
 }
 @keyframes clickeyframe {0% {transform: scale(0);opacity: 1;} 100% {transform: scale(1); opacity: 0.6;}}
 
-#wildetails, #maxdetails, #roadetails, #tgidetails {display: none;}
+#wildetails, #maxdetails, #roadetails, #tgidetails, #vervedetails {display: none;}
 
 #sectionCv		{
 	padding: 4%  0%  4% 0%;
@@ -576,10 +584,13 @@ footer		{
 @media screen and (max-width: 768px) {	//tablet
 html body	{font-size: 18px;}
 .hrtitle {width: 100%; font-size: calc(100% + 20px);}
+#wrapperpen	{display: none;}
 
 #sectionNav	{display: none;}
 .stickytitle	{position: relative;}//no sticky title mobile
 
+#pen   {width: 10%;}
+    
 #sectionAbout	{padding: 10%  3%  10% 3%;}
 .hobbie	{width: 10%;}
 
@@ -618,7 +629,7 @@ html body	{font-size: 16px;}
 #sectionPortfolio		{padding: 2%  1%  5% 1%;}
 
 #sectionExperience	{padding: 2%  1%  5% 1%;}
-#wildclick, #maxclick, #roadclick, #tgiclick 	{display: none;}
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick	{display: none;}
 .experiencedetail {display: none;}
 
 #sectionCv	{display: none;}

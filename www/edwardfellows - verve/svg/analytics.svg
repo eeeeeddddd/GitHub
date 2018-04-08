@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <title>analytics</title>
-  <g id="analytics">
-    <path d="M213.58,180.66h95.3a0,0,0,0,1,0,0V421a0,0,0,0,1,0,0H188.13a0,0,0,0,1,0,0V206.1A25.44,25.44,0,0,1,213.58,180.66Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-    <path d="M103.05,300.73h85a0,0,0,0,1,0,0V421a0,0,0,0,1,0,0H102.13a24,24,0,0,1-24-24V325.65A24.92,24.92,0,0,1,103.05,300.73Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-    <path d="M333.94,70.69h69.13A25.81,25.81,0,0,1,428.88,96.5V395.22A25.81,25.81,0,0,1,403.07,421H308.13a0,0,0,0,1,0,0V96.5A25.81,25.81,0,0,1,333.94,70.69Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-    <path d="M308.37,421h94.75a25.78,25.78,0,0,0,25.76-25.81V301.4c-14.32-14.22-105.59-105.14-120.75-120.34Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-  </g>
-</svg>

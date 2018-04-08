@@ -78,6 +78,12 @@ $("#delay").click(function (e) {
 });
 
 //experience more detail
+//verve
+$(document).ready(function () {	
+	    $("#verveclick").click (function () {
+	    $("#vervedetails").slideToggle(1000);	
+	});
+});
 //wildfire
 $(document).ready(function () {	
 	    $("#wildclick").click (function () {
@@ -104,6 +110,19 @@ $(document).ready(function () {
 });
 
 //hover hide arrow
+//verve
+$(document).ready(function () {
+	$("#verve").hover (function() {
+	$(".verve").toggleClass("experienceanimation");
+	$(".click").toggleClass("experienceanimation");
+	});
+});
+//once click hidden
+$(document).ready(function () {	
+	    $("#verveclick").click (function () {
+	    $(".verve").addClass("experienceclickhidden");	
+	});
+});
 //wildfire
 $(document).ready(function () {
 	$("#wild").hover (function() {

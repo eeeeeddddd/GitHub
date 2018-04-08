@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <title>windows</title>
-  <g id="Layer_26" data-name="Layer 26">
-    <rect id="red" x="72.88" y="70.97" width="167.31" height="167.31" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-    <rect id="green" x="258.88" y="70.97" width="167.31" height="167.31" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-    <rect id="blue" x="72.88" y="255.97" width="167.31" height="167.31" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-    <rect id="orange" x="258.88" y="255.97" width="167.31" height="167.31" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
-  </g>
-</svg>

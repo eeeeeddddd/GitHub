@@ -182,8 +182,7 @@ nav ul li a:hover {
 
 #sectionHeader {
   height: 100vh;
-  background: linear-gradient(to bottom, #00e5ff 0%, #ccff90 52%, #fcfcfc 95%);
-  animation: hue 40s infinite;
+  background-color: #fcfcfc;
 }
 
 #header {
@@ -199,7 +198,7 @@ nav ul li a:hover {
   letter-spacing: 2px;
   font-size: calc(100% + 60px);
   margin: 0;
-  color: white;
+  color: #727272;
   text-shadow: 0.1px 0.1px 1px white;
 }
 
@@ -207,8 +206,19 @@ nav ul li a:hover {
   font-family: 'Reenie Beanie';
   font-weight: 400;
   font-size: calc(100% + 30px);
-  color: white;
+  color: #727272;
   margin: 0;
+}
+
+#pen {
+  display: inline-block;
+  width: 6%;
+}
+
+#pentool {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 8px;
 }
 
 .note, .noteshow {
@@ -329,20 +339,26 @@ nav ul li a:hover {
   stroke-width: 10px;
 }
 
-#flash {
+#lens {
   stroke: #727272;
-  fill: transparent;
   stroke-width: 10px;
-  animation: flash 2s infinite linear;
+  animation: 2s lens linear infinite;
 }
 
-@keyframes flash {
+@keyframes lens {
   0%, 90% {
     fill: transparent;
   }
   100% {
     fill: #727272;
   }
+}
+
+#flash {
+  stroke: #727272;
+  fill: transparent;
+  stroke-width: 10px;
+  animation: flash 2s infinite linear;
 }
 
 #imac {
@@ -715,7 +731,7 @@ nav ul li a:hover {
   margin: 2% 0% 0% 0%;
 }
 
-#wildclick, #maxclick, #roadclick, #tgiclick {
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick {
   cursor: pointer;
   width: 100%;
   display: block;
@@ -761,7 +777,7 @@ nav ul li a:hover {
   }
 }
 
-#wildetails, #maxdetails, #roadetails, #tgidetails {
+#wildetails, #maxdetails, #roadetails, #tgidetails, #vervedetails {
   display: none;
 }
 
@@ -1233,11 +1249,17 @@ footer {
     width: 100%;
     font-size: calc(100% + 20px);
   }
+  #wrapperpen {
+    display: none;
+  }
   #sectionNav {
     display: none;
   }
   .stickytitle {
     position: relative;
+  }
+  #pen {
+    width: 10%;
   }
   #sectionAbout {
     padding: 10%  3%  10% 3%;
@@ -1314,7 +1336,7 @@ footer {
   #sectionExperience {
     padding: 2%  1%  5% 1%;
   }
-  #wildclick, #maxclick, #roadclick, #tgiclick {
+  #wildclick, #maxclick, #roadclick, #tgiclick, #verveclick {
     display: none;
   }
   .experiencedetail {
