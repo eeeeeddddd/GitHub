@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>dreamweaver</title>
+  <g id="dream">
+    <polygon id="w" points="239.48 202.55 266.16 323.97 295.69 323.97 314.25 232.8 330.45 323.97 358.42 323.97 387.56 208.76 387.56 202.61 362.37 202.61 346.01 295.42 329.5 202.61 300.89 202.61 283.09 295.12 267.83 202.55 239.48 202.55" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="d" d="M117.73,158.62V324.34h52.86c59.11-10.95,63.48-69.47,63.22-86s-4.44-68.62-63.12-79.86C165.85,158.47,117.73,158.62,117.73,158.62Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="dd" d="M146.33,184.72V300.34l24.22,0c35.42-11.35,35.07-53,35.07-62.92s.35-40-35.07-52.81C166.09,184.64,146.33,184.72,146.33,184.72Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+  </g>
+</svg>

@@ -1,0 +1,654 @@
+@font-face { font-family: 'mywoff';
+    src: url('../font/bootcamp-regular-webfont.woff2') format('woff2'),
+          url('../font/bootcamp-regular-webfont.woff') format('woff');
+          font-weight: 300;
+          font-style: normal;
+}
+
+$fontTitle:  'mywoff';
+$fontNav:   'mywoff';
+$fontText:	'Poiret One';
+$fontForm: 'Poiret One';
+
+$bg-color: #292929; /*header & footer*/
+$bg-color1: #fcfcfc; /*main*/
+$bg-color2: #f5f5f5; /*White Smoke*/
+
+$fontColor: #727272;/*gray*/
+$navColor: #f5f5f5;/*White Smoke*/
+
+$svg: #727272; /*svg*/
+$color: red;
+
+//html
+html body	{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+#wrapper 	{
+	font-size: 22px;
+	font-family: $fontText;
+	color: $fontColor;
+	background-color: $bg-color;
+	a	{text-decoration: none; color: $fontColor;
+}}	
+
+.title	{/*titles*/
+	text-align: center;
+	height: 60px;//needed for script
+	background-color: $bg-color1;
+}  
+.stickytitle	{position:fixed; top:0; left:0; width:100%; height: 60px; background-color: $navColor;}
+
+.hrtitle {
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	height: 60px;
+	border: 0;
+	font-family: $fontTitle;
+	letter-spacing: 1px;
+    font-size: calc(100% + 30px);	
+    font-weight: 600;
+	text-align: center;
+	line-height: 10px;
+	margin: 0;
+	transition: 0.5s ease;
+		&:hover	{color: $fontColor;}
+}
+.hrtitle:before {
+	content: '';
+	background: -webkit-linear-gradient(left, transparent, transparent, transparent);
+	background: linear-gradient(to right, transparent, transparent transparent);
+// 	background: -webkit-linear-gradient(left, transparent, grey, transparent);
+// 	background: linear-gradient(to right, transparent, grey transparent);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 2px;
+}
+.hrtitle:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	padding: 25px;
+	letter-spacing: 2px;
+// 	background: $bg-color1; //for lines
+// 	border-left: solid 1px grey; border-right: solid 1px grey;
+}
+.hr {width: 40%; margin: 0 auto ; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)); }
+
+#sectionNav	{
+	position: fixed; 
+	top:0; 
+	right: 0; 
+	left: 0; 
+	background-color: $navColor;
+	z-index: 99999;
+	transition: transform 0.5s cubic-bezier(.42,1,.8,1);
+	opacity: 0;
+}
+.sectionNavHide {transform: translateY(-100%);} //nav hide before 780px
+.headerScroll	{opacity: 1!important;}//needs important
+nav {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;	
+	transition: 0.3s ease;
+	overflow: hidden;
+}
+nav ul {
+	margin-top: 0px;
+	list-style: none;
+	padding: 0px;/*stops 40px */
+}
+nav ul li {
+	display: inline-block;
+ 	width: 12%;
+ 	padding: 0% 2% 0% 2%;
+}
+nav ul li a {
+	position: relative;
+	display: block;
+	font-size: 2vw;
+	font-family: $fontNav;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+ 	&:hover {color: $fontColor;}
+}
+.underlinenav::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: $color;
+    position: absolute;
+    bottom:20px;
+    transition: 0.5s ease;
+}
+.underlinenav:hover::after {width: 100%;}
+.left::after  {@extend .underlinenav; right: 0px;}
+.center::after  {@extend .underlinenav; left: 50%; right: 50%;}
+.center:hover::after  {@extend .underlinenav; left: 0px;}
+.right::after  {@extend .underlinenav; left: 0px;}
+.right:hover::after  {@extend .underlinenav; left: 0px;}
+
+#sectionHeader	{
+	height: 100vh;
+	background-color: white;	
+//  	background-image: linear-gradient(180deg, hsla(1, 90%, 60%, 1), hsla(359, 90%, 60%, 1));
+// 	background: linear-gradient(#00E5FF, #CCFF90);
+// 	background: linear-gradient(to bottom, #00e5ff 0%,#ccff90 52%,#fcfcfc 95%);
+// 	animation: hue 40s infinite;
+}
+// @keyframes hue {0% { filter: hue-rotate(0);}100% { filter: hue-rotate(360deg); }}
+
+#header		{
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+	text-align: center;
+	width: 100%;
+}
+.headertitle	{
+	font-family: 'mywoff';
+	letter-spacing: 2px;
+	font-size: calc(100% + 60px);
+	margin: 0;
+	color: $fontColor;
+	text-shadow: 0.1px 0.1px 1px white;
+}
+.headersubtitle	{
+	font-family: 'Reenie Beanie';
+	font-weight: 400;		
+	font-size: calc(100% + 30px);
+	color: $fontColor;
+	margin: 0;
+}
+#pen   {
+    display: inline-block;
+    width: 6%;
+}
+#pentool	{stroke:$svg; fill: none; stroke-width: 8px;}
+
+.note	{
+	font-family:  'Reenie Beanie';
+	font-size: calc(100% + 5px);
+	color: lighten($fontColor, 10%); 
+}
+.noteshow	{@extend .note;}
+.quotemarks	{font-size: calc(100% + 7px);}//quotes
+
+#sectionAbout	{
+	background-color: $bg-color1;
+	padding: 2%  10%  3% 10%;
+	text-align: center;
+}
+#hobbies		{}//temp
+.hobbie   {
+    display: inline-block;
+    width: 4%;
+    margin: 0% 1% 0% 1%;
+}
+
+#coffeecup	{stroke:$svg; fill: none; stroke-width: 10px;}
+#coffee	{stroke:$svg; fill: none;stroke-width: 10px; animation: coffee 10s infinite linear;}
+@keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}}
+#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 2s infinite linear;}
+@keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
+
+#pie	{stroke:$svg; fill: none; stroke-width: 10px;}
+#bite	{stroke:$svg; fill: none; stroke-width: 10px; animation: bite 3s infinite linear;}
+#nobite	{stroke:$svg; fill: none; stroke-width: 10px; animation: nobite 3s infinite linear;}
+@keyframes bite{0%{opacity:0}1%, 49%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
+@keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
+
+#camera	{stroke:$svg; fill: none; stroke-width: 10px;}
+
+#lens {stroke: $svg; stroke-width: 10px; animation: 2s lens linear infinite;}
+@keyframes lens{0%, 90%{fill: transparent;}100%{fill: $svg;}}
+ #flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
+// @keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
+#imac	{stroke:$svg; fill: none; stroke-width: 10px;}
+.paint	{stroke:lightgrey; fill: none; stroke-width: 10px; opacity: 0.7;}
+#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: macscreen 2s infinite linear;}
+@keyframes macscreen {0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
+.draw {animation: 3s draw linear infinite alternate;}
+@keyframes draw 	{0% {stroke-dasharray: 0 500; stroke-dashoffset: 0; stroke: red;}100% {stroke-dasharray: 500; stroke-dashoffset: 0; stroke: lime;}}
+
+#headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 2s infinite linear; transform-origin: center center; transform-box: fill-box;}
+@keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
+
+#video	{stroke:$svg; fill: none; stroke-width: 10px;}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear;}
+@keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
+
+#frame	{stroke:$svg; fill: none; stroke-width: 8px;}
+#parts	{stroke:$svg; fill: none; stroke-width: 8px;}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear;}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1.5s infinite linear;}
+#peddles {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 2s infinite linear;}
+@keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
+
+#sectionExpertise	{
+	padding: 2%  10%  2% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+	a 	{
+		display: inline-block;
+	}
+}
+.columnleft  {
+	vertical-align: top;
+	display: inline-block;
+	width: 30%;	
+    text-align: right;
+ 	padding: 0% 1% 0% 0%;  
+}
+.columnright  {
+	vertical-align: top;
+	display: inline-block;
+	width: 30%;
+	width: 59%;	
+	text-align: left;
+ 	padding: 0% 0% 2% 0%;	
+}
+.columnleft::after {
+    content:": \00b7";
+}
+    
+#sectionQualification	{
+	padding: 2%  10%  3% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+#softwarescroll	{
+	width: 40%;
+	overflow: hidden;
+	padding: 1%;
+	border-radius: 10px;
+	display: inline-block;
+	&:hover	 > #softwarecontainer {
+		animation: software 10s linear infinite alternate;
+	}	
+}
+#softwarecontainer	{
+	width: 5000px;
+}
+.softwaresvg	{
+	float: left;
+	width: 1%;
+    margin-left: 5px;
+	transform: translate(-0px, 0px);
+}
+@keyframes	software	{0% {transform: translateX(0%);}	100% {transform: translateX(-24%);}}
+
+#sectionPortfolio	{
+	padding: 2%  10%  3% 10%;
+	background:  $bg-color1;
+	text-align: center;
+}
+#cloud		{}//temp
+.clouds  {
+	display: inline-block;
+    width: 6%;
+    margin: 0% 2% 0% 2%;
+    transition: all 0.5s linear;
+    &:hover	{transform: translateY(-5px);}
+}
+
+.be	{stroke: $svg; fill: none; stroke-width: 10px;}
+.clouds:hover .be	{stroke: #1969fb; fill: #1969fb; transition: 0.1s linear;}
+
+.cloudcc	{stroke:$svg; fill: none;stroke-width: 11px;}
+.clouds:hover  .cloudcc	{stroke: red; fill: red; transition: 0.2s linear;}
+.cloudlines	{stroke:$svg; fill: none; stroke-width: 14px;}
+.clouds:hover  .cloudlines	{stroke: $bg-color1; fill: none; stroke-width: 16px; transition: 0.2s linear;}
+
+.codepenbox	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .codepenbox	{stroke: black; fill: black; transition: 0.2s linear;}
+.codepenlines		{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .codepenlines	{stroke: $bg-color1; fill: none; transition: 0.2s linear;}
+
+.github	{stroke: $svg; fill: none; stroke-width: 10px;}
+.clouds:hover .github	{stroke: black; fill: black;  transition: 0.2s linear;}
+
+.xd	 {stroke:$svg; fill: none;stroke-width: 10px;}
+.clouds:hover .xd	{stroke: #e750b9; fill: #e750b9;  transition: 0.1s linear;}
+
+.www	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .www	{stroke: blue; fill: blue;  transition: 0.2s linear;}
+.wwwlines	{stroke: $svg; fill: none; stroke-width: 11px;}
+.clouds:hover .wwwlines	{stroke: $bg-color1;  transition: 0.2s linear;}
+
+#sectionExperience		{
+	padding: 2%  15%  5% 15%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+.experienceposition	{
+	color: darken($fontColor, 2%);
+	margin: 2% 0% 0% 0%;
+}
+.experiencecompany	{
+	color: darken($fontColor, 0%);
+	margin: 0% 0% 1% 0%;
+}
+.experiencedetail	{margin: 2% 0% 0% 0%;}
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick 	{
+	cursor: pointer;
+	width: 100%;
+	display: block;
+}
+.fieldset	{
+	border-radius: 10px;
+	padding: 3%;
+	border: solid 1px darken($fontColor, 0%);
+}
+.experienceclickhidden	{visibility: hidden;}
+.experienceanimation {opacity: 1; animation: clickeyframe 1s infinite;}
+.clickanimation{
+	margin-left:auto;
+	margin-right:auto;
+	width: 10px;
+	height: 10px;
+	border: 1px solid $color;
+	border-radius: 20px; 
+	opacity: 0;	
+	&:hover	{
+	border: 1px solid red;}
+}
+@keyframes clickeyframe {0% {transform: scale(0);opacity: 1;} 100% {transform: scale(1); opacity: 0.6;}}
+
+#wildetails, #maxdetails, #roadetails, #tgidetails, #vervedetails {display: none;}
+
+#sectionCv		{
+	padding: 4%  0%  4% 0%;
+	background: $bg-color2;
+	text-align: center;
+}
+#cv   {
+	display: inline-block;
+    width: 14%;
+    transition: all 0.5s linear;
+    cursor:pointer;
+}
+.hide	{opacity: 0;}
+#template	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px;}
+#list	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px; stroke-linecap: round;}
+.list	{animation: list 1ms 0s ease 1 forwards;}
+@keyframes list {0%{opacity: 1;} 100%{opacity: 0;}}
+
+#downloadarrow	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px; opacity: 0; stroke-linecap: round;}
+.downloadarrow	{animation: downloadarrow 1s 0s infinite linear;}
+@keyframes downloadarrow {0%{opacity: 1; transform:translateY(-60px); } 100%{opacity: 0.6; transform:translateY(-20px);}}
+#downloadtray	{fill: none; stroke: darken($svg, 10%); stroke-width: 10px; opacity: 0;}
+.downloadtray	{animation: downloadtray 0.5s 0s ease 1 forwards;}
+@keyframes downloadtray {0%{opacity: 0;} 100%{opacity: 1.0;}}
+		
+#tick	{fill: none; stroke-width: 30px; opacity: 0; stroke-linecap: round;}
+.tick	{animation: tick 1ms 0s ease 1 forwards;}
+@keyframes tick {0%{opacity: 0;} 100%{opacity: 1.0;}}
+
+#tickround	{stroke: lime; stroke-dasharray: 4000;}
+.tickdraw {animation: tickdraw 1.5s 0s linear;}		
+@keyframes tickdraw {0%{stroke-dashoffset: 4000;} 100%{stroke-dashoffset: 8000; }}
+.cvDownload	{font-size: calc(100% + 20px);}
+.cvDownloadColor	{color: lime; transition: 1000ms all 1.6s linear;}
+
+#sectionContact {
+	text-align: center;
+	padding: 5%  0%  5% 0%;
+	background: $bg-color1;
+	margin: 0;
+}
+.forget	{font-size: calc(100% + 15px);}
+input	{
+	width: 50%;
+	height: 1%;
+	padding: 20px;
+	font-size: 30px;
+	font-family: $fontForm;
+	font-size: calc(100% + 0px);
+	border-radius: 10px;
+	background: white;
+	transition: all 0.2s ease-in;
+	border: solid 1px transparent;
+	margin-bottom: 20px;
+	&:hover {
+	border: solid 1px $color;
+	}
+}
+textarea {
+	@extend input;
+// 	font-family: 'Reenie Beanie'; //temp
+	height: 3%;
+	&:hover	{
+		border: solid 1px $color;
+	}
+}
+.btn {
+  width: 100px;
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  font-size: 30px;
+  font-family: 'Poiret One';
+  color: lighten($fontColor, 20%); 
+  line-height: 0px;
+  margin-top: 10px;
+  transition: all 0.2s;
+  box-shadow: 0px 5px 10px lightgray;
+  cursor:pointer;
+  &:hover {
+  	background-color: transparent;
+  	box-shadow: 0px 5px 10px gray;
+  	border: solid 2px lightgray;}
+}
+
+#sectionSocial		{
+	background: $bg-color2;
+	padding: 2% 0% 2% 0%;
+	margin-bottom: 450px;
+	text-align: center;
+}
+.socials   {
+	display: inline-block;
+    width: 3%;
+    padding: 0px 2% 0px 2%;
+    transition: all 0.3s linear;
+    &:hover	{transform: translateY(-5px);}
+}
+.socialsenvelop   {@extend .socials;}
+
+.bee {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.socials:hover .bee	{fill: transparent; transition: 0.3s linear;}
+
+.facebook {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.socials:hover .facebook {fill: transparent; transition: 0.3s linear;}
+
+.envelop {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.open {opacity: 0; stroke: $svg; fill: none; stroke-width: 12px; transition: all 0.3s linear;}
+.close {opacity: 1; stroke: $bg-color1; fill:none; stroke-width: 12px; transition: all 0.3s linear;}
+.socialsenvelop:hover  .open {opacity: 1; fill: $svg;}
+.socialsenvelop:hover  .close	{fill: $bg-color1;}
+.socialsenvelop:hover .envelop {fill: $svg;}
+
+.instagram {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.instagramlines {stroke: $bg-color1; fill: none; stroke-width: 12px;}
+.socials:hover .instagram {fill: transparent; transition: 0.3s linear;}
+.socials:hover .instagramlines {stroke: $svg; transition: 0.3s linear;}
+
+.twitter {stroke: $svg; fill: $svg; stroke-width: 12px;}
+.socials:hover .twitter {fill: transparent; transition: 0.3s linear;}
+
+.dribbblecircle		{stroke: $svg; fill: $svg; stroke-width: 11px;}
+.socials:hover .dribbblecircle	{stroke:$svg; fill: $bg-color1;  transition: 0.2s linear;}
+.dribbblelines	{stroke: $bg-color1; fill: none; stroke-width: 11px;}
+.socials:hover .dribbblelines	{stroke: $svg; fill: none; transition: 0.2s linear;}
+
+footer		{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 450px;
+	background: $bg-color;
+	z-index: -1;
+	text-align: center;
+	color: white;
+	padding: 2% 0% 2% 0%;
+}
+#landscapemode	{position: relative; top: 40px; visibility: hidden;}
+#landscape	{
+	width: 20px;
+	stroke-wodth: 10px;
+	stroke: white;
+	fill: none;
+	animation: landscape 1.5s linear infinite;
+}		
+@keyframes landscape {0% {transform: rotate(0deg);} 20% {transform: rotate(-20deg);} 40%{transform: rotate(0deg); } 60%{transform: rotate(20deg); }100%{transform: rotate(0deg); }}
+.landscapetext	{
+	font-size: 14px;
+	color: white;
+}
+#mouse		{/*mouse*/
+	position: relative;
+	top: 60px;
+	left: 50%;
+	height: 100px;
+}
+.mouse{
+	margin-left: -13px;
+	width: 22px;
+	height: 35px;
+	border:2px solid lightgray;
+	border-radius: 20px;
+  	text-align: center;
+  	transition: all 0.3s;
+  	&:hover	{border: 2px solid $color; box-shadow: 0px 0px 5px gray;}
+}
+#mousescroll{
+	width: 0px;
+	height: 0px;
+	margin-left: 7px;
+    border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid $color;
+	animation: scroll 1.5s infinite both;
+}
+@keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
+.mousetext	{
+	font-family: 'Poiret One';
+	font-size: 10px;
+	margin-top: 40px;
+	font-weight: bold;
+	margin-left: -1px;
+	color: white;
+}
+#me		{
+	position: relative;
+	top: 160px;
+	text-align: center;
+}
+#designby	{
+	position: relative;
+	font-size: 10px;
+	font-family: 'Poiret One';
+}
+.pipe {
+	position: relative;
+	top: -8px;
+	margin-left: 5px;
+	display: inline;
+	width: 30px;
+ 	stroke-dasharray: 2000;
+ 	stroke-dashoffset: 0;
+ 	animation: pipe 4s linear infinite 0.5s;
+ 	&:hover	{animation-play-state: paused;} 	
+}
+@keyframes pipe 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}//pipe
+
+@media screen and (max-width: 900px) {	//desktop
+}
+	
+@media screen and (max-width: 768px) {	//tablet
+html body	{font-size: 18px;}
+.hrtitle {width: 100%; font-size: calc(100% + 20px);}
+#wrapperpen	{display: none;}
+
+#sectionNav	{display: none;}
+.stickytitle	{position: relative;}//no sticky title mobile
+
+#pen   {width: 10%;}
+    
+#sectionAbout	{padding: 10%  3%  10% 3%;}
+.hobbie	{width: 10%;}
+
+#sectionExpertise	{padding: 10%  0%  10% 0%;}
+
+#sectionQualification	{padding: 10%  0%  10% 0%;}
+	
+#sectionPortfolio	{padding: 10%  1%  10% 1%;}
+.clouds	{width: 10%;}
+
+#sectionExperience	{padding: 10%  5%  10% 5%;}
+
+#sectionCv	{padding: 10%  1%  10% 1%;}
+.cv	{width: 20%;}
+
+input	{width: 80%;}
+textarea	{width: 80%;}	
+.socials	{width: 8%;}
+}	
+	
+@media screen and (max-width: 480px) {//mobile
+html body	{font-size: 16px;}
+.headertitle	{font-size: calc(100% + 20px);}
+.headersubtitle	{font-size: calc(100% + 10px);}
+.hrtitle {font-size: calc(100% + 10px);}
+
+#sectionAbout	{padding: 2%  1%  5% 1%;}
+.note	{display: none;}
+.noteshow	{display: inline-block;}
+
+#sectionExpertise	{padding: 2%  1%  5% 1%;}
+
+#sectionQualification	{padding: 2%  1%  5% 1%;}
+#softwarescroll	{width: 80%;}
+	
+#sectionPortfolio		{padding: 2%  1%  5% 1%;}
+
+#sectionExperience	{padding: 2%  1%  5% 1%;}
+#wildclick, #maxclick, #roadclick, #tgiclick, #verveclick	{display: none;}
+.experiencedetail {display: none;}
+
+#sectionCv	{display: none;}
+
+#sectionContact	{display: none;}
+
+.socials	{width: 5%;}
+
+#landscapemode	{visibility: visible;}}
+
+@media (max-width: 320px) {//mobile small
+}
+
+
+
+
+
+
+
+
+
