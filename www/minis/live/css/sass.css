@@ -16,17 +16,8 @@
   background: #fcfcfc;
 }
 
-.edwardfellows {
-  font-size: 50px;
-  font-family: 'mywoff';
-  letter-spacing: 2px;
-  padding-top: 5px;
-  padding-bottom: 30px;
-}
-
-#contact {
-  line-height: 5px;
-  padding-bottom: 10px;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -34,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-section {
+#wrapper {
   display: inline-block;
   height: auto;
   width: 900px;
@@ -46,16 +37,29 @@ section {
   /*nice fix*/
 }
 
+#contact {
+  line-height: 5px;
+  padding-bottom: 10px;
+}
+
+.edwardfellows {
+  font-size: 50px;
+  font-family: 'mywoff';
+  letter-spacing: 2px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
 .career {
   margin: 5px 20px 15px 20px;
 }
 
 legend {
-  font-size: 18px;
+  font-size: calc(100% + 3px);
   padding: 5px;
 }
 
-fieldset {
+.fieldset {
   text-align: left;
   border: 1px solid black;
   border-radius: 6px;
@@ -63,11 +67,190 @@ fieldset {
   line-height: 25px;
 }
 
+#hobbies {
+  text-align: center;
+}
+
+.hobbie {
+  display: inline-block;
+  width: 4%;
+  margin: 0% 1% 0% 1%;
+}
+
+#coffeecup {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#coffee {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#steam {
+  stroke: #727272;
+  fill: #727272;
+  stroke-width: 12px;
+}
+
+#pie {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#bite {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#lines {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#three {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#five {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#severn {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#eight {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#nine {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#win {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#video {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#leftreel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#rightreel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#imac {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.paint {
+  stroke: lightgrey;
+  fill: none;
+  stroke-width: 10px;
+  opacity: 0.7;
+}
+
+#screen {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+}
+
+#headphones {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#camera {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#flash {
+  stroke: #727272;
+  fill: transparent;
+  stroke-width: 10px;
+}
+
+#frame {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#parts {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#frontwheel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#rearwheel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#peddles {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
 table {
   margin-left: 30px;
 }
 
-.tablecol1 {
+.column {
   width: 260px;
 }
 
@@ -76,8 +259,9 @@ table {
   font-size: calc(100% - 1px);
 }
 
-.interests {
-  margin: 3px 20px 3px 20px;
+.margin {
+  margin: 0px 20px 1px 20px;
+  text-align: center;
 }
 
 #design {
