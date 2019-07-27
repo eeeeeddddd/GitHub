@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>speaking</title>
+		<style>
+#wrapper	{
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -75px;
+	top: 25px;
+}	
+#box 	{
+	position: absolute;
+	top: 80px;
+	left: 30px;	
+	width: 90px;
+	height: 90px;
+	border-radius: 24%;	
+	border: solid 2px #727272;	
+}
+
+#circle	{
+	position: absolute;
+	top: 50px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: solid 2px #727272;
+}	
+
+#left, #center, #right {
+	position: absolute;
+	top: 90px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+/* 	border: solid 2px #727272; */
+}
+
+#left {
+	left: 50px;
+	background: red;
+	animation: bounce-left 1000ms infinite;
+	animation-delay: .5s;
+}
+
+#center {
+	background: yellow;
+	left: 70px;
+	animation: bounce-center 1000ms infinite;
+	animation-delay: .7s;
+}
+#right {
+	background: blue;
+	left: 90px;
+	animation: bounce-right 1000ms infinite;
+	animation-delay: .9s;
+}
+
+@keyframes bounce-left {
+	0% {transform: translateY(0px) translateX(0px);}
+	50% {transform: translateY(-40px) translateX(0px);}
+	100% {transform: translateY(0px) translateX(0px);}
+ }
+ @keyframes bounce-center {
+	0% {transform: translateY(0px) translateX(0px);}
+	50% {transform: translateY(-40px) translateX(0px);}
+	100% {transform: translateY(0px) translateX(0px);}
+ }
+ 
+@keyframes bounce-right {
+	0% {transform: translateY(0px) translateX(0px);}
+	50% {transform: translateY(-40px) translateX(0px);}
+	100% {transform: translateY(0px) translateX(0px);}
+ }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="box"></div>
+		<div id="circle">
+			<div id="left"></div>
+			<div id="center"></div>
+			<div id="right"></div>
+		</div> 
+</div>
+	     
+</body>
+    
+</html>

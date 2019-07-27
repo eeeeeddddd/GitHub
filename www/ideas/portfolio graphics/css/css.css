@@ -1,0 +1,1224 @@
+@font-face {
+  font-family: 'mywoff';
+  src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*header & footer*/
+/* #FDEFE3; */
+/*main*/
+/*White Smoke*/
+/*gray*/
+/*gray*/
+/*svg*/
+/*red*/
+html body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 24px;
+  font-family: "Poiret One";
+  color: #727272;
+  background-color: #292929;
+}
+
+html body a {
+  text-decoration: none;
+  color: #727272;
+}
+
+.title {
+  /*titles*/
+  text-align: center;
+  height: 60px;
+  background-color: #fcfcfc;
+}
+
+.stickytitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fcfcfc;
+}
+
+.hrtitle {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 60px;
+  border: 0;
+  font-family: "mywoff";
+  letter-spacing: 1px;
+  font-size: calc(100% + 30px);
+  font-weight: 300;
+  text-align: center;
+  line-height: 10px;
+  margin: 0;
+}
+
+.hrtitle:before {
+  content: '';
+  background: -webkit-linear-gradient(left, transparent, transparent, transparent);
+  background: linear-gradient(to right, transparent, transparent transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+}
+
+.hrtitle:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 25px;
+}
+
+/*
+.subtitle	{
+	font-family: 'Poiret One';
+	letter-spacing: 1px;
+//     font-size: calc(100% + 30px);	
+	color: darken($fontColor, 10%);
+	padding-bottom: 2%;
+}
+*/
+#sectionNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fcfcfc;
+  z-index: 99999;
+  transition: transform 0.5s cubic-bezier(0.42, 1, 0.8, 1);
+  opacity: 0;
+}
+
+.sectionNavHide {
+  transform: translateY(-100%);
+}
+
+.headerScroll {
+  opacity: 1 !important;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+nav ul {
+  margin-top: 0px;
+  list-style: none;
+  padding: 0px;
+  /*stops 40px */
+}
+
+nav ul li {
+  display: inline-block;
+  width: 12%;
+  padding: 0% 2% 0% 2%;
+}
+
+nav ul li a {
+  position: relative;
+  display: block;
+  font-size: 2vw;
+  font-family: "mywoff";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.underlinenav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: #727272;
+  position: absolute;
+  bottom: 20px;
+  transition: 0.5s ease;
+}
+
+.underlinenav:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
+  width: 100%;
+}
+
+.left::after {
+  right: 0px;
+}
+
+.center::after {
+  left: 50%;
+  right: 50%;
+}
+
+.center:hover::after {
+  left: 0px;
+}
+
+.right::after {
+  left: 0px;
+}
+
+.right:hover::after {
+  left: 0px;
+}
+
+#sectionHeader {
+  height: 100vh;
+  background-image: linear-gradient(180deg, #f5403d, #f53d40);
+  animation: hue 30s infinite;
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#header {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.headertitle {
+  font-family: 'mywoff';
+  font-size: 8vw;
+  margin: 0;
+  color: white;
+  text-shadow: 0.1px 0.1px 1px white;
+}
+
+.headersubtitle {
+  font-family: 'Reenie Beanie';
+  font-weight: 400;
+  font-size: 5vw;
+  color: white;
+  margin: 0;
+}
+
+.quotes {
+  font-family: 'Reenie Beanie';
+}
+
+.quotemarks {
+  font-size: calc(100% + 7px);
+}
+
+#sectionAbout {
+  background-color: #fcfcfc;
+  padding: 2%  5%  2% 5%;
+  text-align: center;
+}
+
+#hobbies {
+  background: #fcfcfc;
+  text-align: center;
+  padding: 1% 1% 1% 1%;
+}
+
+.hobbie {
+  display: inline-block;
+  margin: 0% 1% 0% 1%;
+}
+
+.hobbie {
+  display: inline-block;
+  width: 4%;
+  margin: 0% 1% 0% 1%;
+}
+
+#coffeecup {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#coffee {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: coffee 20s infinite linear;
+}
+
+@keyframes coffee {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(230px);
+  }
+}
+
+#steam {
+  stroke: #727272;
+  fill: #727272;
+  stroke-width: 12px;
+  animation: steam 2s infinite linear;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+#pie {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#bite {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: bite 3s infinite linear;
+}
+
+#nobite {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: nobite 3s infinite linear;
+}
+
+@keyframes bite {
+  0% {
+    opacity: 0;
+  }
+  1%, 49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nobite {
+  0% {
+    opacity: 1;
+  }
+  1%, 49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#camera {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#flash {
+  stroke: #727272;
+  fill: transparent;
+  stroke-width: 10px;
+  animation: flash 2s infinite linear;
+}
+
+@keyframes flash {
+  0%, 90% {
+    fill: transparent;
+  }
+  100% {
+    fill: #727272;
+  }
+}
+
+#imac {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.paint {
+  stroke: lightgrey;
+  fill: none;
+  stroke-width: 10px;
+  opacity: 0.7;
+}
+
+#screen {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: macscreen 2s infinite linear;
+}
+
+@keyframes macscreen {
+  0% {
+    stroke: #727272;
+  }
+  50% {
+    stroke: lightgray;
+  }
+  100% {
+    stroke: #727272;
+  }
+}
+
+.draw {
+  animation: 3s draw linear infinite alternate;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0 500;
+    stroke-dashoffset: 0;
+    stroke: red;
+  }
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    stroke: lime;
+  }
+}
+
+#headphones {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+  animation: headphones 2s infinite linear;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes headphones {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+#video {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#leftreel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: reel 2s infinite linear;
+}
+
+#rightreel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: reel 2s infinite linear;
+}
+
+@keyframes reel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#frame {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#parts {
+  stroke: #727272;
+  fill: none;
+  stroke-width: 8px;
+}
+
+#frontwheel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: wheel 1.5s infinite linear;
+}
+
+#rearwheel {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: wheel 1.5s infinite linear;
+}
+
+#peddles {
+  stroke: #727272;
+  stroke-width: 8px;
+  fill: transparent;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: wheel 2s infinite linear;
+}
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#sectionExpertise {
+  padding: 2%  10%  5% 10%;
+  box-sizing: border-box;
+  background: #fcfcfc;
+  width: 100%;
+  text-align: center;
+}
+
+#sectionExpertise a {
+  display: inline-block;
+}
+
+.columnleft, .columnright {
+  vertical-align: top;
+  display: inline-block;
+  /* 	min-width: 230px;  */
+  width: 30%;
+  text-align: right;
+  padding: 0% 1% 0% 0%;
+}
+
+.columnright {
+  width: 59%;
+  text-align: left;
+  padding: 0% 0% 2% 1%;
+}
+
+#sectionQualification {
+  padding: 2%  10%  5% 10%;
+  box-sizing: border-box;
+  background: #fcfcfc;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+#sectionPortfolio {
+  padding: 2%  0%  5% 0%;
+  background: #fcfcfc;
+  text-align: center;
+}
+
+#cloud {
+  padding: 1%;
+  background: #fcfcfc;
+  text-align: center;
+}
+
+.clouds {
+  display: inline-block;
+  width: 6%;
+  margin: 0% 2% 0% 2%;
+  transition: all 0.5s linear;
+}
+
+#cloudcc {
+  stroke: red;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #cloudcc {
+  stroke: red;
+  fill: red;
+  transition: 0.2s linear;
+}
+
+#cloudlines {
+  stroke: red;
+  fill: none;
+  stroke-width: 14px;
+}
+
+.clouds:hover #cloudlines {
+  stroke: #fcfcfc;
+  fill: none;
+  stroke-width: 16px;
+  transition: 0.2s linear;
+}
+
+#codepenbox {
+  stroke: black;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #codepenbox {
+  stroke: black;
+  fill: black;
+  transition: 0.2s linear;
+}
+
+#codepenlines {
+  stroke: black;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #codepenlines {
+  stroke: #fcfcfc;
+  fill: none;
+  transition: 0.2s linear;
+}
+
+#be {
+  stroke: #1969fb;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover #be {
+  stroke: #1969fb;
+  fill: #1969fb;
+  transition: 0.1s linear;
+}
+
+#github {
+  stroke: black;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover #github {
+  stroke: black;
+  fill: black;
+  transition: 0.2s linear;
+}
+
+#xd {
+  stroke: #e750b9;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.clouds:hover #xd {
+  stroke: #e750b9;
+  fill: #e750b9;
+  transition: 0.1s linear;
+}
+
+#dribbblecircle {
+  stroke: #b3335a;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #dribbblecircle {
+  stroke: #b3335a;
+  fill: #b3335a;
+  transition: 0.2s linear;
+}
+
+#dribbblelines {
+  stroke: #b3335a;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.clouds:hover #dribbblelines {
+  stroke: #fcfcfc;
+  transition: 0.2s linear;
+}
+
+#sectionExperience {
+  padding: 2%  20%  5% 20%;
+  box-sizing: border-box;
+  background: #fcfcfc;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.experienceposition {
+  color: #6d6d6d;
+  margin-bottom: 0px;
+}
+
+.experiencecompany {
+  color: #727272;
+  margin: 1% 0% 1% 0%;
+}
+
+.experiencedetail {
+  margin: 0;
+}
+
+#wildclick, #maxclick, #roadclick, #tgiclick {
+  cursor: pointer;
+  width: 100%;
+}
+
+.fieldset {
+  border-radius: 10px;
+  padding: 3%;
+  border: solid 1px #727272;
+}
+
+.experienceclickhidden {
+  visibility: hidden;
+}
+
+.experienceanimation {
+  opacity: 1;
+  animation: clickeyframe 1s infinite;
+}
+
+.experiencehovercolour {
+  color: #F7484E;
+}
+
+.clickanimation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #F7484E;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.clickanimation:hover {
+  border: 1px solid red;
+}
+
+@keyframes clickeyframe {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+#wildetails, #maxdetails, #roadetails, #tgidetails {
+  display: none;
+}
+
+#sectionCv {
+  padding: 4%  0%  4% 0%;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#cv {
+  display: inline-block;
+  width: 14%;
+  transition: all 0.5s linear;
+}
+
+.hide {
+  opacity: 0;
+}
+
+#template {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+}
+
+#list {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+}
+
+.list {
+  animation: list 1ms 0s ease 1 forwards;
+}
+
+@keyframes list {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#downloadarrow {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+  opacity: 0;
+}
+
+.downloadarrow {
+  animation: downloadarrow 1s 0s infinite linear;
+}
+
+@keyframes downloadarrow {
+  0% {
+    opacity: 1;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(-20px);
+  }
+}
+
+#downloadtray {
+  fill: none;
+  stroke: #595959;
+  stroke-width: 10px;
+  opacity: 0;
+}
+
+.downloadtray {
+  animation: downloadtray 0.5s 0s ease 1 forwards;
+}
+
+@keyframes downloadtray {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+#tick {
+  fill: none;
+  stroke-width: 30px;
+  opacity: 0;
+}
+
+.tick {
+  animation: tick 1ms 0s ease 1 forwards;
+}
+
+@keyframes tick {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+#tickround {
+  stroke: lime;
+  stroke-dasharray: 4000;
+}
+
+.tickdraw {
+  animation: tickdraw 1.5s 0s linear;
+}
+
+@keyframes tickdraw {
+  0% {
+    stroke-dashoffset: 4000;
+  }
+  100% {
+    stroke-dashoffset: 8000;
+  }
+}
+
+.cvDownloadColor {
+  color: lime;
+  transition: 1s all 2s linear;
+}
+
+#sectionContact {
+  height: 400px;
+  text-align: center;
+  padding: 5%  0%  15% 0%;
+  background: #fcfcfc;
+  margin: 0;
+}
+
+input, textarea {
+  width: 50%;
+  height: 10px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: "Poiret One";
+  border-radius: 10px;
+  background: white;
+  transition: all 0.2s ease-in;
+  border: transparent;
+  margin-bottom: 20px;
+}
+
+input:hover, textarea:hover {
+  background: #f5f5f5;
+}
+
+textarea {
+  height: 100px;
+}
+
+textarea:hover {
+  background: #f5f5f5;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  font-size: 30px;
+  font-family: 'Poiret One';
+  color: #a5a5a5;
+  line-height: 0px;
+  margin-top: 50px;
+  transition: all 0.2s;
+  box-shadow: 0px 5px 10px lightgray;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  box-shadow: 0px 5px 10px gray;
+}
+
+#sectionSocial {
+  background: #fcfcfc;
+  padding: 2% 0% 2% 0%;
+  margin-bottom: 450px;
+  text-align: center;
+}
+
+.socials, .socialsenvelop {
+  display: inline-block;
+  width: 3%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.3s linear;
+}
+
+#facebook {
+  stroke: #727272;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.socials:hover #facebook, .socialsenvelop:hover #facebook {
+  fill: #727272;
+  transition: 0.3s linear;
+}
+
+#envelop {
+  stroke: #727272;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+#open {
+  opacity: 0;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.3s linear;
+}
+
+#close {
+  opacity: 1;
+  stroke: #727272;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.3s linear;
+}
+
+.socialsenvelop:hover #open {
+  opacity: 1;
+  fill: #727272;
+}
+
+.socialsenvelop:hover #close {
+  fill: #fcfcfc;
+}
+
+.socialsenvelop:hover #envelop {
+  fill: #727272;
+}
+
+#twitter {
+  stroke: #727272;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.socials:hover #twitter, .socialsenvelop:hover #twitter {
+  fill: #727272;
+  transition: 0.3s linear;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+  background: #292929;
+  z-index: -1;
+  text-align: center;
+  color: white;
+  padding: 1% 0% 2% 0%;
+}
+
+#landscapemode {
+  position: relative;
+  top: 40px;
+  visibility: hidden;
+}
+
+#landscape {
+  width: 20px;
+  stroke-wodth: 10px;
+  stroke: white;
+  fill: none;
+  animation: landscape 1.5s linear infinite;
+}
+
+@keyframes landscape {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.landscapetext {
+  font-size: 14px;
+  color: white;
+}
+
+#mouse {
+  /*mouse*/
+  position: relative;
+  top: 50px;
+  left: 50%;
+  height: 100px;
+}
+
+.mouse {
+  margin-left: -13px;
+  width: 22px;
+  height: 35px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.mouse:hover {
+  border: 2px solid #F7484E;
+  box-shadow: 0px 0px 5px gray;
+}
+
+#scroll {
+  width: 0px;
+  height: 0px;
+  margin-left: 7px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid red;
+  animation: scroll 1.5s infinite both;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(6px);
+  }
+}
+
+.mousetext {
+  font-family: 'Poiret One';
+  font-size: 10px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: -1px;
+  color: white;
+}
+
+#me {
+  position: relative;
+  top: 160px;
+  text-align: center;
+}
+
+#designby {
+  position: relative;
+  font-size: 10px;
+  font-family: 'Poiret One';
+}
+
+.pipe {
+  position: relative;
+  top: -8px;
+  margin-left: 5px;
+  display: inline;
+  width: 30px;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  animation: pipe 4s linear infinite 0.5s;
+}
+
+.pipe:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pipe {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html body {
+    font-size: 20px;
+  }
+  #sectionNav {
+    display: none;
+  }
+  .stickytitle {
+    position: relative;
+  }
+  #sectionAbout {
+    padding: 10%  3%  10% 3%;
+  }
+  .hobbie {
+    width: 10%;
+  }
+  #sectionExpertise {
+    padding: 10%  0%  10% 0%;
+  }
+  #sectionQualification {
+    padding: 10%  0%  10% 0%;
+  }
+  .clouds {
+    width: 10%;
+  }
+  #sectionPortfolio {
+    padding: 10%  1%  10% 1%;
+  }
+  #sectionExperience {
+    padding: 10%  5%  10% 5%;
+  }
+  #sectionCv {
+    padding: 10%  1%  10% 1%;
+  }
+  .cv {
+    width: 20%;
+  }
+  input, textarea {
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+  }
+  .socials, .socialsenvelop {
+    width: 8%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html body {
+    font-size: 16px;
+  }
+  .title {
+    border: solid 2px #f5f5f5;
+  }
+  #sectionAbout {
+    padding: 2%  10%  5% 10%;
+  }
+  .quotes {
+    display: none;
+  }
+  #sectionExpertise {
+    padding: 2%  1%  5% 1%;
+  }
+  #sectionQualification {
+    padding: 2%  1%  5% 1%;
+  }
+  #sectionPortfolio {
+    padding: 2%  1%  5% 1%;
+  }
+  #sectionExperience {
+    padding: 2%  1%  5% 1%;
+  }
+  #wildclick, #maxclick, #roadclick, #tgiclick {
+    display: none;
+  }
+  .experiencedetail {
+    display: none;
+  }
+  #sectionCv {
+    display: none;
+  }
+  #sectionContact {
+    display: none;
+  }
+  .socials, .socialsenvelop {
+    width: 5%;
+  }
+  #landscapemode {
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=css.map */

@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');/*'Poiret One'*/
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,'); /*'Advent Pro'*/
+@font-face { font-family: 'mywoff';
+    src: url('../font/bootcamp-regular-webfont.woff2') format('woff2'),
+          url('../font/bootcamp-regular-webfont.woff') format('woff');
+}
+
+$fontTitle: 'mywoff';
+$fontNav:  'mywoff';
+$fontText: 'Advent Pro';
+$fontForm: 'Advent Pro';
+
+$bg-color: #292929; /*header & footer*/
+$bg-color1: white; /*White*/
+$bg-color2: #fcfcfc; /*White Smoke*/
+
+$fontColor: #727272;/*gray*/
+$navColor: #fcfcfc;/*gray*/
+
+$svg: #727272; /*svg*/
+$color: #F7484E; /*red*/
+
+// @mixin dog {}
+// .doggy1 { @include dog;}
+
+.draw:hover {animation: 1s draw linear forwards;}//temp
+@keyframes draw 	{0% {stroke-dasharray: 0 2000; stroke-dashoffset: 0;}100% {stroke-dasharray: 2000; stroke-dashoffset: 0;}}
+
+html body	{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: $fontText;
+	font-size: 20px;
+	color: $fontColor;
+	background-color: $bg-color;
+}
+
+a	{text-decoration: none; color: $fontColor; display: block;}
+.quote	{font-size: 30px;}
+.font	{font-family: 'Poiret+One';}
+.color	{color: $color;}//html red
+.darken	{color: darken($fontColor, 30%);}
+
+.title	{/*titles*/
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	background-color: $navColor;
+	z-index: 999;
+}
+.titletext	{
+	font-family: 'mywoff';
+	letter-spacing: 1px;
+	font-size: 25px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+.stickytitle	{position:fixed; top:0; left:0; width:100%; background-color: $navColor;}
+
+#sectionNav	{
+	position: fixed; 
+	top:0; 
+	right: 0; 
+	left: 0; 
+	background-color: $navColor;
+	z-index: 99999;
+	transition: transform 0.5s cubic-bezier(.42,1,.8,1);
+	opacity: 0;
+}
+.sectionNavHide {transform: translateY(-100%);}
+.headerScroll	{opacity: 1!important;}//needs important
+
+nav {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;	
+	transition: 0.3s ease;
+	overflow: hidden;
+}
+nav ul {
+	margin-top: 0px;
+	list-style: none;
+	padding: 0px;/*stops 40px */
+}
+nav ul li {
+	display: inline-block;
+ 	width: 10%;
+ 	padding: 0% 2% 0% 2%;
+}
+nav ul li a {
+	position: relative;
+	display: block;
+	font-size: 2vw;
+	font-family: $fontNav;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+}
+.underlinenav::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: $color;
+    position: absolute;
+    bottom:20px;
+    transition: 0.5s ease;
+}
+.underlinenav:hover::after {width: 100%;}
+.left::after  {@extend .underlinenav; right: 0px;}
+.center::after  {@extend .underlinenav; left: 50%; right: 50%;}
+.center:hover::after  {@extend .underlinenav; left: 0px;}
+.right::after  {@extend .underlinenav; left: 0px;}
+.right:hover::after  {@extend .underlinenav; left: 0px;}
+
+#sectionHeader	{
+	height: 100vh;
+	background: $bg-color;
+	margin: 0;
+	padding: 0;
+}
+
+#header		{
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+	text-align: center;
+	width: 100%;
+}
+.name	{
+	font-family: 'mywoff';
+	font-size: 10vw;
+	margin: 0;
+	color: white;
+	text-shadow: 0.1px 0.1px 1px white;
+}
+.quoterr	{
+	font-family: 'Advent Pro';
+	font-weight: 400;		
+	font-size: 5vw;
+	color: white;
+	margin: 0;
+}
+
+#sectionAbout	{
+	background-color: $bg-color1;
+	padding: 4%  5%  5% 5%;
+	text-align: center;
+}
+#hobbies		{
+	background: $bg-color1;
+	text-align: center;
+	padding: 1% 1% 1% 1%;
+}
+.hobbie   {
+    display: inline-block;
+    margin: 0% 1% 0% 1%;
+}
+.hobbie   {
+    display: inline-block;
+    width: 4%;
+    margin: 0% 1% 0% 1%;
+}
+
+#coffeecup	{stroke:$svg; fill: none;stroke-width: 10px;}
+#coffee	{stroke:$svg; fill: none;stroke-width: 10px; animation: coffee 20s infinite linear;}
+@keyframes coffee{0%{transform: translateY(0px);} 100%{transform: translateY(230px);}
+}
+#steam	{stroke:$svg; fill: $svg; stroke-width: 12px; animation: steam 2s infinite linear;}
+@keyframes steam{0%{opacity:1; transform: translateY(0px);}100%{opacity:0;transform: translateY(-30px);}}
+
+#pie	{stroke:$svg; fill: none; stroke-width: 10px;}
+#bite	{stroke:$svg; fill: none; stroke-width: 10px; animation: bite 3s infinite linear;}
+#nobite	{stroke:$svg; fill: none; stroke-width: 10px; animation: nobite 3s infinite linear;}
+@keyframes bite{0%{opacity:0}1%, 49%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
+@keyframes nobite {0%{opacity:1;}1%, 49%{opacity:0;}50%{opacity:1;}100%{opacity:1;}}
+
+#camera	{stroke:$svg; fill: none; stroke-width: 10px;}
+#flash	{stroke: $svg; fill:transparent; stroke-width: 10px; animation: flash 2s infinite linear;}
+@keyframes flash{0%, 90%{fill: transparent;}100%{fill: $svg;}}
+
+#imac	{stroke:$svg; fill: none; stroke-width: 10px;}
+#screen	{stroke:$svg; stroke-width: 8px; fill: transparent; animation: mac 2s infinite linear;}
+@keyframes mac{0%{stroke: $svg;}50%{stroke: lightgray;}100%{stroke: $svg;}}
+
+#headphones	{stroke:$svg; fill: none; stroke-width: 10px; animation: headphones 2s infinite linear; transform-origin: center center; transform-box: fill-box;}
+@keyframes headphones{0% {transform:scale(1.0);}	100%	 {transform:scale(0.90);}}
+
+#video	{stroke:$svg; fill: none; stroke-width: 10px;}
+#leftreel	{stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
+#rightreel	{stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: reel 2s infinite linear}
+@keyframes reel{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
+
+#frame	{stroke:$svg; fill: none; stroke-width: 8px;}
+#tube	{stroke:$svg; fill: none; stroke-width: 10px;}
+#seat	{stroke:$svg; fill: none; stroke-width: 18px;}
+#frontwheel {stroke: $svg; stroke-width: 8px; fill: transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
+#rearwheel {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
+#peadle {stroke: $svg; stroke-width: 8px; fill:transparent; transform-origin: center center; transform-box: fill-box; animation: wheel 1s infinite linear}
+@keyframes wheel {0%{transform: rotate(0deg);}100%{transform: rotate(-360deg);}}
+
+.columnleft  {
+	vertical-align: top; //aligns div at top of container
+	display: inline-block;
+	min-width: 230px; width: 30%;	
+    text-align: right;
+ 	padding: 0% 1% 0% 0%;  
+}
+.columnlefttitle  {//maybe
+	@extend columnleft;
+    color: darken($fontColor, 30%);
+    font-size: calc(100% + 2px);
+}
+.columnright  {
+	@extend .columnleft ;
+	width: 59%;	
+	text-align: left;
+	color: $fontColor;
+ 	padding: 0% 0% 2% 1%;	
+}
+
+#sectionExpertise	{
+	padding: 5%  10%  5% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+// 	line-height: 30px;
+	a 	{
+		display: inline-block;
+	}
+}
+
+#sectionQualifications	{
+	padding: 5%  10%  5% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+
+#sectionPortfolio	{
+	padding: 5%  0%  5% 0%;
+	background:  $bg-color1;
+}
+#cloud		{
+	padding: 1%;
+	background: $bg-color1;
+	text-align: center;
+}
+.clouds  {
+	display: inline-block;
+    width: 6%;
+    margin: 0% 2% 0% 2%;
+    transition: all 0.5s linear;
+}
+
+#cc	{stroke:$svg;fill: none;stroke-width: 11px;}
+.clouds:hover  #cc	{stroke: red; transition: 0.2s linear;}
+
+#codepen	{stroke: $svg;fill: none;stroke-width: 11px;}
+.clouds:hover #codepen	{stroke: black;  transition: 0.2s linear;}
+
+#be	{stroke: $svg;fill: none;stroke-width: 10px;}
+.clouds:hover #be	{stroke: #1969fb; fill: none; transition: 0.1s linear;}
+
+#github	{stroke: $svg;fill: none;stroke-width: 10px;}
+.clouds:hover #github	{stroke: black;  transition: 0.2s linear;}
+
+#xd	 {stroke:$svg;fill: none;stroke-width: 10px;}
+.clouds:hover #xd	{stroke: #e750b9; fill: none;  transition: 0.1s linear;}
+
+#dribbble	{stroke: $svg;fill: none;stroke-width: 11px;}
+.clouds:hover #dribbble	{stroke: #b3335a;  transition: 0.2s linear;}
+
+#sectionExperience		{
+	padding: 5%  10%  5% 10%;
+	box-sizing: border-box;
+	background:  $bg-color1;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+
+#sectionCv		{
+	padding: 2%  0%  5% 0%;
+	background: $bg-color1;
+	text-align: center;
+}
+.cv   {
+	display: inline-block;
+    width: 10%;
+    margin: 5px 2% 0px 2%;
+    transition: all 0.5s linear;
+}
+
+#sectionContact {
+	height: 400px;
+	text-align: center;
+	padding: 5%  0%  5% 0%;
+	background: $bg-color2;
+}
+input	{
+	width: 50%;
+	height: 10px;
+	padding: 10px;
+	font-size: 22px;
+	font-family: $fontForm;
+	border-radius: 10px;
+	background: $bg-color2;
+	transition: all 0.2s ease-in;
+	border: transparent;
+	&:hover	{
+		background: $bg-color1;
+	}
+}
+textarea {
+  	width: 50%;
+  	padding: 10px;
+  	font-size: 22px;
+	font-family: $fontForm;
+  	border-radius: 10px;
+	border: transparent;
+	background:$bg-color2;
+	transition: all 0.2s ease-in;
+	&:hover	{
+		background: $bg-color1;
+	}
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  font-size: 20px;
+  font-family: $fontForm; 
+  line-height: 3px;
+  margin-top: 50px;
+  transition: all 0.2s;
+  box-shadow: 0px 5px 10px lightgray;
+  cursor:pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  box-shadow: 0px 5px 10px gray;
+}
+hr { width: 54%; margin: 0 auto; border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
+#sectionSocial		{
+	background: $bg-color2;
+	padding: 2%;
+	margin-bottom: 450px;
+	text-align: center;
+}
+.socials   {
+	display: inline-block;
+    width: 3%;
+    margin: 5px 2% 0px 2%;
+    transition: all 0.3s linear;
+}
+.socialsenvelop   {
+	 @extend .socials;
+}
+#facebook {stroke: $svg; fill: transparent; stroke-width: 12px;}
+.socials:hover #facebook {fill: $svg; transition: 0.3s linear;}
+
+#envelop {stroke: $svg; fill: transparent; stroke-width: 12px;}
+#open {opacity: 0; stroke:$svg; fill: none; stroke-width: 12px; transition: all 0.3s linear;}
+#close {opacity: 1; stroke:$svg; fill:none; stroke-width: 12px; transition: all 0.3s linear;}
+.socialsenvelop:hover  #open {opacity: 1; fill: $svg;}
+.socialsenvelop:hover  #close	{fill: $bg-color1;}
+.socialsenvelop:hover #envelop {fill: $svg;}
+
+#twitter {stroke: $svg; fill: transparent; stroke-width: 12px;}
+.socials:hover #twitter {fill: $svg; transition: 0.3s linear;}
+
+footer		{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 450px;
+	background: $bg-color;
+	z-index: -1;
+	text-align: center;
+	color: white;
+}
+#mouse		{/*mouse*/
+	position: relative;
+	background: $bg-color;
+	height: 100px;
+}
+.mouse{
+	position: relative;
+	top: 25px;
+	left: 50%;
+	margin-left: -13px;
+	width: 22px;
+	height: 35px;
+	border:2px solid lightgray;
+	border-radius: 20px;
+  	text-align: center;
+  	transition: all 0.3s;
+  	&:hover	{border: 2px solid $color; box-shadow: 0px 0px 5px gray;}
+}
+#scroll{
+	width: 0px;
+	height: 0px;
+	margin-left: 7px;
+    border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid $color;
+	animation: scroll 1.5s infinite both;
+}
+@keyframes scroll{0%{opacity:1; transform:translateY(20px);}100%{opacity:0.4; transform:translateY(6px);}}
+
+.mousetext	{
+	font-family: 'Poiret One';
+	font-size: 10px;
+	margin-top: 40px;
+	font-weight: bold;
+	margin-left: -1px;
+}
+#me		{
+	position: relative;
+	top:40%;
+	text-align: center;
+	width: 100%;
+}
+#ted	{
+	font-family: $fontTitle;
+	font-size: 40px;
+	margin: 0px;
+}
+#designby	{
+	position: relative;
+	font-size: 10px;
+	font-family: 'Poiret One';
+}
+.pipe {
+	position: relative;
+	top: -8px;
+	margin-left: 5px;
+	display: inline;
+	width: 30px;
+ 	stroke-dasharray: 2000;
+ 	stroke-dashoffset: 0;
+ 	animation: pipe 4s linear infinite 0.5s;
+ 	&:hover	{animation-play-state: paused;} 	
+}
+@keyframes pipe 	{from	{stroke-dashoffset: 2000;}to	{stroke-dashoffset: 0;}}//pipe
+
+// @media screen and (max-width: 900px) {	//desktop
+// }
+	
+@media screen and (max-width: 768px) {	//tablet
+#sectionNav	{display: none;}
+.stickytitle	{position: relative;}//no sticky title mobile
+
+#sectionAbout	{padding: 10%  3%  10% 3%;}
+.hobbie	{width: 10%;}
+.columnleft		{text-align: center;}
+
+// #sectionPortfolio		{padding: 10%  1%  10% 1%;}
+
+.clouds	{width: 10%;}
+
+.cv	{width: 10%;}
+
+#sectionContact	{padding: 10%  1%  10% 1%;}
+input	{width: 80%;}
+textarea	{width: 80%;}
+hr 	{width: 80%;}	
+.socials	{width: 10%;}
+}	
+	
+@media screen and (max-width: 480px) {//mobile	
+#sectionCv	{display: none;}
+#titlehide	{display: none;}
+#sectionContact	{display: none;}
+}
+
+@media (max-width: 320px) {//mobile small
+#wrapper {min-width: 320px;}		
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>premierepro</title>
+  <g id="pr">
+    <path id="r" d="M342.94,200.58v24.6c-5.45-1.23-25.92.07-29.08,2.56,0,3.61,0,96,0,96H286.7s0-107.24,0-112.61C292.78,205.05,321.48,197.79,342.94,200.58Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="p" d="M164.35,323.75c0-.7.09-165.55.09-165.55l52.33.17s47.9,5.16,47.9,51.18c0,61-66.75,56.2-72.53,55.87,0,9.35,0,58.33,0,58.33Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path id="pp" d="M191.72,183.41l-.13,57.72h18.75S237,240,237,209.46c0-19.95-16.85-26.06-20.38-26.06Z" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+  </g>
+</svg>

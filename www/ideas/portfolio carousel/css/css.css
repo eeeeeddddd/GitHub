@@ -1,0 +1,973 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+/*'Poiret One'*/
+@import url("https://fonts.googleapis.com/css?family=Antic");
+/*'Antic'*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+/*'Roboto Condensed'*/
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500");
+/*'Advent Pro'*/
+/*needed*/
+/*main*/
+/*gray*/
+/*header & footer*/
+/*red*/
+/*gray*/
+/*svg*/
+@font-face {
+  font-family: 'mywoff';
+  src: url("../font/bootcamp-regular-webfont.woff2") format("woff2"), url("../font/bootcamp-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'myotf';
+  src: url("../font/Angelface.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'myttf';
+  src: url("../font/Aamonoline.ttf") format("truetype");
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Advent Pro";
+  color: #707070;
+  font-size: 20px;
+  font-weight: 300;
+  background: #292929;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#sectionHeader {
+  /*header*/
+  height: 100vh;
+  background: #292929;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.headername {
+  font-family: 'mywoff';
+  font-size: 7vw;
+  margin: 0;
+  color: white;
+  text-shadow: 0.5px 0.5px 3px white;
+}
+
+.quote {
+  font-family: 'myotf';
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #F7484E;
+  margin: 0;
+}
+
+.navscroll {
+  height: 60px;
+  line-height: 60px;
+}
+
+.navscrolltext {
+  font-size: 25px;
+}
+
+.stickytop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f5f5f5;
+  z-index: 99;
+  transition: 0.3s ease;
+}
+
+nav ul {
+  margin-top: 0px;
+  list-style: none;
+  padding: 0px;
+  /*stops 40px */
+}
+
+nav ul li {
+  display: inline-block;
+  width: 120px;
+}
+
+nav ul li a {
+  position: relative;
+  display: block;
+  color: #707070;
+  font-size: 20px;
+  font-family: "Advent Pro";
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.underlineNav::after, .left::after, .center::after, .center:hover::after, .right::after, .right:hover::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: #F7484E;
+  position: absolute;
+  bottom: 0px;
+  transition: 0.5s ease;
+}
+
+.underlineNav:hover::after, .left:hover::after, .center:hover::after, .right:hover::after {
+  width: 100%;
+}
+
+.left::after {
+  right: 0px;
+}
+
+.center::after {
+  left: 50%;
+  right: 50%;
+}
+
+.center:hover::after {
+  left: 0px;
+}
+
+.right::after {
+  left: 0px;
+}
+
+.right:hover::after {
+  left: 0px;
+}
+
+#sectionAbout {
+  /*about*/
+  background-color: white;
+  padding: 5%  10%  5% 10%;
+  text-align: center;
+}
+
+#sectionHobbies {
+  /*hobbies*/
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+#hobbies {
+  width: 100%;
+  text-align: center;
+}
+
+.hobbie {
+  display: inline-block;
+  width: 4%;
+  margin: 0px 2% 0px 2%;
+}
+
+.hobbieimg {
+  width: 100%;
+  height: 100%;
+}
+
+#coffeecup {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#coffee {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: coffee 15s infinite linear;
+}
+
+@keyframes coffee {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(230px);
+  }
+}
+
+#steam {
+  stroke: #707070;
+  fill: #707070;
+  stroke-width: 12px;
+  animation: steam 2s infinite linear;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+#pie {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#bite {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: bite 3s infinite linear;
+}
+
+#nobite {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: nobite 3s infinite linear;
+}
+
+@keyframes bite {
+  0% {
+    opacity: 0;
+  }
+  1%, 49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nobite {
+  0% {
+    opacity: 1;
+  }
+  1%, 49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#camera {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#flash {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 10px;
+  animation: flash 2s infinite linear;
+}
+
+@keyframes flash {
+  0%, 90% {
+    fill: transparent;
+  }
+  100% {
+    fill: #707070;
+  }
+}
+
+#imac {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#screen {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: mac 2s infinite linear;
+}
+
+@keyframes mac {
+  0% {
+    stroke: #707070;
+  }
+  50% {
+    stroke: lightgray;
+  }
+  100% {
+    stroke: #707070;
+  }
+}
+
+#headphones {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+  animation: headphones 1s infinite linear;
+}
+
+@keyframes headphones {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(1.04);
+    transform-origin: center center;
+  }
+}
+
+#video {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+#leftreel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: reel 3s infinite linear;
+}
+
+#rightreel {
+  stroke: #707070;
+  stroke-width: 8px;
+  fill: transparent;
+  animation: reel 3s infinite linear;
+}
+
+@keyframes reel {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
+  }
+}
+
+#sectionExpertise {
+  /*expertise*/
+  background-color: white;
+  padding: 5%  10%  5% 10%;
+  text-align: center;
+}
+
+#tableleft {
+  display: inline-block;
+}
+
+#tableright {
+  display: inline-block;
+}
+
+.table {
+  position: relative;
+  font-size: 20px;
+}
+
+.tablecol {
+  width: 150px;
+  padding: 5px 0px 5px 20px;
+  text-align: left;
+}
+
+.underline {
+  position: relative;
+  width: 100px;
+  height: 10px;
+  background: lightgray;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.line {
+  position: relative;
+  height: 10px;
+  width: 10%;
+  background: red;
+  border-radius: 10px;
+  transition: all 1s ease-in;
+}
+
+.line1 {
+  background: #56c9fb;
+}
+
+.line2 {
+  background: #ff7100;
+}
+
+.line3 {
+  background: #ff008b;
+}
+
+.line4 {
+  background: #e55ffe;
+}
+
+.line5 {
+  background: #e55ffe;
+}
+
+.line6 {
+  background: #fa2f00;
+}
+
+.line7 {
+  background: #006fb9;
+}
+
+.line8 {
+  background: #ff7700;
+}
+
+.line9 {
+  background: blue;
+}
+
+.line10 {
+  background: #00ff18;
+}
+
+.percent100 {
+  width: 100%;
+}
+
+.percent90 {
+  width: 90%;
+}
+
+.percent85 {
+  width: 85%;
+}
+
+.percent80 {
+  width: 80%;
+}
+
+.percent75 {
+  width: 75%;
+}
+
+.percent70 {
+  width: 70%;
+}
+
+#sectionExpertiseCircles {
+  /*circle*/
+  padding: 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.circles {
+  display: inline-block;
+  width: 7%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.5s linear;
+}
+
+#sectionQualifications {
+  /*qualifications*/
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/*full screen*/
+.carousel-indicators {
+  color: red;
+}
+
+#sectionPortfolio {
+  /*portfolio*/
+  background: #f5f5f5;
+}
+
+#portfolio {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.port {
+  display: inline-block;
+  position: relative;
+  width: 33.333333333%;
+  margin: -4px -4px 0px 0px;
+  font-size: 0px;
+}
+
+.portimg {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.port:hover .overlay {
+  opacity: 1;
+}
+
+.porttext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#sectionCloud {
+  /*files*/
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+#cloud {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.sky {
+  display: inline-block;
+  width: 7%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.5s linear;
+}
+
+.cc {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.sky:hover .cc {
+  stroke: red;
+  transition: 0.5s linear;
+}
+
+.codepen {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.sky:hover .codepen {
+  stroke: lime;
+  transition: 0.5s linear;
+}
+
+.be {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.sky:hover .be {
+  stroke: #1969fb;
+  transition: 0.5s linear;
+}
+
+.github {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.sky:hover .github {
+  stroke: purple;
+  transition: 0.5s linear;
+}
+
+.xd {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 10px;
+}
+
+.sky:hover .xd {
+  stroke: #e750b9;
+  transition: 0.5s linear;
+}
+
+.dribbble {
+  stroke: #707070;
+  fill: none;
+  stroke-width: 11px;
+}
+
+.sky:hover .dribbble {
+  stroke: #b3335a;
+  transition: 0.5s linear;
+}
+
+#sectionExperience {
+  /*experience*/
+  background-color: white;
+  height: 500px;
+  padding: 5%  10%  5% 10%;
+}
+
+#sectionCv {
+  /*cv download*/
+  padding: 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#cv {
+  display: inline-block;
+  width: 7%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.5s linear;
+}
+
+#sectionContact {
+  /*contact*/
+  height: 500px;
+  text-align: center;
+  padding: 50px;
+  background: white;
+}
+
+form {
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  height: 10px;
+  padding: 10px;
+  font-size: 24px;
+  font-family: "Advent Pro";
+  border-radius: 10px;
+  background: white;
+  transition: all 0.5s ease-in;
+  border: transparent;
+}
+
+input:hover {
+  background: #f5f5f5;
+}
+
+textarea {
+  width: 50%;
+  padding: 10px;
+  font-size: 24px;
+  font-family: "Advent Pro";
+  border-radius: 10px;
+  border: transparent;
+  background: white;
+  transition: all 0.5s ease-in;
+}
+
+textarea:hover {
+  background: #f5f5f5;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  font-size: 22px;
+  font-family: "Advent Pro";
+  line-height: 3px;
+  margin-top: 10px;
+  transition: all 0.2s;
+  box-shadow: 0px 5px 10px lightgray;
+}
+
+.btn:hover {
+  background-color: transparent;
+  box-shadow: 0px 5px 10px gray;
+}
+
+hr {
+  width: 52%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+#sectionSocial {
+  /*social*/
+  background: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+#social {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.network, .networkenvelop {
+  display: inline-block;
+  width: 4%;
+  margin: 0px 2% 0px 2%;
+  transition: all 0.3s linear;
+}
+
+#facebook {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.network:hover #facebook, .networkenvelop:hover #facebook {
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
+#twitter {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.network:hover #twitter, .networkenvelop:hover #twitter {
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
+#envelop {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+#open {
+  opacity: 0;
+  stroke: #707070;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.3s linear;
+}
+
+#close {
+  opacity: 1;
+  stroke: #707070;
+  fill: none;
+  stroke-width: 12px;
+  transition: all 0.3s linear;
+}
+
+.networkenvelop:hover #open {
+  opacity: 1;
+  fill: #707070;
+}
+
+.networkenvelop:hover #close {
+  fill: white;
+}
+
+.networkenvelop:hover #envelop {
+  fill: #707070;
+}
+
+#facetime {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.network:hover #facetime, .networkenvelop:hover #facetime {
+  stroke: transparent;
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
+#instagram {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+#instagramlens {
+  stroke: #707070;
+  fill: transparent;
+  stroke-width: 12px;
+}
+
+.network:hover #instagram, .networkenvelop:hover #instagram {
+  stroke: white;
+  fill: #707070;
+  transition: 0.3s linear;
+}
+
+.network:hover #instagramlens, .networkenvelop:hover #instagramlens {
+  stroke: white;
+  transition: 0.3s linear;
+}
+
+#sectionFooter {
+  /*footer*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #292929;
+  z-index: -1;
+  text-align: center;
+}
+
+#footer {
+  position: relative;
+  top: 25%;
+  text-align: center;
+  width: 100%;
+}
+
+#footername {
+  font-family: "mywoff";
+  font-size: 40px;
+  margin: 0px;
+  color: white;
+}
+
+#designby {
+  position: relative;
+  color: white;
+  font-size: 10px;
+  font-family: 'Poiret One';
+}
+
+.pipe {
+  position: relative;
+  top: -8px;
+  margin-left: 5px;
+  display: inline;
+  width: 30px;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  animation: dash 4s linear infinite 0.5s;
+  /*forwards;*/
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #sectionHeader {
+    height: 200px;
+  }
+  #header {
+    top: 60%;
+  }
+  .headername {
+    font-size: 10vw;
+    text-shadow: 0px 0px 0px;
+  }
+  .quote {
+    font-size: 5vw;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+  }
+  nav ul li {
+    width: 90px;
+  }
+  #sectionAbout {
+    /* font-size: 12px; */
+  }
+  .hobbie {
+    width: 10%;
+  }
+  .circles {
+    width: 10%;
+  }
+  .sky {
+    width: 10%;
+  }
+  #sectionExperience {
+    padding: 5%;
+  }
+  #cv {
+    width: 10%;
+  }
+  #sectionContact {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+  input {
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+  }
+  hr {
+    width: 80%;
+  }
+  .network, .networkenvelop {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=css.map */
