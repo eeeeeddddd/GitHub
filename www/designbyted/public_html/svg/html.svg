@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>html</title>
+  <g id="html">
+    <polygon id="H" points="150.21 78.34 150.21 126.18 166.36 126.18 166.36 109.54 180.66 109.54 180.63 126.17 196.03 126.17 196.01 78.29 179.94 78.29 179.93 94.04 166.16 94.07 166.14 78.31 150.21 78.34" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <polygon id="T" points="202.14 78.32 202.11 94.04 216.21 94.04 216.21 126.25 232.05 126.24 232.07 94.06 245.68 94.08 245.68 78.3 202.14 78.32" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <polygon id="M" points="251.87 78.33 251.87 126.29 267.57 126.29 267.57 102.84 278.49 119.78 288.92 102.55 288.94 126.19 305.09 126.18 305.18 78.31 288 78.31 278.39 94.7 268.13 78.33 251.87 78.33" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <polygon id="L" points="311.78 78.3 311.74 126.19 350.13 126.19 350.11 109.53 328.1 109.53 328.1 78.3 311.78 78.3" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <g id="bg">
+      <polygon id="outer" points="127.36 146.15 372.47 146.15 349.66 395.62 249.65 426.27 150.25 395.9 127.36 146.15" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+    </g>
+    <polygon id="_5" data-name="5" points="326.29 197.24 323.17 229.05 206.21 229.01 209.5 259.44 320.7 259.47 312.31 353.19 249.78 370.97 187.37 353.19 182.52 304.18 213.49 304.18 215.37 328.69 249.78 338.86 283.93 328.7 287.27 290.72 181.17 290.72 172.97 197.25 326.29 197.24" style="fill: none;stroke: #727272;stroke-miterlimit: 10;stroke-width: 5px"/>
+  </g>
+</svg>
