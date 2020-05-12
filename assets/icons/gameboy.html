@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>gameboy</title>
+		<style>
+		#wrapper  {
+		  display: flex;
+		  position: absolute;
+		  left: 50%;
+		  top: 50px;
+		  margin-left: -50px;
+		}
+
+		#gameboy	{
+			position: relative;
+			width: 130px;
+			height: 200px;
+			border-radius: 16px;
+			background-color: #d7d7d7;
+		}
+
+		#onoff	{
+			position: absolute;
+			left: 84px;
+			top: -3px;
+			width: 18px;
+			height: 3px;
+			background-color: gray;
+			border-radius: 2px 2px 0px 0px;
+		}
+		#glass	{
+			position: relative;
+			left: 10px;
+			top: 12px;
+			width: 108px;
+			height: 80px;
+			border-radius: 12px 12px 20px 12px;
+			border: 1px solid gray;
+			background-color: gray;
+		}
+
+		#screen	{
+			position: relative;
+			left: 16px;
+			top: 10px;
+			width: 76px;
+			height: 55px;
+			border-radius: 3px;
+			border: 1px solid black;
+			background-color: #3e3d3d;
+		}
+
+		#light	{
+			position: relative;
+			left: -11px;
+			top: 24px;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: red;
+		}
+
+		#buttons	{
+			position: relative;
+			left: 10px;
+			top: 20px;
+			width: 110px;
+			height: 80px;
+		}
+
+		#br	{
+			position: relative;
+			left: 84px;
+			top: 20px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: gray;
+		}
+
+		#bl	{
+			position: relative;
+			left: 66px;
+			top: 12px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: gray;
+		}
+
+		#updown	{
+			position: relative;
+			left: 21px;
+			top: -20px;
+			width: 12px;
+			height: 34px;
+			border-radius: 3px;
+			background-color: gray;
+		}
+
+		#leftandright	{
+			position: relative;
+			left: 10px;
+			top: -42px;
+			width: 34px;
+			height: 12px;
+			border-radius: 3px;
+			background-color: gray;
+		}
+
+		#select	{
+			position: relative;
+			left: 52px;
+			top: -20px;
+			transform: rotate(-24deg);
+			width: 20px;
+			height: 4px;
+			border-radius: 4px;
+			background-color: gray;
+		}
+
+		#start	{
+			position: relative;
+			left: 32px;
+			top: -24px;
+			transform: rotate(-24deg);
+			width: 20px;
+			height: 4px;
+			border-radius: 4px;
+			background-color: gray;
+		}
+
+		.speeker	{
+			position: relative;
+			transform: rotate(54deg);
+			width: 16px;
+			height: 3px;
+			border-radius: 4px;
+			background-color: gray;
+		}
+
+		.one	{top: -24px; left: 100px;}
+		.two	{top: -24px; left: 96px;}
+		.three	{top: -24px; left: 92px;}
+		.four	{top: -24px; left: 88px;}
+		.five	{top: -24px; left: 84px;}
+		.six	{top: -24px; left: 80px;}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="gameboy">
+		<div id="onoff"></div>
+		<div id="glass">
+			<div id="screen">
+				<div id="light"></div>
+			</div>
+		</div>
+		<div id="buttons">
+			<div id="br"></div>
+			<div id="bl"></div>
+			<div id="updown"></div>
+			<div id="leftandright"></div>
+			<div id="select"></div>
+			<div id="start"></div>
+			<div class="speeker one"></div>
+			<div class="speeker two"></div>
+			<div class="speeker three"></div>
+			<div class="speeker four"></div>
+			<div class="speeker five"></div>
+			<div class="speeker six"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
